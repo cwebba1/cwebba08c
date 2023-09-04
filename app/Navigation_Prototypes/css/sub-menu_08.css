@@ -1,0 +1,150 @@
+
+/*  sub-menu_08.css  -  022215 */
+/* Changing class names to conform with WordPress limitations */
+
+.submenu-toggle:focus {
+  outline: 0;
+}
+
+
+.submenu {
+  position: relative;
+}
+
+.submenu-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  width:100%;
+  min-width: 24em;
+  font-size: 1em;
+  text-align: left;
+  padding: 0;
+  margin: 2px 0 0;
+}
+
+.submenu-menu > li {
+	margin:0;
+	padding:0;
+}
+
+.submenu-menu li a{
+    background:#F0FAF6;
+    text-decoration:none;
+}
+
+.submenu-menu > li > a {
+  display: block;
+  padding: .5em 2%;
+  margin:0;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: nowrap;
+}
+
+.submenu-menu > li > a:hover, .submenu-menu > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #F0E0D0;
+}
+
+.open > .submenu-menu {
+  display: block;
+}
+
+.open > .submenu-menu li {
+display:inline; /*THIS*/
+}
+
+.open > a {
+  outline: 0;
+}
+
+/* Should not these go higher in the cascade? */
+nav ul{
+    list-style:none;
+}
+nav li{
+    display:inline;
+    margin:0 .5em 0 0;
+}
+
+nav li a{
+  line-height: 20px;
+    padding:.125em .5em;
+    background:rgba(20, 25, 45, .2);/* REMOVE THIS WHEN ADDING TO WORDPRESS */
+}
+
+.highlight {
+	padding:1px;
+	background:khaki;
+}
+
+
+@media (min-width: 768px) {
+
+  .submenu-menu {
+  position: absolute;
+  top: 100%;
+  left: -23.625em;
+  z-index: 100;
+  display: block;
+  min-width: 47em;
+  font-size: 1em;
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 2px 0 0;
+  background:transparent;
+}
+
+.submenu-menu > li {
+  margin-right:.5%;
+  padding:0;
+}
+
+.submenu-menu > li > a {
+  display: inline-block;
+  padding: .25em 1%;
+  margin:.5em 0 0;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: nowrap;
+  border-radius: 3px;
+  background:#orange;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+b.caret {
+  display:none;
+}
+
+/* Not In Use
+.nav-tabs > li {
+  float: left;
+  margin-bottom: 1px;
+}
+*/
+
+.nav-pills > li + li {
+  margin-left: 2px;
+}
+
+.navbar-nav > li > a {
+  line-height: 1.428571429;
+  padding: .5em;
+  color: #333333;
+  white-space: nowrap;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+}

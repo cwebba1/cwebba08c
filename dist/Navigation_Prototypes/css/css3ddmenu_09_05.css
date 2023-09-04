@@ -1,0 +1,377 @@
+/*  css3ddmenu_09_05.css  */
+
+/*  css3gradientdropdownmenu.css  */
+/*Demo: Pure CSS3 Gradient Dropdown Menu (No Image Used)*/>
+/* http://www.webdesignerwall.com/demo/css3-dropdown-menu/css-gradient-dropdown.html  */
+
+/* This: css3ddmenu_09_04.css  -- Adding BOTTOM Contact links, shalizar_latifa_docs.htm 121010, Shalizar Website 03 
+Previous: css3ddmenu_09_03.css  -- Adding Contact links, shalizar_latifa_docs.htm 120810, Shalizar Website 03 
+Previous: css3ddmenu_09_02.css  -- Fixing drop:hover line-hieght, Shalizar Website 03 
+Previous: 112710 css3ddmenu_09_01.css  -- Starting build-out, Shalizar Website 03 
+Previous: 112710 css3ddmenu_08_02_liqnunav02.css  -- Starting build-out, Shalizar Website 02 
+Previous: 112610 css3ddmenu_08_02_liquid_nunav.css  -- Starting build-out, Shalizar Website 02 
+Previous: 112610 css3ddmenu_08_02_liquid.css  -- Starting build-out, Shalizar Website 02 
+Previous: 112410 css3ddmenu_08_02.css  -- Starting build-out, Shalizar Website 02 
+Previous: 110110 css3ddmenu_08_01.css  -- Starting build-out, Shalizar Website 02 
+Previous: 102610 css3ddmenu_07ie_test03_03.css <- located in Shalizar IE_drop_menu_test102610 >HTML5 Tests>...How 2 */
+/*  css3ddmenu_07ie_test03_03.css  */
+
+/*body {
+	font: normal .8em/1.5em Arial, Helvetica, sans-serif;
+	background: #ebebeb;
+	width: 900px;
+	margin: 100px auto;
+	color: #666;
+}*/
+
+/* remove all the bullets, borders and padding from the default list styling *//* ie_drop */
+.nav ul {padding:0;margin:0;list-style-type:none; }
+
+
+.nav a { color: #FFF; }
+
+.nav {	
+font-size: 1em;/* .85 Made it smaller *//* ie_drop added */
+	height:1.6em;
+	margin: 0 0 10px 0px;
+	padding: 8px 4px 2px;
+	border: solid 1px rgba(0, 0, 0, .5);
+	line-height: 100%;
+	-moz-border-radius: 2em;
+	-webkit-border-radius: 2em;
+	border-radius: 2em 2em 2em 2em;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+	background: #260F40; /* for non-css3 browsers */
+	background: -webkit-gradient(linear, left top, left bottom, from(#260F40), to(#5C308D)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #260F40,  #5C308D); /* for firefox 3.6+ */
+	linear-gradient(top, #260F40,  #5C308D);
+}
+
+/*.nav {	overflow:hidden;
+}  liquid-center-menu 102610   */
+/* This kills the drop-down menu - cannot do this 102610   */
+
+.nav {	max-width: 468px;
+	min-width: 450px;
+} /* liquid-center-menu 102610   */
+
+
+* html .nav { width:462px;
+} /* liquid-center-menu 102610   */
+
+
+/* Not part of either code - added by me to attempt fix of visual flaw in IE tests. Added 102510 IE Test */
+.ie6 .nav li, .ie7 .nav li,  { border-radius: 1em 1em 1em 1em; 
+}/* Added 102510 IE Test */
+
+.nav li {
+	margin: -.25em 3px;
+/*	padding: 0 0px 8px; I may need to hide this */
+	float: left;
+	position: relative;
+	list-style: none;
+	text-transform: uppercase;
+	border-top: solid 1px rgba (0, 0, 0, 0);
+	}
+
+.nav li.mid33 { width:32.5%;
+} /* Added 102610  liquid-center-menu  */
+
+.nav li.mid25 { width:24.5%;
+} /* Added 102610  liquid-center-menu  */
+
+.nav li.last { margin-right:-10px;
+}  /* Added 102610  liquid-center-menu  */
+/* Safely stop the list from wrapping when computed odd pixels are added  */
+
+
+/* Removed for test 03_03
+.nav li.mid15 { margin-left:15px; }
+.ie6 .nav li.mid15, .ie7 .nav li.mid15 { margin-left:10px; }
+
+.nav li.mid30 { margin-left:30px; }
+.ie6 .nav li.mid30, .ie7 .nav li.mid30 { margin-left:20px; } */
+/* Added 102510 IE Test */
+
+
+/* main level link */
+.nav a {
+font-size:1em;line-height:1.1em; 
+	color: #F7F5F5;
+	text-decoration: none;
+	display: block;
+	padding: 3px 30px 3px;
+	margin:0;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	border-radius: 1em 1em 1em 1em;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, .7);
+}
+
+.nav a { width:auto;
+} /* Added 102610  liquid-center-menu  */
+
+
+/* style the links for the top level *//* ie_drop */
+.nav a, .nav a:visited {display:block;float:left;font-size:1em; text-decoration:none;color:#fff;}
+/* REMOVED  from ie_drop
+height:100%; background:#949e7c; padding:0 3em 0 1em; border-left:1px solid #eee; border-right:1px solid #000; */
+
+
+/* main level link hover */
+.nav .current a, .nav li:hover > a {
+	color: #FFF;
+	border-top: solid 1px #500E5B;
+	padding: 2px 30px 3px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	text-shadow: 1px 1px 2px rgba(153,0,0 .8);
+
+	background: #500E5B; /* for non-css3 browsers */
+	background: -webkit-gradient(linear, left top, left bottom, from(#500E5B), to(#B55EC4)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #500E5B,  #B55EC4); /* for firefox 3.6+ */
+	linear-gradient(top, #500E5B,  #B55EC4);
+	}
+
+
+/* TEST was HERE */
+
+
+/* sub levels link hover */
+.nav ul li:hover a, .nav li:hover li a {
+	text-align:left;
+	background: none;
+	border: none;
+	color: #260F40;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+          box-shadow: none; 
+padding-top:.75em;
+line-height:1.1em; 
+}
+.nav ul a:hover {
+	color: #fff !important;
+	background: #500E5B !important; /* for non-css3 browsers */
+	background: -webkit-gradient(linear, left top, left bottom, from(#500E5B), to(#B55EC4)) !important; /* for webkit browsers */
+	background: -moz-linear-gradient(top, #500E5B, #B55EC4) !important; /* for firefox 3.6+ */
+	linear-gradient(top, #500E5B, #B55EC4);
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0 0 0 0;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+/* level 2 list   – –  – –  – –  – –  – –  – – */
+.nav ul {
+	background: #F8F9FA; /* for non-css3 browsers */
+	background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(35%, #F8F9FA), to(#B3A8C5)); /* for webkit browsers */
+	background: -moz-linear-gradient(-90deg, #FFF, #F8F9FA 35%, #B3A8C5); /* for firefox 3.6+ */
+	linear-gradient(top, #FFFFFF, #F8F9FA 35%, #B3A8C5);
+	color: #fff;
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 200px; /* HERE this has an affect - 150% width */
+	position: absolute;
+	top: -145px;
+	left: -25px;
+	z-index: 2;
+	border: solid 1px #b4b4b4;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px 10px 10px 10px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+.nav ul li a:hover{
+padding-top:.75em;
+line-height:1.1em; 
+	width: 140px;/*NEW added 102610 */
+}/* I added this width, padding + line-height*/
+
+
+/* style the table so that it takes no part in the layout - required for IE to work *//* ie_drop */
+.menu table {position:absolute; left:1px; top:0; width:0; height:0; font-size:1em; z-index:-1;}
+
+
+
+/* dropdown    – –  – –  – –  – –  – –  – – */
+.nav li:hover > ul {
+	display: block;
+}
+.nav ul li {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* float the top list items to make it horizontal and a relative positon so that you can control the dropdown menu positon *//* ie_drop */
+.nav ul li {float:left;} /*  REMOVED: height:3em;line-height:3em;  */
+
+ /*  In the original above, this float is set to NONE. Now this rule MUST be included. When float is removed, the links disappear.  */
+
+.nav ul a {
+	font-weight: normal;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, .9);
+padding-top:.75em;
+line-height:1.1em; 
+}/* I added this padding+line-height*/
+
+/* level 3+ list */
+.nav ul ul {
+	left: 160px;
+	top: -3px;
+}
+
+/* style the sub-level lists *//* ie_drop */
+.menu ul ul {width:15em;}  /* REMOVED */
+
+
+/* I made these two*/
+.nav ul ul a {
+padding-top:.75em;
+line-height:1.1em; 
+}
+.nav ul ul li a:hover{
+padding-top:.75em;
+line-height:1.1em; 
+}
+
+/* style the sub level links *//* ie_drop */
+.nav ul ul a, .nav ul ul a:visited {
+display:block;width:15em;height:100%;line-height:1.1em;}/*this width WAS 12em */
+/* padding:0.5em 1em;background:#d4d8bd; color:#000;*/
+
+* html .nav ul ul a, * html .nav ul ul a:visited  {width:14em; w\idth:12em;}/* ie_drop */
+
+
+/* rounded corners for first and last child */
+.nav ul li:first-child > a {
+	-webkit-border-top-left-radius: 9px;
+	-moz-border-radius-topleft: 9px;
+	-webkit-border-top-right-radius: 9px;
+	-moz-border-radius-topright: 9px;
+border-radius: 9px 9px 0px 0px; /*(top-left, top-right, bottom-right, bottom-left)*/
+}
+.nav ul li:last-child > a {
+	-webkit-border-bottom-left-radius: 9px;
+	-moz-border-radius-bottomleft: 9px;
+	-webkit-border-bottom-right-radius: 9px;
+	-moz-border-radius-bottomright: 9px;
+border-radius: 0px 0px 9px 9px; /*(top-left, top-right, bottom-right, bottom-left)*/
+}
+/* clearfix */
+.nav:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.nav {
+	display: inline-block;
+}
+html[xmlns] .nav {
+	display: block;
+}
+* html .nav {
+	height: 1%;
+}
+
+
+
+
+
+
+/* NEW */
+li.last ul {
+	background: #F8F9FA; /* for non-css3 browsers */
+	background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(35%, #F8F9FA), to(#B3A8C5)); /* for webkit browsers */
+	background: -moz-linear-gradient(-90deg, #FFF, #F8F9FA 35%, #B3A8C5); /* for firefox 3.6+ */
+	linear-gradient(top, #FFFFFF, #F8F9FA 35%, #B3A8C5);
+	color: #fff;
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	position: absolute;
+	top: -55px;
+	left: -25px;
+	z-index: 2;
+	border: solid 1px #b4b4b4;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px 10px 10px 10px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+
+li.contact ul {
+	background: #F8F9FA; /* for non-css3 browsers */
+	background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(35%, #F8F9FA), to(#B3A8C5)); /* for webkit browsers */
+	background: -moz-linear-gradient(-90deg, #FFF, #F8F9FA 35%, #B3A8C5); /* for firefox 3.6+ */
+	linear-gradient(top, #FFFFFF, #F8F9FA 35%, #B3A8C5);
+	color: #fff;
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	position: absolute;
+	top: -53px;
+	left: -25px;
+	z-index: 2;
+	border: solid 1px #b4b4b4;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px 10px 10px 10px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+
+
+
+.nav ul.footnav {
+	background: #F8F9FA; /* for non-css3 browsers */
+	background: -webkit-gradient(linear, center top, center bottom, from(#FFF), color-stop(35%, #F8F9FA), to(#B3A8C5)); /* for webkit browsers */
+	background: -moz-linear-gradient(-90deg, #FFF, #F8F9FA 35%, #B3A8C5); /* for firefox 3.6+ */
+	linear-gradient(top, #FFFFFF, #F8F9FA 35%, #B3A8C5);
+	color: #fff;
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	position: absolute;
+	top: -115px;
+	left: -25px;
+	z-index: 2;
+	border: solid 1px #b4b4b4;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px 10px 10px 10px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+#footnav > .nav {	
+	margin: 0 0 0px 0px;
+	padding: 7px 6px 0px;
+}
+
+#footnav > .nav {	max-width: 700px;
+	min-width: 621px;
+} /* liquid-center-menu 102610   */
+
+
+* html #footnav > .nav { width:700px;
+} /* liquid-center-menu 102610   */

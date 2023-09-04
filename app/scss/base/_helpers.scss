@@ -1,0 +1,267 @@
+/*!  _helpers.scss */
+
+.mw149 { max-width: 149px;}
+
+.mw277 { max-width: 277px;}
+
+.mw306 { max-width: 306px;}
+
+.mw324 { max-width: 20.25em;}
+
+.mw400 { max-width: 25em;}
+
+.mw500 { max-width: 31.25em;}
+
+.mw600 { max-width: 600px;}
+
+.mw670 { max-width:41.875em;}
+
+.w48p { width:48%;
+	-o-transition:width .25s ease-in, max-width .25s ease-in; 
+    -moz-transition:width .25s ease-in, max-width .25s ease-in; 
+    -webkit-transition:width .25s ease-in, max-width .25s ease-in;
+	transition:width .25s ease-in, max-width .25s ease-in; 
+}
+
+.mb1em {margin-bottom:1em;}
+
+/*! Borders */
+
+.bdr0 {
+  border: 1px solid #D4CEC9;
+  padding: 0;
+}
+
+.bdr { 
+border:1px solid #D4CEC9;
+padding:1em;
+ }
+
+ .bdr-bottom-dash {
+  border-bottom: 0.125em dashed #D4CEC9;
+  padding-top:1rem;
+  margin-bottom:1.5rem;
+}
+
+/* Services Dash and Big Bullets */
+
+.dash{
+  border: 0 none;
+  border-top: .125em dashed #D4CEC9;
+  background: none;
+  height:1em;
+  margin:0.125em 0;
+} 
+
+.bigbull::before { 
+font-size:86%; 
+color:hsla(30, 36%, 46%, 1); 
+position:relative;
+top:-0.0625em;
+content:'\25CF';
+padding-left: 0.125em;
+margin: 0 0.325em;
+}
+
+/* Gradient Classes */
+@each $gradient, $value in $gradients {
+  @include bg-gradient(".bg-gradient-#{$gradient}", $value);
+}
+
+// Gradient Classes 
+@each $gradient, $value in $gradients {
+  @include text-gradient(".text-gradient-#{$gradient}", $value);
+}
+
+// Border Classes 
+@each $gradient, $value in $gradients {
+  @include border-gradient(".border-gradient-#{$gradient}", $value);
+}
+
+.shadow {
+background:hsla(321, 50%, 20%, .8);
+-moz-box-shadow: 0 .125em .625em hsla(321, 50%, 20%, 1);
+-webkit-box-shadow: 0 .125em .625em hsla(321, 50%, 20%, 1);
+box-shadow: 0 .125em .625em hsla(321, 50%, 20%, 1);
+}
+
+.innershadow { 
+-moz-box-shadow: inset 0 0 15px #8C7E73, 0 0 20px #DDD6D5;
+-webkit-box-shadow: inset 0 0 15px #8C7E73, 0 0 20px #DDD6D5;
+box-shadow: inset 0 0 15px #8C7E73, 0 0 20px #DDD6D5, inset 0 35px 35px -18px #D2C8C6;
+}
+
+.rule {
+height:2px; border: none; color:#A92323;
+background-color:#A92323; width:100%; padding:0; clear: both; margin-bottom:0;
+}/* #FFCCCC;  */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+b,
+strong { font-weight: 600; }
+
+em,i { font-style:italic; }
+dfn {
+    font-style: italic;
+}
+mark {
+    background: #ff0;
+    color: #000;
+}
+code,
+kbd,
+/*pre,*/
+samp,
+ tt {
+	font-family: $mono-ft;
+	font-size: 1em;
+	color:#900;
+	}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.wrap-text {
+   word-wrap: break-word;
+-epub-word-break: break-all;
+-ms-word-break: break-all;
+     word-break: break-all;
+     word-break: break-word;     /* Non standard for webkit */
+    overflow-wrap: break-word;
+   -epub-hyphens: auto;
+   -webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+
+.nowrap {
+  white-space: nowrap;
+  line-height: inherit;
+}
+
+.hyphenate {
+  -epub-word-break: break-all;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  /* Non standard for webkit */
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -epub-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  -webkit-hyphenate-before: 2;
+  -webkit-hyphenate-after: 3;
+}
+
+.column-no-break {
+  display:block;
+  -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+    page-break-inside: avoid; /* Firefox */
+    break-inside: avoid; /* IE 10+ */
+}
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+small {
+    font-size: 80%;
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* add to span for ampersand */
+.amp{font-family:Adobe Caslon Pro,Baskerville,"Goudy Old Style","Palatino","Palatino Linotype","Book Antiqua",Georgia,"Times New Roman",Times,serif;
+font-style:italic;
+font-size:110%;
+line-height:0;
+position:relative;
+vertical-align:baseline
+} /* Best available ampersand */
+
+.ampem {
+	font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+	font-style: italic;
+	font-weight: normal;
+} /* Ethan Marcotte Best Ampersand */
+
+/* FORMATING OF CLASSES */
+
+.fl{ float: left; }
+.fr{ float: right; }
+.mcent{ margin-left: auto; margin-right: auto; }
+.tcent{text-align:center;}
+.tleft { text-align:left;}
+.trigh { text-align:right;}
+.tjust { text-align:justify;}
+.centertext{ margin-left: auto; margin-right: auto; text-align:center; }
+
+.first {margin-left:0;padding-left:0;}
+.last {margin-right:0;padding-right:0;}
+
+.inline {display:inline;}
+.block {display:block;}
+.inblock {display:inline-block;}
+.relative {position: relative;}
+
+
+.no-margin { margin:0;}
+.mr1{ width:inherit;
+margin-right: 1em; }
+
+.rice { 
+background:url('../assets/images/ricepaper.png');
+}
+
+.pink { background-color:#FFCCCC;}
+.pearl { background-color:#FCE;}
+.puce { background-color:#FEC;}
+.powder { background-color:#CFE;}
+.white { background-color:#FFF;}
+.gree { background-color:#EFEFEF;}
+.gred { background-color:#DDD;}
+.gre9 { background-color:#999;}
+.gre4 { background-color:#444;}
+.yell { background-color:#FFC;}
+
+.blood { color:#900;}
+.blu { color:#139;}
+.violet1{ color:#260F40;}
+.violet2{ color:#34105C;}
+.cocoa{ color:#331700;}
+.mirren{ color: #A92323;} 
+.wht { color:#FFF;}
+
+.trnsp50 {background-color: rgba(255,255,255,0.5);}
+
+code { color:#900;}
+
+.gra-gradi,
+.join,
+.workbook li {
+  background: #f7f7f7;
+  background: map-get($gradients, gra);
+  color: #432;
+  color: hsla(30, 33%, 20%, 1);
+}
+
+
+
+
+

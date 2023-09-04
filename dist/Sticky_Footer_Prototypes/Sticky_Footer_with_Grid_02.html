@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Sticky Footer with Grid 02</title>
+<!-- Sticky_Footer_with_Grid_02.html -->
+<!-- https://codepen.io/chriscoyier/pen/YWKNrE -->
+    <!-- : -->
+    <!-- THIS: Grid_module_01.html
+	FROM: prototype_starter_01.html
+	-->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<style>
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.content {
+  padding: 20px;
+}
+.footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font: 16px Sans-Serif;
+}
+h1 {
+  margin: 0 0 20px 0;
+}
+p {
+  margin: 0 0 20px 0;
+}
+.footer {
+  background: #42A5F5;
+  color: white;
+  padding: 20px;
+}
+</style>
+</head>
+
+
+<body>
+
+
+<div class="content">
+  <h1>Sticky Footer with Grid</h1>
+  <p><button id="add">Add Content</button></p>
+</div>
+
+<footer class="footer">
+  Footer
+</footer>
+
+<!-- JavaScript -->
+<!-- Optional JavaScript -->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+
+ <script>
+// Not required!
+// This is just to demo functionality.
+
+$("#add").on("click", function() {
+  $("<p>Never leave words unsaid, hugs to give, affection to share. Now is right and tomorrow may be too late.</p>").appendTo(".content");
+});
+</script>
+
+</body>
+</html>

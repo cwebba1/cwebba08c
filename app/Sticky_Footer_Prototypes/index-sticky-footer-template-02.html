@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>index-sticky-footer-template-02</title>
+	<!--  This: index-sticky-footer-template-02.html 071216
+  From: This: index-sticky-footer-template-01.html 071216
+  From: index-template-02.html 070616
+  From: index-template-02.html 070516
+  -->
+
+<meta name="author" content="Craig Webb Art" />
+
+<!-- Fonts -->
+<!-- Roboto -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- PT Serif Caption -->
+<link href='https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic' rel='stylesheet' type='text/css'>
+<!-- Contains partial Bootstrap v4.0.0-alpha.2 CSS -->
+<!--<link rel="stylesheet" type="text/css" href="css/style.css?ver=2.0.1"> -->
+<link rel="stylesheet" type="text/css" href="dist/css/cwebba_bootstrap_0503b2.css?ver=2.0.1">
+<link rel="stylesheet" type="text/css" href="css/sisiharmoni-bs04.css?ver=2.0.1">
+<!-- SF sisiharmoni_SilverFox_bs04_070416.css -->
+
+<style>
+/*----------[ = STICKY-FOOTER CODES ]----------*/
+/* line 30, ../sass/base/_base.scss */
+html, body, #wrap {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* line 31, ../sass/base/_base.scss */
+#wrap {
+  display: table;
+  width: 100%;
+}
+
+/* if ie7 support is needed then set height of #wrap and header and footer to auto in CC's and just let it have a normal layout (or: *+html #wrap{height:auto})*/
+/* line 33, ../sass/base/_base.scss */
+.contentblock {
+  vertical-align: top !important;
+}
+
+/* line 34, ../sass/base/_base.scss */
+header, .footer, main {
+  display: table-row;
+}
+
+/* height 1px on the header and footer is the sticky footer technique */
+/* line 36, ../sass/base/_base.scss */
+header, .footer {
+  height: 1px;
+}
+</style>
+
+<style>
+/* Sticky-footer and Header-wrapped elements with BS04 CSS From SilverFox: */
+
+body { }
+#wrap { }
+header { }
+.in-head { }
+.navbar-header { } (contains button)
+	<button>
+.flex-vessel { }
+. logo { } (figure)
+.moniker (header text box)
+. quote (header text box)
+.inner-quotebox
+** in-head ends here **
+    <nav class="navbar topnav">
+	. . .
+.cask-fluid { }
+end nav
+end header
+.main
+.container-fluid
+. . .
+end container
+end main
+#boots .site-footer .footer
+  <footer>
+    <div class="container-fluid">
+      <div class="copyblock">
+	. . .
+      </div><!-- END copyblock -->
+    </div><!-- END container-fluid -->
+  </footer>
+</div><!-- END boots -->
+</div><!-- END id="wrap" -->
+
+ - – - – - – - – - – - – - – - – - – - – - – - – - – - – - – - –
+
+/* line 32, ../sass/resets/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* line 42, ../sass/resets/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 56, ../sass/resets/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*! _reset.scss */
+/* 051116 Reset. This contains declarations from cwebba, BS, Eric Myer, HTML5 Reset */
+/* BS resets from _reboot.scss */
+/* line 6, ../sass/resets/_reset.scss */
+html,			/* NOTE: Remove HTML from this declaration */
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* line 19, ../sass/resets/_reset.scss */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url(/assets/javascripts/master-scripts/boxsizing.htc);
+}
+
+
+/* line 35, ../sass/resets/_reset.scss */
+body, nav, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+/*-  SELF-CLEARING FLOATS  - Example from stephencaver_Responsive
+----------------------------------------------------------------------*/
+/* line 40, ../sass/resets/_reset.scss */
+header:after, nav:after, article:after, aside:after, footer:after, hgroup:after, section:after, .logo:after, figure:after, .page:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+
+/* line 6, ../sass/bs_scss/_cwebba_bootstrap_0503b2.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 31, ../sass/bs_scss/_cwebba_bootstrap_0503b2.scss */
+html {
+  font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 36, ../sass/bs_scss/_cwebba_bootstrap_0503b2.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #373a3c;
+  background-color: #fff;
+}
+
+/* line 405, ../sass/bs_scss/_cwebba_bootstrap_0503b2.scss */
+.container-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+/* line 411, ../sass/bs_scss/_cwebba_bootstrap_0503b2.scss */
+.container-fluid::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*! _base.scss */
+/* line 3, ../sass/base/_base.scss */
+html {
+  color: #222;
+}
+
+/* line 7, ../sass/base/_base.scss */
+html {
+  height: 100%;
+  font-size: 100%;
+  line-height: 1.4;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  overflow-y: scroll;
+}
+
+/* line 16, ../sass/base/_base.scss */
+body {
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  font: 400 normal 1rem/1.5rem 'Roboto', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  -o-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  color: #242424;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+/*----------[ = STICKY-FOOTER CODES ]----------*/
+/* line 30, ../sass/base/_base.scss */
+html, body, #wrap {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* line 31, ../sass/base/_base.scss */
+#wrap {
+  display: table;
+  width: 100%;
+}
+
+/* line 34, ../sass/base/_base.scss */
+header, .footer, main {
+  display: table-row;
+}
+
+/* height 1px on the header and footer is the sticky footer technique */
+/* line 36, ../sass/base/_base.scss */
+header, .footer {
+  height: 1px;
+}
+
+/* line 60, ../sass/base/_base.scss */
+.cask-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  /* media query @min-width: 800px
+  padding 1.5rem */
+}
+
+/* line 70, ../sass/base/_base.scss */
+.cask-fluid::after,
+.cask::after,
+.cup::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+/* line 79, ../sass/base/_base.scss */
+.container-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+/* line 85, ../sass/base/_base.scss */
+.container-fluid::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*! styles _silverfox-styles.scss*/
+/*! *   *   [  Layout  ]    *   *   */
+/* line 6, ../sass/styles/_silverfox_styles.scss */
+header {
+  font-size: 1rem;
+}
+
+/* line 21, ../sass/styles/_silverfox_styles.scss */
+.logo img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border: 1px solid #73808c;
+  box-shadow: 2px 2px 4px rgba(23, 26, 28, 0.6);
+}
+
+/* line 26, ../sass/styles/_silverfox_styles.scss */
+.logo {
+  width: 50%;
+  min-width: 190px;
+  margin: 0 auto .5em;
+  font-size: 1rem;
+}
+
+/* line 31, ../sass/styles/_silverfox_styles.scss */
+.logo a {
+  text-decoration: none;
+}
+
+/* - – [ God Save Bootstrap Code  ] – - */
+/* line 36, ../sass/styles/_silverfox_styles.scss */
+.navbar-header {
+  width: 20%;
+  max-width: 4em;
+  float: right;
+  margin: 0;
+  clear: both;
+}
+
+/* line 45, ../sass/styles/_silverfox_styles.scss */
+.navbar-toggler {
+  padding: .25rem .5rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #999;
+  border-radius: 0.25rem;
+}
+
+/* line 53, ../sass/styles/_silverfox_styles.scss */
+.navbar-toggler:focus, .navbar-toggler:hover {
+  text-decoration: none;
+}
+
+/*NEW*/
+/* line 94, ../sass/styles/_silverfox_styles.scss */
+.in-head {
+  display: table;
+  margin: 0;
+  padding: .5em 0 0;
+  border: 1px red;
+  background: url(../assets/images/Pasadena_CA_project.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+}
+
+/* line 103, ../sass/styles/_silverfox_styles.scss */
+.flex-vessel {
+  /* Fexbox media query min-width: 768px */
+}
+
+/* line 107, ../sass/styles/_silverfox_styles.scss */
+.quote {
+  text-align: center;
+  max-width: 12em;
+  margin: auto;
+  margin-bottom: 0.5em;
+}
+
+/* line 113, ../sass/styles/_silverfox_styles.scss */
+.inner-quotebox {
+  text-align: center;
+  background: rgba(64, 128, 191, 0.5);
+  border: 3px solid #e2ae6f;
+  box-shadow: 0 2px 10px #534865;
+  -moz-box-shadow: 0 2px 10px #534865;
+  -webkit-box-shadow: 0 2px 10px #433855;
+  margin: 0 auto;
+  -webkit-border-radius: .3em;
+  -moz-border-radius: .3em;
+  border-radius: .3em;
+}
+
+/* line 140, ../sass/styles/_silverfox_styles.scss */
+.moniker {
+  max-width: 380px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+/*----------[ = FOOTER ]----------*/
+/* line 401, ../sass/styles/_silverfox_styles.scss */
+#boots {
+  overflow: hidden;
+  width: 100%;
+  background-color: #FFF9F0;
+}
+
+/**/
+/* line 408, ../sass/styles/_silverfox_styles.scss */
+footer {
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  margin: 0em auto 1.5em;
+  border-top: 1px solid #FF8800;
+}
+
+/* line 415, ../sass/styles/_silverfox_styles.scss */
+footer:before,
+footer:after {
+  content: " ";
+  display: table;
+}
+
+/* line 420, ../sass/styles/_silverfox_styles.scss */
+footer:after {
+  clear: both;
+}
+
+/* line 423, ../sass/styles/_silverfox_styles.scss */
+.copyblock {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 1em auto 0;
+  letter-spacing: .02em;
+}
+
+/* line 5, ../sass/module/_lightbox02.scss */
+body:after {
+  content: url(../assets/images/lightboximages/close.png) url(../assets/images/lightboximages/loading.gif) url(../assets/images/lightboximages/prev.png) url(../assets/images/lightboximages/next.png);
+  display: none;
+}
+
+/* line 10, ../sass/module/_lightbox02.scss */
+body.lb-disable-scrolling {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 375px) {
+  /* line 67, ../sass/states/_media_queries.scss */
+  .logo {
+    width: 30%;
+    min-width: 190px;
+    max-width: 200px;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 123, ../sass/states/_media_queries.scss */
+  .flex-vessel {
+    width: 100%;
+    min-height: 1em;
+    margin: auto;
+    -webkit-display: -webkit-box;
+    -webkit-display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  /* line 84, ../sass/states/_media_queries.scss */
+  /* line 141, ../sass/states/_media_queries.scss */
+  .quote,
+  .moniker {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  /* line 89, ../sass/states/_media_queries.scss */
+  /* line 148, ../sass/states/_media_queries.scss */
+  .logo {
+    display: inline-block;
+    width: 49.2%;
+    margin-left: 1.5em;
+  }
+
+  /* line 93, ../sass/states/_media_queries.scss */
+  /* line 155, ../sass/states/_media_queries.scss */
+  .quote {
+    display: inline-block;
+    min-width: 14em;
+    margin-right: 1.5em;
+  }
+
+  /* line 184, ../sass/states/_media_queries.scss */
+  .cask-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+</style>
+
+</head>
+<body>
+<!-- <div id="loginFadar">&nbsp;</div> -->
+<div id="wrap">
+  <header role="banner" class="topmast">
+    <div class="in-head" style="background:#AFBECD;">
+      <div class="navbar-header">
+        <button class="navbar-toggler hidden-qu-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+        <!-- ig Custom Breakpoint -->
+        &#9776;
+        </button>
+      </div><!-- END navbar-header -->
+      <div class="flex-vessel">
+        <figure class="logo"><!-- logo -->
+          <a href="http://craigwebbart.com/">
+            <img src="assets/images/cwebba_logo5.svg" alt="Craig Webb Art" />
+          </a>
+        </figure>
+        <div class='moniker'>
+          <h1>Welcome to <span class="nowrap">Craig Webb Art</span></h1>
+          <h5><i>Communications Design</i></h5>
+        </div>
+<!--        <div class="quote">
+          <div class="inner-quotebox">
+            <a href="#" id="loginBtn" class=".close-login">
+              <h2><span class="nowrap">Get a Quote</span></h2>
+            </a>
+          </div>
+        </div> -->
+      </div><!-- END class="flex-vessel -->
+    </div><!-- END in-head -->
+    <nav class="navbar topnav">
+      <div class="cask-fluid">
+        <div class="collapse navbar-toggleable-qu" id="exCollapsingNavbar2"><!-- ig Custom Breakpoint -->
+          <ul class="nav navbar-nav mainnav">
+            <li class="current-pg"><a href="index.html" title="Craig Webb Art Home">Home</a></li>
+            <li class="nav-item btn-group">
+              <a class="dropdown-toggle nav-link" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Our&nbsp;Services</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li class="dropdown-item"><a href="silverfox-services.html">Residential&nbsp;&amp;&nbsp;Commercial&nbsp;Services</a></li>
+                <li class="dropdown-item"><a href="design-installation.html">Design&nbsp;&amp;&nbsp;Installation</a></li>
+                <li class="dropdown-item"><a href="silverfox-operations.html">Operations &amp; Maintenance</a></li>
+              </ul>
+            </li>
+            <li><a href="financing.html">Financing</a></li>
+            <li><a href="silverfox-classes.html">Classes</a></li>
+            <li><a href="contact-silverfox.html">Contact&nbsp;Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+<main>
+  <div class="container-fluid">
+    <p>THIS IS CONTENT AREA</p>
+    <h4>index-sticky-footer-template-02</h4>
+    <h5>What this is:</h5>
+    <p>This prototype isolates styles for sticky-footer, header and inner-header flex-box.</p>
+    <p>Included is drop-down navigation for BS-04. This navigation relies on styles from sisiharmoni-bs04.css 060116 (red) and cwebba_bootstrap_0503b2.css (select BS-04 styles).</p>
+
+  </div><!-- END container-fluid -->
+</main>
+<div id="boots" class="site-footer footer">
+  <footer>
+    <div class="container-fluid">
+      <div class="copyblock">
+        <h5><strong>Craig Webb Art</strong> &nbsp;&bull;&nbsp; <!--<span class="nowrap">324 E. Foothill Blvd., Ste #201,</span> <span class="nowrap">Arcadia, CA 91006</span> &nbsp;&bull;&nbsp; --><span class="nowrap">Tel: <a class="footfone" href="tel:+1-917-797-0983">917.797.0983</a></span> &nbsp;&bull;&nbsp; <span class="nowrap"><a class="footmail" href="mailto:cwebba1@gmail.com">cwebba1@gmail.com</a></span></h5>
+        <p><strong>Craig Webb Art</strong> communication design </span></p>
+        <div class="copyright">
+          <span>Copyright &copy; <script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2014, null, '-')); else document.write((new Date()).getFullYear());</script> Craig Webb Art. <span class="nowrap">All Rights Reserved.</span></span>
+        </div>
+        <div class="cwebba">web design by&nbsp; <a href="http://www.CraigWebbArt.com" target="_blank">Craig Webb Art</a>
+      </div><!-- END copyblock -->
+    </div><!-- END container-fluid -->
+  </footer>
+</div><!-- END boots -->
+</div><!-- END id="wrap" -->
+<!-- *   *   *   *   *   *   *    -->
+
+<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- LOCAL  -->
+	<script>window.jQuery || document.write('<script src="assets/javascripts/libs/jquery/1.10.2/jquery-1.10.2.min.js"><\/script>')</script>
+
+<!-- Bootstrap v4.0.0-alpha.2 JS -->
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+/** _flex_card.scss */
+/** 062420 */
+
+.cards img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.cards {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cards__item {
+  display: -webkit-box;
+  display: flex;
+  padding: 1rem;
+}
+@media (min-width: 40rem) {
+  .cards__item {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .cards__item {
+    width: 33.3333%;
+  }
+}
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  overflow: hidden;
+    border:1px solid #D4CEC9;
+}
+.card:hover .card__image {
+  -webkit-filter: contrast(100%) grayscale(0);
+          filter: contrast(100%) grayscale(0);
+}
+.card__content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  padding: 0 1rem;
+}
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  -webkit-filter: contrast(95%) grayscale(50%);
+          filter: contrast(95%) grayscale(50%);
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+.card__image::before {
+  content: "";
+  display: block;
+  padding-top: 72.6%;
+}
+@media (min-width: 40rem) {
+  .card__image::before {
+    padding-top: 72.6%;
+  }
+}
+
+.card__title {
+  color: #696969;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__title02 {
+  /*color: #696969;*/
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.card__text {
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+
+/* Cwebba1 Website Links */
+
+.card__image--tb1associates {
+  background: url(../assets/images/websites/tb1associatesllc_home_dt_600.jpg);
+background-size: cover;
+background-position: top;
+}
+
+
+.card__image--lawson-biotech {
+  background: url(../assets/images/websites/Lawson_biotech_c800.jpg);
+background-size: cover;
+background-position: top;
+ }
+
+.card__image--silver-fox {
+  background: url(../assets/images/websites/SilverFox_800.jpg);
+background-size: cover;
+background-position: top;
+ }
+
+.card__image--icarus-group {
+  background-image: url(../assets/images/websites/IcarusGroupIronwork2016_800.jpg);
+background-size: cover;
+background-position: top;
+ }
+
+.card__image--care-handoff {
+  background-image: url(../assets/images/websites/CareHandOff_03_800.jpg);
+background-size: cover;
+background-position: top;
+ }
+
+.card__image--shalizar {
+  background-image: url(../assets/images/websites/Shalizar_home_600.jpg);
+background-size: cover;
+background-position: top;
+ }
+
+.card__image--mural-mural {
+  background-image: url(../assets/images/websites/MMW_About_short_800.jpg);
+background-size: cover;
+background-position: top;
+ }
+
+.card__image--randalls {
+  background-image: url(../assets/images/websites/Randalls_New_Home_800.jpg);
+background-size: cover;
+background-position: top;
+ }
+
+.card__image--bill-miller {
+  background-image: url(../assets/images/websites/BM_Photography_600.jpg);
+background-size: cover;
+background-position: top;
+ }
+
+/** Cwebba1 Graphic Design Links */
+.card__image--magicmarker {
+  background: url(../assets/images/Magic_Marker_Art/excomunication.jpg);
+  background-size: cover;
+  background-position: 0% -100px;
+}
+
+.card__image--doggievacations {
+  background: url(../assets/images/graphics_portfolio/Molly.jpg);
+  background-size: cover;
+  background-position: 0% -146px;
+}
+
+@media only screen and (min-width: 636px) {
+.card__image--doggievacations {
+  background-position: 0% -100px;
+  }
+}
+
+@media only screen and (min-width: 865px) {
+.card__image--doggievacations {
+  background-position: 0% -75px;
+  }
+}
+
+.card__image--iridium {
+  background: url(../assets/images/graphics_portfolio/01NoPlace.jpg);
+/*  background-size: cover contain; */
+    background-position: 0% 0%;
+background-size:178%;
+}
+
+.card__image--illustration {
+  background: url(../assets/images/graphics_portfolio/diasporaII.jpg);
+/*  background-size: cover contain; */
+  background-size: cover;
+    background-position: 0% 0%;
+background-size:100%;
+}
+
+.card__image--maxdelivery {
+  background: url(../assets/images/graphics_portfolio/05md_getit.jpg);
+/*  background-size: cover contain; */
+  background-size: cover;
+    background-position: 50% -5%;
+background-size:110%;
+}
+
+.card__image--honda {
+  background: url(../assets/images/graphics_portfolio/01HondaADT.jpg);
+/*  background-size: cover contain; */
+  background-size: cover;
+    background-position: 0% 70%;
+background-size:200%;
+}
+
+
+

@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Flip-Panel Prototype 03</title>
+
+    <!-- : -->
+    <!-- THIS: Flip-Panel_Prototype_03.html
+	FROM: 	Flip-Panel_Prototype_02.html
+			Services_01.html
+			prototype_starter_01.html
+	-->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,200,300,600,' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+<style>
+
+:root {
+  --cardShadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);
+
+ --content: url(assets/images/gallery/Jack_Kerouac_and_Neal_Cassady.jpg);
+
+ --artDirection: url(assets/images/gallery/Alberto_Giacometti.jpg);
+
+
+ --product: url(assets/images/gallery/Akira_Kurosawa_with-the_cast_of_Rashomon_1950.jpg);
+
+ --frontEnd: url(assets/images/gallery/Paul_Klee_1925.jpg);
+
+ --copyWriting: url(assets/images/gallery/Sunday_trip.jpg);
+
+ --webEngineer: url(assets/images/gallery/James_Dean.jpg);
+
+ --progress: url(assets/images/gallery/George_Platt_Lynes_1939.jpg);
+
+ --cardSize: width:100%;
+height:100%;
+background-size: cover;
+}
+</style>
+
+  <link rel="stylesheet" type="text/css" href="css/prototype-sticky-footer.css"> 
+  <link rel="stylesheet" type="text/css" href="css/prototype_style.css"> 
+
+
+<style>
+
+html { 	background:#AFDFC7; }
+body {	background:#BCDEFA; }
+main {	background:#FEFDFA; }
+header, footer { background:#FEFDFA; }
+.sidebar { background:#CEEFEF; }
+
+.basal {
+  width: 97.5%;
+  margin: 0 auto;
+  padding: 0;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  background:rgba(253, 254, 251, 0.8);
+  transition:width .25s ease-in; 
+}
+
+.splanation {	
+	background:#FEFDFA;
+	width:96%;
+	margin:1em 2%;
+	padding: 1em;
+ 	display:inline-block;
+ 	vertical-align: top;
+}
+
+  .splanation li {	
+  list-style: inside;
+}
+
+@media only screen and (min-width: 600px) {
+  .splanation {	
+	background:#FEFDFA;
+	width:48%;
+	margin:1em 2% 1em  0;
+	padding: 1em;
+ 	display:inline-block;
+    }
+  .splanation:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+
+.content { 
+box-shadow: var(--cardShadow);
+background:linear-gradient(to bottom, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(to bottom, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)),
+var( --content);
+background-size: cover;
+}
+
+.art { 
+box-shadow: var(--cardShadow);
+background:linear-gradient(to bottom, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(to bottom, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)),
+var(--artDirection);
+background-size: cover;
+}
+
+.product { 
+box-shadow: var(--cardShadow);
+background:linear-gradient(to bottom, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(to bottom, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)),
+var(--product);
+background-size: cover;
+}
+
+.front-end { 
+box-shadow: var(--cardShadow);
+background:linear-gradient(to bottom, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(to bottom, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)),
+var(--frontEnd);
+background-size: cover;
+}
+
+.progress { 
+box-shadow: var(--cardShadow);
+background:linear-gradient(to bottom, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(to bottom, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)),
+var(--progress);
+background-size: cover;
+}
+
+
+.copy { 
+box-shadow: var(--cardShadow);
+background:linear-gradient(to bottom, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(to bottom, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)),
+var(--copyWriting);
+background-size: cover;
+}
+
+.web-engineer { 
+box-shadow: var(--cardShadow);
+background:linear-gradient(to bottom, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(to bottom, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)),
+var(--webEngineer);
+background-size: cover;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width:100%;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  display:inline-block;
+  margin-bottom:1em;
+}
+
+/* Global flip card styles */
+.flip-card ul { 
+  list-style: none;
+  line-height:1.2;
+}
+
+.flip-card li { 
+  padding-left: 1em;
+  text-indent: -.75em;
+  margin: 0 0 .5em;
+  font-weight:500;
+}
+
+.flip-card li:before { 
+  content: "» ";
+  color: #A92323;
+}
+
+.front-art { 
+  max-width:100%;
+  height:100%;
+  display:flex;
+  text-align:left;
+  border: 1px solid #f1f1f1;
+}
+
+.box-left { 
+flex: 1 2 45%;
+}
+
+.box-right { 
+  flex: 2 1 55%;
+  max-width:18em;
+  padding:1em 0 1em 1em;
+  line-height: 1.2;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgba(212, 206, 201, 0.3);
+/*    transform: rotateY(180deg); */
+}
+
+.flip-card-back div {
+min-height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-back div p {
+  font-weight:500;
+  text-align:left;
+  width: 80%;
+  align-self: center;
+  margin: 10% 0;
+}
+
+
+
+@media only screen and (min-width: 756px) {
+  .flip-card {
+  height: 250px;
+  width:49.5%;
+}
+
+/* This container is needed to position the front and back side */
+  .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  transform: rotateX(0deg);  /* Mozilla */
+}
+
+/*Style the front side (fallback if image is missing)
+  .flip-card-front {
+  background-color: #bbb;
+  color: black;
+} */
+
+  .flip-card-back {
+  transform: rotateY(180deg);
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .flip-card-back div p {
+  width: 60%;
+  transition:width 2s ease-in; 
+  }
+}
+</style>
+</head>
+
+
+<body>
+<div class="basal">
+  <header>
+    <div class="in-head">
+	<figure class="logo">
+		<a id="nav-home" href="http://www.craigwebbart.com/">
+			<img src="assets/images/cwebba_logo5.svg" alt="Craig Webb Art">
+		</a>
+	</figure>
+	<nav id="main-nav">
+		<ul>
+        		<li><a class="active" href="https://codepen.io/cwebba1/">Codepen</a></li>
+			<li><a href="https://github.com/cwebba1">Github</a></li>
+		</ul>
+	</nav>
+    </div><!-- END class="in-head" -->
+  </header>
+  <main>
+	<h2>Flip-Panel Prototype 03</h2>
+<p>This is an animated hover-card with stacked-images and flex-box inner content.</p>
+
+<section class="flip=box-container" style="display:block; clear:both;">
+
+<div id="content" class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="front-art">
+	<div class="box-left content">
+        </div>
+	<div class="box-right">
+            <h4>Content Development</h4>
+            <ul>
+                <li>Research</li>
+                <li>Copywriting</li>
+                <li>Journalism/Interviews</li>
+                <li>Website Content</li>
+                <li>Advertising Concepts</li>
+                <li>Technical Writing</li>
+            </ul>
+	</div>
+      </div>
+    </div>
+    <div class="flip-card-back">
+<div>
+      <p>Engaging, succinct content written for specific purpose and for repurpose across media</p>
+</div>
+    </div>
+  </div><!-- flip-card-inner -->
+</div>
+
+<div id="art" class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="front-art">
+	<div class="box-left art">
+        </div>
+	<div class="box-right">
+          <h4>Art &amp; Design</h4>
+          <ul>
+            <li>Art Direction</li>
+            <li>Creative Ideation</li>
+            <li>Fine Art</li>
+            <li>Illustration</li>
+            <li>Graphic Design</li>
+            <li>Brand Development</li>
+          </ul>
+	</div>
+      </div>
+    </div>
+  <div class="flip-card-back">
+    <div>
+      <p>Visual vocabulary, technical expertise, and intuitive design solutions with an emphasis on digital design</p>
+    </div>
+  </div><!-- flip-card-inner -->
+</div>
+
+</section>
+
+<section class="flip=box-container" style="display:block; clear:both;">
+
+<div id="product"  class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="front-art">
+	<div class="box-left product">
+        </div>
+	<div class="box-right">
+            <h4>Product Development</h4>
+            <ul>
+                <li>Research</li>
+                <li>Brand Strategy</li>
+                <li>Content Development</li>
+                <li>Information Architecture</li>
+            </ul>
+	</div>
+      </div>
+    </div>
+    <div class="flip-card-back">
+<div>
+      <p>Research, strategy and planning to develop an idea and make it marketable</p>
+</div>
+    </div>
+  </div><!-- flip-card-inner -->
+</div>
+</a>
+
+
+<div id="front-end" class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="front-art">
+	<div class="box-left front-end">
+        </div>
+	<div class="box-right">
+          <h4>Front-end Development</h4>
+          <ul>
+                <li>Custom Front-end Design</li>
+                <li>User Experience Design</li>
+                <li>User Interface Design	</li>
+                <li>Built around your content</li>
+          </ul>
+	</div>
+      </div>
+    </div>
+  <div class="flip-card-back">
+    <div>
+      <p>Customized websites with information architecture structured around content to quickly convey benefit and identity</p>
+    </div>
+  </div><!-- flip-card-inner -->
+</div>
+
+
+</section>
+
+<section class="flip=box-container" style="display:block; clear:both;">
+
+
+<div id="engineer" class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="front-art">
+	<div class="box-left web-engineer">
+        </div>
+	<div class="box-right">
+            <h4>Website Engineering</h4>
+            <ul>
+                <li>Static Websites</li>
+                <li>WordPress Themes</li>
+                <li>JavaScript</li>
+                <li>Design Systems</li>
+                <li>Component Design</li>
+            </ul>
+	</div>
+      </div>
+    </div>
+    <div class="flip-card-back">
+<div>
+      <p>Custom Design systems and component design built for portability and integration with a variety of technical implementations</p>
+</div>
+    </div>
+  </div><!-- flip-card-inner -->
+</div>
+
+<div id="progress" class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <div class="front-art">
+	<div class="box-left progress">
+        </div>
+	<div class="box-right">
+          <h4>Progressive Enhancement</h4>
+          <ul>
+                <li>Maintenance</li>
+                <li>User Testing</li>
+                <li>Analytics and Media</li>
+                <li>Custom Content</li>
+                <li>Special Initiatives</li>
+          </ul>
+	</div>
+      </div>
+    </div>
+  <div class="flip-card-back">
+    <div>
+      <p>Ongoing work to keep your website current with attention paid to the consumer</p>
+    </div>
+  </div><!-- flip-card-inner -->
+</div>
+
+</section>
+
+
+
+
+<div class="splanation">
+<p>This is an animated hover-card prototype.</p>
+<p>Technologies involved with this prototype are:<br>
+<ul>
+<li>RGBa()</li>
+<li>Var()</li>
+<li>Text-shadow</li>
+<li>Box-shadow inset</li>
+<li>Animation / transitions</li>
+<li>Image layering</li>
+<li>CSS gradients</li>
+<li>Flexbox</li>
+<li>Inline-block</li>
+<li>Absolute positioning</li>
+<li>Fluid widths</li>
+</ul>
+</p>
+</div>
+<div class="splanation">
+<p>This is an animated hover-card with stacked-images and flex-box inner content.</p>
+<p>Adhering to a mobile-first approach, this flip-card prototype uses absolute positioning in tandem with transitions, which kick-in after 756px for a desktop view.</p>
+<p>This prototype uses CSS Custom Properties [ var() ] declarations to abstract some of the code within the CSS, such as the box-shadow inset and photos which are stacked with gradients. The images are loaded as background images.</p>
+<p>The use of Custom Properties is very interesting. I chose to apply the custom properties to classes so I can switch images quickly. The drawback is repetitive CSS code. In future, I might apply images via JavaScript but this prototype is strictly CSS.</p>
+<p>I used flex-box properties to style the inner content of the surface boxes. The flip-boxes are displayed using inline-block. I find that flex-box with percentage width values conflicts with inline-block, causing layout mayhem. I had to wrap the flip-boxes in pairs to compensate.</p>
+<p>I created new colors for the shadow-box inset. The new color variations are based on other colors in the cwebba-08 palette.</p>
+<p>Further research for mobile-first is to see how I can create a meaningful card experience with mobile-touch.</p>
+</div>
+
+</main>
+
+  <div class="sock">
+    <nav class="footsie">
+      <ul>
+	<li>
+	   <a href="https://twitter.com/cwebba1/">Twitter</a>
+	</li>
+        <li>
+          <a class="" href="https://angel.co/craig-webb-1">AngelList</a>
+        </li>
+        <li>
+          <a class="" href="mailto:craigwebb@craigwebbart.com">Contact Us</a>
+        </li>
+    </ul>
+  </nav>
+  <div class="copyright-box">
+    <p class="copyright">&copy; <script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2017, null, '-')); else document.write((new Date()).getFullYear());</script> Craig Webb Art. &nbsp;All&nbsp;Rights&nbsp;Reserved.</p>
+  </div>
+
+</div><!-- END sock -->
+</footer>
+</div><!-- END class="basal" -->
+
+<!-- JavaScript -->
+ <script>
+
+</script>
+
+<!-- Optional JavaScript 
+        <script src="assets/js/"></script>-->
+
+</body>
+</html>

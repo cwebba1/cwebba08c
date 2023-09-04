@@ -1,0 +1,112 @@
+
+/* This: liquid1080grid02.css
+Previous: liquid1080grid.css */
+/* Percentages 1080px Grid
+px6 { margin: 0 .555555555555%;}
+px12 { 1.1111111111111%;}
+
+
+100 -
+98.8888888888889 = 1.1111111111111% = 12px
+/2 = 0.55555555555555% = 6px
+
+*/
+
+
+
+/*	*	*	*	*	*	*	*	*	*/
+
+* {padding: 0;margin: 0;}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, cite, code, del, dfn, em, font,  img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, audio, aside, canvas, details, figcaption, figure, footer, header, hgroup, mark, menu, nav, section, summary, time, video { margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;text-decoration: none;background:transparent;vertical-align:baseline;}/* a is removed to below*/
+
+html { font-size:100.01%;height: 100%;
+overflow-y: scroll; } /* always force a scrollbar in non-IE */
+-webkit-text-size-adjust: 100%;
+}
+
+html { font-size:16px; }
+
+body { min-height: 100%; 
+-webkit-font-smoothing:antialiased; 
+font-smoothing:antialiased;
+text-rendering:optimizeLegibility;
+}/* background:url('../images/24px_grid_bg.gif')  */
+/* Note: Improve default text rendering, handling of kerning pairs and ligatures;
+Fix for webkit rendering */
+* html body { height: 100%;width:100%;} /*for IE6*/* html .clearfix             { zoom: 1 } /* IE6 */*:first-child+html .clearfix { zoom: 1 } /* IE7 */
+
+body {background: #b8b8b8; /* for non-css3 browsers - was  #ebebeb; */font-size:1em; line-height:1; font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal;
+	color: rgba(33,16,0,0.9);
+	-moz-text-shadow: 0 1px 0 rgba(245, 245, 245, 0.8);
+	-webkit-text-shadow: 0 1px 0 rgba(245, 245, 245, 0.8);
+	text-shadow: 0 1px 0 rgba(245, 245, 245, 0.8);
+	-webkit-text-size-adjust: none;
+}
+
+
+.pink { background-color:#FFCCCC;}.pearl { background-color:#FCE;}.puce { background-color:#FEC;}.powder { background-color:#CFE;}.white { background-color:#FFF;}.gree { background-color:#EFEFEF;}.gred { background-color:#DDD;}.gre9 { background-color:#999;}.gre4 { background-color:#444;}.yell { background-color:#FFC;}
+
+.clear { clear:both; height:0; overflow:hidden; line-height:1px; font-size:1px;margin:0;padding:0;}
+
+/* NEW CSS */
+/* DEFAULT MOBILE STYLE */
+body {width: 90%; margin: 0 auto;
+} /* Center page without wrapper */
+
+#page {
+margin:0.75em 0 2em;
+margin-bottom:2em;
+padding:.5em 0.55555555555555%;
+background: #ebebeb;
+	background: url("../images/oj_emboss.png")
+}
+
+.contain{
+width:100%;
+  margin: 0 auto;
+  overflow: hidden;
+background-color:rgba(255, 255, 205, 0.4);
+}
+
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12, .col13, .col14, .col15, .col16, .col17, .col18, .col19, .col20, .col21, .col22, .col23, .col24, .col25, .col26, .col27, .col28, .col29, .col30, .col31, .col32, .col33, .col34, .col35, .col36 { margin: 0 .555555555555%; float:left;}
+
+.col1 { width:1.66666666666%}
+.col2 { width:4.4444444444444%;}
+.col3 { width:7.2222222222222%;}
+.col4 { width:10%;}
+.col5 { width:12.7777777777778%;}
+.col6 { width:15.5555555555556%;}
+.col7 { width:18.3333333333333%;}
+.col8 { width:21.1111111111111%;}
+.col9 { width:23.8888888888889%;}
+.col10 { width:26.6666666666667%;}
+.col11 { width:29.4444444444444%;}
+.col12 { width:32.2222222222222%;}
+.col13 { width:35%;}
+.col14 { width:37.7777777777778%;}
+.col15 { width:40.5555555555556%;}
+.col16 { width:43.3333333333333%;}
+.col17 { width:46.1111111111111%;}
+.col18 { width:48.8888888888889%;}
+.col19 { width:51.6666666666667%;}
+.col20 { width:54.4444444444444%;}
+.col21 { width:57.2222222222222%;}
+.col22 { width:60.0%;}
+.col23 { width:62.7777777777778%;}
+.col24 { width:65.5555555555556%;}
+.col25 { width:68.3333333333333%;}
+.col26 { width:71.1111111111111%;}
+.col27 { width:73.8888888888889%;}
+.col28 { width:76.6666666666667%;}
+.col29 { width:79.4444444444444%;}
+.col30 { width:82.2222222222222%;}
+.col31 { width:85%;}
+.col32 { width:87.7777777777778%;}
+.col33 { width:90.5555555555556%;}
+.col34 { width:93.3333333333333%;}
+.col35 { width:96.1111111111111%;}
+.col36 { width:98.8888888888889%;}
+
+.ml0 { margin-left:0 !important;}
+.mr0 {margin-right:0 !important; }

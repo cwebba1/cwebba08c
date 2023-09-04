@@ -1,0 +1,55 @@
+/* _accordion.scss 012717 */
+
+/*    - - - - [ w3schools_Animated-Accordion ] - - - - -  */
+
+
+
+button.accordion {
+    background: url("../assets/images/ricepaper.png");
+    color: #444;
+    cursor: pointer;
+    padding: .125em .875em .25em;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: .875em;
+    transition: 0.4s;
+-moz-border-radius: .25em;
+-webkit-border-radius: .25em;
+-khtml-border-radius: .25em;
+border-radius: .25em;
+}
+
+.accordion h4 { 
+    margin:.25em 0;
+    }
+
+.innerpadding1em { 
+    padding:1em 0;
+}
+
+div.panel {
+    padding: 0 .875em;
+    margin-bottom:.5em;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+/*
+@media only screen and (min-width: 920px) {
+
+button.accordion {
+    width: 48%;
+    margin-right:2%;
+    display:inline-block;
+  }
+
+button.accordion:last-of-type {
+    margin-right: 0;
+}
+}
+*/

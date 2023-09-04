@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+
+<meta charset=utf-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+<title>
+Sticky Footer 03 &mdash; Solved by Flexbox &mdash; Cleaner, hack-free CSS</title>
+
+<meta name=HandheldFriendly content=True>
+<meta name=MobileOptimized content=320>
+<meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1">
+<meta name=description content="A showcase of problems once hard or impossible to solve with CSS alone, now made trivially easy with Flexbox.">
+
+<!-- sticky-footer_04.html  -->
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel=stylesheet>
+<link href=https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css rel=stylesheet>
+
+<!-- <link rel=stylesheet type=text/css href=css/sticky-footer-main_04.css> -->
+<style>
+/*  sticky-footer-main_04.css styles here:  */
+html { 
+font-family:sans-serif;
+-ms-text-size-adjust:100%;
+-webkit-text-size-adjust:100%;
+}
+
+body { 
+margin:0;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block;
+}
+
+h1{ font-size:2em;margin:.67em 0;
+}
+
+*,:after,:before{box-sizing:border-box;
+}
+
+html { 
+height:100%;
+color:#404040;
+font:400 1em/1.4 'Open Sans',sans-serif;
+text-rendering:optimizeLegibility;
+}
+
+@media (-webkit-min-device-pixel-ratio:1.5),(min-resolution:1.5dppx),(min-resolution:144dpi){
+html{font-weight:300;
+}
+;
+}
+
+h1 { 
+font-weight:300;
+font-size:2em;
+-webkit-font-kerning:normal;
+letter-spacing:-.015em;
+line-height:1;
+margin:.25em 0 .75em;
+}
+
+@media (min-width:768px){ 
+h1{
+font-size:2.5em;margin:.5em 0 1em;
+}
+;
+}
+
+h2 { 
+font-size:1.333em;margin:0 0 1.12528em;
+}
+h2,h3 { font-weight:600;
+}
+h3 { font-size:1em;
+}
+h3,p,pre { margin:0 0 1.5em;
+}
+a { border-bottom:1px dashed rgba(70,185,128,.5);
+color:#46b980;text-decoration:none;
+}
+a:focus,a:hover{ 
+border-bottom:1px solid #46b980;
+}
+
+/* Flex Declarations */
+
+.Site { 
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-orient:vertical;
+-webkit-box-direction:normal;
+-webkit-flex-direction:column;
+-ms-flex-direction:column;
+flex-direction:column;
+height:100%;
+}
+.Site-footer,.Site-header { 
+-webkit-box-flex:0;
+-webkit-flex:none;
+-ms-flex:none;
+flex:none;
+}
+.Site-content { 
+-webkit-box-flex:1;
+-webkit-flex:1 0 auto;
+-ms-flex:1 0 auto;
+flex:1 0 auto;
+padding:1.5em 1.5em 0;
+width:100%;
+}
+.Site-content:after { content:'\00a0';
+display:block;
+margin-top:1.5em;
+height:0;
+visibility:hidden;
+}
+
+.Site-content--full {
+padding:0;
+}
+
+.Site-content--full:after { 
+content:none;
+}
+
+.Footer { 
+padding:24px;
+padding:1.5rem;
+background:#404040;
+color:#999;
+font-size:.85em;
+text-align:center;
+}
+
+@media (min-width:768px){
+.Site-content{padding-top:2em;
+}
+.Site-content:after{margin-top:2em;
+}
+;
+}
+
+
+/*  Extra Styles  */
+.Header{padding:1.5em;background-color:hsla(31,15%,50%,.1);text-align:center;
+}
+.Header-title{margin:0 0 .15em;font-size:1.8em;font-weight:600;line-height:1;word-spacing:.08em;
+}
+.Header-title i{font-family:serif;font-style:italic;font-weight:400;
+}
+.Header-title a{border:0;color:inherit;font-weight:inherit;
+}
+.Header-title a:active,.Header-title a:focus,.Header-title a:hover{text-decoration:none;
+}
+.Header-subTitle{margin:0 0 1.5em;font-size:.8em;font-weight:300;white-space:nowrap;
+}
+
+@media (min-width:768px){
+.Header{padding:3em 1.5em;
+}
+
+.Header-title{font-size:4em;
+}
+.Header-subTitle{margin:1em 0 1.75em;font-size:1.1em;
+}
+.Header--cozy{padding:1.5em;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;
+}
+.Header--cozy,
+.Header--cozy .Header-titles{
+display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;
+}
+.Header--cozy .Header-titles{
+-webkit-box-align:baseline;-webkit-align-items:baseline;-ms-flex-align:baseline;align-items:baseline;
+}
+.Header--cozy .Header-title{font-size:1.5em;
+}
+.Header--cozy .Header-subTitle{margin:0 0 0 1em;font-size:.8em;font-weight:300;color:gray;
+}
+.Header--cozy .Header-actions{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;font-size:.9em;
+}
+;
+}
+</style>
+
+</head>
+<body class=Site>
+<header class=Site-header>
+<div class="Header Header--cozy" role=banner>
+<div class=Header-titles>
+<h1 class=Header-title><a href=http://philipwalton.github.io/solved-by-flexbox/ >Solved <i>by</i> Flexbox</a></h1>
+<h2 class=Header-subTitle><a href=http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ >CSS with Vendor Pre-fixes</a></h2>
+</div>
+</div>
+</header>
+
+<main class=Site-content style=background:#EBA;>
+<div class=Container style=background:#ABE;>
+<h1>Sticky Footer</h1>
+<p>This paragraph is within the Container div, which is within the main Site-content element. The main Site-content element has the flex property.</p>
+</div>
+
+
+</main>
+<footer class=Site-footer>
+<div class=Footer>
+<div class=Footer-credits>
+<span class=Footer-credit>
+This prototype is created by <a href=http://craigwebbart.com>Craig Webb Art</a> based on a tutorial by <a href=http://philipwalton.com>Philip Walton</a>.</span>
+
+ <span class=Footer-credit>
+Philip Walton&rsquo;s source code and examples are released under the <a href=https://github.com/philipwalton/solved-by-flexbox/blob/master/LICENSE>
+MIT</a> license.</span>
+ <span class=Footer-credit>
+Philip Walton&rsquo;s website and documentation is licensed under <a href=https://creativecommons.org/licenses/by/4.0/ >
+CC BY 4.0</a>.</span>
+</div>
+</div>
+</footer>
+</body>
+</html>

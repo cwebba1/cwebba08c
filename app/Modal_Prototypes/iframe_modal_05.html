@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Iframe Modal 05</title>
+
+    <!-- : -->
+    <!-- THIS: iframe_modal_04.html
+	FROM: iframe_modal_03.html
+	iframe_modal_02.html
+	iframe_modal_01.html
+	prototype_starter_01.html
+	-->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,200,300,600,' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+  <link rel="stylesheet" type="text/css" href="css/prototype-sticky-footer.css"> 
+  <link rel="stylesheet" type="text/css" href="css/prototype_style.css"> 
+  <link rel="stylesheet" type="text/css" href="css/simple-grid.css"> 
+
+
+<style>
+
+html { 	background:#AFDFC7; }
+body {	background:#BCDEFA; }
+main {	background:#FFDEDD; }
+header, footer {	background:#FEFDFA; }
+.sidebar {	background:#CEEFEF; }
+
+.basal {
+  width: 97.5%;
+  margin: 0 auto;
+  padding: 0;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  background:rgba(253, 254, 251, 0.8);
+  transition:width .25s ease-in; 
+}
+
+/* Prototype Code */
+
+    .modal {
+      z-index:3;
+      display:none;
+      padding-top:50px;
+      position:fixed;
+      left:0;
+      top:0;
+      width:100%;
+      height:100%;
+      overflow:auto;
+      background-color:rgb(0,0,0);
+      background-color:rgba(0,0,0,0.4)
+    }
+
+/*
+#iframe1 { 
+	display:none;
+}
+*/
+
+iframe {
+      position:relative;
+      left:8%;
+      top:8%;
+width:80%;
+height:80vh;
+border:none;
+	display:hidden;
+margin-bottom:1em;
+}
+
+</style>
+</head>
+
+
+<body>
+<div class="basal">
+  <header>
+    <div class="in-head">
+	<figure class="logo">
+		<a id="nav-home" href="http://www.craigwebbart.com/">
+			<img src="assets/images/cwebba_logo5.svg" alt="Craig Webb Art">
+		</a>
+	</figure>
+	<nav id="main-nav">
+		<ul>
+        		<li><a class="active" href="https://codepen.io/cwebba1/">Codepen</a></li>
+			<li><a href="https://github.com/cwebba1">Github</a></li>
+		</ul>
+	</nav>
+    </div><!-- END class="in-head" -->
+  </header>
+  <main>
+	<h2>Iframe Modal 05</h2>
+<p><a href="#">open-iframe-in-bootstrap-modal-on-click</a></p>
+
+
+<!-- HERE -->
+<div class="cup">
+  <div class="twins02">
+<a href="https://craigwebbart.com/services.html"    onclick="document.getElementById('modal1').style.display='block'" target="iframe_modal">
+<figure style="width:400px;">
+    <img src="assets/images/gallery/hero.jpeg" alt="Hero">
+</figure>
+</a>
+  </div><!-- class="twins02 -->
+
+  <div class="twins02">
+<a href="https://craigwebbart.com/portfolio.html"    onclick="document.getElementById('modal1').style.display='block'" target="iframe_modal">
+<figure style="width:400px;">
+    <img src="assets/images/gallery/mask.jpeg" alt="Mask">
+</figure>
+</a>
+  </div><!-- class="twins02 -->
+</div><!-- END cup -->
+
+
+<p>
+    <a href="https://www.example.com" onclick="document.getElementById('modal1').style.display='block'" target="iframe_modal" >example</a>
+  </p>
+
+    <div id="modal1" class="modal" onclick="document.getElementById('modal1').style.display='none'; document.getElementById('iframe1').src =''" class="">
+      <span onclick="document.getElementById('modal1').style.display='none'; document.getElementById('iframe1').src =''" class="">&times;</span>
+
+      <iframe id="iframe1" class='' src="" name="iframe_modal"></iframe>
+    </div>
+
+
+
+
+
+
+
+      <iframe id="iframe1" height="300px" width="100%" src="" name="iframe_modal"></iframe>
+
+
+
+
+<!-- end snippet -->
+<!--
+&times;</span
+-->
+
+
+</main>
+<footer>
+  <div class="sock">
+    <nav class="footsie">
+      <ul>
+	<li>
+	   <a href="https://twitter.com/cwebba1/">Twitter</a>
+	</li>
+        <li>
+          <a class="" href="https://angel.co/craig-webb-1">AngelList</a>
+        </li>
+        <li>
+          <a class="" href="mailto:craigwebb@craigwebbart.com">Contact Us</a>
+        </li>
+    </ul>
+  </nav>
+  <div class="copyright-box">
+    <p class="copyright">&copy; <script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2017, null, '-')); else document.write((new Date()).getFullYear());</script> Craig Webb Art. &nbsp;All&nbsp;Rights&nbsp;Reserved.</p>
+  </div>
+
+</div><!-- END sock -->
+</footer>
+</div><!-- END class="basal" -->
+
+<!-- JavaScript -->
+ <script>
+
+</script>
+
+<!-- Optional JavaScript 
+        <script src="assets/js/"></script>-->
+
+</body>
+</html>

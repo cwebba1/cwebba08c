@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Vert to Horizontal Flex-card Prototype 02</title>
+
+    <!-- : -->
+    <!-- THIS: 	vert-horiz-card_prototype_02.html
+			vert-horiz-card_prototype_01.html
+			prototype_starter_01.html
+	FROM:
+	-->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,200,300,600,' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="css/prototype-sticky-footer.css"> 
+  <link rel="stylesheet" type="text/css" href="css/prototype_style.css"> 
+
+
+<style>
+
+html { 	background:#AFDFC7; }
+body {	background:#BCDEFA; }
+main {	background:#FFDEDD; }
+header, footer {	background:#FEFDFA; }
+.sidebar {	background:#CEEFEF; }
+
+.basal {
+  width: 97.5%;
+  margin: 0 auto;
+  padding: 0;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  background:rgba(253, 254, 251, 0.8);
+  transition:width .25s ease-in; 
+}
+
+/** _iframe_modal.scss */
+/** 062420 */
+
+    .modal {
+      z-index:3;
+      display:none;
+      padding-top:50px;
+      position:fixed;
+      left:0;
+      top:0;
+      width:100%;
+      height:100%;
+      overflow:auto;
+/*      background-color:rgb(0,0,0);*/
+      background:rgba(154, 152, 147, 0.5)
+    }
+
+iframe {
+      position:relative;
+      left:4%;
+      top:8%;
+width:90%;
+height:80vh;
+border:none;
+  display:hidden;
+margin-bottom:1em;
+  }
+
+@media screen and (min-width:768px) {
+
+iframe {
+      position:relative;
+      left:8%;
+      top:8%;
+width:80%;
+height:80vh;
+border:none;
+  display:hidden;
+margin-bottom:1em;
+  }
+}
+
+
+/* White Background box */
+.boxblock { 
+	display:inline-block;
+	margin:0.5em 0.5em;
+	padding:1em;
+	background:#FEFDFA;
+	background:var(--brite-wht);
+	max-width:100%;
+	vertical-align:top;
+}
+
+
+.flexbox { 
+	display:flex;
+	flex-wrap:wrap;
+	align-content:stretch;
+	margin:0.5em 0;
+	background:#FEFDFA;
+	max-width:100%;
+}
+
+.flexbox-card { 
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+  align-content: flex-start;
+	padding:1em;
+	margin:0.5em;
+	background:#FEFDFA;
+min-width:calc(33.333%  - 1em);    max-width:100%;    width:calc((550px - 100%) * 550);
+flex-basis:1;
+}
+
+.sexy-block {    flex: 1 1 auto;    
+min-width:calc(66.666%  - 1em);    max-width:100%;    width:calc((600px - 100%) * 600);
+flex-basis:1;
+background:var(--brite-wht);
+  margin: var(--margin01);
+}
+
+
+.sexy-block-720 {    flex: 1 1 auto;    
+min-width:calc(66.666%  - 1em);    max-width:100%;    width:calc((720px - 100%) * 720);
+flex-basis:1;
+background:var(--brite-wht);
+  margin: var(--margin01);
+}
+
+.big-block {    display:flex;    
+margin:0;
+padding:0;
+min-width:50%;    max-width:100%;    width:calc((500px - 100%) * 600);
+background:#ADBEAC;
+flex-basis:1;
+}
+
+.bitty-titty-block {    flex: 1 1 auto;    
+min-width:calc(33.333%  - 1em);    max-width:100%;    width:calc((600px - 100%) * 600);
+flex-basis:1;
+background:var(--brite-wht);
+  margin: var(--margin01);
+}
+
+.bitty-block {    flex: 1 1 auto;    
+margin:0;
+padding:0;
+min-width:25%;    max-width:100%;    width:calc((500px - 100%) * 600);
+background:#ADACBE;
+flex-basis:1;
+}
+
+.img-block { 
+flex: 0 1 auto;    
+margin-right:0.5em;
+padding:0;
+min-width:39%;    max-width:100%;    width:calc((300px - 100%) * 300);
+background:#FEFDFA;;
+flex-basis:1;
+align-self: flex-start;
+}
+
+.txt-block { 
+flex: 2 1 auto;    
+margin:0;
+min-width:58%;    max-width:100%;    width:calc((300px - 100%) * 300);
+background:#FEFDFA;;
+flex-basis:1;
+}
+
+.img-block,
+.txt-block { 
+margin-bottom:0;
+}
+
+
+.img-block img { 
+	  border:1px solid #ADBEAC;
+}
+
+/* It is necessary to undo p:last-of-type for cutline :/ */
+p:last-of-type { 
+	margin:0;
+}
+
+figcaption { margin:0 0 0.5em;}
+figcaption p {
+	line-height:1.2em;
+	margin: 0;
+	font-size:0.875em;
+}
+
+.bdr { 
+border:1px solid #D4CEC9;
+padding:1em;
+ }
+
+.bdr0 { 
+border:1px solid #D4CEC9;
+padding:0;
+ }
+
+.bdr5 { 
+border:1px solid #D4CEC9;
+padding:0.5em;
+ }
+
+</style>
+</head>
+
+
+<body>
+<div class="basal">
+      <div id="modal_fader">&nbsp;</div>
+  <header>
+    <div class="in-head">
+	<figure class="logo">
+		<a id="nav-home" href="http://www.craigwebbart.com/">
+			<img src="assets/images/cwebba_logo5.svg" alt="Craig Webb Art">
+		</a>
+	</figure>
+	<nav id="main-nav">
+		<ul>
+        		<li><a class="active" href="https://codepen.io/cwebba1/">Codepen</a></li>
+			<li><a href="https://github.com/cwebba1">Github</a></li>
+		</ul>
+	</nav>
+    </div><!-- END class="in-head" -->
+  </header>
+  <main>
+	<h2>Vert to Horizontal Flex-card Prototype 02</h2>
+
+<div class="flexbox" style="width:100%;">
+
+<section class="flexbox-card bdr5">
+<figure class="img-block">
+<img src="assets/images/gallery/by_Herbert_List.jpg" alt="Herbert List"></a>
+<figcaption><p>Herbert List</p></figcaption>
+</figure>
+<div class="txt-block"><p>If the eyes are as calming as the ocean, neither are they without wrecks.<br>
+ So don&rsquo;t delve too deeply into those of the person you love, as you may well not like what you find there</p></div>
+</section>
+
+<section class="flexbox-card bdr5">
+<figure class="img-block">
+<img src="assets/images/gallery/Stand-By-Me_1986.jpeg" alt="On the set of Stand By Me"></a>
+<figcaption><p>On the set of Stand By Me.</p></figcaption>
+</figure>
+<div class="txt-block">Wil Wheaton, River Phoenix, Jerry O'Connell, and Corey Feldman on the set of Stand By Me in 1986.</div>
+</section>
+
+<section class="flexbox-card bdr5">
+<figure class="img-block"><img src="assets/images/gallery/Herbert-List_06.jpg" alt="Herbert List">
+<figcaption><p>Herbert List</p></figcaption>
+</figure>
+<div class="txt-block"><p>Yes: I am a dreamer. For a dreamer is one who can only find his way by moonlight, and his punishment is that he sees the dawn before the rest of the world.<br>
+&ndash; Oscar Wilde</p></div>
+</section>
+
+
+<section class="flexbox-card bdr5">
+<figure class="img-block"><img src="assets/images/gallery/Tierische_Portrait.jpeg" alt="Herbert List">
+<figcaption><p>From Tierische Portraits, Photo by Walter Schels, 1984-2000</p></figcaption>
+</figure>
+<div class="txt-block"><p>Kill my demons, and my angels will die too.<br>
+&ndash; Tennessee Williams</p></div>
+</section>
+
+
+<section class="flexbox-card bdr5">
+<figure class="img-block">
+<img src="assets/images/gallery/Farm-Children_August-Sander.jpeg" alt="Farm Children, August Sander, c. 1928"></a>
+<figcaption><p>Farm Children, August Sander, c. 1928</p></figcaption>
+</figure>
+<div class="txt-block"><p>Men are afraid that women will laugh at them. Women are afraid men will kill them.<br>
+&ndash; Margaret Atwood</p></div>
+</section>
+
+
+<section class="flexbox-card bdr5">
+<figure class="img-block">
+<img src="assets/images/gallery/Peter-Hujar_photo.jpeg" alt="David Wojnarowicz Eating an Apple"></a>
+<figcaption><p>Peter Hujar, photographer</p></figcaption>
+</figure>
+<div class="txt-block">
+<p>Forbidden Fruit (David Wojnarowicz Eating an Apple in an Issey Miyake shirt) from The Twelve Perfect Christmas Gifts from Dianne B., 1983</p>
+</div>
+</section>
+
+
+
+
+
+</main>
+<footer>
+  <div class="sock">
+    <nav class="footsie">
+      <ul>
+	<li>
+	   <a href="https://twitter.com/cwebba1/">Twitter</a>
+	</li>
+        <li>
+          <a class="" href="https://angel.co/craig-webb-1">AngelList</a>
+        </li>
+        <li>
+          <a class="" href="mailto:craigwebb@craigwebbart.com">Contact Us</a>
+        </li>
+    </ul>
+  </nav>
+  <div class="copyright-box">
+    <p class="copyright">&copy; <script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2017, null, '-')); else document.write((new Date()).getFullYear());</script> Craig Webb Art. &nbsp;All&nbsp;Rights&nbsp;Reserved.</p>
+  </div>
+
+</div><!-- END sock -->
+</footer>
+</div><!-- END class="basal" -->
+         <!-- This Block is the logic needed on the page. staged here but does not show -->
+          <div id="modal1" class="modal" onclick="document.getElementById('modal1').style.display='none'; document.getElementById('iframe1').src =''" class="">
+            <span onclick="document.getElementById('modal1').style.display='none'; document.getElementById('iframe1').src =''" class="">&times;</span>
+            <iframe id="iframe1" class='' src="" name="iframe_modal"></iframe>
+          </div>
+
+<!-- JavaScript -->
+ <script>
+
+</script>
+
+<!-- Optional JavaScript 
+        <script src="assets/js/"></script>-->
+
+</body>
+</html>

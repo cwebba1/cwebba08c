@@ -1,0 +1,284 @@
+/* LSH Job-candidates-results_01.css 121320 */
+/* This code came from Prototype_Sandbox/Job_Candidates_Results_03.html */
+
+.smallest-btn {
+  font-size: 80%;
+  padding:.125em .25em;
+  border:1px solid #AEA5BB;
+  background:#EAEBED;
+  border-radius:.375em;
+    color: #888;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eaf3fc+0,f4f9ff+15,f4f9ff+78,e8f0f9+100 */
+background: #eaf3fc; /* Old browsers */
+background: -moz-linear-gradient(top, hsla(210,75%,95%,1) 0%, hsla(213,100%,98%,1) 15%, hsla(213,100%,98%,1) 78%, hsla(212,58%,95%,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, hsla(210,75%,95%,1) 0%,hsla(213,100%,98%,1) 15%,hsla(213,100%,98%,1) 78%,hsla(212,58%,95%,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, hsla(210,75%,95%,1) 0%,hsla(213,100%,98%,1) 15%,hsla(213,100%,98%,1) 78%,hsla(212,58%,95%,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaf3fc', endColorstr='#e8f0f9',GradientType=0 ); /* IE6-9 */
+  border-color: #D6E9FF;
+}
+
+.talent-results { 
+  color:#666;
+  font-size:1rem;
+  padding:0.5em;
+  border:2px solid #D4CEC9;
+  margin-bottom:0.5em; 
+}
+
+.talent-lockup { 
+  color:#666;
+  font-size:1rem;
+ }
+
+ .talent-lockup figure { 
+  margin-bottom:0;
+  border:1px solid red;
+ }
+
+
+.talent-lockup p { 
+  color:#666;
+  margin-bottom:.25em;
+  }
+
+.talent-headshot { 
+  max-width:10em;  
+  margin-right:9px;
+  margin-bottom:0;
+ }
+
+
+.headshot-box {
+  width:9em;
+  height:9em;
+  border:1px solid #ddd; 
+}
+
+.marymueller {
+  background-image:url('assets/images/headshots/MaryMueller.jpg');
+  background-size: cover;
+  background-size: contain;
+}
+
+.dawnsilberberg {
+  background-image:url('assets/images/headshots/DawnSilberberg.jpg');
+  background-size: cover;
+  background-size: contain;
+}
+
+.daviddror {
+  background-image:url('assets/images/headshots/DavidDror.jpg');
+  background-size: cover;
+  background-size: contain;
+}
+
+ .talent-headshot img { 
+  border:1px solid #ddd;
+  vertical-align:top;
+  border-radius:0.25em;
+  margin:0;
+ }
+
+
+ .talent-headshot figcaption { 
+  font-size:.875em;
+  margin:0;
+  color:#666;
+  }
+
+  .matchrating-box { 
+    display:inline-block;
+    min-width:2.625em;
+    text-align:center;
+    margin-right: .5em;
+   }
+
+.matchrating-circle { 
+    display:inline-block;
+    width:2.625em;
+    height:2.625em;
+    text-align:center;
+    background:#FFF;
+    border:4px solid #F66;
+    border-radius:50%;
+    margin-bottom:.25em;
+   }
+
+  .matchrating { 
+    font-size:.9375em;
+    font-weight:600;
+    color:#666;
+    line-height:2.375em;
+   }
+
+.invite2bid-box { 
+    display:inline-block;
+    width:4.25em;
+    text-align:center;
+    border:1px solid #EEE;
+ }
+
+.invite2bid-btn { 
+  width:4em;
+    height:2.5em;
+  border:1px solid #ddd;
+  background:#33CC66;
+  box-shadow:inset 6px 6px 9px hsla(150, 80%, 40%, .8);
+  border-radius:0.25em;
+ }
+
+ .input-label { 
+  font-size:.9375em;
+  line-height:1.675em;
+  color:#666;
+  margin:0;
+  }
+
+.input-label-sml { 
+  font-size:.75em;
+  line-height:1.125em;
+  color:#666;
+  margin:0;
+ }
+
+.talent-lockup-wrapper {
+  flex:         auto;     /* same as "flex: 1 1 auto;" */
+  display:      flex;
+  flex-flow:    row nowrap;
+  min-height:12em;
+  margin-bottom:.25em;
+/*  border:1px solid green; */
+}
+
+.talent-description {
+  flex:         auto;     /* same as "flex: 1 1 auto;" */
+  display:      flex;
+  flex-flow:    column nowrap;
+/*  border:1px solid green;
+  min-height:12em; */
+  margin-bottom:1em;
+/*  display:block;*/
+  /*flex_col_cask*/
+}
+
+.left-lockup-box {
+  height:       100%;
+  width:        100%;
+  max-width:10em;
+  display:      flex;
+  flex-flow:    column nowrap;
+  flex: 1 1 42%;
+}
+
+.right-lockup-box {
+  height:       100%;
+  width:        100%;
+  display:      flex;
+  flex-flow:    column nowrap;
+  flex: 1 2 58%;
+}
+
+.flex_col_cask {
+  height:       100%;
+  width:        100%;
+  display:      flex;
+  flex-flow:    column nowrap;
+}
+.top_row, .bottom_row {
+  flex:         none;     /* same as "flex: 0 0 auto;" */
+}
+.flex_row_cask {
+  flex:         auto;     /* same as "flex: 1 1 auto;" */
+  display:      flex;
+  flex-flow:    row nowrap;
+}
+
+.flipflex_600 {
+  flex:         auto;     /* same as "flex: 1 1 auto;" */
+  display:      flex;
+  flex-flow:    column nowrap;
+justify-content:flex-start;
+}
+@media (min-width: 600px) {
+
+.talent-headshot { 
+  max-width:9em;  
+  margin-right:6px;
+  margin-bottom:0;
+ }
+  .matchrating-box { 
+    display:inline-block;
+    width:2.625em;
+    text-align:center;
+    margin-right: .5em;
+   }
+
+.matchrating-circle { 
+    display:inline-block;
+    width:2.5em;
+    height:2.5em;
+    text-align:center;
+    background:#FFF;
+    border:4px solid #F66;
+    border-radius:50%;
+    margin-bottom:.125em;
+   }
+
+  .matchrating { 
+    font-size:.9375em;
+    color:#666;
+    line-height:2.125em;
+   }
+
+  .input-label { 
+  font-size:.825em;
+  line-height:1.675em;
+  color:#666;
+  margin:0;
+  }
+
+
+.flipflex_600 {
+  height: 100%;
+  flex:         auto;     /* same as "flex: 1 1 auto;" */
+  display:      flex;
+  flex-flow:    row nowrap;
+}
+.talent-description {
+  /*flex_col_cask*/
+  height: 100%;
+  min-height: 0;
+  flex:         auto;     /* same as "flex: 1 1 auto;" */
+  display:      flex;
+  flex-flow:    row nowrap;
+  flex: 1 2 60%;
+}
+
+.talent-lockup-wrapper {
+  flex:         auto;     /* same as "flex: 1 1 auto;" */
+  display:      flex;
+  flex-flow:    row nowrap;
+  margin-right:1em; 
+/*  min-width:16em;
+  min-height:13em; */
+  justify-content:flex-start;
+  flex: 1 1 30%;
+}
+
+.left-lockup-box {
+  flex: 1 1 auto;
+  justify-content:flex-start; 
+  margin:0;
+  min-height: 0;
+}
+
+.right-lockup-box {
+  flex: 1 1 auto;
+  justify-content:flex-start; 
+  margin:0;
+  min-height: 0;
+}
+
+
+}
+

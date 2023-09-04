@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!-- ThirdSampleModal_04.htm  -->
+    <title>ThirdSampleModal Test 04</title>
+
+<!-- http://www.daniweb.com/web-development/javascript-dhtml-ajax/threads/285579/how-to-fade-background-and-show-a-dialog-box  -->
+<head>
+<link href="css/modal-style_02.css" rel="stylesheet" type="text/css">
+<script>
+  document.createElement('header');
+  document.createElement('footer');
+  document.createElement('section');
+  document.createElement('aside');
+  document.createElement('nav');
+  document.createElement('article');
+function overlay() {
+</script>
+
+
+<style type="text/css">
+article, aside, header, section, nav, footer, { display:block;
+}
+
+body { width:100%;
+}
+
+#modal_fader {
+    background: cornflowerblue;
+    opacity: .3;
+    -moz-opacity: .3;
+    filter: alpha(opacity=30);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    display: none;
+}
+#modal_box {
+    width: 50%;
+background:#FFF;
+    border: 1px cornflowerblue solid;
+-moz-border-radius: .5em;
+-webkit-border-radius: .5em;
+border-radius: .5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -22em 0 0 -25%;
+    z-index: 10;
+  	display: none;
+}
+
+#modal_box:after,
+.mod:after
+ {
+ clear: both;
+ content: ".";
+ display: block;
+ height: 0;
+ visibility: hidden;
+}
+
+.modal-btn,
+.close-btn {
+	font-size: 1em;
+	line-height: 1em;
+	padding: .375em 1em;
+	background: #FFF;
+	border: 1px #ddd solid;
+	margin: 0 auto;
+	cursor: pointer;
+-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;}
+</style>
+</head>
+<body>
+<div id="modal_fader">&nbsp;</div>
+<span id="modalBtn" class="modal-btn">Join Our Mailing List</span>
+
+<figure class="w250"><img class="rnd3" src="images/natives_500x300.jpg"ALT="Creative Team" /> 
+<figcaption><p>Freedom is fun and wildly creative.</p></figcaption>
+</figure>
+
+<div id="modal_box">
+<form id="mail-list" action="support/formtoemailpro.php"><form method="post" name="subscription-form" action="support/formtoemailpro.php"><!-- contact-form --><header class="mod">
+<h1>Subscribe to our mailing list</h1>
+<figure><img class="mod" src="images/airplane.jpg"></figure>
+<div class="receive"><p>Receive periodic reviews,  updates about current events and special offers.</p></div>
+</header>
+<br />
+<article id="subscribe">
+<div id="fieldset">
+<legend>Your Contact Information</legend>
+<ul>
+<li>
+<label for=first-name>First Name</label>
+<input id=first-name name=first-name type=text placeholder="First name" required autofocus>
+</li>
+<li>
+<label for=last-name>Last Name</label>
+<input id=last-name name=last-name type=text placeholder="Last Name" required>
+</li>
+<li>
+<label for=email>Email</label>
+<input id=email name=email type=email placeholder="example@domain.com" required>
+</li>
+<li>
+<label for=email>Website</label>
+<input id=website name=website type=website placeholder="http://your-domain.com" >
+</li>
+<li>
+<label for=phone>Phone</label>
+<input id=phone name=phone type=tel placeholder="Eg. +1-212-000-0000">
+</li>
+<li  id="comments">
+<label for=comments class="comments">Comment here</label>
+<textarea type="text" name="comments" value="comment" rows="8"></textarea></li>
+</ul><div class="updates">
+<label for="email-updates" class="wide2">Send Special Offers</label>
+<input type="checkbox" checked name="email-updates"></div>
+
+<button type=submit name=submit value=submit>Send!</button>
+</div><!-- END id="fieldset" -->
+</article>
+</form><footer id="modfoot">
+<nav style="padding:0;margin:0;">
+<span id="closeBtn" class="close-btn">Close Window</span><br />
+<ul class="signup">
+<li><a href="mailto:craigwebb@craigwebbart.com">Send an email to Craig Webb Art</a></li><li class="last">© Copyright 2013 <a href="http://craigwebbart.com" target="_blank">Craig Webb Art</a></li>
+<span class="stretch"></span> 
+</ul>
+</nav></footer>
+</div>
+<!-- *   *   *   *   *   *   *    -->
+
+
+<script type="text/javascript">
+window.onload=function() {
+var modal_btn = document.getElementById('modalBtn');
+var fader = document.getElementById('modal_fader');
+var modal_box = document.getElementById('modal_box');
+var close = document.getElementById('closeBtn');
+//Display modal box
+modal_btn.onclick=function() {
+   fader.style.display = "block";
+   modal_box.style.display = "block";}
+//Hide modal Box
+close.onclick = function() {
+	fader.style.display = "none";
+	modal_box.style.display = "none";}}
+</script>
+
+</body>
+</html>

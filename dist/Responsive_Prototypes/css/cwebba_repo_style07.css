@@ -1,0 +1,663 @@
+/* This: cwebba_repo_style07.css 101711
+From: cwebba_repo_style06.css 101311
+From: cwebba_repo_style05.css 100911
+From: cwebba_repo_style03.css 100711
+From: From: cwebba_repo_style02.css 091011
+From: cwebba_repo_style01.css 090711
+
+*/
+
+/* samples of specific stylesa.class {color:Red } */
+
+/* HTML5 DECLARATIONS */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,  section, dialog { display: block }
+audio[controls], canvas, video {display: inline-block; *display: inline; zoom: 1}
+
+
+/* Resets */
+* {padding: 0;margin: 0;}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, cite, code, del, dfn, em, font,  img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, audio, aside, canvas, details, figcaption, figure, footer, header, hgroup, mark, menu, nav, section, summary, time, video { margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;text-decoration: none;background:transparent;vertical-align:baseline;}/* a is removed to below*/
+
+html { font-size:100.01%;height: 100%;
+overflow-y: scroll; } /* always force a scrollbar in non-IE */
+-webkit-text-size-adjust: 100%;
+}
+
+html { font-size:16px; }
+
+body { min-height: 100%; 
+-webkit-font-smoothing:antialiased; 
+font-smoothing:antialiased;
+text-rendering:optimizeLegibility;
+}/* background:url('../images/24px_grid_bg.gif')  */
+/* Note: Improve default text rendering, handling of kerning pairs and ligatures;
+Fix for webkit rendering */
+* html body { height: 100%;width:100%;} /*for IE6*/* html .clearfix             { zoom: 1 } /* IE6 */*:first-child+html .clearfix { zoom: 1 } /* IE7 */
+
+body {background: #b8b8b8; /* for non-css3 browsers - was  #ebebeb; */font-size:1em; font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal;
+	color: rgba(33,16,0,0.9);
+	-moz-text-shadow: 0 1px 0 rgba(245, 245, 245, 0.8);
+	-webkit-text-shadow: 0 1px 0 rgba(245, 245, 245, 0.8);
+	text-shadow: 0 1px 0 rgba(245, 245, 245, 0.8);
+	-webkit-text-size-adjust: none;
+}
+
+div {margin: 0em 0% 0em 0%;line-height: 1}
+
+/* LISTS */
+ul,ol { list-style: none;line-height:1.5em;
+margin-left: 1em;margin-top:0em;padding: 0 }
+li ul, li ol {margin:0;}
+dl dd {margin-left: 1.5em}
+dt {font-family:Futura, "Century Gothic", AppleGothic, sans-serif}
+
+strong, b, th, dt { font-weight: bold; }em,i { font-style:italic; }small { font-size: .85em; }sub { vertical-align: sub; font-size: smaller; }sup { vertical-align: super; font-size: smaller; }
+pre, code, tt, kbd, samp {font:1em "andale mono", "lucida console", monospace sans-serif; line-height:1.5;}pre { padding: 15px;margin:1.5em 0;white-space:pre;}
+
+pre {white-space: pre; white-space: pre-wrap; word-wrap: break-word} /* Allow line wrapping of 'pre' */
+pre, code, kbd, samp {font-size: 1em; line-height: 1.5em; margin-bottom: 1.5em; font-family: Menlo, Consolas, 'DejaVu Sans Mono', Monaco, monospace}
+
+/* ABBREVIATION */
+abbr[title], dfn[title] {border-bottom: 1px dotted #333; cursor: help}
+
+
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }input, select { vertical-align:middle; }
+
+
+/* FORMATING OF CLASSES */.rule {height:2px; border: none; color:#ab3223;background-color:#ab3223; width:100%; padding:0; clear: both; margin-bottom: 0px;}/* #FFCCCC;  */
+
+.fl{ float: left; }.fr{ float:right; }.mcent{ margin-left: auto; margin-right: auto; }.tcent{text-align:center;}.tleft {	text-align:left;}.trigh {	text-align:right;}.tjust {	text-align:justify;}.centertext{ margin-left: auto; margin-right: auto; text-align:center; }
+
+.pink { background-color:#FFCCCC;}.pearl { background-color:#FCE;}.puce { background-color:#FEC;}.powder { background-color:#CFE;}.white { background-color:#FFF;}.gree { background-color:#EFEFEF;}.gred { background-color:#DDD;}.gre9 { background-color:#999;}.gre4 { background-color:#444;}.yell { background-color:#FFC;}.blood { color:#900;}.blu { color:#139;}.violet1{ color:#260F40;}.violet2{ color:#34105C;}.cocoa{ color:#432;}.mirren{ color: #ab3223;} .wht { color:#FFF;}
+
+.trnsp50 {background-color: rgba(255,255,255,0.5);}.showgrid2 {background-image: url("http://www.craigwebbart.com/e-art/888grid.png");}
+.inline {display:inline;}
+.block {display:block;}
+.relative {position: relative;}
+
+span.amp{font-family:Adobe Caslon Pro,Baskerville,"Goudy Old Style","Palatino","Palatino Linotype","Book Antiqua",Georgia,"Times New Roman",Times,serif;font-style:italic;font-size:110%;line-height:0;position:relative;vertical-align:baseline} /* Best available ampersand */
+
+.ampem {
+	font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+	font-style: italic;
+	font-weight: normal;
+} /* Ethan Marcotte Bast Ampersand */
+
+
+#crumb{ float:left;margin:0; }#crumb p{ margin:0; }.crumb {font-size: .9em;padding:.5em 0% 6.5em;font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,  sans-serif; }
+
+
+/* this is what works about the container/float system */.nest {margin: 0px, auto;}/* MUST add width */.nest:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}.nest {display:block;}
+
+
+
+/* ---- Boxes and Borders ------ */
+
+.border{border-style: solid;border-color: #ddd;border-width: 1px;}
+
+.copyright p {font-family: Verdana, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 11px;line-height: 1em;color:#AA9;text-align:center;margin: 12px 0 12px;clear: both;}#cwebba {font-size: 65%; normal;line-height: 1em;float:right;margin: 0 12px 0px 0;color:#667;}#cwebba > a:link {color:#8A405D; text-decoration: none;normal;}#cwebba > a:visited {color:#781239; text-decoration: none; normal;}#cwebba > a:hover {color:#B73668; text-decoration: underline; normal;}
+/*  END RESET CSS */
+
+
+
+/* TYPOGRAPHY CODE STARTS HERE */p { font-size:1em;line-height: 1.5em;
+margin: 0em 0% .5em 0%; }
+
+figcaption p { font-size:12px; normal;margin: 0em 0% .75em 0%;line-height: 1.2em; font-family: Arial, "HelveticaNeue", "Helvetica Neue", Helvetica,  sans-serif;color:#334;}
+
+p.max45em {
+border:1px solid red;
+width: 45%;
+max-width:45em;
+margin-right:3.5%;
+}
+
+
+/* =LINKS---------------------------------------------------- */
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */a:hover, a:active { outline: none; }
+
+a { margin:0; padding:0; font-size:1em; vertical-align:baseline; background:transparent; text-decoration: none;}
+
+a {color: #004477;	text-decoration: none;
+	-moz-transition: 0.3s color linear;
+	-webkit-transition: 0.3s color linear;
+	transition: 0.3s color linear;
+}/*csw blue */a:focus, a:hover {color: #06C;text-decoration: underline; }/*salmon orange #F96 #036 #06C*/a:visited {color: #8C0C10;font-family: background: transparent;text-decoration: none;}/*Royal blue */a:active { border-bottom: 2px solid;color:  red }
+a.cutine { color: #3399CC;margin: 0em 0% .5em 0%;font-family: Verdana, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 12px;line-height: 1.4em;font-style:italic;text-decoration: none; }a.cutine:hover { color: #3399CC;margin: 0em 0% .5em 0%;font-family: Verdana, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 12px;line-height: 1.4em;font-style:italic;text-decoration: underline; }a.cutine:visited {color: #0066CC;margin: 0em 0% .5em 0%;font-family : Verdana, sans-serif;font-family: Verdana, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 12px;line-height: 1.4em;font-style:italic;text-decoration: underline;background: transparent;}/*Royal blue */
+
+p a, p a:visited { line-height: inherit; }
+
+figcaption p a { font-size:.9em; normal;margin: 0em 0% .5em 0%;line-height: 1.2em; font-family: Arial, "HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif;color:#334;text-decoration: none;}figcaption p a:hover { font-size:.9em; normal;margin: 0em 0% .5em 0%;line-height: 1em; font-family: Arial, "HelveticaNeue", "Helvetica Neue", Helvetica,  sans-serif;color:#004477;text-decoration: underline;}figcaption a.attribute { font-size:9px; normal;margin: -.3em 0% .2em 0%;line-height: 4px;text-align:right;float:right;font-family: Verdana, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;color: #54307C;}
+
+a img, img { border: none; }a img {display: block;} /* Stops image links getting text link styles */
+
+/* =H Tag Elements ---------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6,  blockquote {font-family: 
+Verdana, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+color: #8b4203;  font-weight: normal;
+} /*font-weight:bold;font-weight: normal; *//*#ab3223*/
+
+h1.serif, h2.serif {font-family: Georgia, "Times New Roman", Times, serif; }
+
+h1 {  font-size: 2em; line-height:1.2em; margin-bottom:0.35em; margin-top:0;	}
+
+h2 { font-size:1.8em;line-height:1.5em; margin-bottom:.2em; }
+
+h3 { font-size:1.6em;line-height:1.25em; margin-bottom:.35em; }
+
+h4 { font-size:1.4em;line-height:1.25em; margin-bottom:.35em; }
+
+h5 { font-size:1.2em;line-height:1.25em; margin-bottom:.35em; }
+
+h6 { font-size:1em;line-height:1.25em; margin-bottom:.25em; }
+
+blockquote {margin:.8em 1em;color:#432;font-family: 		"Gill Sans", 
+				"Gill Sans MT",
+				GillSansMT,
+				GillSans,
+Verdana, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:1.1875em; line-height : 2em;font-style:italic;} /* Corbel,  */
+
+
+/* = MEDIA / IMG Elements ---------------------------------------------------- */
+img { margin: 0em auto 0em auto;vertical-align: middle; }
+
+img {border: 0;-webkit-border-radius: .5em;-moz-border-radius: .5em;border-radius: .5em;behavior: url(css/PIE.htc);margin-bottom: .5em;} /*SET PIE*/
+img.centered{display: block;margin-left: auto; margin-right: auto;}
+
+img { -ms-interpolation-mode: bicubic; }
+
+/* from liquid css */a img{border:0}figure{position:relative}
+
+figure img, figure object, figure embed, figure video {max-width: 100%;	_width: 100%; height: auto; } /* Fluid images */
+svg:not(:root) {overflow: hidden} /* Correct IE9 overflow */
+
+/* example:
+img {
+  max-width:240px;
+  width:100%
+} */
+
+
+
+
+/* NEW CSS */
+/* DEFAULT MOBILE STYLE */
+body {width: 92%; margin: 0 auto} /* Center page without wrapper */
+
+#page {
+margin:0;
+margin-bottom:2em;
+background: #ebebeb;
+	background: url("../images/oj_emboss.png")
+}
+
+.contain{
+width:100%
+  /*width was   max-width: 1220px;*/
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 2.45%;
+background-color:rgba(255, 255, 205, 0.4);
+}
+
+
+
+/* -- PERCENTAGE DECLARATIONS --  */
+
+article.d75 {width:100%;
+max-width: 75%; 
+background:#eda;
+float:left;
+}
+
+div.lrg-scn{width: 20em;
+background: #fed;
+}
+
+#divtwo {width:36%;
+background: #fcc;
+  float: left;
+}
+
+div.d50a {width: 433px;
+float:right;
+background-color:#A97;
+}
+
+div.d50b {width: 733px; 
+max-width: 45%;
+margin-right:3.5%;
+float:left;
+}
+
+
+.figure {
+  float: left;
+  margin: 0 6.317535545023696682% 1.5em 0;   /* 21px ÷ 633px */
+  width: 31.121642969984202211%;             /* 3@ 197px ÷ 633px */
+} /* from responsive article - testing only */
+
+
+
+.fig3col {
+  float: left;
+  margin: 0 3.317535545023696682% 1.5em 0;   /* 21px ÷ 633px */
+  width: 31.121642969984202211%;             /* 197px ÷ 633px */
+}
+
+.fig4col {
+  float: left;
+  margin: 0 1.5625% 1.5em 0;   /* 0 .15625% 12px ÷ 768px */
+  width: 23.4375%;             /* (192-12 ÷ 768px */
+}
+
+figure.fig60 {max-width:26em;
+width:60%;
+  margin: 0 3.317535545023696682% 1.5em 0;   /* 21px ÷ 633px */
+float:left;
+}
+
+.min480 {min-width:480px;}
+
+.last {
+  margin-right: 0 !important;
+}
+
+
+
+/* -- MEDIA QUERY DECLARATIONS --  */
+/* inserting new media queries HERE */
+
+
+/* @group Responsive Typesetting */
+	
+@media screen and (max-width: 500px) {
+	nav ul{font-size: 0.75em;}}
+	
+@media screen and (max-width: 800px) {
+	body { font-size: 95%; }}
+	
+@media screen and (min-width: 1024px) {
+	body { font-size: 105%; }}
+	
+		
+/* @end */
+
+
+/* 1st media query
+stylesheets[screen and (min-width: 760px)] = css/screen-760.css */
+@media screen and (min-width: 760px) {
+.contain{
+background-color:rgba(255, 205, 255, 0.4);
+}
+}
+
+
+/* 2nd media query
+stylesheets[screen and (min-width: 960px)] = css/screen-960.css */
+@media screen and (min-width: 960px) {
+.contain{
+ background-color:rgba(175, 255, 255, 0.4);
+}
+}
+
+
+
+/* 2-B media query - From Prior Experiments */
+@media screen and (min-width: 1200px) {
+div.d75 {max-width: 65%;
+margin-right:3.5% }
+
+div.lrg-scn {float:left;
+background:#eda;
+width:25%;
+}
+#divtwo {width:520px;
+max-width:48%;}
+
+} /*end @media 1200*/
+/* END 1200 MQ */
+
+
+
+/* This Media Query is from prior experiment - OBSOLETE */
+@media screen and (max-width: 480px) {
+
+
+div.d50a{width:auto !important; 
+margin:0 auto;
+background-color:#F97;
+color:#345;
+}
+
+div.d50b{ 
+width: 733px; 
+max-width: 85%;
+}
+
+li, figure
+div figure {
+    float: none !important;
+    width: auto !important; 
+margin:0 auto;
+background:#987;}
+
+li.fig4col {
+  float: none;
+  margin: 0 auto 1.5em !important;
+  width: 90%;
+background-color:green;
+}
+} /*end @media 400*/
+
+
+/* 3rd media query - from Prior Experiments - OBSOLETE */
+@media screen and (max-width: 768px) {
+
+div#divtwo {width:auto !important; 
+margin:0 1em;
+background:#457;
+}
+
+li.fig4col {
+  float: left;
+  margin: 0 1.5625% 1.5em 0;
+  width: 48.3412322274882%;
+background-color:red;
+}
+
+
+#second, #fourth {margin-right:0 !important; 
+background-color:blue;
+}
+
+
+} /*end @media 600*/
+
+
+/* from http://louderthan10.ca/ css/style
+@media all and (orientation:portrait) {
+}
+@media all and (orientation:landscape) {
+} END louderthan10 */
+
+
+
+
+/* 3rd media query
+stylesheets[screen and (max-width: 320px)][] = css/screen-320.css */
+@media screen and (max-width: 320px) {
+.contain{
+ background-color:rgba(255, 175, 205, 0.4);
+}
+}
+
+
+/* 4th media query - includes + over-rides above
+stylesheets[screen and (max-width: 480px)][] = css/screen-480.css */
+@media and (max-device-width: 480px), 
+screen and (max-width: 480px) {
+  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none;
+ }
+.contain{
+ background-color:rgba(175, 205, 255, 0.4);
+}
+   .logo,
+   h1,
+   #stuff .contain div:nth-child(odd) p,
+   #stuff .contain div:nth-child(even) p,
+   {
+  	float: none;
+  }
+footer{
+  width: 90%;
+ }
+}
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
+
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } 
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+
+
+/* For IE STYLESHEET:
+ IF WE GET AROUND TO IT */
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+
+/* MISC BOILERPLATE END-OF-CASCADE HOUSEKEEPING STUFF
+– – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – */
+::-moz-selection{ background: #ab3223; color:#fff; text-shadow: none; }::selection { background:#ab3223; color:#fff; text-shadow: none; } a:link { -webkit-tap-highlight-color: #ab3223; }  .hidden { display: none; visibility: hidden; } /* Hide only visually, but have it available for screenreaders    www.webaim.org/techniques/css/invisiblecontent/    Solution from: j.mp/visuallyhidden - Thanks Jonathan Neal! */.visuallyhidden { position: absolute !important;      clip: rect(1px, 1px, 1px, 1px); /* IE6, IE7 */  clip: rect(1px, 1px, 1px, 1px); }/* Hide visually and from screenreaders, but maintain layout */.invisible { visibility: hidden; }
+
+
+
+
+
+
+/* ---- Gradient Classes ------ */
+
+/*----------[ =XML CLASSES ]-----------*/
+
+
+<script>document.createElement("website, descrip, descrip2, about, highlight, serv, skill")</script>
+
+website { font-size:1em;font-weight:bold;line-height:1.1em;}div.weblink > a { line-height:1.5em;font-size:1em;text-decoration:underline;text-align:left;}/* was div.weblink */descrip { font-size:11px;line-height:1.25em;color:#333;}descrip2 { font-size:.85em;line-height:1.2em;color:#444;}about { font-size:8.5em;line-height:1.2em;color:#333;}highlight { font-weight:bold;color:#048;}serv { font-family:Verdana, Arial, Helvetica, sans-serif;font-size:1em;color:#666;line-height:1.5em;}skill { font-family:Verdana, Arial, Helvetica, sans-serif;font-size:.9em;color:#6A7A8A;line-height:1.5em;}
+
+
+/*-  SELF-CLEARING FLOATS  - Example from stephencaver_Responsive
+----------------------------------------------------------------------*/
+
+header:after, nav:after, article:after, aside:after, footer:after, hgroup:after, section:after { content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+
+
+#vitals ul li:after,
+#footer .inner:after,
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}/* needs to be an element, not a class */
+/*  #twitter:after,
+#primary:after,
+#content:after,
+#promo-nav:after,
+#nav li:after,
+#masthead:after,
+.text:after,
+.photoset:after,
+.photo:after,
+.quote:after,
+.link:after,
+.chat:after,
+.video:after,
+.audio:after,
+.pagination:after,
+.mod:after   */
+
+ul.selfclear{display: block;}
+.clear { clear:both; height:0; overflow:hidden; line-height:1px; font-size:1px;margin:0;padding:0;}.fix{	clear: both;	height: 1px;	margin: -1px 0 0;	overflow: hidden}
+/* MICRO CLEARFIX HACK */
+.cf:before, .cf:after {content:"";display:table} /* For modern browsers */
+.cf:after {clear:both}
+.cf {zoom:1} /* For IE 6/7 (trigger hasLayout) */
+
+
+
+/* Property Classes */.para1 { font-size : .95em; line-height: 14px;}.para2 {font-size : .95em; line-height: 16px;}.para3 {line-height:17px;}.para6 {line-height:3px;}/*----------[ =Line Height ]----------*/.lh1 { line-height:1em;}.lh1-1 { line-height:1.1em;}.lh1-2 { line-height:1.2em;}.lh1-3 { line-height:1.3em;}.lh1-5 { line-height:1.5em;}.lh2 { line-height:2em;}.fw2 {font-weight:200;}.fw4 {font-weight:400;}.fw5 {font-weight:500;}.fw6 {font-weight:600;}/*----------[ =Margins ]----------*/.ml3{ margin-left: 3px; }.ml4{ margin-left: 4px; }.ml6{ margin-left: 6px; }.ml8{ margin-left: 8px; }.ml9{ margin-left: 9px; }.ml10{ margin-left: 10px; }.ml12{ margin-left: 12px; }.ml15{ margin-left: 15px; }.ml18{ margin-left: 18px; }.ml20{ margin-left: 20px; }.ml24{ margin-left: 24px; }.ml30{ margin-left: 30px; }.ml39{ margin-left: 39px; }.ml42{ margin-left: 42px; }.ml51{ margin-left: 51px; }.ml60{ margin-left: 60px; }.ml72{ margin-left: 72px; }.ml96{ margin-left: 96px; }.ml102{ margin-left: 102px; }.mr3 {margin-right:3px;}.mr6{ margin-right: 6px; }.mr10{ margin-right: 10px; }.mr12{ margin-right: 12px; }.mr18{ margin-right: 18px; }.mr24{ margin-right: 24px; }.mr30{ margin-right: 30px; }.mt0 {margin-top: 0px;}.mt3 {margin-top: 3px;}.mt6 {margin-top: 6px;}.mt10 {margin-top: 10px; }.mt12 {margin-top: 12px; }.mt24 {margin-top: 24px;}.mt30 { margin-top: 30px; }.mb1 {margin-bottom: 1px;}.mb3 {margin-bottom: 3px;}.mb6 {margin-bottom: 6px;}.mb9 {margin-bottom: 9px;}.mb12 {margin-bottom: 12px;}.mb-6 {margin-bottom: -6px;}.mb-12 {margin-bottom: -12px;}/*----------[ =Element Widths ]----------*/
+
+div.d25 {max-width: 20%;
+margin-right:3.5% }
+.w738 { width: 738px;}.w732 { width: 732px;}.w720 { width: 720px }.w714 { width: 714px }.w710 { width: 710px }.w730 { width: 730px }.w600 { width: 600px}.w588 { width: 588px}.w560 { width:560px}.w552 { width:552px}.w498 { width: 498px }.w492 { width: 492px }.w486 { width: 486px }.w471 { width: 471px }.w462 { width: 462px }.w402 { width: 402px }.w333 { width: 333px }.w362 {width:362px}/*span-10*/.w324 { width:324px}/*span-9*/.w312 { width:312px }/**/.w309 { width:309px }.w294 { width:294px }/**/.w286 { width:286px }/*span-8*/.w258 { width: 258px }.w246 { width: 246px }.w240 { width: 240px }.w238 { width: 238px }.w228 { width: 228px }.w210 { width: 210px }.w203 { width: 203px }.w201 { width: 201px }.w198 { width: 198px }.w192 { width: 192px }.w165 { width: 165px }.w160 { width: 160px }.w150 { width: 150px }.w144 { width: 144px }.w142 { width: 142px }.w138 { width: 138px }.w100 { width: 100% }.w42 { width: 42px }/*----------[ =Element Heights ]----------*/
+
+.h500 {height:500px;}.h300 {height:300px;}.h300 {height:300px;}.h285 {height:285px;}.h282 {height:282px;}.h264 {height:264px;}.h228 {height:228px;}.h102 {height:102px;}.h90 {height:90px;}.h88 {height:88px;}.h84 {height:84px;}.h72 {height:72px;}.h65 {height:65px;}.h54 {height:54px;}.h36 {height:36px;}.h25 {height:25px;}.h18 {height:18px;}/*----------[ =Padding ]----------*/.pd6 {padding:6px;}.pd12 {padding:12px;}.pl6 {padding-left:6px;}.pl9 {padding-left:9px;}.pl12 {padding-left:12px;}.pl24 {padding-left:24px;}.pt3 {padding-top:3px;}.pt6 {padding-top:6px;}.pl3 {padding-left:3px;}.pl6 {padding-left:6px;}.pl12 {padding-left:12px;}.pl24 {padding-left:24px;}.pb3 {padding-bottom:3px;}.pb6 {padding-bottom:6px;}.pb12 {padding-bottom:12px;}.pr3 {padding-right:3px;}.pr12 {padding-right:12px;}
+
+
+
+/*
+Common Screen resolutions:
+1024x768
+800x600
+640x480
+
+Info from thedayhascome-Fluid-Baseline-Grid-194e053:
+###Common Break Points
+* 320 px | Mobile portrait
+* 480 px | Mobile landscape
+* 600 px | Small tablet
+* 768 px | Tablet portrait
+* 1024 px | Tablet landscape/Netbook
+* 1280 px & greater | Desktop
+
+
+DIV is 75% figures= 25% of div
+75% = 768 / 4 = 192 - 12 = 180 or 0.234375%
+
+margin 12 = 0.015625%
+*/
+/*
+3/16 = 0.1875
+0.375
+9/16 = 0.5625
+10/16 = 0.625
+11/16 = 0.6875
+12/16 = 0.75
+13/16 = 0.8125
+14/16 = 0.875
+15/16 = 0.9375
+6/16 = 0.375
+18/16 = 1.125
+19/16 = 1.1875
+20/16 = 1.25
+
+*/
+/* EXAMPLES FROM OTHER SITES TO CONSIDER:
+
+SEE: thedayhascome-Fluid-Baseline-Grid-194e053
+RE: CONSIDER ALTERNATE MEDIA QUERY CASCADE (MOBILE FIRST)
+
+FROM http://louderthan10.ca/:
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+background:url(../images/tread.gif);*/
+
+/* NOTES
+– – – – – – – – – – – – – – – – – –*/
+/* http://www.uxbooth.com/blog/considerations-for-mobile-design-part-2-dimensions/#comments
+iPhone4 screen is 640×960 but is actually 320×640 with a bigger dpi So, to target iP4, you need the following media query: webkit-min-device-pixel-ratio:2 This way you can aim for only iPhone4.
+
+iphone 4 uses resolution of 640×960
+ipad tablets need 1280×800 resolution
+
+BROWSER-SPECIFIC STYLES
+Internet Explorer Mobile - way to target IE Mobile in Windows Phone 7:
+<!--[if IEMobile]>
+<link rel="stylesheet" href="ie_mobile.css" type="text/css" media="screen" />
+<![endif]—>
+(see UX Booth article for others)
+
+http://aralbalkan.com/3331
+RE: iPhone4 SDK Retina Display
+<link
+    rel="stylesheet"
+    type="text/css"
+    href="/css/retina.css"
+    media="only screen and (-webkit-min-device-pixel-ratio: 2)"
+/>
+Then, in the Retina-specific CSS, he loads in 32x32 icons as background images and specifies their dimensions in CSS pixels as 16x16 using the background-size CSS property.
+
+CSS 2.1 describes how a the px unit should be rescaled as needed.
+http://www.w3.org/TR/CSS21/syndata.html#length-units
+
+Enabling ‘text-rendering’ CSS options, specifically ‘optimizeLegibility’, yields improved support for kerning pairs and ligatures. They look great on iPhone4!
+/* Heading kerning pairs and ligatures */
+h1, h2, h3 { text-rendering: optimizeLegibility; }
+
+
+Targeting High Pixel Density Displays
+<!-- High pixel density displays -->
+<link rel='stylesheet' href='highRes.css' media='only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)' />
+
+
+
+Only enable pixel ratio related JavaScript where necessary. This can easily be done with JavaScript pixel ratio detection. We assume a 1:1 pixel ratio if the browser doesn't support it.
+
+// Query the device pixel ratio.
+//-------------------------------
+function getDevicePixelRatio() {
+        if(window.devicePixelRatio === undefined) return 1; // No pixel ratio available. Assume 1:1.
+        return window.devicePixelRatio;
+
+}
+
+// Process all document images
+//-----------------------------
+function processImages() {
+        if(getDevicePixelRatio() > 1) {
+                var images = $('img');
+
+                // Scale each image's width to 50%. Height will follow.
+                for(var i = 0; i < images.length; i++) {
+                        images.eq(i).width(images.eq(i).width() / 2);
+
+                }
+
+        }
+
+}
+
+ */
+
+
+/* = OBSOLETE CSS
+– – – – – – – – – – – – – – – – – –*/
+/*
+.start {line-height:1px; padding: 0;height:10px;margin: 0;}*/ /* was used in icarus to force the page down */
+/*
+img, object, embed {max-width: 100%;}
+
+
+*/
+/* Devduff CSS Code for Scriptaculous *//*
+#slide-show {position:relative; height:258px; width:100%; }#slide-images {	position:relative;	display:block;	margin:0px;	padding:0px;	right:0;	top:0;}/* 	width:318px;	height:221px;  */#slide-images li {	position:absolute;	display:block;	list-style-type:none;	margin:0px;	padding:0px;}#slide-images li img {	display:block;	border: 0;}#slide-images li p {	position:relative;font-size:12px; normal;margin: 0em 0% .75em 0%;line-height: 1.2em; font-family: Arial, "Helvetica Neue", Helvetica,  sans-serif;color:#334;	margin-top:5px;	display:block;	border: 0;}#slide-images li a {text-decoration: none;}
+*/

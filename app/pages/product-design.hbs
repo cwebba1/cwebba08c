@@ -1,0 +1,141 @@
+{{!-- pages/product-design.hbs --}}
+
+{{#> layouts/cwebba-base-03 title="Craig Webb Art / Product Design" }}
+
+{{#*inline "meta-block" }}
+{{> includes/meta
+  meta-description="Craig Webb Art provides creative consulting services including product design, content development, website engineering and product development. Our focus is to create your brand presence."
+  meta-keywords="Product Design, product research, Creative strategy, Content Development, Front-end Development, Website Engineering, Graphic Design, Copywriting"
+  meta-social-content="Craig Webb Art Product Design"
+  meta-url="http://craigwebbart.com/product-design.html"
+  meta-site-name="Craig Webb Art"
+  og-image="http://www.craigwebbart.com/assets/images/heropics/spacesuits.jpeg"
+  og-image-alt="Spacesuits"
+}}
+{{/inline}}
+{{!-- best image 1200x630px, aspect ratio 1.91:1, size less than 1mb --}}
+
+{{!--   The `includes/head` partial is here.  --}}
+  {{#*inline "head-block"}}
+  <style>
+
+  .content {align-content:flex-start;}
+
+  .content section {
+    margin-bottom: 1em;
+  }
+  .content h4 {
+    margin-top: 1em;
+  }
+
+  .content section p:last-of-type {margin-bottom: 1.5em;
+  }
+
+.wide-content { 
+  align-items:flex-start;
+}
+
+.wide-content section p:last-of-type;
+</style>
+  {{/inline}}
+
+{{!--   The `includes/header` partial is here.  --}}
+{{#*inline "rail-block"}}
+{{> includes/rail
+  rail-src="assets/images/navpics/wave.jpg"
+  rail-alt="(917) 797&middot;0983"
+}}
+{{/inline}}
+
+{{!-- MAIN CONTENT --}}
+
+{{!-- Let's change the hero image for this layout. --}}
+{{#*inline "hero-block"}}
+{{> includes/hero
+  hero-class="herobox"
+  hero-src="assets/images/heropics/spacesuits.jpeg"
+  hero-alt="Historic Spacesuits Photograph"
+  fig-caption=""
+}}
+{{/inline}}
+
+{{!-- Let's change the content for this layout. --}}
+{{#*inline "content-block"}}
+
+
+<!-- - - - - - - - [ START Product Design HERE  ] - - - - - - - - --> 
+
+<h2>Product Design</h2>
+<h4>Project development and digital design</h4>
+<section class="columns02e">
+<p>A product designer identifies a problem, finds a solution and brings it to market.</p>
+ 
+<p>The aim of product design is to foster cross-functional lateral thinking across disciplines.</p>
+<p>The Product Designer leads stakeholders across the creative process to share the product vision and own the outcome.</p>
+ 
+<p>It is important to have a vision of the final product to ensure that the final project is fully realized.</p>
+</section>
+<hr class="dash" />  
+
+<h4>Creating a product strategy &ldquo;road map&rdquo;</h4>
+<section class="columns02e">
+<p>Creating a product strategy establishes a &ldquo;road map&rdquo; guideline for building the product.  The product road map is the big-picture context for what the project will achieve. </p>
+<p>The product strategy tells what the product should do and how it fits into business and market goals.</p>
+ 
+<p>As a living document the product roadmap grows as projects progress. The guideline is the full description of the product vision. It specifies functions, content and style, mission and brand ethos.</p>
+ 
+<p>A plan for priorities and the order of building functions and components is set out. </p>
+<p>Plans to prototype a MVP and plan marketing stepping-stones are also part of the product road map.</p>
+ </section>
+<hr class="dash" />  
+
+  <h4>Product design leadership and planning</h4>
+<section class="columns02e">
+<p>Being a Product Designer requires more research and pre-planning than other development tasks. 
+<figure Style="float:left;
+margin-right:1em; min-width:20%; width:calc(50% - 1em); max-width:100%; ">
+<img src="assets/images/content/Product-Management_VenDiagram.png" alt="Product Manager = UX, Tech, Business">
+<figcaption><p>Digital Product Design: <br>Business, UX &amp; Technology</p></figcaption>
+</figure>
+It requires leadership and the ability to coalesce actors around a shared purpose.</p>
+ 
+<p>Research into the business side must answer many questions such as: what is the market fit? Is there an interest in the product? What functions are critical to success and which are first to production?</p>
+ 
+<p>Tasks such as conducting focus groups and user studies provide answers.</p>
+ 
+<p>Planning each stage of the production process gives an estimate of resources, costs and time-to-market.</p>
+ 
+<p>Early planning stages include market research, product definition and validation. Having some concept of the systems design before starting is important.</p>
+ 
+<p>Once preliminary research is in place, a strategic sprint to further define the product, more research and usability testing is in order.</p>
+ 
+<p>A process of design, validation and iteration continues through development and user testing.</p>
+ 
+<p>Bridging the gap between the business, clients, users, and the development team is critical to success.</p>
+</section>
+<hr class="dash" />  
+<h4>Design and development experience</h4>
+<section class="columns02e">
+<p>As a product designer, I specialize in front-end design and development. I have a history of owning projects from start to finish.</p>
+ 
+<p>Having a combination of content, design and coding skills provides useful knowledge of how technology works.</p>
+ 
+<p>I write content and develop brand assets for products or websites. Content development often includes creative brainstorming, market research, user research and advertising.</p>
+ 
+<p>I learn about the backend and the team development stack and how to integrate with it. I learn as much as I can about stuff like data structures, online security and working with servers. I work to make my share of code compatible with the rest of the development team.</p>
+</section>
+<hr class="dash" />  
+<blockquote class="big">Sharing the product vision and owning the outcome <span class="nowrap">is critical to success.</span></blockquote>
+
+{{/inline}}
+
+{{!-- The "footer-block" content is here. --}}
+
+{{!--  MODAL FORM BLOCK HERE  --}}
+
+  {{#*inline "js-block"}}
+    {{!--  The `includes/js01` partial is the default content, but can be overridden.  --}}
+    {{!--  {{> includes/scripts/js-accordion}}--}}
+  {{/inline}}
+
+{{/layouts/cwebba-base-03}}

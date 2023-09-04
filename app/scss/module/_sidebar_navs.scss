@@ -1,0 +1,525 @@
+/* _sidebar_navs.scss */
+
+
+/* - - - - [ DEFAULT SIDE NAVIGATION ] - - - -  */
+
+/*  SHARED  */
+.gra-gradi {
+  background: #f7f7f7;
+  background: map-get($gradients, gra);
+  color: #432;
+  color: hsla(30, 33%, 20%, 1);
+}
+
+
+.services-art header,
+.services header { text-align:left;
+padding:.5em;
+border-radius:6px;
+margin-bottom:.5em;
+clear:both;
+}
+.services-art p,
+.services p { font-size:.875em;
+line-height: 1.5em;
+}
+
+.colcontain {padding:.125em;
+}
+
+.sidnavcol {
+  margin: .5em 0;
+  padding: .5em .5em .25em;
+  border: 1px solid #E7E6E4;
+  -webkit-border-radius: .35em;
+  -moz-border-radius: .35em;
+  border-radius: .35em;
+}
+
+.sidnavcol a {
+  color: hsla(210, 0%, 54%, 1);
+}
+
+.sidnavcol a:hover {
+  color: hsla(210, 100%, 40%, 1);
+  text-decoration:none;
+}
+
+
+/* - - - - [ DEFAULT SIDE NAVIGATION (Two side-columns )] - - - -  */
+
+/*  Mobile-first  */
+
+.move h4 { 
+  margin:0 0 .25em;
+color:hsla(200, 100%, 40%, 1);/*#0088CC;*/
+line-height:1.75em;
+font-weight:400;
+}
+
+.move p { font-size:1em;
+line-height:1.25em; 
+color:#223; margin:0;
+}
+
+.sidnav-art nav,
+.sidnav nav { margin:1em 0 .5em;
+}
+
+.navserv {width: 100%;
+} /*this is a UL element */
+
+
+  .navserv li {
+    font-size: .9875em;
+    line-height: .75em;
+    border-bottom: 1px solid #DDD;
+    display: inline-block;
+    width: 48%;
+    margin: .25em 1% .5em 0;
+  }
+
+  .navserv li:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+    zoom: 1;
+    display: inline;
+  }
+
+.navserv li {
+text-align:left;
+margin:.25em 0;
+}
+  .navserv li {
+    font-size: .9875em;
+    border-bottom: 1px solid #DDD;
+    display: inline-block;
+    width: 98%;
+    margin: .25em 1% .5em 0;
+    line-height: 1em;
+  }
+
+.navserv a, .navserv a:visited {
+  font-size:.875em;
+  line-height: 1.5em;
+  padding: .375em 1.25em;
+  color: rgba(33,16,0,.7);
+  background: transparent;
+  text-decoration: none;
+  border: 0;
+border-radius: .35em;
+}
+
+.grn-gradi01,
+.navserv a:hover, .navserv a:active {
+  color: #857464;
+  background: #EAFFEA;
+  background: map-get($gradients, grn);
+}
+
+/* This was turned off - part of two-sidebar layout
+.sidnavcol p { font-size:.8275em;
+line-height: 1.125em;
+  color: rgba(33,16,0,.7);
+}
+*/
+
+/*@media only screen and (max-width: 600px) {
+} NOTE: These two declarations are now mobile-first. */
+  .sidnav-art,
+  .sidnav {
+    width: 100%;
+  }
+
+  .related-info {
+    width: 100%;
+  }
+
+
+@media screen and (min-width: 787px) {
+
+  .sidnav {
+    margin: 0;
+    width: 70%;
+    display: inline-block;
+  }
+
+  .sidnav-art {
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .related-info {
+    width: 30%;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 920px) {
+
+.sidnavcol {
+  margin: .5em 0;
+  }
+}
+
+@media screen and (min-width: 921px), print {
+
+  .navserv {
+    font-size: 1em;
+    border-bottom: 1px solid #DDD;
+    width: 98%;
+  }
+}
+
+/* - - - - [ END SIDE NAVIGATION ] - - - -  */
+
+
+/* - - - - [ DEFAULT WIDE-SIDE NAVIGATION ] - - - -  */
+
+
+.wide-services {
+  width: 100%;
+  margin: 0;
+  -o-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.wide-services header { 
+padding:.5em .75em;
+margin:.5em 0;
+text-align:left;
+}
+
+.wide-services h5 { 
+margin:0;
+}
+
+.wide-services p { font-size:.875em;
+line-height: 1.5em;
+}
+
+.wide-navserv {width: 100%;
+} /*this is a UL element */
+
+.wide-navserv div a,
+.side-nav-serv div a { 
+  display:block;
+  line-height:1.375em;
+}
+
+.wide-navserv li {
+  width: 100%;
+  display: block;
+}
+
+.grn-gradi01,
+.wide-navserv div:hover, .wide-navserv div:active {
+  color: #857464;
+  background: #EAFFEA;
+  background: map-get($gradients, grn);
+}
+
+.list-archives {  list-style: none;
+}
+
+.list-archives li {
+  font-weight: 400;
+  font-size: .875em;
+  line-height: 1.5em;
+  margin: 0 0 .25em;
+  color: rgba(33, 16, 0, 0.7);
+}
+
+.row, /* Renaming this. remove .row */
+.sid-service-menu {
+width: 100%;
+margin: 0 auto;
+overflow: hidden;
+}
+
+.wide-move,
+.side-services {
+  width: 100%;
+  margin-right: 2%;
+  -o-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.wide-move h4,
+.side-services h4 { margin:0 0 .25em;
+color:$tagblu;/*#0088CC;*/
+line-height:1.75em;
+font-weight:400;
+}
+
+.wide-move p,
+.side-services p { font-size:1em;
+line-height:1.25em; 
+color:#223; margin:0;
+}
+
+.wide-sidnav nav { margin:1em 0 .5em;
+}
+
+.wide-navserv,
+.side-nav-serv {
+  padding: 0;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 1em;
+  -moz-column-count: 2;
+  -moz-column-gap: 1em;
+  -ms-column-count: 2;
+  -ms-column-gap: 1em;
+  column-count: 2;
+  column-gap: 1em;
+  margin-bottom:1em;
+}
+
+.wide-navserv li,
+.side-nav-serv li {
+  width: 100%;
+  float: left;
+}/*  border-bottom: 1px solid #DDD;
+  padding: .375em 0;*/
+
+
+.wide-navserv li div,
+.side-nav-serv li div {
+  background: transparent;
+  padding: .375em 1.25em;
+  -webkit-border-radius: .35em;
+  -moz-border-radius: .35em;
+  border-radius: .35em;
+}
+
+.wide-navserv li div:hover,
+.side-nav-serv li div:hover {
+  color: #857464;
+  background: #EAFFEA;
+  background: map-get($gradients, grn);
+  padding: .375em 1.25em;
+}
+
+.wide-navserv a, .wide-navserv a:visited,
+.side-nav-serv a, .side-nav-serv a:visited {
+  font-size: .875em;
+  line-height: 1.5em;
+  color: rgba(33, 16, 0, 0.7);
+  text-shadow: hsla(29, 14%, 46%, 0.5) 0 0 1px;
+  background: transparent;
+  text-decoration: none;
+  border: 0;
+}
+
+/* Wide-sidebar Media Queries */
+
+@media screen and (min-width: 600px) {
+
+.wide-navserv,
+.side-nav-serv {
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  -ms-column-count: 1;
+  column-count: 1;
+  }
+
+.wide-services {
+  width: 63%;
+  float: left;
+  margin: 0;
+  -o-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  }
+
+.wide-move/*,
+.side-services*/ {
+  width: 35%;
+  float: left;
+  margin-right: 2%;
+}
+}
+
+@media screen and (min-width: 788px) {
+
+.wide-move/*,
+.side-services*/ {
+  width: 44%;
+  float: left;
+  margin-right: 2%;
+  -o-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  }
+
+.wide-services {
+  width: 53%;
+  float: left;
+  margin: 0;
+  }
+
+.wide-services p {
+  font-size: .8375em;
+  line-height: 1.5em;
+  color: rgba(33, 16, 0, 0.7);
+  }
+
+.wide-services header {
+  margin-bottom: .25em;
+  }
+}
+
+@media screen and (min-width: 921px), print {
+
+.wide-navserv li,
+.side-nav-serv li {
+  font-size: 1em;
+  border-bottom: 1px solid #DDD;
+  width: 98%;
+  }
+
+.wide-navserv li div,
+.side-nav-serv li div {
+  margin:.125em 0;
+}
+.wide-move,
+.side-services {
+  width: 100%;
+  }
+
+.wide-services {
+  width: 100%;
+  margin:.5em 0;
+  }
+
+}
+
+
+/* - - - - [ END WIDE SIDE NAVIGATION ] - - - -  */
+
+
+/* - - - - -   [  Me-Menu ]  - - - - - */
+
+.me-menu { width:98%;
+display:block;
+padding: .5em 2.739726027397%;
+border-style: solid;
+border-color: #eee;
+border-width: 2px;
+-webkit-border-radius: .5em;
+-moz-border-radius: .5em;
+border-radius: .5em;
+margin:0;
+margin-bottom: 1em;
+} 
+
+.me-menu:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;
+}
+
+.me-menu-pic { 
+float:left;
+margin:.5em 4% .25em auto;
+}
+
+.me-menu-text { 
+	font-size:.9375em;
+line-height:1.5em;
+margin:.5em 0 .5em 2.739726027397%;
+list-style: none;
+}
+
+.me-menu h4 a {
+  font-family: 'Ubuntu', Verdana, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana Ref", sans-serif;
+  color : #E6662D;
+  font-weight:400;
+  text-decoration: none;
+}
+
+.me-menu h4 a:hover {
+  font-family: 'Ubuntu', Verdana, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana Ref", sans-serif;
+  color : #FF9966;
+  text-decoration: underline;
+}
+
+/* - - - - -   [  WIDE ME-MENU ]  - - - - - */
+
+.wide-me-menu { width:98%;
+margin:0;
+display:block;
+margin-bottom: 1.5em;
+padding: .5em 2.739726027397%;
+border-style: solid;
+border-color: #eee;
+border-width: 2px;
+-webkit-border-radius: .5em;
+-moz-border-radius: .5em;
+border-radius: .5em;
+}
+
+.wide-me-menu:after { content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;
+}
+
+ /*_ _ _ _ [ END WIDE ME-MENU ] _ _ _ _ _*/
+
+.wide-me-menu h4 a {
+	font-family: 'Ubuntu', Verdana, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana Ref", sans-serif;
+	color : #E6662D;
+	font-weight:400;
+	text-decoration: none;
+}
+
+.wide-me-menu h4 a:hover {
+	font-family: 'Ubuntu', Verdana, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana Ref", sans-serif;
+	color : #FF9966;
+	text-decoration: underline;
+}
+
+
+/* Me-Menu Media Queries */
+
+@media only screen and (max-width: 400px) {
+  .me-menu-pic {
+    padding-bottom: 0;
+    clear: right;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .me-menu-pic {
+    margin-right: 90%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+
+  li.me-menu-text {
+    width: 100%;
+    margin: .15em 0;
+  }
+
+  .wide-me-menu {
+    width: 98%;
+    float: left;
+    margin-right: 2%;
+  }
+}
+
+@media only screen and (max-width: 684px) {
+  .me-menu-pic {
+    padding-bottom: 1em;
+    clear: right;
+  }
+}
+
+
+
+
+

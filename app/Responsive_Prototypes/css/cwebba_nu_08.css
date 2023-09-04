@@ -1,0 +1,1198 @@
+/* This: cwebba_nu_08.css 120411 -- with New changed Queriey + Grids (widths)
+From: cwebba_nu_08.css 112011 -- with Moved Queries (changed widths)
+From: cwebba_nu_08.css 111911C -- Moving Queries around (changing widths)
+From: cwebba_nu_08.css 111911B
+From: cwebba_nu_08.css 111911A
+From: cwebba_nu_08.css 111511
+From: cwebba_nu_08.css 111311B
+From: cwebba_nu_08.css 111311A
+From: cwebba_nu_08.css 111111
+From: cwebba_nu_08.css 110711
+From: cwebba_nu_08.css 110611
+From: cwebba_nu_08.css 110511
+From: cwebba_nu_08.css 110411
+From: cwebba_nu_07.css 103111
+From: cwebba_nu_06.css 103111
+From: cwebba_nu_04.css 102611B <-- v05 was a test
+From: cwebba_nu_04.css 102611A
+From: cwebba_nu_03.css 102511
+From: cwebba_nu_02.css 102411
+From: cwebba_nu_02.css 101911
+From: cwebba_nu_01.css 101811
+From: cwebba_repo_style07.css 101711
+
+*/
+
+/* samples of specific stylesa.class {color:Red } */
+
+/* HTML5 DECLARATIONS */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,  section, dialog { display: block }
+audio[controls], canvas, video {display: inline-block; *display: inline; zoom: 1}
+
+
+/* Resets */
+* {padding: 0;margin: 0;}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, cite, code, del, dfn, em, font,  img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, audio, aside, canvas, details, figcaption, figure, footer, header, hgroup, mark, menu, nav, section, summary, time, video { margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;text-decoration: none;background:transparent;vertical-align:baseline;}/* a is removed to below*/
+
+html { font-size:100.01%;height: 100%;
+overflow-y: scroll; } /* always force a scrollbar in non-IE */
+-webkit-text-size-adjust: 100%;
+}
+
+html { font-size:16px; }
+
+body { min-height: 100%; 
+-webkit-font-smoothing:antialiased; 
+font-smoothing:antialiased;
+text-rendering:optimizeLegibility;
+}/* background:url('../images/24px_grid_bg.gif')  */
+/* Note: Improve default text rendering, handling of kerning pairs and ligatures;
+Fix for webkit rendering */
+* html body { height: 100%;width:100%;} /*for IE6*/* html .clearfix             { zoom: 1 } /* IE6 */*:first-child+html .clearfix { zoom: 1 } /* IE7 */
+
+body {background: #bFc0b0; /* for non-css3 browsers - was  #ebebeb; */font-size:1em; line-height:1; font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal;
+	color: rgba(33,16,0,0.9);
+	-moz-text-shadow: 0 1px 0 rgba(245, 245, 245, 0.8);
+	-webkit-text-shadow: 0 1px 0 rgba(245, 245, 245, 0.8);
+	text-shadow: 0 1px 0 rgba(245, 245, 245, 0.8);
+	-webkit-text-size-adjust: none;
+}
+
+div {margin: 0em 0% 0em 0%;line-height: 1}
+
+/* LISTS */
+ul,ol { list-style: none;line-height:1.5em;
+margin-left: 1em;margin-top:0em;padding: 0 }
+li ul, li ol {margin:0;}
+dl dd {margin-left: 1.5em}
+dt {font-family:Futura, "Century Gothic", AppleGothic, sans-serif}
+
+strong, b, th, dt { font-weight: bold; }em,i { font-style:italic; }small { font-size: .85em; }sub { vertical-align: sub; font-size: smaller; }sup { vertical-align: super; font-size: smaller; }
+pre, code, tt, kbd, samp {font:1em "andale mono", "lucida console", monospace sans-serif; line-height:1.5;}pre { padding: 15px;margin:1.5em 0;white-space:pre;}
+
+pre {white-space: pre; white-space: pre-wrap; word-wrap: break-word} /* Allow line wrapping of 'pre' */
+pre, code, kbd, samp {font-size: 1em; line-height: 1.5em; margin-bottom: 1.5em; font-family: Menlo, Consolas, 'DejaVu Sans Mono', Monaco, monospace}
+
+/* ABBREVIATION */
+abbr[title], dfn[title] {border-bottom: 1px dotted #333; cursor: help}
+
+
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }input, select { vertical-align:middle; }
+
+
+/* FORMATING OF CLASSES */.rule {height:2px; border: none; color:#ab3223;background-color:#ab3223; width:100%; padding:0; clear: both; margin-bottom: 0px;}/* #FFCCCC;  */
+
+.fl{ float: left; }.fr{ float:right; }.mcent{ margin-left: auto; margin-right: auto; }.tcent{text-align:center;}.tleft {	text-align:left;}.trigh {	text-align:right;}.tjust {	text-align:justify;}.centertext{ margin-left: auto; margin-right: auto; text-align:center; }
+
+.pink { background-color:#FFCCCC;}.pearl { background-color:#FCE;}.puce { background-color:#FEC;}.powder { background-color:#CFE;}.white { background-color:#FFF;}.gree { background-color:#EFEFEF;}.gred { background-color:#DDD;}.gre9 { background-color:#999;}.gre4 { background-color:#444;}.yell { background-color:#FFC;}.blood { color:#900;}.blu { color:#139;}.violet1{ color:#260F40;}.violet2{ color:#34105C;}.cocoa{ color:#432;}.mirren{ color: #ab3223;} .wht { color:#FFF;}
+
+.trnsp50 {background-color: rgba(255,255,255,0.5);}.showgrid {background-image: url("../images/navpics/widget24x36.png");}
+.inline {display:inline;}
+.block {display:block;}
+.relative {position: relative;}
+
+span.amp{font-family:Adobe Caslon Pro,Baskerville,"Goudy Old Style","Palatino","Palatino Linotype","Book Antiqua",Georgia,"Times New Roman",Times,serif;font-style:italic;font-size:110%;line-height:0;position:relative;vertical-align:baseline} /* Best available ampersand */
+
+.ampem {
+	font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+	font-style: italic;
+	font-weight: normal;
+} /* Ethan Marcotte Bast Ampersand */
+
+
+
+/* this is what works about the container/float system */.nest {margin: 0px, auto;}/* MUST add width */.nest:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}.nest {display:block;}
+
+
+
+/* ---- Boxes and Borders ------ */
+
+.border{border-style: solid;border-color: #ddd;border-width: 1px;}
+
+/*  END RESET CSS */
+
+
+
+/* TYPOGRAPHY CODE STARTS HERE */p { font-size:1em;line-height: 1.5em;
+padding: 0em 0% .5em 0%;
+}
+
+/*
+3/16 = 0.1875
+0.375
+9/16 = 0.5625
+10/16 = 0.625
+11/16 = 0.6875
+12/16 = 0.75
+13/16 = 0.8125
+14/16 = 0.875
+15/16 = 0.9375
+6/16 = 0.375
+18/16 = 1.125
+19/16 = 1.1875
+20/16 = 1.25
+*/
+
+p.p16 { background: #68A;
+}
+
+p.p9 {font-size:.5625em;line-height: 1.5em;
+margin: 0em 0% 2.15em 0%;
+}/*  18px*/
+
+p.p10 {font-size:.625em;line-height: 1.5em;
+margin: 0em 0% 1.75em 0%;}/*  .625em  */
+
+p.p11 {font-size:.6875em;line-height: 1.5em;
+margin: 0em 0% 1.375em 0%;}
+
+p.p12 {font-size:.75em;line-height: 1.5em;
+margin: 0em 0% 1.25em 0%;}
+
+p.p13 {font-size:.8125em;line-height: 1.5em;
+margin: 0em 0% 1em 0%;}/* 12.5px margin */
+
+p.p14 {font-size:.875em;line-height: 1.5em;
+margin: 0.34375em 0% 0.34375em 0%;
+}/*  0.6875em  */
+
+p.p14b {font-size:.875em;line-height: 1.5em;
+margin: 0;
+}/*  0.6875em  */
+
+p.p15 {font-size:.9375em;line-height: 1.5em;
+margin: 0em 0% 0.625em 0%;}
+
+p.p18 {font-size:1.125em;line-height: 1.375em;
+margin: 0em 0% 0.458333333333333em 0%;}
+
+p.p19 {font-size:1.1875em;line-height: 1.1875em;
+margin: 0em 0% 0.625em 0%;}
+
+p.p20 {font-size:1.25em;line-height: 1.25em;
+margin: 0em 0% 0.416666666666667em 0%;}
+
+p.p24 {font-size:1.5em;line-height: 2.25em;
+margin: .25em 0% 1.5em 0%;}
+
+figcaption p { font-size:12px; normal;margin: 0em 0% .75em 0%;line-height: 1.2em; font-family: Arial, "HelveticaNeue", "Helvetica Neue", Helvetica,  sans-serif;color:#334;}
+
+p.max45em {
+border:1px solid red;
+width: 45%;
+max-width:45em;
+margin-right:3.5%;
+}
+
+
+/* =LINKS---------------------------------------------------- */
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */a:hover, a:active { outline: none; }
+
+a { margin:0; padding:0; font-size:1em; vertical-align:baseline; background:transparent; text-decoration: none;}
+
+a {color: #004477;	text-decoration: none;
+	-moz-transition: 0.2s color linear;
+	-webkit-transition: 0.2s color linear;
+	transition: 0.2s color linear;
+}/*csw blue */a:focus, a:hover {color: #06C;text-decoration: underline; }/*salmon orange #F96 #036 #06C*/a:visited {color: #8C0C10;font-family: background: transparent;text-decoration: none;}/*Royal blue */a:active { border-bottom: 2px solid;color:  red }
+a.cutine { color: #3399CC;margin: 0em 0% .5em 0%;font-family: Verdana, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 12px;line-height: 1.4em;font-style:italic;text-decoration: none; }a.cutine:hover { color: #3399CC;margin: 0em 0% .5em 0%;font-family: Verdana, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 12px;line-height: 1.4em;font-style:italic;text-decoration: underline; }a.cutine:visited {color: #0066CC;margin: 0em 0% .5em 0%;font-family : Verdana, sans-serif;font-family: Verdana, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 12px;line-height: 1.4em;font-style:italic;text-decoration: underline;background: transparent;}/*Royal blue */
+
+p a, p a:visited { line-height: inherit; }
+
+figcaption p a { font-size:.9em; normal;margin: 0em 0% .5em 0%;line-height: 1.2em; font-family: Arial, "HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif;color:#334;text-decoration: none;}figcaption p a:hover { font-size:.9em; normal;margin: 0em 0% .5em 0%;line-height: 1em; font-family: Arial, "HelveticaNeue", "Helvetica Neue", Helvetica,  sans-serif;color:#004477;text-decoration: underline;}figcaption a.attribute { font-size:9px; normal;margin: -.3em 0% .2em 0%;line-height: 4px;text-align:right;float:right;font-family: Verdana, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;color: #54307C;}
+
+a img, img { border: none; }a img {display: block;} /* Stops image links getting text link styles */
+
+/* =H Tag Elements ---------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6,  blockquote {font-family: 
+Verdana, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+color: #8b4203;  font-weight: normal;
+} /*font-weight:bold;font-weight: normal; *//*#ab3223*/
+
+h1.serif, h2.serif {font-family: Georgia, "Times New Roman", Times, serif; }
+
+h1 {  font-size: 2em; line-height:1.2em; margin-bottom:0.35em; margin-top:0;	}
+
+h2 { font-size:1.75em;line-height:1.5em; margin-bottom:.2em; }
+
+h3 { font-size:1.5em;line-height:1.25em; margin-bottom:.35em; }
+
+h4 { font-size:1.25em;line-height:1.25em; margin-bottom:.35em; }
+
+h5 { font-size:1em;line-height:1.25em; margin-bottom:.35em; }
+
+h6 { font-size:1em;line-height:1.25em; margin-bottom:.25em; }
+
+blockquote {color:#432;font-family: 		Corbel, "Gill Sans", 
+				"Gill Sans MT",
+				GillSansMT,
+				GillSans,
+Verdana, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:1.125em;line-height: 1.375em;
+margin: 0em 0% 0.5em 0%;
+font-style:italic;} /* Corbel,  */
+
+blockquote.big {
+color:#555;font-size:1.125em;line-height: 1.375em;
+background-color:#EFEFEF;
+padding:0.25em 1% 0.375em 2%;
+margin: 1.25em 0% 1.375em 0%;}
+
+/* = MEDIA / IMG Elements ---------------------------------------------------- */
+img { margin: 0em auto 0em auto;vertical-align: middle; }
+
+img.rnd {border: 0;-webkit-border-radius: .5em;-moz-border-radius: .5em;border-radius: .5em;behavior: url(css/PIE.htc);margin-bottom: .5em;} /*SET PIE*/
+img.centered{display: block;margin-left: auto; margin-right: auto;}
+
+img { -ms-interpolation-mode: bicubic; }
+
+/* from liquid css */a img{border:0}figure{position:relative}
+
+figure img, figure object, figure embed, figure video {max-width: 100%;	 width: 100%; height: auto; } /* Fluid images */
+svg:not(:root) {overflow: hidden} /* Correct IE9 overflow */
+
+/* example:
+img {
+  max-width:240px;
+  width:100%
+} */
+
+aside, section, article, #leftnav, blockquote.big{
+border-radius: .375em;
+     -moz-border-radius: .375em;
+     -webkit-border-radius: .375em;
+}
+
+
+/* NEW CSS */
+/* DEFAULT MOBILE STYLE */
+body {width: 96%; margin: 0 auto} /* Center page without wrapper */
+
+#page {
+margin:0.6em 0 2em;
+background: #ebebeb;
+	background: url("../images/oj_emboss.png")
+}
+
+.contain{
+width:100%
+box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+  margin: 0 auto;
+  padding: 0 1.1111111111111%;
+  overflow: hidden;
+background-color:rgba(255, 255, 205, 0.4);
+}
+
+.contain2{
+width:100%
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+background-color:rgba(255, 255, 205, 0.4);
+}
+
+.contain3{
+width:100%
+  margin: 0 auto;
+  padding: 0 0.555555555555%%;
+  overflow: hidden;
+background-color:rgba(255, 255, 205, 0.4);
+}
+
+
+/* -- DEFAULT LAYOUT --  */
+
+#status {
+background-color:rgba(148, 205, 85, 0.4);
+}
+#status p:after {content:"Default Width – Up to 479 Mobiles in portrait";
+font-size:.875em;line-height: .875em;
+font-weight:bold;
+}
+#static {
+background-color:rgba(50, 205, 85, 0.4);
+height:.375em;}
+
+header { text-align:center;
+	clear:both;
+	float:left;
+	width:100%;
+	border-bottom:1px solid #FFF;
+}
+
+nav {
+padding:0;}
+
+header figure {
+background-color:rgba(248, 205, 85, 0.4);
+}
+
+#rightrail {  margin: 0 auto;
+padding:0;
+}
+
+
+nav.table {
+width:100%;
+display: table;
+}
+
+
+nav ul { 
+list-style:none;
+font-size: .875em;
+margin:0;
+padding:0;}
+
+ul.topnav   {
+display: table-row;
+}
+
+ul.topnav li {
+display: table-cell;
+width:14.285714285714286%;
+height: 2.25em;
+line-height: 2.25em;
+text-align:center;
+}
+
+
+.topnav a:link, .topnav a:visited
+{
+	color: rgba(33,16,0,.7);
+	background-color: transparent;
+	text-decoration: none;
+	padding: 0.25em 7.5%;
+border: 0;-webkit-border-radius: .35em;-moz-border-radius: .35em;border-radius: .35em;behavior: url(css/PIE.htc);}
+
+.topnav a:hover, .topnav a:active
+{
+	color: rgba(33,16,0,1);
+	background-color: #bdc;
+}
+
+#about {padding:0 .25em; }
+
+#mast { padding:0 .1125em;
+text-align:center;
+margin:auto; }
+
+
+section#leftcol { box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+background-color:rgba(55, 175, 205, 0.4);
+padding:0.25em 0.5em 0em .5em;
+}
+
+.newslet { box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+border:1px solid rgba(33,16,0,.4);
+padding:0.25em 0.5em 0em .75em;
+margin:0 0.5em;
+background-color:rgba(255, 205, 185, 0.4);
+}
+
+.navserv, .footserv {width: 100%;
+}
+
+.navserv li, .footserv li {
+font-size:.875em;line-height: 1.5em;
+margin: 0 auto;
+width:25%;
+text-align:center;
+display: inline;
+float: left;
+}
+
+
+.navserv a, .navserv a:visited, .footserv a, .footserv a:visited
+{
+	color: rgba(33,16,0,.7);
+	background-color: transparent;
+	text-decoration: none;
+	padding: 0.25em .5em;
+border: 0;-webkit-border-radius: .35em;-moz-border-radius: .35em;border-radius: .35em;behavior: url(css/PIE.htc);}
+
+
+.navserv a:hover, .navserv a:active, .footserv a:hover, .footserv a:active
+{
+	color: rgba(133,116,100,1);
+	background-color: #bdc;
+}
+
+
+#services header { text-align:left;}
+aside#services p { font-size:.875em;line-height: 1.5em;
+}
+
+.colcontain {padding:.125em;
+}
+
+  .columns{
+    -webkit-column-count: 2;
+    -webkit-column-rule: 0px;
+    -moz-column-count: 2;
+    -moz-column-rule: 0px;
+  }
+div.columns02{
+    -webkit-column-count: 2;
+    -webkit-column-rule: 2px;
+    -moz-column-count: 2;
+    -moz-column-rule: 1px;
+background-color:rgba(245, 245, 245, 0.4);
+padding:.5em .5em .25em;
+border-bottom: 1px dashed #333;
+ margin:.125em 0 .325em ;
+border: 0;-webkit-border-radius: .35em;-moz-border-radius: .35em;border-radius: .35em;behavior: url(css/PIE.htc); }
+
+div.columns02 p {font-size:.875em;line-height: .875em !important;
+}
+
+
+
+.features p {padding:.5em 1.5em;}
+
+footer { background-color:rgba(255, 255, 255, 0.5);
+}
+
+
+#footnav {width:100%;
+box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+background-color:rgba(55, 175, 205, 0.4);
+padding:0.25em 0.5em 0em .5em;
+}
+
+.tagline {
+float:left;
+width:100%;
+margin-top: .5em;
+}
+
+.foot-nav {margin:auto;
+clear:both;
+}
+
+.footnav li {
+display: inline;
+font-size:1.125em;line-height: 1.5em;
+height: 1.5em;
+margin: 0 auto;
+text-align:left;
+float: left; }
+
+
+
+/* -- END DEFAULT LAYOUT --  */
+
+/* bg-queries.css
+110411 BG-queries.CSS - Short List in approximate size order */
+
+@media screen and (max-device-width: 810px) {
+	* { -webkit-text-size-adjust: 100%; }
+}
+
+@media screen and (min-width: 380px) {
+}
+
+/* hide this duplicate content on small screens */
+@media (max-device-width: 480px) {
+}
+
+@media screen and (min-width: 480px), print {
+}
+
+
+@media screen and (min-width:480px){ /* @FIRST */
+
+#status {
+background-color:rgba(85, 108, 215, 0.4);
+}
+#status p:after {content:"480px wide – 480–767 	Smartphones in landscape";}
+
+#static { width:480px;
+background-color:rgba(205, 50, 85, 0.4);
+}
+
+header figure {
+background-color:rgba(205, 248, 85, 0.4);
+}
+
+#logo { float:left;
+width:34.1232227488152%;
+}
+
+#rightrail {  margin: 0;
+width:65.8767772511848%;
+float:right;}
+
+.navserv li, .footserv li {
+font-size:1em;line-height: 1.5em;
+}
+
+
+div.columns02{
+    -webkit-column-count: 3;
+    -webkit-column-rule: 0px;
+    -moz-column-count: 3;
+    -moz-column-rule: 0px;
+  }
+
+.newslet {
+width: 33.5%;
+float:left;
+padding:0.25em 1.666666666667% 0em 2.25000000000002%;
+margin-right:3.3333333333333%";
+background:red;
+}
+
+.tagline {
+width:62.5%;
+background:silver;
+float:left;
+margin-top:0;
+margin-bottom:1em;
+}
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px), print { /* @FIRST W/ MAX */
+}
+
+@media screen and (min-width: 480px) and (max-width: 620px), print {
+}
+
+@media screen and (min-width: 480px) and (max-width: 639px), print {
+}
+
+@media screen and (min-width:480px) and (max-width:620px),print{
+}
+
+@media screen and (min-width: 480px) and (max-width: 620px){
+}
+
+@media screen and (min-width: 481px) and (max-width: 799px), print {
+}
+
+@media screen and (max-width: 500px), print {
+}
+
+@media screen and (min-width: 600px), print {
+}
+
+
+@media screen and (min-width: 600px) { /* WAS @SECOND */
+}
+
+@media screen and (max-width:620px),print{
+}
+
+@media screen and (max-width:620px){
+}
+
+@media screen and (min-width:620px){ /* WAS @THIRD */
+#contain{margin:0 auto 10px;width:93.75%;
+}
+}
+
+@media screen and (min-width:620px),print{
+/*[Lot of code]*/
+}
+
+@media screen and (min-width: 620px), print {
+/*[ Lots of code within this query]*/
+}
+
+/* 600 and up w/ 10px margin */
+@media screen and (min-width: 620px){
+}
+
+@media screen and (min-width: 640px), print {
+}
+
+@media screen and (max-width: 810px) {
+	/* hide the sections on mobile at load */
+}
+
+@media screen and (min-width: 768px), print  { /* @2NEW SECOND */
+
+#status {
+background-color:rgba(215, 85, 108, 0.4);
+}
+#status p:after {content:"768px wide – 768–1023 Tablets in portrait templates";}
+
+#static { width:768px;
+background-color:rgba(50, 85, 205, 0.4);
+}
+
+#contain{margin:0 auto 10px;width:93.75%;
+}
+
+#mast { width: 100%;
+margin 0 auto;}
+
+nav.table { 
+background-color:rgba(148, 185, 205, 0.4);
+}
+
+
+/* THIS IS THE ONE THAT'S FUCKED UP */
+.navserv li {
+display: block;
+width:90%;
+font-size:1em;line-height: 1.5em;
+height: 2em;
+text-align:left;
+border-bottom: 1px solid #DDD;
+margin: .25em 0 .75em 0;
+float: left;
+}
+
+.footserv li {
+height: 2.25em;
+font-size:1em;line-height: 1em;
+margin: 0;
+width:25%;
+text-align:left;
+float: none;}
+
+#leftcol { width: 38%;
+float: left;
+}
+
+#about { width: 60%;
+margin-left: 1.209677419355%;
+float:right;
+}
+
+#feat01, #feat02 { width: 60%;
+margin-left: 1.209677419355%;
+float:left;
+padding:0;
+}
+#feat02 { margin-bottom:1em;}
+
+#feat03 {font-size:.875em;line-height: 1.5em;
+text-align:center;
+width: 70%;
+margin:0 auto; }
+
+div.columns02{
+    -webkit-column-count: 1;
+    -webkit-column-rule: 0px;
+    -moz-column-count: 1;
+    -moz-column-rule: 0px;
+margin:.5em 0;  }
+
+.newslet {
+width: 28%;
+float:right;
+margin-right:1.666666666667%;
+background:pink;
+}
+
+.tagline {
+width:65%;
+background:gray;
+float:rleft;
+margin:0 1.1111111111111% .5em;
+}
+
+#footnav { }
+
+.footnav { text-align:left;
+float:none;
+}
+
+}
+
+@media screen and (min-width: 788px), print {  /* @THIRD */
+
+#status {
+background-color:rgba(215, 108, 185, 0.4);
+}
+#status p:after {content:"788px wide – 768–1023 Tablets in portrait templates";}
+
+#static { width:788px;
+background-color:rgba(50, 205, 35, 0.4);
+}
+#logo img { float:left;
+}
+
+#logo { width:18%;
+max-width:144px;
+margin: 0;
+float:left;
+background-color:rgba(148, 205, 85, 0.4);
+}
+
+nav.table { width: 46.4467005076142%;
+margin-left: 18.5%; 
+margin-right:35.2791878172589%;
+background-color:rgba(148, 205, 85, 0.4);
+}
+
+#rightrail {  width:34%;
+max-width: 278px;
+margin: 0;
+float:right;
+background-color:rgba(148, 205, 85, 0.4);
+}
+
+figure#cswnavpic {
+max-width: 278px;
+float:right;
+}
+
+
+ul.topnav li {
+display: table-cell;
+width:14.2857142857143%;
+height: 2.25em;
+line-height: 2.25em;
+text-align:center;
+}
+
+#leftnav { box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+width: 16.5322580645161%;
+margin-right: 1.209677419355%;
+float:left;
+padding:0.25em 0.125em 0em .75em;
+}
+
+.navserv li {
+display: block;
+width:90%;
+font-size:1em;line-height: 1.5em;
+height: 2em;
+text-align:left;
+border-bottom: 1px solid #DDD;
+margin: .25em 0 .75em 0;
+float: left;
+}
+
+#about {width: 59.6774193548387%;
+float:right;
+ }
+
+.newslet { box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+width: 21%;
+float:right;
+margin-right: 1.209677419355%;
+background:yellow;
+padding:0.25em 0.125em 0em .75em;
+}
+
+.tagline {
+width:75%;
+background:gray;
+float:rleft;
+margin:0 1.1111111111111% .5em;
+}
+#foot-nav {float:right;
+width:100%;
+}
+
+.footserv li {
+height: 2.25em;
+font-size:1em;line-height: 1em;
+margin: 0;
+width:25%;
+text-align:left;
+float: none;
+}
+
+}
+
+@media screen and (min-width: 788px) and (max-width: 1050px), print {
+}
+@media screen and (min-width: 810px)  and (max-width: 1050px), print {  
+
+
+
+}
+
+@media screen and (min-width:800px),print{
+}
+
+@media screen and (min-width: 810px), print {
+}
+
+@media screen and (min-width: 810px) {
+}
+
+
+@media screen and (min-width: 900px){ 
+}
+
+@media screen and (min-width:900px),print{ 
+}
+
+/*[ LOTS Code not within Query]*/
+
+
+@media screen and (min-width:980px) {  /* @FOURTH */
+
+#status {
+background-color:rgba(25, 108, 255, 0.4);
+}
+#status p:after {content:"980px wide – 1024+= Desk-top range";}
+
+#static { width:980px;
+background-color:rgba(205, 50, 35, 0.4);
+}
+
+#logo { width:14.6938775510204%;
+height:auto;
+max-width:144px;
+margin: 0;
+float:left;
+background: bisque;
+}
+
+nav.table { width: 56.9387755102041%;
+margin-left: 14.75%; 
+margin-right:28.5%;
+background: aliceblue;
+}
+
+#rightrail {  width:28.3673469387755%;
+height:auto;
+max-width: 278px;
+margin: 0;
+float:right;
+background: aliceblue;
+}
+
+
+}
+
+@media screen and (min-width: 1100px) {
+}
+
+@media screen and (min-width: 1200px){  /* @FIFTH */
+
+#status {
+background-color:rgba(108, 25, 255, 0.4);
+}
+#status p:after {content:"1200px wide";}
+
+#static { width:1200px;
+background-color:rgba(35, 205, 50, 0.4);
+}
+
+#logo { width:12%;
+max-width:144px;
+margin: 0;
+float:left;
+background: cornsilk;
+}
+
+nav.table { width: 64.8333333333333%;
+margin-left: 12%; 
+margin-right:23.1666666666667%;
+background: cornsilk;
+}
+
+#rightrail {  width:23.1666666666667%;
+max-width: 278px;
+margin: 0;
+float:right;
+background: cornsilk;
+}
+
+}
+
+/*[ BIG chunk of code - not in Query - here]*/
+
+/* 1200px+ (counting 10px margin) */
+@media screen and (min-width: 1220px){
+/*[ Little code within this query]*/
+}
+
+@media screen and (min-width: 1460px){  /* @SIXTH */
+
+#status {
+background-color:rgba(255, 108, 25, 0.4);
+}
+#status p:after {content:"1460px wide";}
+
+#static { width:1460px;
+background-color:rgba(35, 50, 205, 0.4);
+}
+
+#logo { width:9.863013698630%;
+max-width:144px;
+margin: 0;
+float:left;
+background: lightblue;
+}
+
+nav.table { width: 71.0958904109589%;
+margin-left: 9.863013698630%; 
+margin-right:19.041095890411%;
+background: lightblue;
+}
+
+#rightrail {  width:19.041095890411%;
+max-width: 278px;
+margin: 0;
+float:right;
+background: lightblue;
+}
+}
+
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
+
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } 
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+
+
+/* For IE STYLESHEET:
+ IF WE GET AROUND TO IT */
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+
+/* MISC BOILERPLATE END-OF-CASCADE HOUSEKEEPING STUFF
+– – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – – */
+::-moz-selection{ background: #ab3223; color:#fff; text-shadow: none; }::selection { background:#ab3223; color:#fff; text-shadow: none; } a:link { -webkit-tap-highlight-color: #ab3223; }  .hidden { display: none; visibility: hidden; } /* Hide only visually, but have it available for screenreaders    www.webaim.org/techniques/css/invisiblecontent/    Solution from: j.mp/visuallyhidden - Thanks Jonathan Neal! */.visuallyhidden { position: absolute !important;      clip: rect(1px, 1px, 1px, 1px); /* IE6, IE7 */  clip: rect(1px, 1px, 1px, 1px); }/* Hide visually and from screenreaders, but maintain layout */.invisible { visibility: hidden; }
+
+
+
+
+
+
+/* ---- Gradient Classes ------ */
+
+
+
+/*-  SELF-CLEARING FLOATS  - Example from stephencaver_Responsive
+----------------------------------------------------------------------*/
+
+header:after, nav:after, article:after, aside:after, footer:after, hgroup:after, section:after, #rightrail:after, #cswnav:after { content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+
+
+
+
+#vitals ul li:after,
+#footer .inner:after,
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}/* needs to be an element, not a class */
+/*  #twitter:after,
+#primary:after,
+#content:after,
+#promo-nav:after,
+#nav li:after,
+#masthead:after,
+.text:after,
+.photoset:after,
+.photo:after,
+.quote:after,
+.link:after,
+.chat:after,
+.video:after,
+.audio:after,
+.pagination:after,
+.mod:after   */
+
+ul.selfclear{display: block;}
+.clear { clear:both; height:0; overflow:hidden; line-height:1px; font-size:1px;margin:0;padding:0;}.fix{	clear: both;	height: 1px;	margin: -1px 0 0;	overflow: hidden}
+/* MICRO CLEARFIX HACK */
+.cf:before, .cf:after {content:"";display:table} /* For modern browsers */
+.cf:after {clear:both}
+.cf {zoom:1} /* For IE 6/7 (trigger hasLayout) */
+
+
+
+/* Property Classes *//*----------[ =Line Height ]----------*/.lh1 { line-height:1em;}.lh1-1 { line-height:1.1em;}.lh1-2 { line-height:1.2em;}.lh1-3 { line-height:1.3em;}.lh1-5 { line-height:1.5em;}.lh2 { line-height:2em;}.fw2 {font-weight:200;}.fw4 {font-weight:400;}.fw5 {font-weight:500;}.fw6 {font-weight:600;}/*----------[ =Margins ]----------*/.ml3{ margin-left: 3px; }.ml4{ margin-left: 4px; }.ml6{ margin-left: 6px; }.ml8{ margin-left: 8px; }.ml9{ margin-left: 9px; }.ml10{ margin-left: 10px; }.ml12{ margin-left: 12px; }.ml15{ margin-left: 15px; }.ml18{ margin-left: 18px; }.ml20{ margin-left: 20px; }.ml24{ margin-left: 24px; }.ml30{ margin-left: 30px; }.ml39{ margin-left: 39px; }.ml42{ margin-left: 42px; }.ml51{ margin-left: 51px; }.ml60{ margin-left: 60px; }.ml72{ margin-left: 72px; }.ml96{ margin-left: 96px; }.ml102{ margin-left: 102px; }.mr3 {margin-right:3px;}.mr6{ margin-right: 6px; }.mr10{ margin-right: 10px; }.mr12{ margin-right: 12px; }.mr18{ margin-right: 18px; }.mr24{ margin-right: 24px; }.mr30{ margin-right: 30px; }.mt0 {margin-top: 0px;}.mt3 {margin-top: 3px;}.mt6 {margin-top: 6px;}.mt9 {margin-top: 9px;}.mt10 {margin-top: 10px; }.mt12 {margin-top: 12px; }.mt24 {margin-top: 24px;}.mt30 { margin-top: 30px; }.mb1 {margin-bottom: 1px;}.mb3 {margin-bottom: 3px;}.mb6 {margin-bottom: 6px;}.mb9 {margin-bottom: 9px;}.mb12 {margin-bottom: 12px;}.mb-6 {margin-bottom: -6px;}.mb-12 {margin-bottom: -12px;}/*----------[ =Element Widths ]----------*/
+
+div.d25 {max-width: 20%;
+margin-right:3.5% }
+.w738 { width: 738px;}.w732 { width: 732px;}.w720 { width: 720px }.w714 { width: 714px }.w710 { width: 710px }.w730 { width: 730px }.w600 { width: 600px}.w588 { width: 588px}.w560 { width:560px}.w552 { width:552px}.w498 { width: 498px }.w492 { width: 492px }.w486 { width: 486px }.w471 { width: 471px }.w462 { width: 462px }.w402 { width: 402px }.w333 { width: 333px }.w362 {width:362px}/*span-10*/.w324 { width:324px}/*span-9*/.w312 { width:312px }/**/.w309 { width:309px }.w294 { width:294px }/**/.w286 { width:286px }/*span-8*/.w258 { width: 258px }.w246 { width: 246px }.w240 { width: 240px }.w238 { width: 238px }.w228 { width: 228px }.w210 { width: 210px }.w203 { width: 203px }.w201 { width: 201px }.w198 { width: 198px }.w192 { width: 192px }.w165 { width: 165px }.w160 { width: 160px }.w150 { width: 150px }.w144 { width: 144px }.w142 { width: 142px }.w138 { width: 138px }.w100 { width: 100% }.w42 { width: 42px }/*----------[ =Element Heights ]----------*/
+
+.h500 {height:500px;}.h300 {height:300px;}.h300 {height:300px;}.h285 {height:285px;}.h282 {height:282px;}.h264 {height:264px;}.h228 {height:228px;}.h102 {height:102px;}.h90 {height:90px;}.h88 {height:88px;}.h84 {height:84px;}.h72 {height:72px;}.h65 {height:65px;}.h54 {height:54px;}.h36 {height:36px;}.h25 {height:25px;}.h18 {height:18px;}/*----------[ =Padding ]----------*/.pd6 {padding:6px;}.pd12 {padding:12px;}.pl6 {padding-left:6px;}.pl9 {padding-left:9px;}.pl12 {padding-left:12px;}.pl24 {padding-left:24px;}.pt3 {padding-top:3px;}.pt6 {padding-top:6px;}.pl3 {padding-left:3px;}.pl6 {padding-left:6px;}.pl12 {padding-left:12px;}.pl24 {padding-left:24px;}.pb3 {padding-bottom:3px;}.pb6 {padding-bottom:6px;}.pb12 {padding-bottom:12px;}.pr3 {padding-right:3px;}.pr12 {padding-right:12px;}
+
+
+
+/*
+Common Screen resolutions:
+1024x768
+800x600
+640x480
+
+Info from thedayhascome-Fluid-Baseline-Grid-194e053:
+###Common Break Points
+* 320 px | Mobile portrait
+* 480 px | Mobile landscape
+* 600 px | Small tablet
+* 768 px | Tablet portrait
+* 1024 px | Tablet landscape/Netbook
+* 1280 px & greater | Desktop
+
+
+DIV is 75% figures= 25% of div
+75% = 768 / 4 = 192 - 12 = 180 or 0.234375%
+
+margin 12 = 0.015625%
+*/
+/*
+3/16 = 0.1875
+0.375
+9/16 = 0.5625
+10/16 = 0.625
+11/16 = 0.6875
+12/16 = 0.75
+13/16 = 0.8125
+14/16 = 0.875
+15/16 = 0.9375
+6/16 = 0.375
+18/16 = 1.125
+19/16 = 1.1875
+20/16 = 1.25
+
+*/
+/* EXAMPLES FROM OTHER SITES TO CONSIDER:
+
+SEE: thedayhascome-Fluid-Baseline-Grid-194e053
+RE: CONSIDER ALTERNATE MEDIA QUERY CASCADE (MOBILE FIRST)
+
+FROM http://louderthan10.ca/:
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+background:url(../images/tread.gif);*/
+
+/* NOTES
+– – – – – – – – – – – – – – – – – –*/
+/* http://www.uxbooth.com/blog/considerations-for-mobile-design-part-2-dimensions/#comments
+iPhone4 screen is 640×960 but is actually 320×640 with a bigger dpi So, to target iP4, you need the following media query: webkit-min-device-pixel-ratio:2 This way you can aim for only iPhone4.
+
+iphone 4 uses resolution of 640×960
+ipad tablets need 1280×800 resolution
+
+BROWSER-SPECIFIC STYLES
+Internet Explorer Mobile - way to target IE Mobile in Windows Phone 7:
+<!--[if IEMobile]>
+<link rel="stylesheet" href="ie_mobile.css" type="text/css" media="screen" />
+<![endif]—>
+(see UX Booth article for others)
+
+http://aralbalkan.com/3331
+RE: iPhone4 SDK Retina Display
+<link
+    rel="stylesheet"
+    type="text/css"
+    href="/css/retina.css"
+    media="only screen and (-webkit-min-device-pixel-ratio: 2)"
+/>
+Then, in the Retina-specific CSS, he loads in 32x32 icons as background images and specifies their dimensions in CSS pixels as 16x16 using the background-size CSS property.
+
+CSS 2.1 describes how a the px unit should be rescaled as needed.
+http://www.w3.org/TR/CSS21/syndata.html#length-units
+
+Enabling ‘text-rendering’ CSS options, specifically ‘optimizeLegibility’, yields improved support for kerning pairs and ligatures. They look great on iPhone4!
+/* Heading kerning pairs and ligatures */
+h1, h2, h3 { text-rendering: optimizeLegibility; }
+
+
+Targeting High Pixel Density Displays
+<!-- High pixel density displays -->
+<link rel='stylesheet' href='highRes.css' media='only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)' />
+
+
+
+Only enable pixel ratio related JavaScript where necessary. This can easily be done with JavaScript pixel ratio detection. We assume a 1:1 pixel ratio if the browser doesn't support it.
+
+// Query the device pixel ratio.
+//-------------------------------
+function getDevicePixelRatio() {
+        if(window.devicePixelRatio === undefined) return 1; // No pixel ratio available. Assume 1:1.
+        return window.devicePixelRatio;
+
+}
+
+// Process all document images
+//-----------------------------
+function processImages() {
+        if(getDevicePixelRatio() > 1) {
+                var images = $('img');
+
+                // Scale each image's width to 50%. Height will follow.
+                for(var i = 0; i < images.length; i++) {
+                        images.eq(i).width(images.eq(i).width() / 2);
+
+                }
+
+        }
+
+}
+
+ */
+
+
+/* = OBSOLETE CSS
+– – – – – – – – – – – – – – – – – –*/
+/*
+.start {line-height:1px; padding: 0;height:10px;margin: 0;}*/ /* was used in icarus to force the page down */
+/*
+img, object, embed {max-width: 100%;}
+
+
+*/
+/* Devduff CSS Code for Scriptaculous *//*
+#slide-show {position:relative; height:258px; width:100%; }#slide-images {	position:relative;	display:block;	margin:0px;	padding:0px;	right:0;	top:0;}/* 	width:318px;	height:221px;  */#slide-images li {	position:absolute;	display:block;	list-style-type:none;	margin:0px;	padding:0px;}#slide-images li img {	display:block;	border: 0;}#slide-images li p {	position:relative;font-size:12px; normal;margin: 0em 0% .75em 0%;line-height: 1.2em; font-family: Arial, "Helvetica Neue", Helvetica,  sans-serif;color:#334;	margin-top:5px;	display:block;	border: 0;}#slide-images li a {text-decoration: none;}
+*/

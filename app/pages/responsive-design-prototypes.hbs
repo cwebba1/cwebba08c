@@ -1,0 +1,111 @@
+{{!-- pages/responsive-design-prototypes.hbs --}}
+
+{{#> layouts/cwebba-base-05 title="Responsive Design Prototypes" }}
+
+{{#*inline "meta-block" }}
+{{> includes/meta
+  meta-description="Craig Webb is an Artist and Graphic Designer, content writer and Front-end website designer who helps clients to create their brand presence online."
+  meta-kewords="Artist, graphic designer, copywriter, content developer, website designer, web development engineer"
+  meta-social-content="Craig Webb is an artist, content developer and web designer who helps clients to create their brand presence online."
+  meta-url="http://craigwebbart.com/portfolio.html"
+  meta-site-name="Craig Webb Art"
+  og-image="http://craigwebbart.com/assets/images/heropics/hasegawa-tohaku-maple.jpg"
+  og-image-alt="Hasegawa Tōhaku: Maple and plants, c. 1593"
+}}
+{{/inline}}
+{{!-- best image 1200x630px, aspect ratio 1.91:1, size less than 1mb --}}
+
+{{!--   The `includes/head` partial is here.  --}}
+  {{#*inline "head-block"}}
+<link rel="stylesheet" type="text/css" href="css/prototype-theater.css">
+  {{/inline}}
+
+  {{!--   The `includes/header` partial is here.  --}}
+  {{#*inline "rail-block"}}
+    {{> includes/rail
+      rail-src="assets/images/navpics/math.jpg"
+      rail-alt="(917) 797&middot;0983"
+      rail-width="278"
+      rail-height="36"
+    }}
+  {{/inline}}
+
+{{!-- MAIN prototype-parent Starts here HERE. --}}
+
+
+  {{#*inline "tagline-header-block"}}
+    {{> includes/tagline-header
+      page-title="Responsive Prototypes"
+    }}
+  {{/inline}}
+
+
+  {{#*inline "prototype-list-nav-block"}}
+        {{!-- Prototype List Navigation goes here. --}}
+<!--      ##HERE!!!   -->
+<div class="div2 view-alert">
+<p><em>View links in the theater view or open links in a new tab to examine closely</em></p>
+</div><!-- END div2 -->
+<section class="div3 menu-wrap">
+  <nav class="prototype-list">
+  <ul id="proto-list">
+   {{!-- Put the "Prototype List" content here (list only). --}}
+<li><div><a href="Responsive_Prototypes/cwebba_ia.html" id="01" data-title="Craig Webb Art Information Architecture" data-cutline="This ancestor early website predates responsive design. I adopted the structure of placing the navigation between two images." target="page" rel="noopener noreferrer">Craig Webb Art Information Architecture</a></div></li>
+
+<li><div><a href="Responsive_Prototypes/liquid1080grid-test02.htm" id="02" data-title="Liquid 1080 Grid Test" data-cutline="This early experiment with fluid design clings to the old idea of a grid system within a 1080 pixel width. But the old fixed-width concept was no longer suitable. At the time it was the width appropriate for desktop computers." target="page" rel="noopener noreferrer">Liquid 1080 Grid Test</a></div></li>
+
+<li><div><a href="Responsive_Prototypes/ChristoSchmittFloats2Display_Cols_Faux_Columns_6th-tutorial_06.htm" id="03" data-title="Christo Schmitt Floats to Display Columns" data-cutline="This prototype shows how to move containers around using floats and negative margins. The display of content differs from the order of content in HTML" target="page" rel="noopener noreferrer">Christo Schmitt Floats to Display Columns</a></div></li>
+
+<li><div><a href="Responsive_Prototypes/responsiveHTML5test_08.htm" id="04" data-title="Responsive HTML5 Test" data-cutline="This Craig Webb Art mood board struggles to grasp formatting for responsive design." target="page" rel="noopener noreferrer">Responsive HTML5 Test</a></div></li>
+
+<li><div><a href="Responsive_Prototypes/about.htm" id="05" data-title="About Craig Webb Art" data-cutline="TThis prototype works out much of the design and reflow for Craig Webb Art. Note the JavaScript under the header to show the width." target="page" rel="noopener noreferrer">About Craig Webb Art</a></div></li>
+
+<li><div><a href="Responsive_Prototypes/Google_Contact_Form_02.htm" id="06" data-title="Google Contact Form" data-cutline="I rework and reuse this form pattern for many uses. This one connects to a Google spreadsheet." target="page" rel="noopener noreferrer">Google Contact Form</a></div></li>
+
+<li><div><a href="Responsive_Prototypes/icarus-index.html" id="07" data-title="Icarus Responsive Super Footer" data-cutline="The &ldquo;Super Footer&rdquo; on the Icarus website was first designed on a static website. This responsive redesign uses CSS3 columns and floats to control flow." target="page">Icarus Responsive Super Footer</a></div></li>
+
+<li><div><a href="Responsive_Prototypes/Nest_Flex_06.html" id="08" data-title="Nesting Flexbox Prototype" data-cutline="This prototype uses a series of nested flexboxes to form an inner &ldquo;Holy Grail&rdquo; layout within an outer &ldquo;Holy Grail&rdquo; shell." target="page" rel="noopener noreferrer">Nesting Flexbox Prototype</a></div></li>
+
+<li><div><a href="Responsive_Prototypes/work_wizard_08.html" id="09" data-title="Work Wizard Nesting Flexbox Component" data-cutline="This prototype uses flexbox nesting to create an inner component with inner scrolling sections." target="page" rel="noopener noreferrer">Work Wizard Nesting Flexbox Component</a></div></li>
+
+<li><div><a href="Responsive_Prototypes/LSH_Job_Candidates_Results_06.html" id="10" data-title="Job Candidates Results" data-cutline="This flexbox layout displays complex data within a component." target="page" rel="noopener noreferrer">Job Candidates Results</a></div></li>
+
+<li><div><a href="live-prototypes.html" rel="noopener noreferrer" class="fnt400">&hookleftarrow; Back to Prototypes main page</a></div></li>
+
+
+    </ul>
+  </nav>
+</section><!-- END div3 -->
+{{/inline}}
+
+{{!-- END OF Prototype List Navigation HERE. --}}
+
+  {{#*inline "prototypes-theater-block"}}
+    {{> includes/prototypes-theater
+      first-link="Responsive_Prototypes/cwebba_ia.html"
+    }}
+  {{/inline}}
+
+
+        {{#> creative-consulting-nav-block }}
+        {{> includes/creative-consulting-nav }}
+        {{!-- This should be a standard template. --}}
+        {{/creative-consulting-nav-block }}
+
+        {{#> blockquote-workbook-block}}
+        {{> includes/blockquote-workbook }}
+        {{!-- This should be a standard template. --}}
+        {{/blockquote-workbook-block}}
+
+{{!-- MAIN prototype-parent ENDS here here. --}}
+
+
+ {{!-- The "footer-block" content is here. --}}
+
+{{!--  MODAL FORM BLOCK HERE  --}}
+
+    {{#*inline "js-block"}}
+    {{> includes/scripts/js-iframe-theater }}
+    {{/inline}}
+  
+{{/layouts/cwebba-base-05}}

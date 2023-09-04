@@ -1,0 +1,91 @@
+/* This: 121612 pie3_ie_01.cssPrior: */
+
+
+body { box-shadow: 0 0 10px #786D6D;transition:all .5s ease-in-out; 
+behavior: url(css/PIE.htc);}
+.product-grid-item img { border-radius: 4px;behavior: url(css/PIE.htc);}
+.columns2, .columns2-infra, .columns2-abox { column-count: 2;
+column-gap: 2em; 
+column-rule: 0px;
+text-shadow:#FFF -2px -2px 1px;/*color horz vert blur*/
+behavior: url(css/PIE.htc);}
+#left-side img, #context-thin img, #context img { border-radius: 3px;
+behavior: url(css/PIE.htc);}
+#app_box { border-radius: 6px;
+linear-gradient(top, #FFFFFF, #F4F1F1 85%, #E8E3E3);behavior: url(css/PIE.htc);}
+#app_box h4 { text-shadow:#311 1px 1px 1px;
+border-radius: 6px 6px 0px 0px;
+linear-gradient(top, #CC0000, #990000 85%, #800000);behavior: url(css/PIE.htc);}
+#butt { border-radius: 6px;
+linear-gradient(top, #FFFFFF, #DDD6D5 45%, #D1C7C7);behavior: url(css/PIE.htc);}
+#big-butt { border-radius: 6px;
+linear-gradient(top, #FFFFFF, #DDD6D5 45%, #D1C7C7);behavior: url(css/PIE.htc);}
+footer { linear-gradient(top, #CC0000, #B30000 65%, #910808);behavior: url(css/PIE.htc);}
+.shadow { box-shadow: 0 0 10px #786D6D;
+}
+.innershadow { box-shadow: inset 0 0 15px #8C7373, 0 0 20px #DDD6D5, inset 0 35px 35px -18px #D2C8C6;
+behavior: url(css/PIE.htc);
+}
+#top-nav { box-shadow: 0 0 10px #8C7373;
+border-radius: 6px;
+transition:all .25s ease-in-out; 
+}
+.toggleMenu { border-radius: 6px;behavior: url(css/PIE.htc);}
+.top-nav { linear-gradient(top, #CC0000, #990000 85%, #800000);behavior: url(css/PIE.htc);}
+.top-nav a { text-shadow:#611 2px 2px 2px;
+border-radius: 6px;behavior: url(css/PIE.htc);
+}
+.top-nav li:hover { linear-gradient(top, #CC0000, #CC0000 60%, #990000);
+border-radius: 6px;behavior: url(css/PIE.htc);}
+.top-nav li li a { border-radius: 0px;behavior: url(css/PIE.htc);
+}
+.top-nav li li.hover a { linear-gradient(top, #DA0B0B, #B30000 45%, #990000);behavior: url(css/PIE.htc);
+}
+.current a { border-radius: 6px;behavior: url(css/PIE.htc);}
+#butt-links li{ border-radius: 6px;	box-shadow: inset 0 0 15px #544545, 0 0 20px #DDD6D5, inset 0 35px 35px -18px #DCD5D5;
+behavior: url(css/PIE.htc);
+}
+#butt-links li:hover { box-shadow: inset 0 0 15px #910808, 0 0 20px #DDD6D5, inset 0 35px 35px -18px #FF3333;
+behavior: url(css/PIE.htc);
+}
+#butt-links li:hover a { text-shadow:#111 2px 2px 3px;
+}
+#middle { border-radius: 6px;	box-shadow: inset 0 0 15px #786D6D, 0 0 20px #DDD6D5, inset 0 35px 35px -18px #D2C8C6;
+behavior: url(css/PIE.htc);
+}
+.product-grid li { border-radius: 6px;box-shadow: 0 0 10px #786D6D;behavior: url(css/PIE.htc);}
+.carousel-control { border-radius: 23px;
+behavior: url(css/PIE.htc);}
+.foot-nav a { text-shadow: #2E100F 0 1px 1px;
+behavior: url(css/PIE.htc);}
+.foot-nav li ul { border-radius: 6px;behavior: url(css/PIE.htc);}
+@media only screen and (min-width : 1200px)  {
+.top-nav { border-radius: 6px;behavior: url(css/PIE.htc);}
+#top-nav { border-radius: 0px;behavior: url(css/PIE.htc);}
+}
+@media only screen and (max-width : 800px)  {
+#top-nav { 	box-shadow: 0 0 10px #F0EBEB;
+behavior: url(css/PIE.htc);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

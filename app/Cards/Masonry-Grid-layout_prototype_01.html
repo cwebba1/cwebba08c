@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Masonry Grid layout prototype 01.html</title>
+
+    <!-- : -->
+    <!-- THIS: Masonry-Grid-layout_prototype_01.html
+prototype_starter_01.html
+	FROM:
+	-->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,200,300,600,' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="css/prototype-sticky-footer.css"> 
+  <link rel="stylesheet" type="text/css" href="css/prototype_style.css"> 
+
+
+<style>
+
+html { 	background:#AFDFC7; }
+body {	background:#BCDEFA; }
+main {	background:#FFDEDD; }
+header, footer {	background:#FEFDFA; }
+.sidebar {	background:#CEEFEF; }
+
+.basal {
+  width: 97.5%;
+  margin: 0 auto;
+  padding: 0;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  background:rgba(253, 254, 251, 0.8);
+  transition:width .25s ease-in; 
+}
+
+/* styles from portfolio.html */
+
+.bdr { 
+border:1px solid #D4CEC9;
+padding:1em;
+ }
+
+.bdr0 {
+  border: 1px solid #D4CEC9;
+  padding: 0;
+}
+
+.container { 
+  padding:1em;
+  background:rgba(254, 253, 250, 0.5);
+}
+
+/* Flex Holy Albatross */
+    .card-gallery-01 {
+  display: flex;
+  flex-wrap: wrap;
+  --margin01: 0.5rem;
+  --multiplier01: calc(40rem - 100%);
+  margin: calc(var(--margin01) * -1);
+  justify-content: center;
+  padding:1em;
+  background:rgba(253, 254, 251, 0.3);
+  border:1px solid #DEDFDB;
+
+}
+.card-gallery-01 > * {
+  min-width: 33%;
+  max-width: 100%;
+  flex-grow: 1;
+  flex-basis: calc(var(--multiplier01) * 999);
+  margin: var(--margin01);
+}
+
+.card-gallery-01 > :nth-child(2n - 1) {
+  min-width: calc(20% - (var(--margin01) * 2));
+}
+    .card-gallery-02 {
+  display: flex;
+  flex-wrap: wrap;
+  --margin02: 0.5rem;
+  --multiplier02: calc(30rem - 100%);
+  margin: calc(var(--margin01) * -1);
+
+  justify-content: center;
+  padding:1em;
+  background:rgba(253, 254, 251, 0.3);
+  border:1px solid #DEDFDB;
+
+}
+.card-gallery-02 > * {
+  min-width: 33%;
+  max-width: 100%;
+  flex-grow: 1;
+  flex-basis: calc(var(--multiplier02) * 999);
+  margin: var(--margin02);
+}
+
+.card-gallery-02 > :nth-child(2n - 1) {
+  min-width: calc(20% - (var(--margin02) * 2));
+}
+
+.hv-card { 
+  padding:1em;
+  background:#FEFDFA;
+  border:1px solid #DEDFDB;
+    margin: 0.5em;
+  margin-bottom:1em;
+ }
+
+.hv-card img { 
+}
+
+/* styles from portfolio.html Media Queries */
+/* These styles control the inner box img/text flex direction in Gallery Two */
+
+@media (min-width: 576px) {
+.hv-card { 
+  flex: 1 1 24em;
+max-width:calc(50% - 1em);
+}
+
+@media (min-width: 768px) {
+.hv-card { 
+  flex: 0 1 calc(50% - 1em);
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  }
+
+.hv-card figure { 
+     flex: 1 0 50%;
+    min-height: 1px;
+margin-right:1em;
+}
+
+.hv-card figure img { 
+align-self:stretch;
+}
+
+.hv-card-body {
+    flex: 1 0 50%;
+    min-height: 1px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+.hv-card { 
+  flex: 0 1 calc(50% - 1em);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+.hv-card figure { 
+     flex: 1 1 100%;
+    min-height: 1px;
+margin-right:0;
+
+}
+
+
+
+</style>
+</head>
+
+
+<body>
+<div class="basal">
+  <header>
+    <div class="in-head">
+	<figure class="logo">
+		<a id="nav-home" href="http://www.craigwebbart.com/">
+			<img src="assets/images/cwebba_logo5.svg" alt="Craig Webb Art">
+		</a>
+	</figure>
+	<nav id="main-nav">
+		<ul>
+        		<li><a class="active" href="https://codepen.io/cwebba1/">Codepen</a></li>
+			<li><a href="https://github.com/cwebba1">Github</a></li>
+		</ul>
+	</nav>
+    </div><!-- END class="in-head" -->
+  </header>
+  <main>
+	<h2>Masonry Grid layout prototype 01</h2>
+
+<div class="wrapper" style="background:rgba(254, 253, 250, 0.375);">
+      <div class="card-gallery-01">
+
+<div class="container">
+<figure><img src="assets/images/gallery/Walter_and_Benjamin_2005.jpeg" class="bdr0" alt="Walter and Benjamin">
+<figcaption><p>Walter and Benjamin 2005</p></figcaption>
+</figure>
+<div>
+<h3>The Science of Awe</h3>
+<p>There are consequences. Our morality is anthropocentric.</p>
+</div>
+</div>
+
+<div class="container bdr">
+<div>
+<h3>Hurdy Gurdy Man</h3>
+<p>Donovan
+<a href="https://youtu.be/jRsrDLkACTs">https://youtu.be/jRsrDLkACTs</a></p>
+
+<p>Thrown like a star in my vast sleep
+I opened my eyes to take a peek
+To find that I was by the sea
+Gazing with tranquility</p>
+
+<p>&rsquo;Tis then when the Hurdy Gurdy Man
+Comes singing songs of love
+Then when the Hurdy Gurdy Man
+Comes singing songs of love</p>
+
+<p>Histories of ages past
+Unenlightened shadows cast
+Down through all eternity
+The crying of humanity</p>
+</div>
+</div>
+
+<div class="container">
+<figure><img src="assets/images/gallery/Matisse.jpeg" alt="Matisse">
+<figcaption><p>Matisse</p></figcaption>
+</figure>
+<div>
+<h3>The Science of Awe</h3>
+<p>There are consequences. Our morality is anthropocentric.</p>
+</div>
+</div>
+
+<div class="hv-card">
+<figure><img src="assets/images/gallery/Walter_and_Benjamin_2005.jpeg" class="bdr0" alt="Walter and Benjamin">
+<figcaption><p>Walter and Benjamin 2005</p></figcaption>
+</figure>
+<div>
+<h3>The Science of Awe</h3>
+<p>There are consequences. Our morality is anthropocentric.</p>
+</div>
+</div>
+
+<div class="hv-card">
+<figure><img src="assets/images/gallery/Matisse.jpeg" alt="Matisse">
+<figcaption><p>Matisse</p></figcaption>
+</figure>
+<div>
+<h3>The Science of Awe</h3>
+<p>There are consequences. Our morality is anthropocentric.</p>
+</div>
+</div>
+
+
+
+</div><!-- END card-gallery-01 -->
+</div><!-- END Wrapper -->
+
+
+</main>
+<footer>
+  <div class="sock">
+    <nav class="footsie">
+      <ul>
+	<li>
+	   <a href="https://twitter.com/cwebba1/">Twitter</a>
+	</li>
+        <li>
+          <a class="" href="https://angel.co/craig-webb-1">AngelList</a>
+        </li>
+        <li>
+          <a class="" href="mailto:craigwebb@craigwebbart.com">Contact Us</a>
+        </li>
+    </ul>
+  </nav>
+  <div class="copyright-box">
+    <p class="copyright">&copy; <script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2017, null, '-')); else document.write((new Date()).getFullYear());</script> Craig Webb Art. &nbsp;All&nbsp;Rights&nbsp;Reserved.</p>
+  </div>
+
+</div><!-- END sock -->
+</footer>
+</div><!-- END class="basal" -->
+
+<!-- JavaScript -->
+ <script>
+
+</script>
+
+<!-- Optional JavaScript 
+        <script src="assets/js/"></script>-->
+
+</body>
+</html>

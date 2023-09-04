@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]> <html lang="en" class="no-js ie9"> <![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="" />
+<meta name="keywords" content="">
+<meta name="author" content="Craig Webb Art" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Justified Centered Containers</title>
+<!-- http://jsfiddle.net/EDp8R/1803/
+Justified_Centered_containers01.htm
+ -->
+
+<style>
+body { width:96%;
+margin:auto;
+text-align:center;
+}
+ul { 
+list-style:none;
+margin:0;
+padding:0;
+}
+
+
+#container { width:100%;
+    border: 2px dashed #444;
+    height: 125px;
+    
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    
+    /* just for demo */
+    min-width: 300px;
+}
+
+.box, .box1, .box2, .box3, .box4 {
+    height: 125px;
+text-align:center;
+    vertical-align: middle;
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+}
+
+.l4 { width:9.510810810810812%;}
+.l5 { width:11.513513513513515%;}
+.l7 { width:16.218918918918921%;}
+.l8 { width:18.021621621621624%;}
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+.box1, .box3 {
+    background: #ccc
+}
+.box2, .box4 {
+    background: #0ff
+}
+
+.box:nth-child(even) { background-color:rgba(148, 25, 85, 0.4);}
+.box:nth-child(odd) { background-color:rgba(25, 148, 85, 0.4);}
+
+
+</style>
+</head>
+<body>
+<ul id="container">
+    <li class="box"><a href="#">About</a></li>
+    <li class="box"><a href="#">Services</a></li>
+    <li class="box"><a href="#">Work</a></li>
+    <li class="box"><a href="#">News</a></li>
+    <li class="box"><a href="#">Blog</a></li>
+    <li class="box"><a href="#">Contact</a></li>
+    <li class="box"><a href="#">Links</a></li>
+    <span class="stretch"></span>
+</ul>
+
+
+
+</body>
+
+</html>
+

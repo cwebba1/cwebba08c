@@ -1,0 +1,290 @@
+/* _media_queries.scss */
+
+/* ======= [ Media Queries ]  =========== */
+
+.copyright {
+font-family: $head-ft;
+font-size: 0.6875em;
+line-height: .0625em;
+color:#889;
+position:absolute;
+bottom:0;
+left:1em;
+width:70%;
+}
+
+.back2top { font-size:.75em;
+margin:0;
+}
+
+
+
+.tothetop { display:inline-block;
+vertical-align:baseline;
+background:#CEBEBE;
+font-weight:400;
+padding:.125em .5em;
+position:absolute;
+bottom:0;
+right:0;
+-webkit-border-top-left-radius: 8px 6px;
+-moz-border-top-left-radius: 8px 6px;
+border-top-left-radius: 8px 6px;
+}
+
+span.learn { display:none;
+}
+
+.sm_button { display: inline-block;
+text-align:center;
+width:17.5%;
+padding: 0.35em 1% 0.75em;
+}
+
+
+@media only screen and (max-width: 400px) {
+  a.menu {
+    font-size: .875em;
+    line-height: 2em;
+  }
+
+  a.menu:hover {
+    font-size: .875em;
+    line-height: 1em;
+  }
+
+  .inset, .inset2 {
+    font-size: 1.125em;
+    line-height: 1.375em;
+    letter-spacing: normal;
+  }
+
+}
+
+
+
+@media screen and (min-width: 920px) {
+
+
+figure.w250 { width:250px;
+max-width:250px; 
+margin-right:1em; 
+  }
+
+figure.w200 { width:200px;
+max-width:200px; 
+margin-right:1em; 
+  }
+
+figure.w150 { width:150px;
+max-width:150px; 
+margin-right:1em; 
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+  #modal_box {
+    width: 75%;
+    top: 5%;
+    left: 12.5%;
+  }
+
+  #map_box {
+    width: 80%;
+    top: 10%;
+    left: 10%;
+  }
+
+  .receive {
+    float: left;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+
+
+  .inset2 {
+    width: 100%;
+  }
+
+  /* Contact Page*/
+  .formbox {
+    width: 100%;
+    margin-left: 0;
+    float: none;
+    display: block;
+  }
+
+  .addressbox {
+    width: 100%;
+    margin: .5em 0;
+    float: none;
+    display: block;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 920px) {
+  .first {
+    padding-left: 1em;
+  }
+}
+@media screen and (max-width: 900px) {
+  .receive {
+    float: left;
+    width: 70%;
+  }
+
+  .subscribe label,
+  .wide,
+  .wide2 {
+    text-align: left;
+    font-size: 0.75em;
+    color: #6E5F4D;
+    float: left;
+    width: 93.5%;
+  }
+
+  /*label*/
+  #mail-list input:not([type=radio]),
+  #mail-list textarea {
+    padding: .25em .375em;
+    width: 93.5%;
+    border: 1px solid #c4c8cc;
+  }
+}
+@media screen and (max-width: 768px) {
+  #fieldset {
+    width: 80%;
+    border: none;
+    margin: 0 auto .125em;
+    background: #E6F0E6;
+  }
+
+  #modal_box {
+    width: 90%;
+    top: 5%;
+    left: 5%;
+  }
+
+  #map_box {
+    width: 90%;
+    top: 5%;
+    left: 5%;
+  }
+
+  .mod figure {
+    margin: .5em 1em 0 0;
+    float: left;
+  }
+
+  .receive {
+    float: left;
+    width: 65%;
+  }
+}
+@media screen and (max-width: 720px) {
+
+  .herobox-clear,
+  .herobox {
+    margin-bottom: 1em;
+    -o-transition: margin .25s ease-in;
+    -moz-transition: margin .25s ease-in;
+    -webkit-transition: margin .25s ease-in;
+    transition: margin .25s ease-in;
+  }
+
+  figure.w306 {
+    width: 100%;
+    max-width: 306px;
+  }
+
+  .mcap {
+    width: 85%;
+    /* for instance*/
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .w48p {
+    width: 58%;
+  }
+}
+@media only screen and (max-width: 600px) {
+ 
+  figure.w150,
+  figure.w200,
+  figure.w250 {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0;
+    float: none;
+  }
+
+  .collapse.in {
+    height: 0;
+  }
+
+  .inset2 {
+    width: 100%;
+    display: inline-block;
+  }
+
+  span.learn {
+    display: inline;
+    font-size: .625em;
+    line-height: 1.5em;
+    padding: .25em 2%;
+    border: 1px solid #B6DFCB;
+    background: rgba(148, 209, 179, 0.3);
+    margin: .125em 2% 2.15em 0;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+  }
+
+  span.learn:hover {
+    background: rgba(255, 221, 51, 0.5);
+  }
+
+  .triad {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 0;
+    display: inline-block;
+    display: inline;
+    zoom: 1;
+  }
+
+  .half-box {
+    width: 90%;
+    margin-right: 0;
+  }
+
+  #map_box {
+    width: 96%;
+    top: 5%;
+    left: 2%;
+  }
+
+  .wcap,
+  .mcap {
+    width: 100%;
+    margin: auto;
+  }
+
+  figure.hero-art {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .triad figure {
+    margin-bottom: 0;
+  }
+
+  .last span {
+    display: none;
+  }
+}

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Flex-wrap Layout Prototype 01</title>
+
+    <!-- : -->
+    <!-- THIS: flex-wrap_layout_prototype_01.html
+	FROM:	prototype_starter_01.html
+
+	-->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,200,300,600,' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="css/prototype-sticky-footer.css"> 
+  <link rel="stylesheet" type="text/css" href="css/vars.css"> 
+  <link rel="stylesheet" type="text/css" href="css/prototype_style.css"> 
+
+
+<style>
+
+html { 	background:#AFDFC7; }
+body {	background:#BCDEFA; }
+main {	background:#FFDEDD; }
+header, footer {	background:#FEFDFA; }
+.sidebar {	background:#CEEFEF; }
+
+.basal {
+  width: 97.5%;
+  margin: 0 auto;
+  padding: 0;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  background:rgba(253, 254, 251, 0.8);
+  transition:width .25s ease-in; 
+}
+
+
+.boxblock { 
+	display:inline-block;
+	margin:0.5em 0.5em;
+	padding:1em;
+	background:#FEFDFA;
+	background:var(--brite-wht);
+	max-width:100%;
+	vertical-align:top;
+}
+
+.flexbox { 
+	display:flex;
+	flex-wrap:wrap;
+	align-content:stretch;
+	margin:0.5em 0;
+	background:#FEFDFA;
+	max-width:100%;
+}
+
+.block {    display:flex;    
+margin:0;
+padding:0;
+min-width:50%;    max-width:100%;    width:calc((500px - 100%) * 600);
+background:#ADBEAC;
+flex-basis:1;
+}
+
+.bitty-block {    flex: 1 1 auto;    
+margin:0;
+padding:0;
+min-width:25%;    max-width:100%;    width:calc((500px - 100%) * 600);
+background:#ADACBE;
+flex-basis:1;
+}
+
+.bitty-titty-block {    flex: 2 1 auto;    
+margin:0;
+padding:0;
+min-width:33.333%;    max-width:100%;    width:calc((500px - 100%) * 600);
+background:#BEACAD;
+flex-basis:1;
+}
+
+
+
+</style>
+</head>
+
+
+<body>
+<div class="basal">
+  <header>
+    <div class="in-head">
+	<figure class="logo">
+		<a id="nav-home" href="http://www.craigwebbart.com/">
+			<img src="assets/images/cwebba_logo5.svg" alt="Craig Webb Art">
+		</a>
+	</figure>
+	<nav id="main-nav">
+		<ul>
+        		<li><a class="active" href="https://codepen.io/cwebba1/">Codepen</a></li>
+			<li><a href="https://github.com/cwebba1">Github</a></li>
+		</ul>
+	</nav>
+    </div><!-- END class="in-head" -->
+  </header>
+  <main>
+	<h2>Flex-wrap Layout Prototype 01</h2>
+
+<div class="boxblock" style="width:20%; margin:0;">
+<h4>Being but Men</h4>
+<p>by Dylan Thomas</p>
+
+<p>Being but men, we walked into the trees<br>
+Afraid, letting our syllables be soft<br>
+For fear of waking the rooks,<br>
+For fear of coming<br>
+Noiselessly into a world of wings and cries.</p>
+
+<p>If we were children we might climb,<br>
+Catch the rooks sleeping, and break no twig,<br>
+And, after the soft ascent,<br>
+Thrust out our heads above the branches<br>
+To wonder at the unfailing stars.</p>
+
+<p>Out of confusion, as the way is,<br>
+And the wonder, that man knows,<br>
+Out of the chaos would come bliss.</p>
+
+<p>That, then, is loveliness, we said,<br>
+Children in wonder watching the stars,<br>
+Is the aim and the end.</p>
+
+<p>Being but men, we walked into the trees.</p>
+</div>
+
+<div class="boxblock" style="width:72%;">
+<div class="flexbox">
+<div class="bitty-block">Bitty-Block Box</div>
+<div class="bitty-block">Bitty-Block Box</div>
+<div class="block">Stack-and-grow Box</div>
+<div class="block">Stack-and-grow Box</div>
+<div class="bitty-block">Bitty-Block Box</div>
+<div class="bitty-block">Bitty-Block Box</div>
+<div class="bitty-titty-block">Bitty-Titty-Block Box</div>
+<div class="bitty-titty-block">Bitty-Titty-Block Box</div>
+<div class="bitty-titty-block">The more you recognize the immense good within you, the more you magnetize immense good around you. <br>&ndash; Alan Cohen</div>
+<div class="bitty-block">Bitty-Block Box</div>
+<div class="bitty-block">
+<p>A film is never really good unless the camera is an eye in the head of a poet<br>
+– Orson Welles</p> </div>
+<div class="block">Stack-and-grow Box</div>
+<div class="bitty-titty-block">Bitty-Titty-Block Box</div>
+<div class="bitty-block">Bitty-Block Box</div>
+<div class="bitty-block">Bitty-Block Box</div>
+</div>
+
+
+</main>
+<footer>
+  <div class="sock">
+    <nav class="footsie">
+      <ul>
+	<li>
+	   <a href="https://twitter.com/cwebba1/">Twitter</a>
+	</li>
+        <li>
+          <a class="" href="https://angel.co/craig-webb-1">AngelList</a>
+        </li>
+        <li>
+          <a class="" href="mailto:craigwebb@craigwebbart.com">Contact Us</a>
+        </li>
+    </ul>
+  </nav>
+  <div class="copyright-box">
+    <p class="copyright">&copy; <script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2017, null, '-')); else document.write((new Date()).getFullYear());</script> Craig Webb Art. &nbsp;All&nbsp;Rights&nbsp;Reserved.</p>
+  </div>
+
+</div><!-- END sock -->
+</footer>
+</div><!-- END class="basal" -->
+
+<!-- JavaScript -->
+ <script>
+
+</script>
+
+<!-- Optional JavaScript 
+        <script src="assets/js/"></script>-->
+
+</body>
+</html>

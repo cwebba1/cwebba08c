@@ -1,0 +1,80 @@
+/* aux-style01.css*/
+/* from http://christopherschmitt.com/2007/10/23/css-floats-to-display-columns-in-any-order
+CSS Floats to Display Columns in Any Order
+*/
+body {
+ font: normal 62.5%/1.7 Verdana, Geneva, Helvetica, Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+}
+#container:after {
+ clear: both;
+ content: ".";
+ display: block;
+ height: 0;
+ visibility: hidden;
+}
+#container {
+ display: inline;
+}
+/* Hide from MacIE5 \*/
+#container {
+ display: block;
+}
+/**/
+#container-outer {
+ background: url("images/grunge_wall.png") repeat-y 20% 0;
+}
+#container {
+ background: url("images/cork_1.png") repeat-y 80% 0;
+}
+.column .wrap {
+ padding: 20px;
+}
+#content .wrap {
+ padding: 20px 30px;
+}
+#content p {
+ margin-top: 0;
+}
+#content p:first-child {
+ font: normal 1.4em/1.6 Georgia, Times, "Times New Roman", serif;
+}
+#content p:first-child:first-line {
+ text-transform: uppercase;
+}
+#sidnav ul, #sidnav ul li {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+#sidnav ul li {
+ margin-bottom: .4em;
+}
+#sidnav li a {
+ background: #36C;
+ color: #FFF;
+ border-left: 7px solid #09F;
+ display: block;
+ padding: .4em .4em .4em 20px;
+ text-decoration: none;
+}
+#sidnav li a:hover {
+ border-left: none;
+ border-right: 7px solid #09F;
+ padding-left: 27px;
+}
+#related-info {
+ color: #555;
+ font-style: italic;
+}
+#copyright {
+ border: 1px solid #B2B2B2;
+ border-width: 1px 0;
+ clear: both;
+ padding: 10px 20px;
+ text-align: center;
+}
+#copyright p {
+ margin: 0;
+} 

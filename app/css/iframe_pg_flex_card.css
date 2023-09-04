@@ -1,0 +1,166 @@
+/* iframe_pg_flex_card.css */
+/* 121820 */
+
+
+/* White Background box */
+.boxblock { 
+	display:inline-block;
+	margin:0.5em 0.5em;
+	padding:1em;
+	background:#FEFDFA;
+	background:var(--brite-wht);
+	max-width:100%;
+	vertical-align:top;
+}
+
+.flexbox { 
+	display:flex;
+	flex-wrap:wrap;
+	align-content:stretch;
+	margin:0.5em 0;
+	background:#FEFDFA;
+	max-width:100%;
+}
+
+.flexbox-super-card { 
+  display:flex;
+  flex-wrap:wrap;
+  align-content:flex-start;
+  padding:1em;
+  margin:0.5em;
+  background:#FEFDFA;
+min-width:calc(100% - 1em);    max-width:100%;    width:calc((800px - 100%) * 800);
+flex-basis:1;
+}
+
+.flexbox-big-card { 
+  display:flex;
+  flex-wrap:wrap;
+  align-content:flex-start;
+  padding:1em;
+  margin:0.5em;
+  background:#FEFDFA;
+min-width:calc(50%  - 1em);    max-width:100%;    width:calc((600px - 100%) * 600);
+flex-basis:1;
+}
+
+.flexbox-card { 
+	display:flex;    
+	flex-wrap:wrap;
+	align-content:flex-start;
+	padding:1em;
+	margin:0.5em;
+	background:#FEFDFA;
+min-width:calc(33.333%  - 1em);    max-width:100%;    width:calc((500px - 100%) * 500);
+flex-basis:1;
+}
+
+.img-block { 
+flex: 0 1 auto;    
+padding:0;
+min-width:39%;    max-width:100%;    width:calc((260px - 100%) * 260);
+background:#FEFDFA;;
+flex-basis:1;
+margin-right:0.5em;
+}
+
+.txt-block { 
+flex: 2 1 auto;    
+margin:0;
+min-width:58%;    max-width:100%;    width:calc((260px - 100%) * 260);
+background:#FEFDFA;;
+flex-basis:1;
+align-self: flex-start;
+}
+
+.img-block,
+.txt-block { 
+margin-bottom:0;
+}
+
+.img-block img { 
+    border:1px solid #ADBEAC;
+}
+
+.flexbox-big-card .img-block,
+.flexbox-big-card .txt-block{ 
+width:calc((350px - 100%) * 350);}
+
+.flexbox-super-card .img-block,
+.flexbox-super-card .txt-block{ 
+width:calc((560px - 100%) * 560);}
+
+.super-block {    flex: 1 1 auto;    
+min-width:calc(100%);    max-width:100%;    width:calc((500px - 100%) * 500);
+flex-basis:1;
+  margin: var(--margin01);
+}
+
+.big-block {    flex: 1 1 auto;    
+min-width:calc(50% - 1em);    max-width:100%;    width:calc((500px - 100%) * 500);
+flex-basis:1;
+  margin: var(--margin01);
+}
+
+.sexy-block-720 {    flex: 1 1 auto;    
+min-width:calc(66.666%  - 1em);    max-width:100%;    width:calc((720px - 100%) * 720);
+flex-basis:1;
+  margin: var(--margin01);
+}
+
+.sexy-block {    flex: 1 1 auto;    
+min-width:calc(66.666%  - 1em);    max-width:100%;    width:calc((600px - 100%) * 600);
+flex-basis:1;
+  margin: var(--margin01);
+}
+
+.bitty-titty-block {    flex: 1 1 auto;    
+min-width:calc(33.333%  - 1em);    max-width:100%;    width:calc((600px - 100%) * 600);
+flex-basis:1;
+  margin: var(--margin01);
+}
+
+.bitty-block {    flex: 1 1 auto;    
+min-width:25%;    max-width:100%;    width:calc((500px - 100%) * 600);
+flex-basis:1;
+  margin: var(--margin01);
+}
+
+.itti-bitty-block {    flex: 1 1 auto;    
+min-width:calc(16.666% - 1em);    max-width:100%;    width:calc((500px - 100%) * 500);
+flex-basis:1;
+  margin: var(--margin01);
+}
+
+/* It is necessary to undo p:last-of-type for cutline :/ 
+p:last-of-type { 
+	margin:0;
+}               */
+
+figcaption { margin:0 0 0.5em;}
+figcaption p {
+	line-height:1.2em;
+	margin: 0;
+	font-size:0.875em;
+}
+
+.bdr { 
+border:1px solid #D4CEC9;
+padding:1em;
+ }
+
+.bdr0 { 
+border:1px solid #D4CEC9;
+padding:0;
+ }
+
+.bdr5 { 
+border:1px solid #D4CEC9;
+padding:0.5em;
+ }
+
+  .flexbox-super-card .img-block { 
+  margin-right:1em;
+  }
+
+  

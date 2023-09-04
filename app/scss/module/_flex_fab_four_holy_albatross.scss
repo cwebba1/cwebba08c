@@ -1,0 +1,177 @@
+/** 082923 _flex-fab-four-holy-albatross.scss */
+/** 122520 _flex-fab-four-holy-albatross.scss */
+
+.flexbox-wrapper { 
+	display:flex;
+	flex-wrap:wrap;
+	align-items:stretch;  /* WAS align-content */
+  --margin01: 0.5rem;
+  margin: calc(var(--margin01) * -1);
+	max-width:100%;
+  margin-bottom:1em;
+}
+
+.flexbox-wrapper {
+  content-visibility : auto;
+/* hidden, visible, auto */
+}
+
+
+.super-block {    flex: 1 1 auto;    
+min-width:calc(100%);    max-width:100%;    width:calc((500px - 100%) * 500);
+margin: var(--margin01);
+}
+
+.big-block {    flex: 1 1 auto;    
+min-width:calc(50% - 1em);    max-width:100%;    width:calc((500px - 100%) * 500);
+margin: var(--margin01);
+}
+
+.sexy-block-720 {    flex: 1 1 auto;    
+min-width:calc(66.666%  - 1em);    max-width:100%;    width:calc((720px - 100%) * 720);
+margin: var(--margin01);
+}
+
+.sexy-block {    flex: 1 1 auto;    
+min-width:calc(66.666%  - 1em);    max-width:100%;    width:calc((600px - 100%) * 600);
+margin: var(--margin01);
+}
+
+.bitty-titty-block {    flex: 1 1 auto;    
+min-width:calc(33.333%  - 1em);    max-width:100%;    width:calc((666px - 100%) * 666);
+margin: var(--margin01);
+}
+
+.bitty-block {    flex: 1 1 auto;    
+min-width:calc(25%  - 1em);    max-width:100%;    width:calc((500px - 100%) * 500);
+margin: var(--margin01);
+}
+
+.itti-bitty-block {    flex: 1 1 auto;    
+min-width:calc(16.666% - 1em);    max-width:100%;    width:calc((500px - 100%) * 500);
+margin: var(--margin01);
+}
+
+
+/** vert-horiz-albatross-card */
+/** 121020 comps-and-wireframes */
+.flexwrapstretch { 
+  display:flex;
+  flex-wrap:wrap;
+  align-content:stretch;
+  margin:0.5em 0;
+  width:100%;
+  max-width:100%;
+}
+
+.flex-albatross-card { 
+  display:flex;
+  flex-wrap:wrap;
+  align-content:flex-start; /* was stretch */
+  background:var(--proto-wht);
+  padding:0.5em;
+  border:1px solid #D4CEC9;
+  margin:0.5em;
+min-width:calc(33.333%  - 1em);    
+max-width:100%;    
+width:calc((600px - 100%) * 600);
+}
+
+.img-albatross-box { 
+flex: 0 1 auto;    
+margin-right:0.5em;
+margin-bottom:0.5em;
+padding:0;
+min-width:38%;    
+max-width:100%;    
+width:calc((260px - 100%) * 260);
+align-self: flex-start;
+}
+
+.txt-albatross-box { 
+flex: 2 1 auto;    
+align-self: flex-start;
+margin:0;
+min-width:58%;    
+max-width:100%;    
+width:calc((260px - 100%) * 260);
+flex-basis:1;
+}
+
+.img-albatross-box,
+.txt-albatross-box { 
+margin-bottom:0;
+}
+
+.img-albatross-box img { 
+  border:1px solid #ADBEAC;
+}
+
+
+
+/** Vertical - Horizontal - Vertical Pattern w/ Media Queries */
+
+.hv-card { 
+  padding:1em;
+  border:1px solid #DEDFDB;
+    margin: 0.5em;
+  margin-bottom:1em;
+ }
+
+.hv-card img { 
+  border:1px solid #DEDFDB;
+}
+
+
+@media (min-width: 576px) {
+.hv-card { 
+  flex: 1 1 24em;
+max-width:calc(50% - 1em);
+}
+
+.clipped-vertical-image { 
+  max-width:300px;
+  margin-right:1em;
+  float:left;
+  }
+}
+
+
+@media (min-width: 768px) {
+.hv-card { 
+  flex: 0 1 calc(50% - 1em);
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  }
+
+.hv-card figure { 
+     flex: 1 0 50%;
+    min-height: 1px;
+margin-right:1em;
+}
+
+.hv-card figure img { 
+align-self:stretch;
+}
+
+.hv-card-body {
+    flex: 1 0 50%;
+    min-height: 1px;
+  }
+}
+
+@media (min-width: 1200px) {
+.hv-card { 
+  flex: 0 1 calc(50% - 1em);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+.hv-card figure { 
+     flex: 1 1 100%;
+    min-height: 1px;
+margin-right:0;
+}
+}

@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Flexbox Card Grid 04</title>
+
+    <!-- : -->
+    <!-- THIS: Flexbox_Card_Grid_04.html
+
+	FROM: Flexbox_Card_Grid_03.html
+      Flexbox_Card_Grid_02.html
+			Flexbox_Card_Grid_01.html
+			prototype_starter_01.html
+	-->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Remove this line in HBS, see below. -->
+
+
+<!-- Copied from CWebba07 061120, This: work_web.htm 063018, work_web.htm 091717 -->
+  <meta name="description" content="Craig Webb Art, Advertising and Design is an independent New York based design firm creating content and design for Internet and Digital Media communications." />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+
+  <meta name="keywords" content="Front-end Website development, Interactive design, progressive enhancement, responsive website design, mobile-first website design, dynamic JavaScript functions, semantic HTML5, content-first website development, searchable keyword-rich phrases, Digital Design, Craig Webb Art">
+  <meta name="copyright" content="Craig Webb Art" />
+  <meta name="author" content="Craig Webb" />
+  <meta name="revisit-after" content="30 days" />
+  <meta http-equiv="reply-to" content="Craig Webb Art" />
+  <meta name="robots" content="index, follow">
+  <meta name="robots" content="noimageindex">
+
+<meta property="og:title" content="Internet and Digital Media &ndash; Craig Webb Art, Advertising and Design" />
+<meta property="og:url" content="http://craigwebbart.com/work_web.htm" />
+<meta property="og:image" content="http://craigwebbart.com/assets/images/craigwebbart-Graphics-Logo_fb.jpg" />
+<meta property="og:description" content="Internet and Digital Media design examples from Craig Webb Art." />
+<meta property="og:type" content="website" />
+
+
+<!--  - – - – - – - – - – - – - – - – - – - – - – - – - – - – - – -->
+
+
+
+
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,200,300,600,' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="css/prototype-sticky-footer.css"> 
+  <link rel="stylesheet" type="text/css" href="css/prototype_style.css"> 
+  <link rel="stylesheet" type="text/css" href="css/css3_columns.css"> 
+
+
+<style>
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  background-color: #f0f0f0;
+}
+body {
+  color: #999999;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.cards {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cards__item {
+  display: -webkit-box;
+  display: flex;
+  padding: 1rem;
+}
+@media (min-width: 40rem) {
+  .cards__item {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .cards__item {
+    width: 33.3333%;
+  }
+}
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  overflow: hidden;
+}
+.card:hover .card__image {
+  -webkit-filter: contrast(100%);
+          filter: contrast(100%);
+}
+.card__content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  padding: 1rem;
+}
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  -webkit-filter: contrast(70%);
+          filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+.card__image::before {
+  content: "";
+  display: block;
+  padding-top: 72.6%;
+}
+@media (min-width: 40rem) {
+  .card__image::before {
+    padding-top: 72.6%;
+  }
+}
+
+.card__title {
+  color: #696969;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__title02 {
+  /*color: #696969;*/
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.card__text {
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+/* Tutorial Links */
+
+
+}.card__image--flowers {
+  background-image: url(https://unsplash.it/800/600?image=82);
+}
+.card__image--river {
+  background-image: url(https://unsplash.it/800/600?image=11);
+}
+.card__image--record {
+  background-image: url(https://unsplash.it/800/600?image=39);
+}
+.card__image--fence {
+  background-image: url(https://unsplash.it/800/600?image=59);
+}
+
+
+/* Cwebba1 Website Links */
+
+.card__image--tb1associates {
+  background-image: url(assets/images/websites/tb1associatesllc_home_dt_600.jpg);
+background-size: cover;
+background-position: top;
+}
+
+
+.card__image--lawson-biotech {
+  background-image: url(assets/images/websites/Lawson_biotech_c800.jpg);
+background-size: cover;
+background-position: top;
+ }
+
+.card__image--silver-fox {
+  background-image: url(assets/images/websites/SilverFox_800.jpg);
+background-size: cover;
+background-position: top;
+ }
+
+.card__image--icarus-group {
+  background-image: url(assets/images/websites/IcarusGroupIronwork2016_800.jpg);
+background-size: cover;
+background-position: top;
+ }
+
+.card__image--care-handoff {
+  background-image: url(assets/images/websites/CareHandOff_03_800.jpg);
+background-size: cover;
+background-position: top;
+ }
+
+.card__image--shalizar {
+  background-image: url(assets/images/websites/Shalizar_home_600.jpg);
+background-size: cover;
+background-position: top;
+ }
+
+.card__image--mural-mural {
+  background-image: url(assets/images/websites/MMW_About_short_800.jpg);
+background-size: cover;
+background-position: top;
+ }
+
+.card__image--randalls {
+  background-image: url(assets/images/websites/Randalls_New_Home_800.jpg);
+background-size: cover;
+background-position: top;
+ }
+
+.card__image--bill-miller {
+  background-image: url(assets/images/websites/BM_Photography_600.jpg);
+background-size: cover;
+background-position: top;
+ }
+
+/* Blurb Box */
+.blurb-box {
+  padding:0;
+  width:100%;
+  transition: width, padding .25s ease-in, max-width .25s ease-in;
+}
+
+@media screen and (min-width:768px) {
+.blurb-box {
+  max-width:64em;
+  padding:0 3em;
+  margin:auto;
+  }
+}
+
+/* Prototype Code */
+
+    .modal {
+      z-index:3;
+      display:none;
+      padding-top:50px;
+      position:fixed;
+      left:0;
+      top:0;
+      width:100%;
+      height:100%;
+      overflow:auto;
+      background-color:rgb(0,0,0);
+      background-color:rgba(120,50,50,0.4)
+    }
+
+iframe {
+      position:relative;
+      left:4%;
+      top:8%;
+width:90%;
+height:80vh;
+border:none;
+  display:hidden;
+margin-bottom:1em;
+  }
+
+@media screen and (min-width:768px) {
+
+iframe {
+      position:relative;
+      left:8%;
+      top:8%;
+width:80%;
+height:80vh;
+border:none;
+  display:hidden;
+margin-bottom:1em;
+  }
+}
+
+/* From Base.scss */
+blockquote {
+  color: #241000;
+  font-size: 1.125em;
+  line-height: 1.375em;
+  margin: 0 0 0.5em 0;
+  font-style: italic;
+}
+
+blockquote.big {
+  color: #241000;
+  font-size: 1.125em;
+  line-height: 1.375em;
+  letter-spacing: 0.1em;
+  background: rgba(148, 209, 179, 0.3);
+  padding: 0.25em 1% 0.375em 2%;
+  margin: 1.25em 0 1.375em 0;
+}
+
+aside, article, #leftnav, blockquote.big {
+  border-radius: .375em;
+}
+
+</style>
+</head>
+
+<body>
+<div class="basal">
+  <header>
+    <div class="in-head">
+	<figure class="logo">
+		<a id="nav-home" href="http://www.craigwebbart.com/">
+			<img src="assets/images/cwebba_logo5.svg" alt="Craig Webb Art">
+		</a>
+	</figure>
+	<nav id="main-nav">
+		<ul>
+        		<li><a class="active" href="https://codepen.io/cwebba1/">Codepen</a></li>
+			<li><a href="https://github.com/cwebba1">Github</a></li>
+		</ul>
+	</nav>
+    </div><!-- END class="in-head" -->
+  </header>
+  <main>
+<!-- *     *     *     *     *     *     * -->
+
+<!--  CONTENT BEGINS HERE -->
+<figure class="mast">
+<img class="rnd shadow" src="assets/images/heropics/swim528x90_x2Banner.jpg" width="528" height="90"
+alt="About Craig Webb" />
+</figure>
+
+<!--<h2>Communications Design</h2>-->
+<!--<h4>Communications Development and Digital Design</h4>-->
+<h2>Internet and Digital Media</h2>
+
+<article class="project-content">
+  <header>
+    <h2>Recent Projects</h2>
+<section class="blurb-box">
+<p>Combining development of compelling search-optimized content with progressively enhanced responsive architectures, <strong>Craig&nbsp;Webb&nbsp;Art</strong> builds expertly-crafted mobile-first websites that focus on usability while exceeding business objectives.</p>
+</section>
+  </header>
+  <section class="projectthumbs">
+<!-- - - - - - - - [ START Portfolio HERE  ] - - - - - - - - --> 
+<ul class="cards">
+  <li class="cards__item" id="12">
+    <div class="card">
+      <a href="webprojects/web-project_12.htm" title="TB1 Associates LLC" onclick="document.getElementById('modal1').style.display='block'" target="iframe_modal">
+        <div class="card__image card__image--tb1associates"></div></a>
+      <div class="card__content">
+        <h4 class="card__title02">TB1 Associates LLC</h4>
+        <p class="card__text">NYC-based private investigators TB1 Associates LLC needed a website to launch a business. Craig Webb Art worked with the client to outline the services that they offer and built a simple website that echoed the client’s branding. </p>
+      </div>
+    </div>
+  </li>
+  <li class="cards__item" id="01">
+    <div class="card">
+      <a href="webprojects/web-project_01.htm" title="TB1 Associates LLC" onclick="document.getElementById('modal1').style.display='block'" target="iframe_modal">
+        <div class="card__image card__image--lawson-biotech"></div></a>
+      <div class="card__content">
+        <h4 class="card__title02">Lawson Galleries</h4>
+        <p class="card__text">Lawson Galleries needed a way to create buzz for their California-based fine art gallery and represent their stable of artists. Craig Webb met with the client to sketch layout ideas and created an information architecture for blog content.</p>
+      </div>
+    </div>
+  </li>
+  <li class="cards__item" id="02">
+    <div class="card">
+      <a href="webprojects/web-project_02.htm" title="Silver Fox Renewables LLC" onclick="document.getElementById('modal1').style.display='block'" target="iframe_modal">
+        <div class="card__image card__image--silver-fox"></div></a>
+      <div class="card__content">
+        <h4 class="card__title02">Silver Fox Renewables</h4>
+        <p class="card__text">California solar energy design and installation company Silver Fox Renewables LLC needed a fresh look for their business. Craig Webb researched the solar energy business and worked with the client to write original, searchable content.</p>
+      </div>
+    </div>
+  </li>
+  <li class="cards__item" id="03">
+    <div class="card">
+     <a href="webprojects/web-project_03.htm" title="Icarus Group Ironwork" onclick="document.getElementById('modal1').style.display='block'" target="iframe_modal">
+      <div class="card__image card__image--icarus-group"></div></a>
+      <div class="card__content">
+        <h4 class="card__title02">Icarus Group Ironwork</h4>
+        <p class="card__text">Icarus Group Ironwork offers a wide range of custom manufactured products. Craig Webb Art designed the website and wrote original content that put Icarus Group Ironwork on Google&rsquo;s 1st page for four years, using natural search.</p>
+      </div>
+    </div>
+  </li>
+  <li class="cards__item" id="04">
+    <div class="card">
+     <a href="webprojects/web-project_04.htm" title="Care Hand Off" onclick="document.getElementById('modal1').style.display='block'" target="iframe_modal">
+        <div class="card__image card__image--care-handoff"></div></a>
+      <div class="card__content">
+        <h4 class="card__title02">Care Hand Off</h4>
+        <p class="card__text">xVenturesGroup needed to conduct market-testing and build interest in a health-care app under development. Craig Webb Art worked with the client to brainstorm marketing ideas, create a brand style, marketing materials, live-code prototypes and built the initial website.</p>
+      </div>
+    </div>
+  </li>
+  <li class="cards__item" id="05">
+    <div class="card">
+     <a href="webprojects/web-project_05.htm" title="Shalizar Properties Ltd." onclick="document.getElementById('modal1').style.display='block'" target="iframe_modal">
+        <div class="card__image card__image--shalizar"></div></a>
+      <div class="card__content">
+        <h4 class="card__title02">Shalizar Properties Ltd.</h4>
+        <p class="card__text">Shalizar Properties LTD. needed to advertise high-end condominiums and real estate investment opportunities in Dhaka, Bangladesh. Craig Webb Art designed and built a clean, sophisticated website presentation utilizing all of the new eye-candy of very-early HTML5/CSS3.</p>
+      </div>
+    </div>
+  </li>
+  <li class="cards__item" id="06">
+    <div class="card">
+     <a href="webprojects/web-project_06.htm" title="Mural Mural on the Walls" onclick="document.getElementById('modal1').style.display='block'" target="iframe_modal">
+        <div class="card__image card__image--mural-mural"></div></a>
+      <div class="card__content">
+        <h4 class="card__title02">Mural Mural on the Walls</h4>
+        <p class="card__text">Mural Mural on the Walls offers a unique community art education program. Craig Webb wrote original website content to promote the client's services and built a website architecture to display photographs from the program.</p>
+      </div>
+    </div>
+  </li>
+  <li class="cards__item" id="07">
+    <div class="card">
+     <a href="webprojects/web-project_07.htm" title="Randalls Auto Body" onclick="document.getElementById('modal1').style.display='block'" target="iframe_modal">
+        <div class="card__image card__image--randalls"></div></a>
+      <div class="card__content">
+        <h4 class="card__title02">Randall&rsquo;s Auto Body</h4>
+        <p class="card__text">Randall&rsquo;s Auto Body services hi-end automotive vehicles for exacting clients. Craig Webb Art designed and built a website to feature Randall’s full range of services. Original website content lands Randall&rsquo;s Auto Body on Page One of Google for ten years and counting.</p>
+      </div>
+    </div>
+  </li>
+  <li class="cards__item" id="08">
+    <div class="card">
+     <a href="webprojects/web-project_08.htm" title="Bill Miller Photography" onclick="document.getElementById('modal1').style.display='block'" target="iframe_modal">
+        <div class="card__image card__image--bill-miller"></div></a>
+      <div class="card__content">
+        <h4 class="card__title02">Bill Miller Photography</h4>
+        <p class="card__text">NYC-based Real Estate photographer Bill Miller Photography needed a new website portfolio. Craig Webb Art proposed a website architecture with multiple photo-galleries that include written content to add interest and build SEO.</p>
+      </div>
+    </div>
+  </li>
+</ul>
+      </section>
+  </article>
+
+  <!-- This Block is the logic needed on the page. staged here but does not show -->
+  <div id="modal1" class="modal" onclick="document.getElementById('modal1').style.display='none'; document.getElementById('iframe1').src =''" class="">
+    <span onclick="document.getElementById('modal1').style.display='none'; document.getElementById('iframe1').src =''" class="">&times;</span>
+    <iframe id="iframe1" class='' src="" name="iframe_modal"></iframe>
+  </div>
+
+<h4>Internet Media and&nbsp;Digital&nbsp;Development</h4>
+<div class="columns02d">
+<p>Great Internet communications make your business thrive like no other marketing medium today.</p>
+<p>Modern websites are composed of a combination of search-optimized content, graphics, and a code layer progressively enhanced for display on browsers, mobile devices and tablets.</p>
+<p>Additional dynamic functionality and integration with third-party cloud-based services is the norm.</p>
+<p><strong>Craig Webb Art</strong> designs and builds online communications, creates original content and brand identity.</p>
+<p>We provide a full range of services, collaborate, or act as part of your development team.</p>
+<p>Each website is designed to meet specific needs. Contact <strong>Craig Webb Art</strong> to build a powerful world-wide presence.</p>
+</div><!-- END second-content -->
+
+<blockquote class="big" style="margin-top:0.5em;"><strong>Craig Webb Art</strong> provides all aspects of New Business Communications Development including project management, creative development, copywriting and graphic design.</blockquote>
+
+
+
+
+<br>
+<h2>Flexbox Card Grid 04</h2>
+<p>Craig Anthony<br>
+@mcraiganthony<br>
+<a href="https://codepen.io/mcraiganthony/pen/NxGxqm">Flexbox Card Grid</a></p>
+</main>
+<footer>
+  <div class="sock">
+    <nav class="footsie">
+      <ul>
+	<li>
+	   <a href="https://twitter.com/cwebba1/">Twitter</a>
+	</li>
+        <li>
+          <a class="" href="https://angel.co/craig-webb-1">AngelList</a>
+        </li>
+        <li>
+          <a class="" href="mailto:craigwebb@craigwebbart.com">Contact Us</a>
+        </li>
+    </ul>
+  </nav>
+  <div class="copyright-box">
+    <p class="copyright">&copy; <script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2017, null, '-')); else document.write((new Date()).getFullYear());</script> Craig Webb Art. &nbsp;All&nbsp;Rights&nbsp;Reserved.</p>
+  </div>
+
+</div><!-- END sock -->
+</footer>
+</div><!-- END class="basal" -->
+<!-- JavaScript -->
+ <script>
+
+</script>
+
+<!-- Optional JavaScript 
+        <script src="assets/js/"></script>-->
+
+</body>
+</html>

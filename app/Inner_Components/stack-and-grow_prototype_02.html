@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>stack-and-grow prototype 02</title>
+
+    <!-- : -->
+    <!-- THIS: stack-and-grow_prototype_02.html
+
+	FROM:	stack-and-grow_prototype_01.html
+			prototype_starter_01.html
+	-->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,200,300,600,' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="css/prototype-sticky-footer.css"> 
+  <link rel="stylesheet" type="text/css" href="css/prototype_style.css"> 
+
+
+<style>
+
+html { 	background:#AFDFC7; }
+body {	background:#BCDEFA; }
+main {	background:#FFDEDD; }
+header, footer {	background:#FEFDFA; }
+.sidebar {	background:#CEEFEF; }
+
+.basal {
+  width: 97.5%;
+  margin: 0 auto;
+  padding: 0;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  background:rgba(253, 254, 251, 0.8);
+  transition:width .25s ease-in; 
+}
+
+.boxblock { 
+	display:block;
+	margin:0.5em 1em;
+	padding:1em;
+	background:#FEFDFA;
+	max-width:100%;
+}
+
+.flexbox { 
+	display:flex;
+	flex-wrap:wrap;
+	margin:0.5em 0;
+	background:#FEFDFA;
+	max-width:100%;
+}
+
+
+.block {    display:inline-block;    
+margin:0;
+padding:0;
+min-width:49.75%;    max-width:100%;    width:calc((900px - 100%) * 900);
+background:#ADBEAC;
+}
+
+.bitty-block {    display:inline-block;    
+margin:0;
+padding:0;
+min-width:25%;    max-width:100%;    width:calc((500px - 100%) * 500);
+background:#ADACBE;
+}
+/*
+@media (max-width: 900px){
+
+.bitty-block {    display:inline-block;    
+margin:0;
+padding:0;
+min-width:33%;    max-width:100%;    width:calc((800px - 100%) * 800);
+background:#ADACBE;
+}
+
+}
+*/
+</style>
+</head>
+
+
+<body>
+<div class="basal">
+  <header>
+    <div class="in-head">
+	<figure class="logo">
+		<a id="nav-home" href="http://www.craigwebbart.com/">
+			<img src="assets/images/cwebba_logo5.svg" alt="Craig Webb Art">
+		</a>
+	</figure>
+	<nav id="main-nav">
+		<ul>
+        		<li><a class="active" href="https://codepen.io/cwebba1/">Codepen</a></li>
+			<li><a href="https://github.com/cwebba1">Github</a></li>
+		</ul>
+	</nav>
+    </div><!-- END class="in-head" -->
+  </header>
+  <main>
+<div class="boxblock">
+	<h2>Stack-and-grow Prototype 02</h2>
+
+<div class="block">Stack-and-grow Box</div>
+<div class="block">Stack-and-grow Box</div>
+<div class="block">Stack-and-grow Box</div>
+<div class="block">Stack-and-grow Box</div>
+</div>
+
+
+<div class="boxblock">
+<div class="flexbox">
+<div class="bitty-block">Bitty-Block Box</div>
+<div class="bitty-block">Bitty-Block Box</div>
+<div class="bitty-block">Bitty-Block Box</div>
+<div class="bitty-block">Bitty-Block Box</div>
+</div>
+
+<h3>Purpose: <br>
+Providing breakpoints within a container not the viewbox without media queries</h3>
+<p>This prototype explores the code described by Rémi Parmentier in the tutorial <a href="https://www.freecodecamp.org/news/the-fab-four-technique-to-create-responsive-emails-without-media-queries-baf11fdfa848/#.qn28y65bx">The Fab Four technique to create Responsive Emails without Media Queries</a>, (2016)</p>
+
+<p>The key to the code is the relationship between max-width, width, and min-width.</p>
+
+<p>A further explanation is provided by Raphaël Goetter in the tutorial <a href="https://goetter.tumblr.com/post/64119638003/quiz-parce-que-la-taille-ca-compte">Head in the Flux!</a></p>
+
+<p>The cascade rules behind this pattern are described as thus:<br>
+if there is no min / max , width wins<br>
+if width is greater than max-width , max-width wins<br>
+if width is smaller than min-width , min-width wins</p>
+<p>The order of execution is important , it is the order of the list, so 1 then 2 then 3. In the end, min-width wins.</p>
+<p><em><strong>
+min-width() = Desktop Element width<br>
+max-width() = 100% Mobile stack<br>
+width:calc() = the target breakpoint 
+</strong></em></p>
+
+
+
+</div>
+
+</main>
+<footer>
+  <div class="sock">
+    <nav class="footsie">
+      <ul>
+	<li>
+	   <a href="https://twitter.com/cwebba1/">Twitter</a>
+	</li>
+        <li>
+          <a class="" href="https://angel.co/craig-webb-1">AngelList</a>
+        </li>
+        <li>
+          <a class="" href="mailto:craigwebb@craigwebbart.com">Contact Us</a>
+        </li>
+    </ul>
+  </nav>
+  <div class="copyright-box">
+    <p class="copyright">&copy; <script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2017, null, '-')); else document.write((new Date()).getFullYear());</script> Craig Webb Art. &nbsp;All&nbsp;Rights&nbsp;Reserved.</p>
+  </div>
+
+</div><!-- END sock -->
+</footer>
+</div><!-- END class="basal" -->
+
+<!-- JavaScript -->
+ <script>
+
+</script>
+
+<!-- Optional JavaScript 
+        <script src="assets/js/"></script>-->
+
+</body>
+</html>

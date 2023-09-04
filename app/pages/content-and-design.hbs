@@ -1,0 +1,119 @@
+{{!-- pages/content-development.hbs --}}
+
+{{#> layouts/cwebba-base-03 title="Craig Webb Art / Content & Design" }}
+
+{{#*inline "meta-block" }}
+{{> includes/meta
+  meta-description="Craig Webb Art home page"
+  meta-keywords="Web design, Graphic design, Copywriting"
+  meta-social-content="Craig Webb Art"
+  meta-url="http://craigwebbart.com/"
+  meta-site-name="Craig Webb Art"
+  og-image="http://www.craigwebbart.com/assets/images/heropics/Saturn_Returns.jpg"
+  og-image-alt="Saturn Returns"
+}}
+{{/inline}}
+{{!-- best image 1200x630px, aspect ratio 1.91:1, size less than 1mb --}}
+
+
+  {{!--   The `includes/head` partial is here.  --}}
+  {{#> head-block}}
+        {{> includes/head }}
+  {{/head-block}}
+
+  {{!--   The `includes/header` partial is here.  --}}
+  {{#*inline "rail-block"}}
+    {{> includes/rail
+      rail-src="assets/images/navpics/wave.jpg"
+      rail-alt="(917) 797&middot;0983"
+    }}
+  {{/inline}}
+
+    {{!-- MAIN CONTENT --}}
+
+    {{!-- Let's change the hero image for this layout. --}}
+  {{#*inline "hero-block"}}
+    {{> includes/hero
+      hero-class="herobox"
+      hero-src="assets/images/heropics/528x90_laugh.jpg"
+      hero-alt="Chinese wealth laugh banner"
+      fig-caption=""
+    }}
+  {{/inline}}
+
+    {{!-- Let's change the content for this layout. --}}
+   {{#*inline "content-block"}}
+<h2>Content and Design</h2>
+<p>Content is the tangible material that users cognitively consume. Design is the presentation of content. On a grander scale, design is a process to solve problems and invent new things and paradigms.</p>
+
+<p>Content and design are interdependent. Distinct in creative methods and criteria, content and design together convey purpose and meaning.</p>
+
+<p>Build websites to serve the marketing program. Communicators, not technicians, determine the design, structure, and content of your website. Business branding and marketing, once established, will inform the website structure and design.</p>
+
+<p>The website must work in concert with the overall marketing program. 
+Development of your brand needs to come before a website. The site is an extension of the brand and not the other way around.</p>
+
+<p>A website is not a one-time, knock-off brochure. It is a flexible, extensible communications tool which represents your business. For many businesses, the website is the key touch point between the business and customers.</p>
+<br>
+
+<h3>Content strategy and development</h3>
+
+<p>Content strategy guides the creation, delivery, and governance of useful, usable content.</p>
+
+<p>Content strategy&rsquo;s purpose is to create content that supports meaningful interactive experiences. Useful information, clearly written in language a defined audience understands, impacts brand success.</p>
+
+<p>Websites must meet the needs of its audience. The customer&rsquo;s perspective, wants and needs are most important. What do visitors want from your site?</p>
+
+<p>Types of content that your defined audience will respond to might include:
+Articles, Emails, Interviews, Videos, Photos, Infographics, Case Studies, Podcasts, Webinars, Polls/Surveys, etc.</p>
+
+<p>Effective websites require experts in all aspects of communication.</p>
+<br>
+
+<p><strong>A Content Strategy that embraces brand, mission and user needs will define:</strong><br>
+<ul class="bullet">
+<li>Key themes and messages</li>
+<li>Recommended topics</li>
+<li>The purpose of content for audience needs and business requirements</li>
+<li>Content gap analysis</li>
+<li>Metadata frameworks and related content attributes</li>
+<li>Search engine optimization (SEO)</li>
+<li>Strategic recommendations on content creation, publication, and governance</li>
+</ul></p>
+<p>It is important for the development team to get to know your business. Primary campaign goals and how to position your brand in the market must be clearly defined.</p>
+
+<p>The relevance of content and meaning to your audience will grow or change over time. The marketing team researches and identifies how to connect with and influence prospects.</p>
+<br>
+
+<h3>Design and Brand Development</h3>
+
+<p>Design influences how people understand content and how people feel about content. Visitors decide whether to take action because of something they read. The effectiveness of words determines whether a website serves or converts visitors.</p>
+
+<p>It is best practice to design the website and build the layout around the content.</p>
+
+<p>After content development, one of the first steps in the web design process is to decide on a visual look and feel. A brand identity for your business is a necessary element of design.</p>
+
+<p>Your brand is important. Brands set businesses apart. Brands establish a framework for understanding value and meaning. Brand is an authentic expression of the mission and cultural values that underpin products and services.</p>
+
+<p>The brand is also the visual representation of a business. People think, feel or visualize unique business characteristics as expressed by the brand.</p>
+
+<p>Without a defined brand voice, content and design will be inconsistent. If a brand identity does not already exist, it is a separate marketing task.</p>
+
+<blockquote class="big">The most effective, profit-bearing websites that I have built are ones where I had a hand in both content and design.</blockquote>
+  {{/inline}}
+
+
+{{!-- includes/workbook-nav.hbs --}}
+
+
+  {{!-- The "sidebar-block" content is here. --}}
+
+  {{!-- The "footer-block" content is here. --}}
+
+  {{!--  MODAL FORM BLOCK HERE  --}}
+
+    {{#*inline "js-block"}}
+    {{> includes/scripts/lightbox-plus-jquery }}
+    {{/inline}}
+  
+{{/layouts/cwebba-base-03}}

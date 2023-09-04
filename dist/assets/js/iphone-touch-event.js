@@ -1,0 +1,1 @@
+!function(e){var t="addEventListener",n="gesturestart",i="querySelectorAll",m=[1,1],r=i in e?e[i]("meta[name=viewport]"):[];function a(){r.content="width=device-width,minimum-scale="+m[0]+",maximum-scale="+m[1],e.removeEventListener(n,a,!0)}(r=r[r.length-1])&&t in e&&(a(),m=[.25,1.6],e[t](n,a,!0))}(document);

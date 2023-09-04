@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Nest Flex 06</title>
+    <!-- Nest_Flex_06.html
+    Nest_Flex_05.html
+    Nest_Flex_04.html 
+    Nest_Flex_01.html 
+    -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+
+<style>
+  html, body {
+  height:       100%;
+  width:        100%;
+}
+body {
+  margin:     0;
+  padding:    0;
+  border:     0;
+}
+
+.flex_col_cask {
+  height:       100%;
+  width:        100%;
+  display:      flex;
+  flex-flow:    column nowrap;
+}
+.top_row, .bottom_row {
+  flex:         none;     /* same as "flex: 0 0 auto;" */
+}
+.flex_row_cask {
+  flex:         auto;     /* same as "flex: 1 1 auto;" */
+  display:      flex;
+  flex-flow:    row nowrap;
+}
+
+.flipflex {
+  flex:         auto;     /* same as "flex: 1 1 auto;" */
+  display:      flex;
+  flex-flow:    column nowrap;
+  background:#FCA;
+}
+
+.left_col, .right_col {
+  flex:         none;
+}
+.flex-enclos {
+  flex:         auto;
+  zzheight:       100%;
+  /* Chrome suggested workaround */
+  zzdisplay:      flex;
+  zzflex-flow:    column;
+}
+.fixedwrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width:100%;
+}
+.fixedhead, .fixedfoot {
+  background:#EFFEEF;
+}
+.scrollbox {
+  flex: 1;
+  overflow: auto;
+  background: pink;
+}
+.scroller {  
+  display:block;
+  overflow:scroll;
+}
+
+@media (min-width: 720px) {
+
+.flipflex {
+  height: 100%;
+  flex:         auto;     /* same as "flex: 1 1 auto;" */
+  display:      flex;
+  flex-flow:    row nowrap;
+}
+.fixedwrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width:60%;
+}
+}
+/* For visible debugging */
+html        { background: darkgray;     }
+body        { background: lightgray;    }
+
+.flex_col_cask     { background: darkblue;     }
+.top_row       { background: blue;         }
+.bottom_row    { background: blue;         }
+.flex_row_cask    { background: lightblue;    }
+.left_col      { background: purple;       }
+.right_col     { background: purple;       }
+.flex-enclos     { background: lightgreen;   }
+
+.bgcolor6   { background: pink;         }
+.bgcolor7   { background: aquamarine;   }
+.bgcolor8   { background: turquoise;    }
+
+
+</style>
+  </head>
+  <body>
+
+<!-- 
+ref: https://code.google.com/p/chromium/issues/detail?id=542388 
+ref: https://code.google.com/p/chromium/issues/detail?id=341310
+related: https://people.mozilla.org/~dholbert/tests/flexbox/compat_tests/percent-height-grandchild-1.html
+-->
+<!-- the outer holy-grail -->
+
+<div class="flex_col_cask">
+  <div class="top_row">
+    Top notch
+  </div>
+
+  <div class="flex_row_cask">
+    <div class="left_col">
+      Left<br>foot
+    </div>
+
+    <div class="flex-enclos">
+
+          <!-- the inner holy-grail -->
+
+          <div class="flex_col_cask">
+
+            <div class="top_row bgcolor7">
+              Borealis
+            </div>
+
+            <div class="flipflex" >
+              <div class="left_col bgcolor8">
+                Occi<br>dent<br>alis
+              </div>
+
+              <div class="fixedwrap">
+                <div class="fixedhead"><h4>Twin One</h4></div>
+                <div class="scrollbox">
+                  Sheep<br>
+                Goats<br>
+                Horses<br>
+                      Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />      Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content goes here Content goes here <br />Content ends here<br />
+                </div><!-- END scrollbox -->
+                <div class="fixedfoot"><h4>Left Foot</h4></div>
+
+              </div>
+
+              <div class="fixedwrap"><!-- Make this scroll -->
+  <div class="fixedhead"><h4>Twin Two</h4></div>
+  <div class="scrollbox">
+             <h5>Please Mr. Fantasy </h5>
+          <p>
+            Please Mr. Fantasy play us a tune<br>
+Something to make us all happy<br>
+Do anything, take us out of this gloom<br>
+Sing a song, play guitar make it snappy<br>
+
+You are the one who can make us all laugh <br>
+But doing that you break out in tears<br>
+
+Please don't be sad if it was a straight mind you had<br>
+We wouldn't have known you all these years<br>
+<a href="https://youtu.be/dyMiUmrouZU">https://youtu.be/dyMiUmrouZU</a></p>
+
+
+<h5>Guiding your vision to heaven and heaven is in your mind</h5>
+
+<p>You ride on the swing <br>
+In and out of the bars<br>
+Capturing moments of life in a jar<br>
+Playing with children, <br>
+Acting as stars<br>
+Guiding your visions to heaven <br>
+And heaven is in your mind<br>
+Take extra care not to lose what you feel<br>
+The apple you're eating is simple and real<br>
+So water the flowers that grow at you heel<br>
+Guiding your visions to heaven <br>
+And heaven is in your mind<br>
+<a href="https://youtu.be/aZmmwK3MlII">https://youtu.be/aZmmwK3MlII</a>
+</p>
+<p>Reverb. That's where it's really at. 
+Lots and lots of reverb.
+<a href="https://youtu.be/S-Uxv-O7vbU">https://youtu.be/S-Uxv-O7vbU</a>
+          </p>
+  </div><!-- END scrollbox -->
+  <div class="fixedfoot"><h4>Right Foot</h4></div>
+</div><!-- END fixedwrap -->
+              <div class="right_col bgcolor8">
+                Orient<br>alis
+              </div>
+            </div>
+
+            <div class="bottom_row bgcolor7">
+              Australis
+            </div>
+
+          </div>
+
+    </div>
+
+    <div class="right_col">
+      Right<br>foot
+    </div>
+  </div>
+
+  <div class="bottom_row">
+    Bottom line
+  </div>
+
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>

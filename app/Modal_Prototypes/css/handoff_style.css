@@ -1,0 +1,1780 @@
+/* http://log.vieron.net/articles/sass-mixins-for-vendor-prefixed-transitions-including-properties/ */
+/*!
+ 
+Theme Name: CareHandOff
+Theme URI: #
+Description: Theme for CareHandOff
+Version: 0.5
+Author: Craig Webb Art - @cwebba1
+Author URI: http://CraigWebbArt.com
+License: Copyright 2015 Craig Webb Art
+License URI: License.txt
+Tags: responsive-layout, post-formats
+ 
+*/
+/* _base.scss */
+/* style_24_comp02.css 121315
+style_24_comp01.css 121115
+Care HandOff style_23.css 101315
+handOff style_20.css 080115
+*/
+/* For expert web design contact http://craigwebbart.com */
+/*	*	*	[ BASE ]	*	*	*/
+/*	RESETS	*/
+/* line 17, ../sass/base/_base.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 19, ../sass/base/_base.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 29, ../sass/base/_base.scss */
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+}
+
+/* line 34, ../sass/base/_base.scss */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 36, ../sass/base/_base.scss */
+body, nav, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 38, ../sass/base/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  *behavior: url(assets/js/boxsizing.htc);
+  /* IF IE*/
+}
+
+/* line 44, ../sass/base/_base.scss */
+.unborderbox {
+  box-sizing: content-box;
+  *behavior: url(assets/js/boxsizing.htc);
+  /* IF IE*/
+}
+
+/* BASE */
+/* line 52, ../sass/base/_base.scss */
+html {
+  font-family: 'source_sans_proregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 16px;
+  color: #1F4731;
+}
+
+/* line 60, ../sass/base/_base.scss */
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  -o-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  background-color: rgba(34, 103, 65, 0.4);
+}
+
+/* line 71, ../sass/base/_base.scss */
+body {
+  font: 400 normal 1rem/1.70rem;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+/*-  SELF-CLEARING FLOATS  - Example from stephencaver_Responsive
+----------------------------------------------------------------------*/
+/* line 80, ../sass/base/_base.scss */
+header:after, nav:after, article:after, aside:after, footer:after, hgroup:after, section:after, figure:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+/* line 82, ../sass/base/_base.scss */
+header {
+  clear: both;
+  overflow: hidden;
+}
+
+/* line 87, ../sass/base/_base.scss */
+.clearfix {
+  display: block;
+}
+
+/* line 88, ../sass/base/_base.scss */
+.clearfix:after, .container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+/* line 93, ../sass/base/_base.scss */
+.hidden {
+  visibility: hidden;
+  overflow: hidden;
+  line-height: 0;
+}
+
+/* line 98, ../sass/base/_base.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/* line 103, ../sass/base/_base.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 108, ../sass/base/_base.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/* TYPOGRAPHY */
+/* line 118, ../sass/base/_base.scss */
+.antonio {
+  font-family: 'antonioregular';
+}
+
+/* line 122, ../sass/base/_base.scss */
+.arvo {
+  font-family: 'arvoregular';
+}
+
+/* line 126, ../sass/base/_base.scss */
+.arvoitalic {
+  font-family: 'arvoitalic';
+}
+
+/* line 130, ../sass/base/_base.scss */
+.arvo-bd {
+  font-family: 'arvobold';
+}
+
+/* line 134, ../sass/base/_base.scss */
+.arvobold_italic {
+  font-family: 'arvobold_italic';
+}
+
+/* line 138, ../sass/base/_base.scss */
+.soursans {
+  font-family: 'source_sans_proregular';
+}
+
+/* line 142, ../sass/base/_base.scss */
+.source_sans_proitalic {
+  font-family: 'source_sans_proitalic';
+}
+
+/* line 145, ../sass/base/_base.scss */
+.source_sans_prosemibold {
+  font-family: 'source_sans_prosemibold';
+}
+
+/* line 147, ../sass/base/_base.scss */
+.soursans-bd {
+  font-family: 'source_sans_probold';
+}
+
+/* line 151, ../sass/base/_base.scss */
+.source_sans_probold_italic {
+  font-family: 'source_sans_probold_italic';
+}
+
+/*
+3/16 = 0.1875
+0.375
+9/16 = 0.5625
+10/16 = 0.625
+11/16 = 0.6875
+12/16 = 0.75
+13/16 = 0.8125
+14/16 = 0.875
+15/16 = 0.9375
+6/16 = 0.375
+18/16 = 1.125
+19/16 = 1.1875
+20/16 = 1.25
+*/
+/* line 170, ../sass/base/_base.scss */
+p {
+  font-size: 1.125em;
+  line-height: 1.5em;
+  margin: 0 0 1em 0;
+  color: #1F4731;
+}
+
+/*147 17 28 30*/
+/* line 177, ../sass/base/_base.scss */
+p:last-child {
+  padding-bottom: 0;
+}
+
+/* line 180, ../sass/base/_base.scss */
+b, strong {
+  font-family: 'source_sans_proregular', 'Helvetica Neue Bold', Helvetica, Arial, sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  font-weight: bold;
+  font-size: inherit;
+  color: #1F4731;
+}
+
+/* line 189, ../sass/base/_base.scss */
+span.nowrap {
+  white-space: nowrap;
+}
+
+/* line 192, ../sass/base/_base.scss */
+#faq p:nth-child(odd) {
+  margin-bottom: .25em;
+}
+
+/* line 195, ../sass/base/_base.scss */
+#faq p:nth-child(even) {
+  margin-bottom: 1.5em;
+}
+
+/* line 198, ../sass/base/_base.scss */
+a {
+  text-decoration: none;
+  color: #23824E;
+}
+
+/* line 201, ../sass/base/_base.scss */
+a:hover {
+  text-decoration: none;
+  color: #ab3223;
+}
+
+/* line 205, ../sass/base/_base.scss */
+a:visited {
+  color: #8C0C10;
+  text-decoration: none;
+}
+
+/*Royal blue */
+/* line 208, ../sass/base/_base.scss */
+a:hover, a:focus, a:active {
+  outline: none;
+}
+
+/* line 210, ../sass/base/_base.scss */
+p a, p a:visited {
+  line-height: inherit;
+}
+
+/* line 211, ../sass/base/_base.scss */
+a img, img {
+  border: none;
+}
+
+/* line 212, ../sass/base/_base.scss */
+a img {
+  display: block;
+}
+
+/* Stops image links getting text link styles */
+/* line 214, ../sass/base/_base.scss */
+h1, h2, h3, h4, h5, h6, blockquote {
+  font-family: arvoregular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #01AD4E;
+}
+
+/* line 220, ../sass/base/_base.scss */
+h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+/* line 222, ../sass/base/_base.scss */
+h2 {
+  font-size: 1.75em;
+  line-height: 1.5em;
+  margin: 1em 0;
+}
+
+/* line 224, ../sass/base/_base.scss */
+h3 {
+  font-size: 1.5em;
+  line-height: 1.25em;
+  margin-bottom: .35em;
+}
+
+/* line 226, ../sass/base/_base.scss */
+h4 {
+  font-size: 1.25em;
+  line-height: 1.25em;
+  margin-bottom: .2em;
+}
+
+/* line 228, ../sass/base/_base.scss */
+h5 {
+  margin-top: .5em;
+  font-size: 1em;
+  line-height: 1.25em;
+  margin-bottom: .35em;
+}
+
+/* line 231, ../sass/base/_base.scss */
+h6 {
+  font-size: 1em;
+  line-height: 1.25em;
+  margin-bottom: .25em;
+  margin-top: 0;
+}
+
+/* line 235, ../sass/base/_base.scss */
+hr {
+  display: block;
+  height: 2px;
+  border: none;
+  padding: 0;
+  clear: both;
+}
+
+/* line 237, ../sass/base/_base.scss */
+.dashed {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #FFF;
+  max-width: 90%;
+  border-bottom: 1px dashed #c5c5c5;
+}
+
+/* line 241, ../sass/base/_base.scss */
+b, strong {
+  font-family: 'source_sans_prosemibold';
+  font-weight: 500;
+}
+
+/* line 244, ../sass/base/_base.scss */
+em, i {
+  font-family: 'source_sans_proitalic';
+  font-style: italic;
+}
+
+/* = List Items 
+---------------------------------------------------- */
+/* line 251, ../sass/base/_base.scss */
+ol, ul {
+  list-style: none;
+}
+
+/*ol,ul { list-style:initial;}*/
+/* List for navigation*/
+/* line 255, ../sass/base/_base.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 258, ../sass/base/_base.scss */
+nav li {
+  display: inline;
+}
+
+/* = MEDIA / IMG Elements 
+---------------------------------------------------- */
+/* line 264, ../sass/base/_base.scss */
+img {
+  border: 0;
+  margin: 0 auto 0 auto;
+  background: transparent;
+  vertical-align: baseline;
+}
+
+/* line 270, ../sass/base/_base.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 274, ../sass/base/_base.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 276, ../sass/base/_base.scss */
+img, object {
+  height: auto;
+  max-width: 100%;
+}
+
+/* IMAGE MODIFIERS */
+/* line 283, ../sass/base/_base.scss */
+figure.logo a {
+  display: block;
+  height: 100%;
+}
+
+/* line 285, ../sass/base/_base.scss */
+figure.logo a img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 287, ../sass/base/_base.scss */
+.border {
+  border-style: solid;
+  border-color: #DDD;
+  border-width: 1px;
+}
+
+/* from liquid css */
+/* line 294, ../sass/base/_base.scss */
+figure img, figure object, figure embed, figure video {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/* Fluid images */
+/* line 297, ../sass/base/_base.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Correct IE9 overflow */
+/* example:
+img {
+  max-width:240px;
+  width:100%
+} */
+/* line 305, ../sass/base/_base.scss */
+figure {
+  padding: 0;
+  margin: 0 0 .5em;
+  font-size: 1em;
+}
+
+/* line 311, ../sass/base/_base.scss */
+figcaption {
+  margin: .25em 0;
+  font-size: 1em;
+  line-height: 1em;
+  color: #333333;
+}
+
+/* line 313, ../sass/base/_base.scss */
+figcaption p {
+  margin: 0 0 .5em;
+  font-size: .875em;
+  line-height: 1em;
+  color: #333333;
+  text-align: left;
+}
+
+/* this is what works about the container/float system */
+/* line 318, ../sass/base/_base.scss */
+.nest {
+  margin: 0px, auto;
+}
+
+/* MUST add width */
+/* line 323, ../sass/base/_base.scss */
+.nest:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+/* line 332, ../sass/base/_base.scss */
+.nest {
+  display: block;
+}
+
+/* line 336, ../sass/base/_base.scss */
+.fignest {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* line 342, ../sass/base/_base.scss */
+.textnest {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  font-size: inherit;
+}
+
+/* line 349, ../sass/base/_base.scss */
+.mid {
+  vertical-align: middle !important;
+  background: red;
+}
+
+/* line 354, ../sass/base/_base.scss */
+.inlist {
+  list-style: disc;
+  list-style-position: inside;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  padding-left: .875em;
+  text-indent: -.875em;
+  margin: 0 0 .375em;
+}
+
+/* _helpers.scss */
+/* style_24_comp02.css 121315
+style_24_comp01.css 121115
+Care HandOff style_23.css 101315
+handOff style_20.css 080115
+*/
+/* For expert web design contact http://craigwebbart.com */
+/*	*	*	[ HELPERS ]	*	*	*/
+/* = Colors 
+---------------------------------------------------- */
+/* line 18, ../sass/base/_helpers.scss */
+.grn-blu-grey {
+  color: #3B5446;
+}
+
+/*p tags 147 17 28 30*/
+/* line 19, ../sass/base/_helpers.scss */
+.handoff-grn {
+  color: #01AD4E;
+}
+
+/*h tags 147 99 34 55*/
+/* line 20, ../sass/base/_helpers.scss */
+.ho-grn {
+  color: #267D4D;
+}
+
+/*h tags 147 53 32 41*/
+/* line 21, ../sass/base/_helpers.scss */
+.grn-blu-grey2 {
+  color: #23824E;
+}
+
+/*a tags 147 58 32 42*/
+/* line 23, ../sass/base/_helpers.scss */
+.tomato {
+  color: #FF6347;
+}
+
+/* line 26, ../sass/base/_helpers.scss */
+.dodgerblue {
+  color: #1E90FF;
+}
+
+/* line 29, ../sass/base/_helpers.scss */
+.honeydew {
+  background: #F0FFF0;
+}
+
+/* line 30, ../sass/base/_helpers.scss */
+.darkseagreen {
+  background: #8FBC8F;
+}
+
+/* line 31, ../sass/base/_helpers.scss */
+.pink {
+  background: #FFAAAA;
+}
+
+/* line 35, ../sass/base/_helpers.scss */
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 40, ../sass/base/_helpers.scss */
+.rnd {
+  border: 0;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  border-radius: .5em;
+}
+
+/*SET PIE*/
+/* line 47, ../sass/base/_helpers.scss */
+.rnd3 {
+  border: 0;
+  -webkit-border-radius: .3em;
+  -moz-border-radius: .3em;
+  border-radius: .3em;
+}
+
+/* line 53, ../sass/base/_helpers.scss */
+.shadow {
+  background: rgba(77, 25, 59, 0.8);
+  -moz-box-shadow: 0 0.125em 0.625em #4d193b;
+  -webkit-box-shadow: 0 0.125em 0.625em #4d193b;
+  box-shadow: 0 0.125em 0.625em #4d193b;
+}
+
+/* line 60, ../sass/base/_helpers.scss */
+.innershadow {
+  -moz-box-shadow: inset 0 0 15px #8C7373, 0 0 20px #DDD6D5;
+  -webkit-box-shadow: inset 0 0 15px #8C7373, 0 0 20px #DDD6D5;
+  box-shadow: inset 0 0 15px #8C7373, 0 0 20px #DDD6D5, inset 0 35px 35px -18px #D2C8C6;
+}
+
+/* line 66, ../sass/base/_helpers.scss */
+.no-break {
+  white-space: nowrap;
+}
+
+/* _carehandoff.scss */
+/*	*	*	*	*	[  STRUCTURE  ]	*	*	*	*/
+/* line 5, ../sass/styles/_carehandoff.scss */
+#sitewrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+/*	*	*	*	*	[  TOP NAVIGATION  ]	*	*	*	*/
+/* line 13, ../sass/styles/_carehandoff.scss */
+header {
+  min-height: 80px;
+  padding-top: .5em;
+  text-align: center;
+}
+
+/* line 19, ../sass/styles/_carehandoff.scss */
+header figure {
+  width: 55%;
+  max-width: 16.5em;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+/* line 27, ../sass/styles/_carehandoff.scss */
+header figure.logo, #main-nav {
+  margin: auto;
+}
+
+/* line 32, ../sass/styles/_carehandoff.scss */
+#main-nav ul {
+  text-align: center;
+}
+
+/* line 37, ../sass/styles/_carehandoff.scss */
+#main-nav ul li {
+  display: inline-block;
+  line-height: 2em;
+  margin: 0 0 0 1em;
+}
+
+/* line 42, ../sass/styles/_carehandoff.scss */
+#main-nav ul li {
+  display: inline-block;
+  float: none;
+  line-height: 2em;
+  margin: 0 1em;
+}
+
+/* line 48, ../sass/styles/_carehandoff.scss */
+#main-nav ul li a {
+  position: relative;
+  color: #588679;
+  color: #59887a;
+  font-family: 'arvoregular';
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 1em;
+  letter-spacing: 1px;
+}
+
+/* line 60, ../sass/styles/_carehandoff.scss */
+#main-nav ul li a:hover, #main-nav ul li a:focus, #main-nav ul li a.active {
+  color: #5ABA9F;
+  color: #5aba9f;
+}
+
+/* line 65, ../sass/styles/_carehandoff.scss */
+#main-nav ul::after,
+#main-nav::after {
+  content: '';
+  display: block;
+  clear: both !important;
+  float: none !important;
+}
+
+/*	*	*	*	*	[  2ND TOP NAVIGATION  ]	*	*	*	*/
+/* line 71, ../sass/styles/_carehandoff.scss */
+.navjusttinav {
+  line-height: 0;
+}
+
+/*nav*/
+/* line 76, ../sass/styles/_carehandoff.scss */
+.justtinav {
+  padding: 0;
+  margin: 0;
+  list-style-type: 0;
+}
+
+/* line 82, ../sass/styles/_carehandoff.scss */
+.justtinav li {
+  display: inline-block;
+  margin: .5em 0;
+  text-align: center;
+}
+
+/* line 88, ../sass/styles/_carehandoff.scss */
+.justtinav li {
+  font-size: 1rem;
+  line-height: 0;
+  text-align: center;
+  font-family: 'oxygenbold', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 95, ../sass/styles/_carehandoff.scss */
+.list-justified {
+  text-align: justify;
+}
+
+/* line 99, ../sass/styles/_carehandoff.scss */
+.list-justified:after {
+  content: "";
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+  width: 100%;
+}
+
+/* line 107, ../sass/styles/_carehandoff.scss */
+.justtinav a, .justtinav a:visited {
+  color: #5C5D61;
+  color: #5c5d61;
+  background: rgba(202, 237, 237, 0.4);
+  padding: .25em .75em;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  border-radius: .25em;
+  line-height: 1em;
+}
+
+/* line 118, ../sass/styles/_carehandoff.scss */
+.justtinav a:hover {
+  color: #59887a;
+  text-shadow: 0px 0px 4px rgba(217, 242, 242, 0.8);
+  background: rgba(202, 237, 237, 0.6);
+  text-decoration: none;
+}
+
+/* line 126, ../sass/styles/_carehandoff.scss */
+.justtinav a.active {
+  background: #caeded;
+}
+
+/* - - - - [  Figure Declarations  ] - - - - */
+/* line 135, ../sass/styles/_carehandoff.scss */
+.view {
+  display: block;
+  margin: auto;
+  margin-bottom: 1em;
+  max-width: 322px;
+}
+
+/*.list-box,*/
+/* line 142, ../sass/styles/_carehandoff.scss */
+div.list-box,
+.list-box li {
+  display: block;
+  vertical-align: top;
+  padding: 1.25em;
+  background: rgba(224, 235, 229, 0.76);
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  -o-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+/* line 156, ../sass/styles/_carehandoff.scss */
+.greatbox {
+  padding: .5em;
+  margin-bottom: 1em;
+  background: rgba(243, 247, 245, 0.5);
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+/* line 165, ../sass/styles/_carehandoff.scss */
+header {
+  display: block;
+  width: 100%;
+  min-height: 110px;
+  padding-top: 2em;
+  background: #FFF;
+  z-index: 1;
+}
+
+/*	*	*	*	*	[  SHELLS  ]	*	*	*	*/
+/* line 174, ../sass/styles/_carehandoff.scss */
+.shell {
+  width: 99%;
+  padding: 1em 0;
+}
+
+/* line 179, ../sass/styles/_carehandoff.scss */
+.shell {
+  display: block;
+  max-width: 1280px;
+  font-size: 1rem;
+  margin: 0 auto;
+  -o-transition: width .5s ease-in;
+  -moz-transition: width .5s ease-in;
+  -webkit-transition: width .5s ease-in;
+  transition: width .5s ease-in;
+  /*	background:#F0EFDF;
+  	position:relative;*/
+}
+
+/* line 192, ../sass/styles/_carehandoff.scss */
+.shell-wide {
+  display: block;
+  width: 98%;
+  font-size: 1rem;
+  margin: 0 auto;
+  /*	background:#F0EFDF;
+  	position:relative;*/
+}
+
+/* line 201, ../sass/styles/_carehandoff.scss */
+.shell-wider::after,
+.shell::after {
+  content: '';
+  display: block;
+  clear: both;
+  float: none;
+}
+
+/* line 204, ../sass/styles/_carehandoff.scss */
+.shell-wider {
+  display: block;
+  width: 98%;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  padding: .5em 0;
+  /*	background:#F0EFDF;
+  	position:relative;*/
+}
+
+/* line 215, ../sass/styles/_carehandoff.scss */
+.shell-wide::after,
+.shell::after {
+  content: '';
+  display: block;
+  clear: both;
+  float: none;
+}
+
+/* line 218, ../sass/styles/_carehandoff.scss */
+.thin {
+  width: 80%;
+  max-width: 760px;
+}
+
+/* line 223, ../sass/styles/_carehandoff.scss */
+.thinner {
+  width: 80%;
+  max-width: 600px;
+}
+
+/* line 228, ../sass/styles/_carehandoff.scss */
+.shell h1,
+.shell h2,
+.shell-wide h1,
+.shell-wide h2 {
+  text-align: center;
+}
+
+/* line 235, ../sass/styles/_carehandoff.scss */
+.shell-wide h1 {
+  margin-bottom: .25em;
+}
+
+/* line 239, ../sass/styles/_carehandoff.scss */
+header .shell {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* line 242, ../sass/styles/_carehandoff.scss */
+#free,
+#index {
+  background: #A9BCB2 url(../assets/images/080914_hands/hands-white_bw-b620.png) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 248, ../sass/styles/_carehandoff.scss */
+#contact,
+#about,
+#danka,
+#faq {
+  /*text-align:right;*/
+  width: 100%;
+  min-height: 950px;
+  background: #f2f5f6;
+}
+
+/* line 258, ../sass/styles/_carehandoff.scss */
+#free .shell .list-box,
+#contact .shell .list-box,
+#about .shell .list-box,
+#danka .shell .list-box,
+#faq .shell .list-box {
+  font-size: 1.125rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 267, ../sass/styles/_carehandoff.scss */
+.box-box {
+  padding: 1.25em 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 273, ../sass/styles/_carehandoff.scss */
+#iconpanel {
+  font-size: 1rem;
+  /*text-align:right;*/
+  width: 100%;
+  background: #f2f5f6;
+}
+
+/* line 279, ../sass/styles/_carehandoff.scss */
+#snapshot {
+  font-size: 1rem;
+  /*text-align:right;*/
+  width: 100%;
+  min-height: 950px;
+  background: #f2f5f6;
+}
+
+/* line 286, ../sass/styles/_carehandoff.scss */
+#manage {
+  min-height: 950px;
+  background: #f2f5f6;
+  /*background:url("../images/shutterstock_1429209.jpg") 50% 0 no-repeat #f2f5f6;*/
+}
+
+/* line 291, ../sass/styles/_carehandoff.scss */
+#collaborate {
+  background: #f2f5f6;
+  /*background:#BADECA;
+  background:url("../images/nursing_home.jpg") 50% 0 no-repeat #f2f5f6;*/
+}
+
+/* line 297, ../sass/styles/_carehandoff.scss */
+#peace {
+  background: #f2f5f6;
+  /*background:url("../images/nursing_home.jpg") 50% 0 no-repeat #f2f5f6;*/
+  min-height: 900px;
+  text-align: right;
+}
+
+/* line 304, ../sass/styles/_carehandoff.scss */
+#iconpanel, #snapshot, #manage, #collaborate {
+  background-size: 100% auto;
+}
+
+/* line 308, ../sass/styles/_carehandoff.scss */
+#share,
+#loop {
+  width: 100%;
+  min-height: 720px;
+  position: relative;
+  /*text-align:right;*/
+}
+
+/* line 316, ../sass/styles/_carehandoff.scss */
+#why,
+#abou,
+#better,
+#partner {
+  width: 100%;
+  height: 720px;
+  min-height: 720px;
+  position: relative;
+  /*text-align:right;*/
+}
+
+/* line 329, ../sass/styles/_carehandoff.scss */
+.red {
+  background: #f2f5f6;
+}
+
+/* line 331, ../sass/styles/_carehandoff.scss */
+.green {
+  background: #DBFAE9;
+}
+
+/* line 333, ../sass/styles/_carehandoff.scss */
+.blue {
+  background: #DBEFFA;
+}
+
+/* line 335, ../sass/styles/_carehandoff.scss */
+.yellow {
+  background: #F6F8DB;
+}
+
+/* line 337, ../sass/styles/_carehandoff.scss */
+.grey {
+  background: #f2f5f6;
+}
+
+/* - - - - - - [ Section-content Styles ] - - - - - - */
+/* line 342, ../sass/styles/_carehandoff.scss */
+.section-content {
+  display: inline-block;
+  vertical-align: top;
+  width: 62%;
+}
+
+/* line 348, ../sass/styles/_carehandoff.scss */
+.section-content h2,
+.section-content h3 {
+  text-align: inherit;
+}
+
+/* line 352, ../sass/styles/_carehandoff.scss */
+.intro {
+  text-align: center;
+  width: 96%;
+  max-width: 34em;
+  margin: 1em auto;
+  font-family: 'source_sans_proitalic';
+  font-size: 1.125em;
+}
+
+/* line 360, ../sass/styles/_carehandoff.scss */
+.dash {
+  display: block;
+  vertical-align: top;
+  width: 80%;
+  margin: auto;
+  margin-left: 3em;
+}
+
+/* line 368, ../sass/styles/_carehandoff.scss */
+.fignest {
+  width: 80%;
+  max-width: 322px;
+}
+
+/* line 374, ../sass/styles/_carehandoff.scss */
+#collaborate .section-content {
+  margin-bottom: 3em;
+  width: 32%;
+}
+
+/* line 378, ../sass/styles/_carehandoff.scss */
+#peace .section-content {
+  width: 52%;
+  margin-right: 2.5%;
+}
+
+/* line 382, ../sass/styles/_carehandoff.scss */
+.conference {
+  width: 66%;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  display: inline-block;
+  vertical-align: top;
+  /*zoom: 1; *display: inline;*/
+}
+
+/* line 390, ../sass/styles/_carehandoff.scss */
+.momdad {
+  width: 45%;
+  max-width: 600px;
+  margin-bottom: 1em;
+  display: inline-block;
+  vertical-align: top;
+  /*zoom: 1; *display: inline;*/
+}
+
+/* line 398, ../sass/styles/_carehandoff.scss */
+.siblings {
+  width: 45%;
+  max-width: 600px;
+  margin: .25em 2% 3em 0;
+  float: left;
+  vertical-align: top;
+  /*zoom: 1; *display: inline;*/
+}
+
+/* line 406, ../sass/styles/_carehandoff.scss */
+.motomama {
+  width: 100%;
+  margin-bottom: 1em;
+  display: inline-block;
+  vertical-align: top;
+  /*zoom: 1; *display: inline;*/
+}
+
+/*	*	*	*	*	[  FOOTER  ]	*	*	*	*/
+/* line 416, ../sass/styles/_carehandoff.scss */
+footer {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  background: #FFF;
+}
+
+/* line 426, ../sass/styles/_carehandoff.scss */
+footer figure {
+  width: 50%;
+  max-width: 16em;
+  margin: 1em auto;
+}
+
+/* line 431, ../sass/styles/_carehandoff.scss */
+footer .shell {
+  padding-top: .5em;
+  padding-bottom: 1em;
+}
+
+/* line 436, ../sass/styles/_carehandoff.scss */
+#footer-nav {
+  margin: 0;
+  margin: 0 1em 0;
+}
+
+/* line 441, ../sass/styles/_carehandoff.scss */
+#footer-nav li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 14px;
+}
+
+/* line 446, ../sass/styles/_carehandoff.scss */
+#footer-nav li:last-child {
+  padding-right: 0;
+}
+
+/* line 448, ../sass/styles/_carehandoff.scss */
+#footer-nav li a {
+  color: #889;
+  text-align: center;
+}
+
+/* line 452, ../sass/styles/_carehandoff.scss */
+#footer-nav li a:hover, #footer-nav li a:focus, #footer-nav li a.active {
+  color: #2b9ac2;
+}
+
+/* line 455, ../sass/styles/_carehandoff.scss */
+footer span {
+  font-size: .875em;
+  color: #889;
+  line-height: 1.2em;
+}
+
+/* line 460, ../sass/styles/_carehandoff.scss */
+.copyright {
+  margin: 2em auto 0;
+  float: none;
+  display: block;
+}
+
+/* line 466, ../sass/styles/_carehandoff.scss */
+#cwebba {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  display: inline-block;
+  float: none;
+  margin: auto;
+  font-size: .875em;
+  color: #889;
+}
+
+/* line 475, ../sass/styles/_carehandoff.scss */
+#cwebba a:link {
+  color: #48ADE0;
+  text-decoration: none;
+  font-size: inherit;
+}
+
+/* line 477, ../sass/styles/_carehandoff.scss */
+#cwebba a:visited {
+  color: #D8D7B0;
+  text-decoration: none;
+  font-size: inherit;
+}
+
+/* line 479, ../sass/styles/_carehandoff.scss */
+#cwebba a:hover {
+  color: #B00;
+  text-decoration: underline;
+  font-size: inherit;
+}
+
+/*	*	*	*	*	[  BOX MODULES  ]	*	*	*	*/
+/*	*	*	[ Get Started ]	*	*	*/
+/*	*	*	[ Big Bullet Box ]	*	*	*/
+/* line 491, ../sass/styles/_carehandoff.scss */
+.bullet-box {
+  max-width: 18em;
+  margin: 1em auto .75em;
+  padding: .75em 1.25em 0;
+  /*background:rgba(246,254,249,.4);*/
+}
+
+/* line 497, ../sass/styles/_carehandoff.scss */
+.bullet-box p {
+  font-size: 1.25em;
+  line-height: 1.25em;
+  margin: 0 0 0.416666666666667em 0;
+}
+
+/* line 502, ../sass/styles/_carehandoff.scss */
+.custom-bullet li {
+  padding-left: 2em;
+  text-indent: -3em;
+  margin: 0 0 .375em;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  margin: 0 0 0.416666666666667em 0;
+}
+
+/* line 511, ../sass/styles/_carehandoff.scss */
+.custom-bullet li:before {
+  content: "\25cf" "\00A0";
+  font-size: 1.75em;
+  color: #01AD4E;
+  position: relative;
+  vertical-align: baseline;
+  bottom: -0.125em;
+}
+
+/* _popups.scss  */
+/* - - - [ Social Modal ] - - - */
+/* - - - [ Modal Fadars (Login, Start and Learn) ] - - - */
+/* line 9, ../sass/module/_popups.scss */
+#modal_fader,
+#loginFadar,
+#startFadar,
+#learnFadar {
+  background: darkseagreen;
+  opacity: .3;
+  -moz-opacity: .3;
+  filter: alpha(opacity=30);
+  /* IF IE */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  display: none;
+}
+
+/* line 27, ../sass/module/_popups.scss */
+#modal_box,
+#loginBox,
+#startBox,
+#learnBox {
+  width: 90%;
+  background: #FFF;
+  padding: 1em;
+  border: 1px cornflowerblue solid;
+  -moz-border-radius: .5em;
+  -webkit-border-radius: .5em;
+  border-radius: .5em;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: 10;
+  display: none;
+}
+
+/* line 45, ../sass/module/_popups.scss */
+#modal_box:after,
+#loginBox:after,
+#startBox:after,
+#learnBox:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+/*.modal-btn,*/
+/* line 59, ../sass/module/_popups.scss */
+.modal-close-btn,
+.close-login,
+.close-start,
+.close-learn {
+  font-size: 1em;
+  line-height: 1em;
+  padding: .375em 1em;
+  background: #FFF;
+  border: 1px #ddd solid;
+  margin: 0 auto;
+  cursor: pointer;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* line 77, ../sass/module/_popups.scss */
+.close-learn.rt {
+  float: right;
+}
+
+/* _button_styles.scss */
+/*  *   *   *   *   [  EMAIL BUTTON  ]  *   *   *   */
+/* line 5, ../sass/module/_button_styles.scss */
+.button-title {
+  margin: 0 auto .25em;
+  font: 'source_sans_probold';
+  font-weight: bold;
+  font-size: 1.5em;
+  text-shadow: white 1px 1px 6px;
+  text-align: center;
+}
+
+/*  *   *   *   *   [  EMAIL BOX  ] *   *   *   */
+/* line 16, ../sass/module/_button_styles.scss */
+.get-da-app {
+  margin-top: 1em;
+}
+
+/* line 20, ../sass/module/_button_styles.scss */
+.mail-box {
+  max-width: 28em;
+  margin: 1em auto .75em;
+  padding: .75em 1.25em 1em;
+  background: rgba(246, 254, 249, 0.4);
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  border-radius: 22px;
+}
+
+/* line 29, ../sass/module/_button_styles.scss */
+.mail-box02 {
+  max-width: 28em;
+  margin: 1em auto .5em;
+  padding: .75em 1.25em 0;
+  background: rgba(246, 254, 249, 0.4);
+  border-radius: 22px;
+  line-height: 1.05em;
+}
+
+/* line 37, ../sass/module/_button_styles.scss */
+.screen-reader-text,
+.hide {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+/* line 44, ../sass/module/_button_styles.scss */
+#mailbox {
+  background-color: #eaf8fc;
+  background-image: linear-gradient(#ffffff, #d4e8ec);
+  border-radius: 0.9375em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c4d9df #a4c3ca #83afb7;
+  width: 100%;
+  height: 3em;
+  padding: .5em;
+  margin: 0 auto;
+  overflow: hidden;
+  /* Clear floats */
+}
+
+/* line 58, ../sass/module/_button_styles.scss */
+#mailbox input[type=email],
+textarea {
+  width: 80%;
+  height: 1.875em;
+  line-height: 1em;
+  font-size: 1em;
+}
+
+/* _tabs.scss */
+/* - - - [ AJAX Tabs ] - - - */
+/* line 4, ../sass/module/_tabs.scss */
+.container--tabs {
+  /*  margin: 2rem;*/
+}
+
+/* line 7, ../sass/module/_tabs.scss */
+.container--tabs .nav-tabs {
+  float: left;
+  width: 100%;
+  margin: 0;
+  list-style-type: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 14, ../sass/module/_tabs.scss */
+.container--tabs .nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+
+/* line 18, ../sass/module/_tabs.scss */
+.container--tabs .nav-tabs > li > a {
+  float: left;
+  margin-right: 2px;
+  line-height: 1.42857143;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+
+/* line 26, ../sass/module/_tabs.scss */
+.container--tabs .nav-tabs > li > a:hover {
+  border-color: #eee #eee #ddd;
+}
+
+/* line 29, ../sass/module/_tabs.scss */
+.container--tabs .nav-tabs > li.active-tab > a,
+.container--tabs .nav-tabs > li.active-tab > a:hover,
+.container--tabs .nav-tabs > li.active-tab > a:focus {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+/* line 38, ../sass/module/_tabs.scss */
+.container--tabs .tab-content {
+  float: left;
+  width: 100%;
+}
+
+/* line 42, ../sass/module/_tabs.scss */
+.container--tabs .tab-content > .tab-pane {
+  display: none;
+}
+
+/* line 45, ../sass/module/_tabs.scss */
+.container--tabs .tab-content > .tab-pane.active-tab {
+  display: block;
+  padding: 2.5% 3.5%;
+  /*  background-color: #efefef;*/
+}
+
+/* line 50, ../sass/module/_tabs.scss */
+.container--tabs .tab-content > .active-tab {
+  display: block;
+}
+
+/* _media_queries.scss*/
+/* MEDIA QUERIES*/
+@media only screen and (max-width: 440px) {
+  /* line 5, ../sass/states/_media_queries.scss */
+  /* line 7, ../sass/states/_media_queries.scss */
+  .justtinav li {
+    font-size: .825em;
+  }
+
+  /* line 9, ../sass/states/_media_queries.scss */
+  /* line 12, ../sass/states/_media_queries.scss */
+  .prodonav li {
+    font-size: .875em;
+  }
+}
+@media only screen and (max-width: 760px) {
+  /* line 71, ../sass/states/_media_queries.scss */
+  /* line 18, ../sass/states/_media_queries.scss */
+  .break {
+    width: 100%;
+    display: inline-block;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* line 28, ../sass/states/_media_queries.scss */
+  .shell {
+    width: 80%;
+    padding: 2em 0;
+  }
+
+  /* line 33, ../sass/states/_media_queries.scss */
+  .shell-wide {
+    display: block;
+    width: 80%;
+    max-width: 1280px;
+    font-size: 1rem;
+    margin: 0 auto;
+    /*  background:#F0EFDF;
+        position:relative;*/
+  }
+
+  /* line 43, ../sass/states/_media_queries.scss */
+  #main-nav ul li a {
+    font-size: 1.375em;
+    line-height: 1.75em;
+  }
+
+  /* line 48, ../sass/states/_media_queries.scss */
+  header figure {
+    width: 58%;
+    max-width: 16.5em;
+    margin: auto;
+    margin-bottom: 1em;
+  }
+
+  /* line 54, ../sass/states/_media_queries.scss */
+  .custom-bullet li {
+    padding-left: 2em;
+    text-indent: -3em;
+    margin: 0 0 .375em;
+    font-size: 1.375em;
+    line-height: 1.5em;
+    margin: 0 0 0.416666666666667em 0;
+  }
+
+  /* line 63, ../sass/states/_media_queries.scss */
+  .custom-bullet li:before {
+    content: "\25cf" "\00A0";
+    color: #01AD4E;
+    font-size: 1.9375em;
+    position: relative;
+    vertical-align: baseline;
+    bottom: -0.125em;
+  }
+}
+@media only screen and (min-width: 760px) {
+  /* line 76, ../sass/states/_media_queries.scss */
+  header figure {
+    display: block;
+    float: left;
+    width: 30%;
+    max-width: 16em;
+    margin: 0 0 1em 0;
+  }
+
+  /* line 83, ../sass/states/_media_queries.scss */
+  #index {
+    width: 100%;
+    min-height: 720px;
+    position: relative;
+  }
+
+  /* line 88, ../sass/states/_media_queries.scss */
+  #main-nav {
+    display: block;
+    float: right;
+    line-height: 2em;
+    margin-bottom: 1em;
+  }
+
+  /* line 95, ../sass/states/_media_queries.scss */
+  #main-nav ul {
+    width: 20em;
+  }
+
+  /* line 99, ../sass/states/_media_queries.scss */
+  #main-nav ul,
+  #main-nav ul li {
+    display: block;
+    float: right;
+    text-align: right;
+    margin: 0;
+  }
+
+  /* line 107, ../sass/states/_media_queries.scss */
+  #main-nav ul li {
+    padding-left: 2%;
+    margin-left: 2%;
+  }
+
+  /* line 112, ../sass/states/_media_queries.scss */
+  .fignest {
+    width: 36%;
+  }
+
+  /* line 116, ../sass/states/_media_queries.scss */
+  .textnest {
+    width: 62.25%;
+  }
+
+  /* line 120, ../sass/states/_media_queries.scss */
+  .textdown {
+    margin-top: 10%;
+  }
+
+  /* line 123, ../sass/states/_media_queries.scss */
+  .mr {
+    margin-right: 2%;
+  }
+
+  /* line 127, ../sass/states/_media_queries.scss */
+  .dash {
+    display: inline-block;
+    width: 50%;
+    margin-right: 3%;
+  }
+
+  /* line 132, ../sass/states/_media_queries.scss */
+  .view {
+    max-width: 322px;
+    margin-right: 3%;
+    margin-bottom: 1em;
+    display: inline-block;
+    vertical-align: top;
+    /*zoom: 1; *display: inline;*/
+  }
+
+  /* line 140, ../sass/states/_media_queries.scss */
+  .shove {
+    margin-top: 20%;
+  }
+
+  /* line 144, ../sass/states/_media_queries.scss */
+  .children {
+    height: 300px;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+
+  /* line 152, ../sass/states/_media_queries.scss */
+  footer {
+    text-align: left;
+  }
+
+  /* line 155, ../sass/states/_media_queries.scss */
+  footer figure {
+    display: block;
+    margin: auto;
+    margin-top: .5em;
+    float: left;
+  }
+
+  /* line 160, ../sass/states/_media_queries.scss */
+  #footer-nav {
+    display: block;
+    margin: auto;
+    float: right;
+  }
+
+  /* line 166, ../sass/states/_media_queries.scss */
+  footer figure {
+    width: 30%;
+    max-width: 12em;
+    float: left;
+    margin: 30px 0 10px 0;
+  }
+
+  /* line 171, ../sass/states/_media_queries.scss */
+  #footer-nav {
+    margin: 0;
+    float: right;
+    margin: 1.5em 0 1em 0;
+  }
+
+  /* line 177, ../sass/states/_media_queries.scss */
+  .copyright {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: .875em;
+    font-weight: normal;
+    line-height: 1.2em;
+    width: 100%;
+    padding: 1em 0;
+    margin: 2em auto 0;
+    float: left;
+  }
+
+  /* line 188, ../sass/states/_media_queries.scss */
+  #cwebba {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    float: right;
+    margin: 0;
+    font-size: .875em;
+    font-style: normal;
+    color: #889;
+    display: inline;
+  }
+}
+@media only screen and (min-width: 900px) {
+  /* line 200, ../sass/states/_media_queries.scss */
+  #modal_box,
+  #loginBox,
+  #startBox {
+    width: 60%;
+    left: 20%;
+  }
+
+  /* line 208, ../sass/states/_media_queries.scss */
+  #learnBox {
+    width: 86%;
+    left: 7%;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  /* line 217, ../sass/states/_media_queries.scss */
+  .shell-wider {
+    display: block;
+    width: 90%;
+    max-width: 1080px;
+    font-size: 1rem;
+    margin: 0 auto;
+    /*  background:#F0EFDF;
+        position:relative;*/
+  }
+}

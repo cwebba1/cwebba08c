@@ -1,0 +1,268 @@
+<DOCTYPE html>
+<!--header.php-->
+<!--[if lt IE 7]><html lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7 no-touch"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 lt-ie8 no-touch"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 no-touch"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" class="no-js no-touch"><!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bootstrap Open-dropdown Submenu for WordPress Prototype 07</title>
+<!-- BS_open-drop_sub-menu_pattern_07.html  -->
+<link rel="stylesheet" type="text/css" href="normalize_v3.0.2.css">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- <link rel="stylesheet" type="text/css" href="assets/css/sub-menu_08.css"> -->
+<style>
+/*  sub-menu_08.css  -  022215 */
+
+.submenu-toggle:focus {
+  outline: 0;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  width:100%;
+  min-width: 24em;
+  font-size: 1em;
+  text-align: left;
+  padding: 0;
+  margin: 2px 0 0;
+}
+
+.submenu-menu > li {
+  margin:0;
+  padding:0;
+}
+
+.submenu-menu li a{
+    background:#F0FAF6;
+    text-decoration:none;
+}
+
+.submenu-menu > li > a {
+  display: block;
+  padding: .5em 2%;
+  margin:0;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: nowrap;
+}
+
+.submenu-menu > li > a:hover, .submenu-menu > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #F0E0D0;
+}
+
+.open > .submenu-menu {
+  display: block;
+}
+
+.open > .submenu-menu li {
+display:inline; /*THIS*/
+}
+
+.open > a {
+  outline: 0;
+}
+
+.submenu-toggle:focus {
+  outline: 0;
+}
+
+/* Obsolete ?
+.list-inline li,
+.list-inline li ul li {
+    display:inline;
+}
+*/
+
+.open > .list-inline li {
+display:inline; /*THIS*/
+}
+
+nav ul{
+    list-style:none;
+}
+nav li{
+    display:inline;
+    margin:0 .5em 0 0;
+}
+
+nav li a{
+  line-height: 20px;
+    padding:.125em .5em;
+    background:rgba(20, 25, 45, .2);/* REMOVE THIS WHEN ADDING TO WORDPRESS */
+}
+
+.highlight {
+  padding:1px;
+  background:khaki;
+}
+
+
+@media (min-width: 768px) {
+
+  .submenu-menu {
+  position: absolute;
+  top: 100%;
+  left: -23.625em;
+  z-index: 100;
+  display: block;
+  min-width: 47em;
+  font-size: 1em;
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 2px 0 0;
+  background:transparent;
+}
+
+.submenu-menu > li {
+  margin-right:.5%;
+  padding:0;
+}
+
+.submenu-menu > li > a {
+  display: inline-block;
+  padding: .25em 1%;
+  margin:.5em 0 0;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: nowrap;
+  border-radius: 3px;
+  background:#orange;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+b.caret {
+  display:none;
+}
+
+/* Not In Use
+.nav-tabs > li {
+  float: left;
+  margin-bottom: 1px;
+}
+*/
+
+.nav-pills > li + li {
+  margin-left: 2px;
+}
+
+.navbar-nav > li > a {
+  line-height: 1.428571429;
+  padding: .5em;
+  color: #333333;
+  white-space: nowrap;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+}
+
+</style>
+
+
+
+<!-- This: PreBlast 022515
+BS_open-drop_sub-menu_pattern_12.html 022215 
+From: BS_open-drop_sub-menu_pattern_10.html 022015 
+-->
+
+
+<script type='text/javascript' src='http://craigwebbart.com/preblast/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://craigwebbart.com/preblast/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://craigwebbart.com/preblast/wp-content/themes/blast_wp_theme/assets/javascripts/bootstrap.min.js?ver=4.0.1'></script>
+</head>
+
+<body>
+<h3 style="padding:1em;">Bootstrap Open-dropdown Submenu for WordPress Prototype 12</h3>
+
+<div class="container" style="background:#669">
+  <nav class="navbar navbar-default" role="navigation"> 
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display --> 
+      <div class="navbar-header"> 
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
+          <span class="sr-only">Toggle navigation</span> 
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span> 
+        </button>
+
+        <a class="navbar-brand" href="#"><!--Pre-Blast-->
+          <figure class="logo">
+            <img src="http://craigwebbart.com/preblast/wp-content/themes/blast_wp_theme/assets/images/hsi_logo_02-wht.svg" alt="HSI">
+          </figure>
+        </a> 
+      </div> 
+      <!-- Collect the nav links, forms, and other content for toggling --> 
+      <div class="collapse navbar-collapse navbar-ex1-collapse"> 
+        <ul id="menu-primary" class="nav navbar navbar-nav navbar-right"><!-- list-inline  class="nav nav-pills" -->
+          <li class="active"><a href="#">Welcome to HSI</a></li>
+          <li class="submenu">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <b class="caret"></b></a>
+            <ul class="submenu-menu">
+              <!-- links -->
+              <li><a href="#">Pre-Blast &amp; Pre-Construction Surveys</a></li>
+              <li><a href="#">Vibration Monitoring</a></li>
+              <li><a href="#">Noise &amp; Sound Measurement</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div> 
+    </nav> 
+</div><!-- END class="container" -->
+
+<br />
+<div style="width:96%; padding:1em 2em;">
+<div class="breaktest768">BREAKPOINT: </div>
+<br />
+<p>Hello World</p>
+
+<p>This prototype is version 12 with css/sub-menu_08.css. (embedded). Key classes are LI class <span class="highlight">submenu</span>, which replaces the Bootstrap <span class="highlight">dropdown</span> class; and a UL UL class <span class="highlight">submenu-menu</span>.</p>
+
+<p>The purpose is to create a Bootstrap Dropdown menu that open to a sub-menu in desktop views.</p>
+
+<p>I need help to integrate this prototype and target it elements in a WordPress theme using the Navwalker plugin.</p>
+</div>
+
+
+<br />
+<br /><br /><br />
+
+
+</div><!-- END class="container -->
+
+
+
+
+
+<footer>
+<div class="copyright">Copyright &copy; <script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2014, null, '-')); else document.write((new Date()).getFullYear());</script> Craig Webb Art. All Rights Reserved.
+  </div>
+  <div class="cwebba">web design by&nbsp; <a href="#">Craig Webb Art</a>
+</footer>
+</body>
+</html>

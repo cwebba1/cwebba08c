@@ -1,0 +1,110 @@
+{{!-- pages/sticky-footer-prototypes.hbs --}}
+
+{{#> layouts/cwebba-base-05 title="Sticky-footer Prototypes" }}
+
+{{#*inline "meta-block" }}
+{{> includes/meta
+  meta-description="Craig Webb is an Artist and Graphic Designer, content writer and Front-end website designer who helps clients to create their brand presence online."
+  meta-kewords="Artist, graphic designer, copywriter, content developer, website designer, web development engineer"
+  meta-social-content="Craig Webb is an artist, content developer and web designer who helps clients to create their brand presence online."
+  meta-url="http://craigwebbart.com/portfolio.html"
+  meta-site-name="Craig Webb Art"
+  og-image="http://craigwebbart.com/assets/images/heropics/hasegawa-tohaku-maple.jpg"
+  og-image-alt="Hasegawa Tōhaku: Maple and plants, c. 1593"
+}}
+{{/inline}}
+{{!-- best image 1200x630px, aspect ratio 1.91:1, size less than 1mb --}}
+
+{{!--   The `includes/head` partial is here.  --}}
+  {{#*inline "head-block"}}
+    <link rel="stylesheet" type="text/css" href="css/prototype-theater.css">
+  {{/inline}}
+
+{{!--   The `includes/header` partial is here.  --}}
+  {{#*inline "rail-block"}}
+    {{> includes/rail
+      rail-src="assets/images/navpics/math.jpg"
+      rail-alt="(917) 797&middot;0983"
+      rail-width="278"
+      rail-height="36"
+    }}
+  {{/inline}}
+
+{{!-- MAIN prototype-parent Starts here HERE. --}}
+
+
+  {{#*inline "tagline-header-block"}}
+    {{> includes/tagline-header
+      page-title="Sticky-Footer Prototypes"
+    }}
+  {{/inline}}
+
+  {{#*inline "prototype-list-nav-block"}}
+        {{!-- Prototype List Navigation goes here. --}}
+<!--      ##HERE!!!   -->
+<div class="div2 view-alert">
+<p><em>View links in the theater view or open links in a new tab to examine closely</em></p>
+</div><!-- END div2 -->
+<section class="div3 menu-wrap">
+  <nav class="prototype-list">
+  <ul id="proto-list">
+   {{!-- Put the "Prototype List" content here (list only). --}}
+<li><div><a href="Sticky_Footer_Prototypes/Sticky_Footer_at_Bottom.htm" id="01" data-title="Static page sticky footer test" data-cutline="This sticky footer, ca. 2011, does not work but it serves to illustrate the problem. In HTML the page ends at the end of the content. Creating an attractive footer at the bottom of the view window is a hack." target="page" rel="noopener noreferrer">Static page sticky footer test</a></div></li>
+
+<li><div><a href="Sticky_Footer_Prototypes/simple_sticky_footer_01.htm" id="02" data-title="Simple, slimy, slick sticky footer" data-cutline="This sticky footer is one of many that does not work. Looks good. Open the prototype into a new tab and resize the window. It will break." target="page" rel="noopener noreferrer">Simple, slimy, slick sticky footer</a></div></li>
+
+<li><div><a href="Sticky_Footer_Prototypes/sticky-footer_04.html" id="03" data-title="Solved by Flexbox Sticky Footer" data-cutline="This is the Solved by Flexbox Sticky Footer by Philip Walton.
+It is simple and it works." target="page" rel="noopener noreferrer">Solved by Flexbox Sticky Footer</a></div></li>
+
+<li><div><a href="Sticky_Footer_Prototypes/Sticky_Footer_WP_Wrapper_Test_02.htm" id="04" data-title="Relative/Absolute wrapped footer for WordPress" data-cutline="I found this sticky footer on a WordPress forum. It uses relative and absolute positioning to work. Sticky footers became more of a problem with the advent of CMS." target="page" rel="noopener noreferrer">Relative/Absolute wrapped footer for WordPress</a></div></li>
+
+<li><div><a href="Sticky_Footer_Prototypes/Sticky_Footer_WP_Wrapper_Test_03.htm" id="05" data-title="Table/table-row wrapped sticky footer for WP" data-cutline="This sticky footer uses a display:table wrapper, and display:table-row for the components. There is also an added display:block hack for IE7 as well. It claims to work with IE8 and above." target="page" rel="noopener noreferrer">Table/table-row wrapped sticky footer for WP</a></div></li>
+
+<li><div><a href="Sticky_Footer_Prototypes/index-sticky-footer-template-02.html" id="06" data-title="Bootstrap 4-alpha Sticky Footer" data-cutline="This prototype uses partial and modified code from Bootstrap v4.0.0-alpha, ca. 2015." target="page" rel="noopener noreferrer">Bootstrap 4-alpha Sticky Footer</a></div></li>
+
+<li><div><a href="Sticky_Footer_Prototypes/Sticky_Footer_with_Grid_02.html" id="07" data-title="CSS Grid sticky footer" data-cutline="This prototype from a Chris Coyier codepen uses CSS Grid to create the sticky footer." target="page" rel="noopener noreferrer">CSS Grid sticky footer</a></div></li>
+
+<li><div><a href="Sticky_Footer_Prototypes/s_ib_s_Workbook-Refactor_02.html" id="08" data-title="Inner component sticky footer" data-cutline="This prototype pattern is a sticky footer inside of a sticky footer. It uses display:inline-flex, an uncommon declaration, to work." target="page" rel="noopener noreferrer">Inner component sticky footer</a></div></li>
+
+<li><div><a href="live-prototypes.html" rel="noopener noreferrer" class="fnt400">&hookleftarrow; Back to Prototypes main page</a></div></li>
+
+
+
+    </ul>
+  </nav>
+</section><!-- END div3 -->
+{{/inline}}
+
+{{!-- END OF Prototype List Navigation HERE. --}}
+
+
+  {{#*inline "prototypes-theater-block"}}
+    {{> includes/prototypes-theater
+      first-link="Sticky_Footer_Prototypes/Sticky_Footer_at_Bottom.htm"
+    }}
+  {{/inline}}
+
+
+        {{#> creative-consulting-nav-block }}
+        {{> includes/creative-consulting-nav }}
+        {{!-- This should be a standard template. --}}
+        {{/creative-consulting-nav-block }}
+
+        {{#> blockquote-workbook-block}}
+        {{> includes/blockquote-workbook }}
+        {{!-- This should be a standard template. --}}
+        {{/blockquote-workbook-block}}
+
+{{!-- MAIN prototype-parent ENDS here here. --}}
+
+
+
+ {{!-- The "footer-block" content is here. --}}
+
+{{!--  MODAL FORM BLOCK HERE  --}}
+
+    {{#*inline "js-block"}}
+    {{> includes/scripts/js-iframe-theater }}
+    {{/inline}}
+  
+{{/layouts/cwebba-base-05}}

@@ -1,0 +1,107 @@
+/*!  _bg_gradient.scss  */
+
+/*!
+This Gradient SCSS file is a full example from examples at 
+https://medium.com/@alvaro.saburido/applying-gradient-trends-in-sass-cf825d70f5fe
+https://codepen.io/alvarosaburido/pen/YarpJz
+https://codepen.io/alvarosaburido/pen/WzZREy
+
+The code here is divided onto the vars and the mixin scss files.
+This file is saved as a prototype record. 010719
+
+*/
+
+
+// Applying Gradients in Sass example #1
+// A PEN BY Alvaro Saburido
+
+/*
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html, body, .full-screen {
+  height: 100%;
+  width: 100%;
+}
+.full-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-weight: 800;
+  color: #fff;
+  font-size: 72px;
+  width: 30%;
+}
+
+.border-gradient-chill .title {
+  width: 98%;
+}
+
+.container {
+  padding: 0 1rem;
+  width: 30%;
+}
+
+
+*/
+//
+// Gradient system
+//
+
+// Main Gradient Color Variables
+$gradients: () !default;
+$gradients: map-merge((
+    chill: linear-gradient(135deg, #09e485 0%,#0291e3 100%),
+    warm: linear-gradient(135deg, #F2CD48 0%,#FD803F 100%),
+    hot: linear-gradient(30deg, #F9445A 0%, #445AF9 34%,#FD9F60 100%),
+    cold: linear-gradient(135deg, #8019C6 0%,#2F93CC 100%)
+), $gradients);
+
+
+// Border Gradient Mixin
+@mixin border-gradient($parent, $gradient) {
+  #{$parent} {
+    border: 20px solid transparent;
+    border-width: 6px;
+    border-style: solid;
+    border-image: $gradient;
+    border-image-slice: 1;
+  }
+}
+
+
+// Gradient backgrounds
+@mixin bg-gradient($parent, $gradient) {
+  #{$parent} {
+    background: $gradient;
+  }
+}
+
+// Gradient text
+@mixin text-gradient($parent, $gradient) {
+  #{$parent} {
+    background-image: $gradient;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+// Gradient Classes 
+@each $gradient, $value in $gradients {
+  @include bg-gradient(".bg-gradient-#{$gradient}", $value);
+}
+
+// Gradient Classes 
+@each $gradient, $value in $gradients {
+  @include text-gradient(".text-gradient-#{$gradient}", $value);
+}
+
+// Border Classes 
+@each $gradient, $value in $gradients {
+  @include border-gradient(".border-gradient-#{$gradient}", $value);
+}

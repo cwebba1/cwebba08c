@@ -1,0 +1,243 @@
+<DOCTYPE html>
+<!--header.php-->
+<!--[if lt IE 7]><html lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7 no-touch"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 lt-ie8 no-touch"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 no-touch"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" class="no-js no-touch"><!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bootstrap Open-dropdown Submenu for WordPress Prototype 07</title>
+<!-- BS_open-drop_sub-menu_pattern_07.html  -->
+<link rel="stylesheet" type="text/css" href="normalize_v3.0.2.css">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/sub-menu_06.css">
+
+<!-- This: PreBlast 021315
+BS_open-drop_sub-menu_pattern_10.html 022015 
+BS_open-drop_sub-menu_pattern_09.html 022015 021315
+From: BS_open-drop_sub-menu_pattern_08.html 020815
+BS_open-drop_sub-menu_pattern_07.html 010815
+BS_open-drop_sub-menu_pattern_05.html 010815
+PreBlast 06 101014
+webblog 01 052614 + Bones 
+-->
+
+
+<!--
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/helpers.css">
+<link rel="stylesheet" type="text/css" href="css/layouts.css">
+<link rel="stylesheet" type="text/css" href="css/media_queries.css">
+-->
+
+
+<script type='text/javascript' src='http://craigwebbart.com/preblast/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://craigwebbart.com/preblast/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://craigwebbart.com/preblast/wp-content/themes/blast_wp_theme/assets/javascripts/bootstrap.min.js?ver=4.0.1'></script>
+</head>
+
+<body>
+<h3>Bootstrap Open-dropdown Submenu for WordPress Prototype 10</h3>
+<p>Hello World</p>
+
+<div class="container" style="background:#669">
+  <nav class="navbar navbar-default top-nav" role="navigation"> 
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display --> 
+      <div class="navbar-header"> 
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
+          <span class="sr-only">Toggle navigation</span> 
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span> 
+        </button>
+
+        <a class="navbar-brand" href="#"><!--Pre-Blast-->
+          <figure class="logo">
+            <img src="http://craigwebbart.com/preblast/wp-content/themes/blast_wp_theme/assets/images/hsi_logo_02-wht.svg" alt="HSI">
+          </figure>
+        </a> 
+      </div> 
+      <!-- Collect the nav links, forms, and other content for toggling --> 
+      <div class="collapse navbar-collapse navbar-ex1-collapse"> 
+        <ul  id="menu-primary" class="nav navbar navbar-nav navbar-right"><!-- list-inline  class="nav nav-pills" -->
+          <li class="active"><a href="#">Welcome to HSI</a></li>
+          <li class="lowmenu">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <b class="caret"></b></a>
+            <ul class="lowmenu-menu">
+              <!-- links -->
+              <li><a href="#">Pre-Blast &amp; Pre-Construction Surveys</a></li>
+              <li><a href="#">Vibration Monitoring</a></li>
+              <li><a href="#">Noise &amp; Sound Measurement</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div> 
+    </nav> 
+</div><!-- END class="container" -->
+
+<br />
+<div class="breaktest768">HERE</div>
+<p>This prototype works. Version 5 with css/sub-menu_03.css. Key classes are <span class="highlight">list-inline</span>, <span class="highlight">submenu</span> and <span class="highlight">submenu-menu</span>.</p>
+
+<p><span class="highlight">list-inline</span> is Bootstrap code. nav nav-pills breaks. Next iteration goal is to make compatable with <span class="highlight">nav nav-pills</span>.</p>
+<br />
+<br /><br /><br />
+
+
+<p>Modified Bootstrap Default Navbar</p>
+<!-- Bootstrap Default Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+<p>Bootstrap Default Navbar</p>
+<!-- Bootstrap Default Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+    <!-- Dead Test -->
+<!--
+<nav><ul>
+    <li><a href="#">Something Else</a>
+    </li>
+    <li><a href="#">Another Thing</a>
+    </li>
+    <li><a href="#">Another Thing</.a>
+    </li>
+    <li><a href="#">This Thing has a dropdown</a>
+        <ul style="">
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Something Else</a>
+    </li>
+    </ul></nav>
+-->
+</div><!-- END class="container -->
+
+
+
+
+
+<footer>
+
+</footer>
+</body>
+</html>

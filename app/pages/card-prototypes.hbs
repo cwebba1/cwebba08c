@@ -1,0 +1,103 @@
+{{!-- pages/card-prototypes.hbs --}}
+
+{{#> layouts/cwebba-base-05 title="Card Prototypes" }}
+
+{{#*inline "meta-block" }}
+{{> includes/meta
+  meta-description="Craig Webb is an Artist and Graphic Designer, content writer and Front-end website designer who helps clients to create their brand presence online."
+  meta-kewords="Artist, graphic designer, copywriter, content developer, website designer, web development engineer"
+  meta-social-content="Craig Webb is an artist, content developer and web designer who helps clients to create their brand presence online."
+  meta-url="http://craigwebbart.com/portfolio.html"
+  meta-site-name="Craig Webb Art"
+  og-image="http://craigwebbart.com/assets/images/heropics/hasegawa-tohaku-maple.jpg"
+  og-image-alt="Hasegawa Tōhaku: Maple and plants, c. 1593"
+}}
+{{/inline}}
+{{!-- best image 1200x630px, aspect ratio 1.91:1, size less than 1mb --}}
+
+{{!--   The `includes/head` partial is here.  --}}
+  {{#*inline "head-block"}}
+    <link rel="stylesheet" type="text/css" href="css/prototype-theater.css">
+  {{/inline}}
+
+{{!--   The `includes/header` partial is here.  --}}
+  {{#*inline "rail-block"}}
+    {{> includes/rail
+      rail-src="assets/images/navpics/math.jpg"
+      rail-alt="(917) 797&middot;0983"
+      rail-width="278"
+      rail-height="36"
+    }}
+  {{/inline}}
+
+{{!-- MAIN prototype-parent Starts here HERE. --}}
+
+
+  {{#*inline "tagline-header-block"}}
+    {{> includes/tagline-header
+      page-title="Card Prototypes"
+    }}
+  {{/inline}}
+
+  {{#*inline "prototype-list-nav-block"}}
+        {{!-- Prototype List Navigation goes here. --}}
+<!--      ##HERE!!!   -->
+<div class="div2 view-alert">
+<p><em>View links in the theater view or open links in a new tab to examine closely</em></p>
+</div><!-- END div2 -->
+<section class="div3 menu-wrap">
+  <nav class="prototype-list">
+  <ul id="proto-list">
+   {{!-- Put the "Prototype List" content here (list only). --}}
+<li><div><a href="Cards/Flexbox_Card_Grid_04.html" id="01" data-title="Flexbox Card Grid" data-cutline="A first serious foray into cards, I nicked the card styles and set the cards within a flexbox grid." target="page" rel="noopener noreferrer">Flexbox Card Grid</a></div></li>
+
+<li><div><a href="Cards/portfolio.html" id="02" data-title="Portfolio prototype" data-cutline="This prototype tests the use of min and max widths to control card width within rows and when breaks occur. Min and max widths also control image and text content within cards. The card layout switches from vertical to horizontal, and then back to a vertical layout. A media query used on the second row extends the layout before the final break. Combining text cards with cards that reformat inner content is a third concern." target="page" rel="noopener noreferrer">Portfolio prototype</a></div></li>
+
+<li><div><a href="Cards/Masonry-Grid-layout_prototype_01.html" id="03" data-title="Masonry Grid and card layout prototype 01" data-cutline="This prototype tests the use of min and max widths to control card width within rows and when breaks occur. Min and max widths also control image and text content within cards. A media query used on the second row extends the layout before the final break." target="page" rel="noopener noreferrer">Masonry Grid and card layout prototype</a></div></li>
+
+<li><div><a href="Cards/Flip-Panel_Prototype_04.html" id="04" data-title="Flip-Panel Prototype 04" data-cutline="This animated flip-panel layout combines text and images within cards. For mobile-width devices, the back panel content slides below the front panel and becomes static." target="page" rel="noopener noreferrer">Flip-Panel Prototype</a></div></li>
+
+<li><div><a href="Cards/CSS3_Card_Prototype_02.html" id="05" data-title="CSS3 Card Prototype 02" data-cutline="This prototype combines flexbox with media queries to control layout. Card inner layout switches from vertical, to horizontal, and back to vertical layout." target="page" rel="noopener noreferrer">CSS3 Card Prototype</a></div></li>
+
+<li><div><a href="Cards/vert-horiz-card_prototype_03.html" id="06" data-title="Vertical to Horizontal Card Prototype 03" data-cutline="This prototype uses min and max-width to control both flexbox layout and card content. No media queries are in use. Card layout here runs horizontal, to vertical, and back to horizontal layout." target="page" rel="noopener noreferrer">Vertical to Horizontal Card Prototype</a></div></li>
+
+<li><div><a href="live-prototypes.html" rel="noopener noreferrer" class="fnt400">&hookleftarrow; Back to Prototypes main page</a></div></li>
+
+    </ul>
+  </nav>
+</section><!-- END div3 -->
+{{/inline}}
+
+{{!-- END OF Prototype List Navigation HERE. --}}
+
+
+  {{#*inline "prototypes-theater-block"}}
+    {{> includes/prototypes-theater
+      first-link="Cards/Flexbox_Card_Grid_04.html"
+    }}
+  {{/inline}}
+
+
+        {{#> creative-consulting-nav-block }}
+        {{> includes/creative-consulting-nav }}
+        {{!-- This should be a standard template. --}}
+        {{/creative-consulting-nav-block }}
+
+        {{#> blockquote-workbook-block}}
+        {{> includes/blockquote-workbook }}
+        {{!-- This should be a standard template. --}}
+        {{/blockquote-workbook-block}}
+
+{{!-- MAIN prototype-parent ENDS here here. --}}
+
+
+
+ {{!-- The "footer-block" content is here. --}}
+
+{{!--  MODAL FORM BLOCK HERE  --}}
+
+    {{#*inline "js-block"}}
+    {{> includes/scripts/js-iframe-theater }}
+    {{/inline}}
+  
+{{/layouts/cwebba-base-05}}

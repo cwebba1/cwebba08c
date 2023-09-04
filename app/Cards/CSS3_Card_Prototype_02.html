@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CSS3 Flex Card Prototype 02</title>
+
+    <!-- STICKY FOOTER: -->
+    <!-- THIS: CSS3_Card_Prototype_02.html
+	FROM:
+	CSS3_Card_Prototype_01.html
+	CSS3_Columns_Prototype_01.html
+	prototype_starter_01.html
+	Sticky_Footer_Flex_Component_03.html
+	 -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,200,300,600,' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="css/prototype_style.css"> 
+  <link rel="stylesheet" type="text/css" href="css/prototype-sticky-footer.css"> 
+  <link rel="stylesheet" type="text/css" href="css/vanilla_lightbox_08_082820.css"> 
+
+
+<style>
+
+html { 	background:#AFDFC7; }
+body {	background:#BCDEFA; }
+main {	background:#FFDEDD; }
+header, footer {	background:#FEFDFA; }
+.sidebar {	background:#CEEFEF; }
+
+
+.basal {
+  width: 97.5%;
+  margin: 0 auto;
+  padding: 0;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  background:rgba(253, 254, 251, 0.8);
+  transition:width .25s ease-in; 
+}
+
+main {	background:#EEEDEA; }
+
+.credits {
+  font-size:0.8625em; 
+  line-height:1.2;
+  max-width:38em;
+  margin:3.5em 1em 1em;"
+}
+
+
+.card-gallery { 
+	padding:1em;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background:rgba(253, 254, 251, 0.3);
+	border:1px solid #DEDFDB;
+}
+.card { 
+	padding:1em;
+	background:#FEFDFA;
+	border:1px solid #DEDFDB;
+    margin: 0.5em;
+	margin-bottom:1em;
+ }
+
+.card img { 
+	border:1px solid #DEDFDB;
+}
+
+@media (min-width: 576px) {
+.card { 
+  flex: 1 1 24em;
+max-width:calc(50% - 1em);
+}
+
+@media (min-width: 768px) {
+.card { 
+  flex: 0 1 calc(50% - 1em);
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+  }
+
+.card figure { 
+	   flex: 1 1 50%;
+    min-height: 1px;
+margin-right:1em;
+}
+
+.card-body {
+    flex: 1 1 50%;
+    min-height: 1px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+.card { 
+  flex: 0 1 calc(33% - 1em);
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+  }
+
+.card figure { 
+	   flex: 1 1 100%;
+    min-height: 1px;
+margin-right:0;
+
+}
+
+</style>
+</head>
+
+
+<body>
+<div class="basal">
+  <header>
+    <div class="in-head">
+	<figure class="logo">
+		<a id="nav-home" href="http://www.craigwebbart.com/">
+			<img src="assets/images/cwebba_logo5.svg" alt="Craig Webb Art">
+		</a>
+	</figure>
+	<nav id="main-nav">
+		<ul>
+        		<li><a class="active" href="https://codepen.io/cwebba1/">Codepen</a></li>
+			<li><a href="https://github.com/cwebba1">Github</a></li>
+		</ul>
+	</nav>
+    </div><!-- END class="in-head" -->
+  </header>
+  <main>
+	<h2>CSS3 Flex Card Prototype 02</h2>
+
+<p class="p14">This is an example of using CSS3 Flexbox to build a card that is both horizontal and vertical.</p>
+
+<article class="card-gallery gallery-container">
+
+<section class="card">
+<figure class="gallery-item" data-index="1">
+<img src="assets/images/gallery/A nude Ralph McWilliams, photographed by George Platt Lynes in 1952.jpeg" alt="Ralph McWilliams" title="Ralph McWilliams" data-cutline="A nude Ralph McWilliams, photographed by George Platt Lynes in 1952" >
+<figcaption><p>A nude Ralph McWilliams, photographed by George Platt Lynes in 1952</p></figcaption>
+</figure>
+<div class="card-body">
+<h3>Ralph McWilliams</h3>
+<p>A nude Ralph McWilliams, photographed by George Platt Lynes in 1952</p>
+</div>
+</section>
+
+<section class="card">
+<figure class="gallery-item" data-index="2">
+<img src="assets/images/gallery/High-jump_Leap-frog.jpg" alt="Leap Frog" title="High Jump Leap Frog" data-cutline="High Jump Leap Frog" >
+<figcaption><p>High Jump Leap Frog</p></figcaption>
+</figure>
+<div class="card-body">
+<h3>High Jump Leap Frog</h3>
+<p>High Jump Leap Frog</p>
+</div>
+</section>
+
+<section class="card">
+<figure class="gallery-item" data-index="3">
+<img src="assets/images/gallery/Michael-Childers,_David-Hockney_with_His_Dogs,_Stanley_and_Boodgie.jpg" alt="David Hockney with His Dogs" title="David Hockney with His Dogs" data-cutline="Michael Childers, David Hockney with His Dogs, Stanley and Boodgie" >
+<figcaption><p>Michael Childers, David Hockney with His Dogs, Stanley and Boodgie</p></figcaption>
+</figure>
+<div class="card-body">
+<h3>David Hockney with His Dogs</h3>
+<p>Michael Childers, David Hockney with His Dogs, Stanley and Boodgie</p>
+</div>
+</section>
+
+
+<article>
+
+
+</main>
+<footer>
+  <div class="sock">
+    <nav class="footsie">
+      <ul>
+	<li>
+	   <a href="https://twitter.com/cwebba1/">Twitter</a>
+	</li>
+        <li>
+          <a class="" href="https://angel.co/craig-webb-1">AngelList</a>
+        </li>
+        <li>
+          <a class="" href="mailto:craigwebb@craigwebbart.com">Contact Us</a>
+        </li>
+    </ul>
+  </nav>
+  <div class="copyright-box">
+    <p class="copyright">&copy; <script type='text/javascript'>if (typeof(getCopyrightDate)=='function') document.write(getCopyrightDate(2017, null, '-')); else document.write((new Date()).getFullYear());</script> Craig Webb Art. &nbsp;All&nbsp;Rights&nbsp;Reserved.</p>
+  </div>
+
+</div><!-- END sock -->
+</footer>
+</div><!-- END class="basal" -->
+
+<!-- Optional JavaScript -->
+<!-- Vanilla JavaScript Lightbox -->
+        <script src="assets/javascripts/vanilla-lightbox_08.min.js"></script>
+
+<!--<script src=""></script> -->
+</body>
+</html>

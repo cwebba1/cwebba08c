@@ -1,0 +1,3 @@
+/*! map-modal.js 060220 - from CWebba06 2014
+* MapJavaScript */
+window.onload=function(){var e=document.getElementById("mapBtn"),n=document.getElementById("map_fadar"),t=document.getElementById("map_box"),l=document.getElementById("map-closeBtn");e.onclick=function(){n.style.display="block",t.style.display="block"},l.onclick=function(){n.style.display="none",t.style.display="none"};var o=document.getElementById("modalBtn"),d=document.getElementById("modal_fader"),c=document.getElementById("modal_box"),m=document.getElementById("modal-closeBtn");o.onclick=function(){d.style.display="block",c.style.display="block"},m.onclick=function(){d.style.display="none",c.style.display="none"}};

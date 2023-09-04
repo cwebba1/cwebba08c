@@ -1,0 +1,103 @@
+{{!-- pages/inner-component-prototypes.hbs --}}
+
+{{#> layouts/cwebba-base-05 title="Inner Component Prototypes" }}
+
+{{#*inline "meta-block" }}
+{{> includes/meta
+  meta-description="Craig Webb is an Artist and Graphic Designer, content writer and Front-end website designer who helps clients to create their brand presence online."
+  meta-kewords="Artist, graphic designer, copywriter, content developer, website designer, web development engineer"
+  meta-social-content="Craig Webb is an artist, content developer and web designer who helps clients to create their brand presence online."
+  meta-url="http://craigwebbart.com/portfolio.html"
+  meta-site-name="Craig Webb Art"
+  og-image="http://craigwebbart.com/assets/images/heropics/hasegawa-tohaku-maple.jpg"
+  og-image-alt="Hasegawa Tōhaku: Maple and plants, c. 1593"
+}}
+{{/inline}}
+{{!-- best image 1200x630px, aspect ratio 1.91:1, size less than 1mb --}}
+
+{{!--   The `includes/head` partial is here.  --}}
+  {{#*inline "head-block"}}
+    <link rel="stylesheet" type="text/css" href="css/prototype-theater.css">
+  {{/inline}}
+
+  {{!--   The `includes/header` partial is here.  --}}
+  {{#*inline "rail-block"}}
+    {{> includes/rail
+      rail-src="assets/images/navpics/math.jpg"
+      rail-alt="(917) 797&middot;0983"
+      rail-width="278"
+      rail-height="36"
+    }}
+  {{/inline}}
+
+{{!-- MAIN prototype-parent Starts here HERE. --}}
+
+
+  {{#*inline "tagline-header-block"}}
+    {{> includes/tagline-header
+      page-title="Inner Component Prototypes"
+    }}
+  {{/inline}}
+
+  {{#*inline "prototype-list-nav-block"}}
+        {{!-- Prototype List Navigation goes here. --}}
+<!--      ##HERE!!!   -->
+<div class="div2 view-alert">
+<p><em>View links in the theater view or open links in a new tab to examine closely</em></p>
+</div><!-- END div2 -->
+<section class="div3 menu-wrap">
+  <nav class="prototype-list">
+  <ul id="proto-list">
+   {{!-- Put the "Prototype List" content here (list only). --}}
+<li><div><a href="Inner_Components/Masonry-Grid-layout_prototype_02.html" id="01" data-title="Masonry-Grid-layout_prototype_02" data-cutline="Flexbox layout combining min and max-widths, variables, and media queries to control layout." target="page" rel="noopener noreferrer">Masonry-Grid-layout_prototype_02</a></div></li>
+
+<li><div><a href="
+Inner_Components/vert-horiz-card_prototype_03.html" id="02" data-title="vert-horiz-card_prototype_03" data-cutline="Flexbox layout with cards controlled by min and max-width declarations. This layout does not use media queries. The inner-layout for cards is horizontal-vertical-horizontal." target="page" rel="noopener noreferrer">vert-horiz-card_prototype_03</a></div></li>
+
+<li><div><a href="Inner_Components/stack-and-grow_prototype_02.html" id="03" data-title="stack-and-grow_prototype_02" data-cutline="This flexbox layout uses min and max-widths to control layout without media queries. Boxes collapse in pairs to a mobile layout." target="page" rel="noopener noreferrer">stack-and-grow_prototype_02</a></div></li>
+
+<li><div><a href="Inner_Components/flex-wrap_layout_prototype_01.html" id="04" data-title="flex-wrap_layout_prototype_01" data-cutline="This prototype is proof of concept to build &ldquo;masonry&rdquo; layout with CSS. Rows fill vertical and horizontal space. See the &ldquo;Bitty-Titty-Block Box&rdquo;, set to 33%, reflow to fill remaining horizontal space. The layout breaks for mobile layout." target="page" rel="noopener noreferrer">flex-wrap_layout_prototype_01</a></div></li>
+
+<li><div><a href="Inner_Components/flex-wrap_layout_prototype_04.html" id="05" data-title="flex-wrap_layout_prototype_04" data-cutline="This Content Page prototype uses the flex-wrap layout to control content layout. Cards both expand to fill horizontal space and reflow to lower rows as needed to fill space." target="page" rel="noopener noreferrer">Fluid Navigation Prototype</a></div></li>
+
+<li><div><a href="live-prototypes.html" rel="noopener noreferrer" class="fnt400">&hookleftarrow; Back to Prototypes main page</a></div></li>
+
+
+    </ul>
+  </nav>
+</section><!-- END div3 -->
+{{/inline}}
+
+{{!-- END OF Prototype List Navigation HERE. --}}
+
+
+  {{#*inline "prototypes-theater-block"}}
+    {{> includes/prototypes-theater
+      first-link="Inner_Components/Masonry-Grid-layout_prototype_02.html"
+    }}
+  {{/inline}}
+
+
+        {{#> creative-consulting-nav-block }}
+        {{> includes/creative-consulting-nav }}
+        {{!-- This should be a standard template. --}}
+        {{/creative-consulting-nav-block }}
+
+        {{#> blockquote-workbook-block}}
+        {{> includes/blockquote-workbook }}
+        {{!-- This should be a standard template. --}}
+        {{/blockquote-workbook-block}}
+
+{{!-- MAIN prototype-parent ENDS here here. --}}
+
+
+
+ {{!-- The "footer-block" content is here. --}}
+
+{{!--  MODAL FORM BLOCK HERE  --}}
+
+    {{#*inline "js-block"}}
+    {{> includes/scripts/js-iframe-theater }}
+    {{/inline}}
+  
+{{/layouts/cwebba-base-05}}

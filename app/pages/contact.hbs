@@ -1,0 +1,168 @@
+{{!-- pages/contact.hbs --}}
+
+{{#> layouts/cwebba-base-03 title="Craig Webb Art / Contact" }}
+
+{{#*inline "meta-block" }}
+{{> includes/meta
+  meta-description="Contact Craig Webb Art"
+  meta-kewords="Contact Craig Webb"
+  meta-social-content="Contact Craig Webb Art for web design, graphic design and original content."
+  meta-url="http://www.craigwebbart.com/contact.html"
+  meta-site-name="Craig Webb Art"
+  og-image="http://www.craigwebbart.com/assets/images/heropics/jamboree790x90x2.jpg"
+  og-image-alt="Jamboree Panorama"
+}}
+{{/inline}}
+{{!-- best image 1200x630px, aspect ratio 1.91:1, size less than 1mb --}}
+
+{{!--   The `includes/head` partial is here.  --}}
+{{#> head-block}}
+{{> includes/head }}
+{{/head-block}}
+
+{{!--   The `includes/modal` partial is here.  --}}
+
+
+  {{#*inline "modal-spot-block"}}
+    {{!--  The `includes/modal` partial is the default content, but can be overridden.  --}}
+    {{> includes/map-modal-box }}
+  {{/inline}}
+
+{{!--   The `includes/header` partial is here.  --}}
+{{#*inline "rail-block"}}
+{{> includes/rail
+  rail-src="assets/images/navpics/wave.jpg"
+  rail-alt="(917) 797&middot;0983"
+}}
+{{/inline}}
+
+
+{{!-- MAIN CONTENT --}}
+
+{{!-- Let's change the hero image for this layout. --}}
+{{#*inline "hero-block"}}
+{{> includes/hero 
+  hero-class="mast"     
+  hero-src="assets/images/heropics/jamboree790x90x2.jpg"
+  hero-alt="Jamboree goup meeting"
+  fig-caption=""
+}}
+{{/inline}}
+
+{{!-- Let's change the content for this layout. --}}
+{{#*inline "content-block"}}
+<h2>Contact Craig Webb Art</h2>
+<br />
+<div class="formbox">
+  <form id="contact-form" action="support/formtoemailpro.php">
+    <form method="post" name="subscription-form" action="support/formtoemailpro.php"><!-- contact-form -->
+
+     <fieldset>
+      <legend> Contact Craig Webb Art </legend>
+      <div>
+        <div id="title1" class="i2">
+          <label id="title1" for="first-name">First Name</label>
+          <input id="first-name" name=first-name type=text placeholder="First name" autocomplete="given-name" value="" required autofocus size="8" tabindex="1">
+        </div>
+
+        <div id="title2" class="i2 last">
+          <label id="title2" for="last-name">Last Name</label>
+          <input id="last-name" name=last-name type=text placeholder="Last Name" autocomplete="family-name" required value="" size="8" tabindex="2">
+        </div>
+      </div>
+
+      <div>
+        <div id="title3" class="i2">
+          <label id="title3" for="email">Email</label>
+          <input id="email" name=email type=email value=""  placeholder="example@domain.com" autocomplete="email" size="8" tabindex="3" required>
+        </div>
+
+        <div id="title4" class="i2 last">
+          <label class="desc" id="title4" for="phone">Phone</label>
+          <input id="phone" name=phone type=tel  placeholder="Eg. +1-212-000-0000" autocomplete="tel" required value="" size="8" tabindex="4">
+        </div>
+      </div>
+      <div>
+        <div id="title5" class="street">
+          <label id="title5" class="address" for="address">Address </label>
+          <input id="address" name=address type= text value="" placeholder="Street Address" autocomplete= "street-address" size="8" tabindex="5">
+        </div>
+      </div>
+      <div class="town">
+
+        <div id="title6" class="city">
+          <label id="title6" for="city"> City </label>
+          <input id="city" name=city type=text  placeholder="City" autocomplete="address-level2" value="" size="8" tabindex="6">
+        </div>
+        <div id="title7" class="state">
+          <label id="title7" for="state">State</label>
+          <select id="state" name="state" autocomplete="address-level1" tabindex="7"><option>NY</option><option>AL</option><option>AK</option><option>AR</option><option>AZ</option><option>CA</option><option>CO</option><option>CT</option><option>DC</option><option>DE</option><option>FL</option><option>GA</option><option>HI</option><option>ID</option><option>IA</option><option>IL</option><option>IN</option><option>KS</option><option>KY</option><option>LA</option><option>MA</option><option>MD</option><option>ME</option><option>MI</option><option>MO</option><option>MN</option><option>MS</option><option>MT</option><option>NC</option><option>ND</option><option>NE</option><option>NH</option><option>NJ</option><option>NM</option><option>NV</option><option>OH</option><option>OK</option><option>OR</option><option>PA</option><option>RI</option><option>SC</option><option>SD</option><option>TN</option><option>TX</option><option>UT</option><option>VA</option><option>VT</option><option>WA</option><option>WI</option><option>WV</option><option>WY</option></select>
+        </div><div id="title8" class="zip">
+          <label id="title8" for="zip">Zip</label>
+          <input id="zip" name=zip type=text  placeholder="Zip Code" value="" size="8" tabindex="9">
+        </div>
+      </div>
+      <div>
+        <div id="title9">
+          <label id="title9" for="comments" class="comments">Comment Here</label>
+          <textarea type="text" id="comments" name="comments" value="comment" rows="6"  tabindex="9" required></textarea>
+        </div>
+        <div>
+          <div class="yes">
+            <input type="checkbox" checked id="email-updates" name="email-updates"  tabindex="10">
+            <label for="email-updates">Add to Mail List</label>
+          </div>
+          <div class="sendbuttonbox">
+            <button class="send" type=submit name=submit value=submit  tabindex="11">Send!</button>
+          </div>
+
+        </div>
+
+      </fieldset>
+    </form>
+
+  </div><!-- END formbox  -->
+
+
+  <div class="addressbox addresscolumns">
+    <p><strong>Telephone</strong><br />
+    (917) 797-0983</p>
+
+    <p><strong>email</strong><br />
+      <a href="mailto:craigwebb@craigwebbart.com">craigwebb@craigwebbart.com</a></p>
+      <span class="keepcolumn">
+        <p><strong>Address</strong><br/>
+          14-28 30th Road, Suite 1<br />
+        Astoria, New York 11102</p>
+
+        <p><a href="#" id="mapBtn" class="btn-grn">See Map</a></p>
+      </span>
+      <p style="margin-bottom:0;"><strong>Online Payments</strong><br />
+      You may make online payments using PayPal with your credit card or PayPal account.</p>
+      <!-- PayPal Code  -->
+      <div id="paypal" style="width:100%;"><form action="https://www.paypal.com/cgi-bin/webscr" method="post"> <input type="hidden" name="cmd" value="_xclick"> <input type="hidden" name="business" value="craigwebb@craigwebbart.com"> <input type="hidden" name="no_shipping" value="0"> <input type="hidden" name="no_note" value="1"> <input type="hidden" name="currency_code" value="USD"> <input type="hidden" name="tax" value="0.00"> <input type="hidden" name="lc" value="US"> <input type="hidden" name="bn" value="PP-BuyNowBF"> <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_paynow_LG.gif" name="submit" alt="Make payments with PayPal - it's fast, free and secure!"> <img alt="PayPal" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1"></form></div>
+
+      <p>Thank you for your patronage.</p>
+    </div><!-- END addresscolumns, addressbox -->
+
+    <br class="clear"/>
+    <h4>Concept, design and creative development.</h4>
+    <blockquote class="big">Build a core identity and message tailored to your target audience.</blockquote>
+    <p class="endpara2"><strong>Craig Webb Art</strong> provides all aspects of New Business Communications Development including project management, creative development, copywriting and graphic design.</p>
+
+    {{/inline}}
+
+    {{!-- The "footer-block" content is here. --}}
+
+    {{!--  OVERRIDE MODAL FORM BLOCK HERE  --}}
+    {{#*inline "modal-form-block"}}
+    {{!--  The `map-modal-contact` partial has a combined scriipt.  --}}
+    {{> includes/map-modal-contact }}
+    {{/inline}}
+
+    {{!-- Overriding the `includes/js01` partial with custom JavaScript. --}}
+    {{#*inline "js-block"}}
+    {{> includes/scripts/js_contact }}
+    {{/inline}}
+
+    {{/layouts/cwebba-base-03}}

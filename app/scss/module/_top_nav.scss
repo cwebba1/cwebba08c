@@ -1,0 +1,429 @@
+/*  _top_nav.scss 020819 */
+
+/* Top Header Navigation Module - Cwebba07 Styles */
+
+/* HEADER section */
+
+header { /*text-align:center;*/
+	clear:both;
+	float:left;
+	width:100%;
+}
+
+header figure { margin-bottom:0;
+}
+
+.logo img { float:left;
+}
+
+.logo {
+  width: 34.1232227488152%;
+  margin: 0;
+  float: left;
+}
+.rightrail {
+  width: 65.8767772511848%;
+  margin: 0;
+  float: right;
+  overflow: hidden;
+}
+
+.cswnavpic { 
+line-height:0;
+margin-bottom:0;
+}
+
+
+/* HACK - See http://stackoverflow.com/questions/4604436/is-there-a-non-trivial-purpose-for-defining-a-css-style-for-htmlxmlns - Might change to Conditional Comment */
+html[xmlns] .top {
+	display: block;
+}
+
+ul.top { 
+width: 100%;
+height:2em;
+margin:auto;
+text-align: justify;
+font-size: 0;
+padding: 0 1.5em;
+}
+
+.top:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  zoom: 1;
+/*  display: inline; */
+}
+
+.top li {
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  padding: 0;
+  zoom: 1;
+/*  display: inline;*/
+}
+
+.drop {
+	position: relative;
+	}
+
+.top a {
+  display: block;
+  float: left;
+  text-decoration: none;
+}
+
+.top a:link, .top a:visited { 
+	font-family: $head-ft;
+  font-weight:400;
+	font-size: 1em;
+	color: rgba(33,16,0,.7);
+	line-height:1em;
+	-o-transition:font-size .25s ease-in, padding .25s ease-in; 
+	-moz-transition:font-size .25s ease-in, padding .25s ease-in; 
+	-webkit-transition:font-size .25s ease-in, padding .25s ease-in;
+	transition:font-size .25s ease-in, padding .25s ease-in; 
+	background: transparent;
+	text-decoration: none;
+	padding: 0.5em 12%;/*was 7.5%*/
+	border: 0;
+-webkit-border-radius: .35em;
+-moz-border-radius: .35em;
+border-radius: .35em;
+}
+
+.top a:hover, .top a:active {
+  color: #241000;
+  color: hsla(27, 100%, 7%, 1);
+  background: #BBDDCC;
+  background: map-get($gradients, topnavhover);
+}
+
+.top a, .top a:visited {display:block;float:left; text-decoration:none;
+}
+
+.top .current a, .top li:hover > a {
+	color: #732626;
+	}
+
+.top .current a {
+  padding: .5em 12%;
+  border: 0;
+  border-radius: .35em;
+  background: #FFCCCC;
+  background: map-get($gradients, topcurrent);
+}
+
+
+/* level 2 list   - - - - - - - */
+.top ul {
+  background: #F9FBFA;
+  background: map-get($gradients, topul);
+  color: #fff;
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 9em;
+  height: 5.25em;
+  /* HERE this has an affect - 150% width */
+  position: absolute;
+  top: 1.425em;
+  left: 0;
+  z-index: 2;
+  border: solid 1px #CFCFCF;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/*
+.top li:nth-child(even) { background-color:rgba(148, 25, 85, 0.4);}
+.top li:nth-child(odd) { background-color:rgba(25, 148, 85, 0.4);}
+*/
+
+.top ul li {
+  margin: 0;
+  padding: 0;
+  height: 1.75em;
+  float: left;
+}
+
+/* dropdown */
+.top li:hover > ul {
+	display: block;
+}
+
+.top ul a {
+  font-weight: 400;
+  padding-top: .5em;
+  line-height: 1em;
+}
+
+/* sub levels link hover */
+.top ul li:hover a, .top li:hover li a {
+  text-align: left;
+  background: none;
+  border: none;
+  color: #260F40;
+  padding-top: .5em;
+  line-height: 1.2em;
+  width: 11.875em;
+  z-index: 2;
+}
+
+/* sub levels link hover */
+/* line 194, ../sass/styles/_cwebba07.scss */
+.top ul a:hover {
+  color: #900000;
+  background-color: #bdc;
+  background: linear-gradient(to bottom, #bbddcc, #7bad94) !important;
+  background-color: map-get($gradients, topulhover);
+  border-radius: 0 0 0 0;
+}
+
+/* THESE DECLARATIONS ARE EXTRA (compares to the MQ-Redo version)
+
+.top ul li a:hover {
+padding-top:.5em;
+line-height:1.1em; 
+	width: 11.4em;
+}
+
+.top ul li {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* float the top list items to make it horizontal and a relative position so that you can control the dropdown menu position *//* ie_drop */
+/* .top ul li {float:left;} /*  REMOVED: height:3em;line-height:3em;  */
+
+ /*  In the original above, this float is set to NONE. Now this rule MUST be included. When float is removed, the links disappear.  */
+
+/* level 3+ list */
+.top ul ul {
+	left: 10em;
+	top: -.125em;
+}
+
+/* style the sub-level lists *//* ie_drop */
+.top ul ul {width:15em;
+}
+
+.top ul ul a {
+padding-top:.5em;
+line-height:1.1em; 
+}
+.top ul ul li a:hover{
+padding-top:.5em;
+line-height:1.1em; 
+}
+
+/* style the sub level links *//* ie_drop */
+.top ul ul a, 
+.top ul ul a:visited {
+display:block;
+width:15em;
+height:100%;
+line-height:1.1em;
+}/*this width WAS 12em */
+/* padding:0.5em 1em;background:#d4d8bd; color:#000;*/
+
+
+/* rounded corners for first and last child */
+.top ul li:first-child > a {
+	-moz-border-radius-topleft: 9px;
+	-moz-border-radius-topright: 9px;
+border-radius: 9px 9px 0 0; /*(top-left, top-right, bottom-right, bottom-left)*/
+}
+.top ul li:last-child > a {
+	-moz-border-radius-bottomleft: 9px;
+	-webkit-border-bottom-right-radius: 9px;
+	-moz-border-radius-bottomright: 9px;
+	border-bottom-right-radius: 9px;
+border-radius: 0 0 9px 9px; /*(top-left, top-right, bottom-right, bottom-left)*/
+}
+
+.top ul li:last-child > a {
+  -moz-border-radius-bottomleft: 9px;
+  -webkit-border-bottom-right-radius: 9px;
+  -moz-border-radius-bottomright: 9px;
+  border-bottom-right-radius: 9px;
+  border-radius: 0 0 9px 9px;
+  /*(top-left, top-right, bottom-right, bottom-left)*/
+}
+
+/* END HEADER section */
+
+/* ======= [ Header Top Navigation Media Queries ]  =========== */
+
+
+
+@media only screen and (max-width: 400px) {
+  .top a:link, .top a:visited {
+    font-size: .75em;
+    padding: 0.75em 7%;
+  }
+
+  .top ul li:hover a, .top li:hover li a {
+    font-family: $bod-ft;
+    line-height: 1.375em;
+  }
+
+  .top ul li a:hover {
+    width: 12.5em;
+  }
+
+}
+
+@media only screen and (min-width: 400px) {
+  .top a:link, .top a:visited {
+    font-size: .875em;
+  }
+
+.top ul {
+  width: 9em;
+  height: 5.25em; }
+
+.top ul li:hover a, .top li:hover li a {
+  padding-top: .325em;
+  line-height: 1.1em;
+  width: 10.15em;
+  }
+} 
+
+@media only screen and (min-width: 560px) {
+
+  .top a:link, .top a:visited {
+    font-size: 1em;
+  }
+
+  .top ul {
+    position: absolute;
+  top: 1.875em;
+  width: 9.5em;
+  height: 5.6em;
+  }
+
+.top ul li:hover a, .top li:hover li a {
+    padding: 0.46em 8%;
+  line-height: 1em;
+  width: 9.375em;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+/*
+  .top {
+  font-size: 0;
+    width: 90%;
+    height: 1em;
+    -o-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  .top ul {
+    position: absolute;
+  top: 1.875em;
+  border:1px solid blue;
+  height: 5.75em;
+  }
+*/
+}
+
+@media screen and (min-width: 920px) {
+/*  
+  .top {
+  width: 100%;
+  height: 2em;
+  }
+  .top li {
+  padding: 0 .5em 0 .5em;
+  }
+*/
+.logo {
+  width: 12%;
+  }
+.rightrail {
+  width: 23.1666666666667%;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  /* squish in for first and last child */
+  .top:first-child > li {
+    margin-left: .25em;
+  }
+
+  .top:last-child > li {
+    margin-right: .25em;
+  }
+}
+
+@media screen and (min-width: 921px), print {
+
+  .top li:last-child { margin-right:0.75em;
+  }
+
+}
+
+@media screen and (max-width: 920px) {
+  .topnav {
+    width: 98%;
+    margin: 0 auto;
+    padding-right: 2%;
+    clear: both;
+  }
+
+  .topnav:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+    zoom: 1;
+/*    display: inline; */
+  }
+
+}
+
+@media screen and (min-width: 560px) and (max-width: 920px) {
+  .topnav {
+    margin: 0 auto .5em;
+}
+}
+
+@media screen and (min-width: 921px), print {
+  .top li:last-child { margin-right:0.75em;
+  }
+
+}
+
+@media only screen and (max-width: 560px) {
+/*
+  .top ul li:hover a, .top li:hover li a {
+    font-family: 'Ubuntu', Verdana, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana Ref", sans-serif;
+    font-weight: 500;
+    padding-left: 7%;
+  }
+
+  .top ul li a:hover {
+    width: 10.75em;
+    line-height: 1em;
+  }
+*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

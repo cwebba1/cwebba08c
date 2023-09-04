@@ -1,0 +1,379 @@
+/*!  _cwebba_layout.scss 071220
+062420, 020817 */
+/* This style sheet represents the cwebba08 layout, including media queries.
+Portioms of this layout is mobile-first, but not all. */
+
+/* _cwebba_layout.scss 020817 Cwebba07 Version */
+/* _cwebba_layout.scss 011217 */
+/* cwebba_layout_02.css 011117 */
+/* cwebba_layout_01.css 011017 */
+
+/* Base Declarations */
+
+
+.basal {
+  width: 98%;
+  margin: 0 auto;
+  padding: 0;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  background:rgba(253, 254, 251, 0.8);
+  transition:width .25s ease-in; 
+}
+
+
+.container2 { } /*This is just a div. */
+
+.rice {
+  background: url("../assets/images/ricepaper.png");
+  }
+
+footer {
+  clear: both;
+  }
+
+/* Mobile-first */
+
+  .landpage,
+  .main-art-content,
+  .main-content {
+    margin: 0;
+    width: 100%;
+  }
+
+
+/* - - - - [ NO sidebar  ] - - - -  */
+
+/* No column layout */
+.landpage  {
+  width: 100%;
+  padding:1em 1.5em;
+  margin: 0;
+  }
+
+
+/* Is this supposed to have a media query?*/
+.landpage { width:80%;
+margin: auto;
+padding:1em 1.5em;
+}
+
+.landpage:before {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  zoom: 1;
+  display: inline;
+}
+
+@media screen and (min-width: 920px) {
+/* This is No-sidebar layout */
+.landpage { width:80%;
+  margin: auto;
+  -o-transition:width .25s ease-in; 
+    -moz-transition:width .25s ease-in; 
+    -webkit-transition:width .25s ease-in;
+  transition:width .25s ease-in; 
+  }
+
+.landpage:before {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  zoom: 1;
+  display: inline;
+  }
+}
+
+/* - - - - [ WIDE PAGE STYLE - 1 sidebar  ] - - - -  */
+
+/* Mobile */
+
+/*
+.wide-content {
+  width: 100%;
+  float: left;
+  padding: 1em 1.5em;
+  }
+
+.wide-sidnav {
+  width: 100%;
+  padding: 1em;
+  float: left;
+  }
+*/
+
+/* - - - - [ 2 sidebar main-content layout (services): ] - - - -  */
+/* 3-COLUMN LAYOUT STYLE */
+
+.main-content {
+width:60%;
+float:left;
+margin-left: 20%;
+padding:1em 1.5em;
+}
+
+.sidnav {
+width: 20%;
+margin-left: -80%;
+padding: 1em;
+float:left;
+}
+
+/* RELATED INFO (Right Column) */
+
+.related-info {
+width: 20%;
+color: #555;
+padding: 1em;
+float:left;
+}
+
+.related-info h6 { 
+font-style: italic;
+line-height:1.5em;
+padding:.5em .375em .75em .75em;
+margin:0 0 .5em;
+-webkit-border-radius: .75em;
+-moz-border-radius: .75em;
+border-radius: .75em;
+}/*rgba(245, 245, 245, 0.8);*/
+
+.related-info h6, .related-info figure { margin-bottom:1em;
+}
+
+
+/* - - - - [ MEDIA QUERIES ] - - - -  */
+
+@media only screen and (min-width : 600px)  {
+
+.basal {
+  width: 97.5%;
+  }
+
+/* This is 2-sidebar layout */
+
+.sidnav {
+ margin: 0;
+ width:70%;
+display: inline-block;
+  }
+
+.related-info {
+ margin: 0;
+ width: 30%;
+ display: inline-block;
+  } 
+}
+
+@media screen and (min-width: 920px) {
+  .basal {
+  width: 96.5%;
+  }
+
+.main-content {
+width:60%;
+float:left;
+margin-left: 20%;
+}
+
+  .sidnav {
+width: 20%;
+margin-left: -80%;
+padding: 1em;
+float:left;
+  }
+
+.related-info {
+width: 20%;
+color: #555;
+padding: 1em;
+float:left;
+  }
+/* This is 1-sidebar layout */
+/*
+  .wide-content {
+    margin-left: 25%;
+    width: 75%;
+  }
+
+  .wide-sidnav {
+    width: 25%;
+    margin-left: -100%;
+  }
+*/
+}
+
+/* ======= [ CWebba Layout Media Queries ]  =========== */
+
+
+@media screen and (max-width: 920px) {
+
+  .sidnav {
+    margin: 0;
+    width: 70%;
+    display: inline-block;
+  }
+
+  .sidnav-art {
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .related-info {
+    width: 30%;
+    display: inline-block;
+  }
+  
+}
+
+
+@media only screen and (max-width: 600px) {
+  .sidnav-art,
+  .sidnav {
+    width: 100%;
+  }
+
+  .related-info {
+    width: 100%;
+  }
+
+}
+
+
+/* - - - - -   [ WEB-DESIGN PAGE ]  - - - - - */
+
+.project-content { 
+  margin-bottom:1.5em;
+}
+
+
+.project-content header,
+.projectthumbs { 
+  display:block;
+  clear:both;
+  float:left;
+  width:100%;
+  text-align: left;
+}
+.project-content header:after,
+.projectthumbs:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+/* Blurb Box */
+.blurb-box {
+  padding:0;
+  width:100%;
+  transition: width, padding .25s ease-in, max-width .25s ease-in;
+}
+
+@media screen and (min-width:768px) {
+.blurb-box {
+  width:96%;
+  max-width:60em;
+/*  padding:0 3em; */
+  }
+}
+
+.project-content h1 { 
+  margin-bottom:0.125em;
+ }
+
+.project-content h4 { 
+  margin-bottom:1em;
+ }
+
+
+/* - - - - -   [ SERVICES PAGE ]  - - - - - */
+
+#skillset {
+  margin:1em 0 1.5em;
+}
+
+#skillset h4 {
+  margin-bottom:0.125em;
+}
+
+
+/* - - - - -   [ PORTFOLIO PAGE ]  - - - - - */
+
+#portfolio { 
+  width:100%;
+
+ }
+
+#portfolio H3 { 
+  font-variant:small-caps;
+  letter-spacing: 0.0375em;
+}
+
+#portfolio ul { 
+  list-style-position: inside;
+ }
+
+.bdr h3 {margin-top:0;}
+
+
+.big-wave {
+flex: 0 1 auto;    
+min-width:calc(33.333%  - 1em);    max-width:100%;    width:calc((600px - 100%) * 600);
+flex-basis:1;
+  background: no-repeat url(../assets/images/content/Healthcare_Sunami01.jpg);
+  background-size: cover;
+ margin: var(--margin01);
+  margin-right:1em;
+}
+
+/* - - - - -   [ INDEX PAGE - WORKBOOK NAV ]  - - - - - */
+
+
+.graphic-icon { 
+box-shadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);
+background:linear-gradient(0deg, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(0deg, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)),
+var(--graphics);
+background-size: cover;
+}
+
+.copywriting-icon { 
+box-shadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);
+background:linear-gradient(0deg, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(0deg, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)),
+var(--graphics);
+background-size: cover;
+}
+
+.development-icon { 
+box-shadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);
+background:linear-gradient(0deg, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(0deg, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)),
+var(--graphics);
+background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

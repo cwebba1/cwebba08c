@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Work Wizard Component 08</title>
+    <!-- work_wizard_08.html 112017
+    work_wizard_07.html 112017
+    work_wizard_04_debug02.html 112017
+    work_wizard_04.html 111517
+    Formerly: Nest_Flex_07.html
+    -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="css/LSH-style_121117.css">
+
+<style>
+</style>
+  </head>
+  <body>
+<!-- 
+ref: https://code.google.com/p/chromium/issues/detail?id=542388 
+ref: https://code.google.com/p/chromium/issues/detail?id=341310
+related: https://people.mozilla.org/~dholbert/tests/flexbox/compat_tests/percent-height-grandchild-1.html
+-->
+<!-- the outer holy-grail -->
+<div class="flex_col_cask">
+    <div class="top_row">
+        <div id="projectpost">
+            <h2>Post a Job</h2>
+            <div id="progresso">
+                <button><a href="#">Sub-catagory Specific</a></button><button><a href="#">Common Questions</a></button><button><a href="#">Culture Fit</a>
+                </button>
+            </div><!-- END Progress -->    
+        </div>
+    </div>
+    <div class="flipflex">
+        <div class="fixedwrap question-box">
+            <div class="fixedhead">
+                <h4>Medical Writing Deliverables</h4>
+                <p class="big-p">What are your medical writing project deliverables?</p>
+                <hr />
+            </div>
+            <div class="scrollbox">
+                <div id="questions">
+            <a href="#">Briefing packages</a><a href="#">investigator brochures, and annual reports</a><a href="#">Study documents: protocols/amendments, clinical study reports, subject narratives</a><a href="#">Periodic safety reporting</a>
+            <a href="#">Patient safety narratives</a><a href="#">U.S. Food and Drug Administration (FDA) briefing documents</a><a href="#">Submission summary documents, including 505(b)(2) submissions</a><a href="#">Risk management plans</a><a href="#">Pediatric investigational plans</a>
+            <a href="#">Medical editing</a><a href="#">Literature summaries</a><a href="#">Aggregate safety reports (PSURs, PBRERs, DSURs, PADERs)</a><a href="#">PUBLICATIONS SERVICES: Manuscripts and journal articles</a>
+            <a href="#">Go Somewhere</a><a href="#">Be Somebody</a><a href="#">Have a Heart</a><a href="#">Think About It</a>
+            <a href="#">Go Somewhere</a><a href="#">Be Somebody</a><a href="#">Have a Heart</a><a href="#">Think About It</a>
+                </div>
+            </div><!-- END scrollbox -->
+            <div class="fixedfoot">
+<!—  QUESTION WIZARD NAVIGATION —>
+                <div class="wizard-nav-box">
+<nav id="wizard-nav" role="navigation">
+<div class="wiz-nav-left">
+<button type="">
+    <div class="btn-oz-nav-icon"><svg id="i-clock" viewBox="0 1 32 32" width="26" height="26" fill="none" stroke="#090" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <circle cx="16" cy="16" r="14" fill="#FFF" />
+    <path d="M16 8 L16 16 20 20" />
+</svg> <div class="stack-text">Save and <br>Continue Later</div></div></button> 
+
+
+<!-- EDIT PROJECT Button trigger modal -->
+<button type="button" class="" data-toggle="modal" data-target="#exampleModal">
+<div class="btn-oz-nav-icon"><svg id="i-ban" viewBox="0 0 32 32" width="24" height="24" fill="#FFF" stroke="#D00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <circle cx="16" cy="16" r="14" />
+    <path d="M6 6 L26 26" />
+</svg> <div class="stack-text">Cancel <br>Changes</div>
+</div>
+</button>
+</div>
+
+<!-- Split -->
+
+  <div class="wiz-nav-right">
+<button type=""><div><svg id="i-caret-left" viewBox="0 2 30 30" width="18" height="18" fill="#FFF" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M22 30 L6 16 22 2 Z" />
+</svg><span>Back</span></div></button> 
+
+<button type=""><div><span>Next</span><svg id="i-caret-right" viewBox="0 2 30 30" width="18" height="18" fill="#FFF" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <path d="M10 30 L26 16 10 2 Z" />
+    </svg></div></button>
+        </div>
+      </nav><!-- END Wizard Nav -->
+    </div>
+            </div><!-- END fixedfoot -->
+        </div><!-- END question-box -->
+
+
+ <!-- EXTRA QUESTION BOX -->
+
+         <div class="fixedwrap answers-box">
+  <div class="fixedhead wizard-answers">
+    <h4>Project Details</h4>
+    <hr />
+  </div>
+            <div class="scrollbox scrollstyle">
+                <div class="bucket-box">
+                        <div class="bucket-header">
+                    <a href="#">
+                            <h5>Common Data</h5>
+                    </a>
+                        </div>
+                    <ul class="answers">
+                        <li>
+                            <a href="#">
+                            <h6>Medical Writer</h6>
+                            <p>Specific Deliverables and tasks</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <h6>Aggregate safety reports</h6>
+                            <p>PSURs, PBRERs, DSURs, PADERs</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <h6>Another Project Credential</h6>
+                            <p>Specific Deliverables and tasks</p>
+                           </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bucket-box">
+                    <div class="bucket-header">
+                    <a href="#">
+                        <h5>Skills</h5>
+                    </a>
+                    </div>
+                    <ul class="answers">
+                        <li>
+                            <a href="#">
+                            <h6>Medical Writer</h6>
+                            <p>Specific Deliverables and tasks</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <h6>Aggregate safety reports</h6>
+                            <p>PSURs, PBRERs, DSURs, PADERs</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <h6>Another Project Credential</h6>
+                            <p>Specific Deliverables and tasks</p>
+                           </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h6>Child safety reports</h6>
+                                <p>PSURs, PBRERs, DSURs, PADERs</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bucket-box">
+                    <div class="bucket-header">
+                    <a href="#">
+                        <h5>Culture</h5>
+                    </a>
+                    </div>
+                    <ul class="answers">
+                        <li>
+                            <a href="#">
+                            <h6>Medical Writer</h6>
+                            <p>Specific Deliverables and tasks</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <h6>Aggregate safety reports</h6>
+                            <p>PSURs, PBRERs, DSURs, PADERs</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <h6>Another Project Credential</h6>
+                            <p>Specific Deliverables and tasks</p>
+                           </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h6>Karaoke </h6>
+                                <p>Sing in tune, Good taste in Music</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- END scrollbox -->
+            <!--  <div class="fixedfoot"><h4>Right Foot</h4></div> -->
+        </div><!-- END question-box -->
+
+ <!-- END EXTRA QUESTION BOX -->       
+
+    </div><!-- END flipflex -->
+    <div style="line-height:1em;">
+        <br />
+    </div>
+</div>
+
+        <script type="text/javascript">
+      $('div#progresso > button').click(function(){
+      $(this).toggleClass('bucket');
+    });
+  </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,292 @@
+/*  pop-style.css *//*  This: modal-style_02.css 061013
+modal-style.css 060813
+pop-style.css 060712 
+  Previous: pop-style.css 012212 
+  Previous: pop-style.css 012212A 
+  Previous: pop-style.css 012112 
+  Previous: pop-style.css 091209 
+  Previous: -- pop-style.css 072708_BM *//*----------[ =code from pop-up window example ]----------*//*  #6E594D = brown#EFD = acid green  color: #6E594D; BM Text Brown#FFEABF BM French Vanilla*/
+
+ul { margin:0 0 .5em;list-style: none;
+}
+
+.clear {clear: both;margin:0;padding:0;line-height: 0; height: 0; }
+
+a:link, a:visited {text-decoration: none;font-size: inherit;line-height: inherit;color: #6E594D;border: 0;outline: 0;
+margin: inherit;padding: 0;
+}a:hover, a:focus {text-style: bold;font-size: inherit;line-height: inherit;color: #900000;border: 0;outline: 0;
+margin: inherit;padding: 0;
+}
+
+a:active {text-decoration: none;border: 0;outline: 0;
+margin: inherit;padding: 0;
+color: red;}
+
+h1, h2, h3, h4, h5, h6 { font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.mod h1 {	font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 1.125em;line-height: 1.5em;color: #384313;font-weight: bold;}/* 221090  900000*/
+.mod figure { margin:.5em;
+margin-left:1em;
+margin-right:2em;
+float:left;
+}
+
+img.mod {border: 1px solid #6E594D;text-decoration: none;}
+
+
+header.mod { width:93.6%;
+padding:.5em 1em 0; 
+margin:0 auto;
+background:transparent;
+}
+
+.receive { float:left;
+width:70%;
+}
+
+.receive p { color:#66704F;
+font-size:.875em;
+line-height:1.375em;
+margin:.5em 0 0;
+}
+
+form {margin-bottom: 0;
+position:relative;
+}
+
+form#mail-list { width:100%;
+text-align: left;
+background:#FFF;
+margin:0 auto;
+margin-top:.5em;
+}
+
+#subscribe { 
+text-align: left;margin:0 auto;
+padding:.25em 0 1em; 
+}/*background:#E6F0E6;*/
+
+
+#subscribe header { margin-top:0;
+padding:.5em 1em; background:#FFF;
+}
+
+#fieldset {
+width:90%!important;
+margin: 0 auto .125em;
+background:#E6F0E6;
+padding: .5em 2% 1em;
+}
+
+#fieldset ul { padding: 0;
+margin:0;
+}
+
+legend {
+color: #384313;
+font-size: 1em;
+line-height: 0em;
+font-weight: bold;
+text-shadow: 0 1px 1px #c0d576;
+padding:1em 0;
+}
+
+label { font-family: Verdana, Arial, Helvetica, sans-serif;margin-top: .125em;;margin-right:1em;padding-top: 0;text-align: right;font-size: 0.75em;line-height:1.5em;
+color: #6E5F4D;float: left;
+width: 8em;
+}
+
+label.wide2 { width:11em;
+text-align:right;
+}
+
+label.comments { line-height:1.5em;
+margin-top:.25em;
+}
+
+#comments {
+margin-top:.5em;
+}
+
+form#mail-list input:not([type=radio]),
+#mail-list textarea {
+background: #fefefe;
+border: none;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-khtml-border-radius: 4px;
+border-radius: 3px;
+font: italic .8125em Georgia, "Times New Roman", Times, serif;
+outline: none;
+padding: .25em .375em;
+width: 70%;
+border: 1px solid #c4c8cc;
+  -moz-box-shadow: 5px 5px 7px #AAA;
+  -moz-border-radius-bottomright: 0px;
+  -webkit-box-shadow: 5px 5px 7px #A0A9Af;
+  -webkit-border-bottom-right-radius: 0px;
+margin-bottom:.5em;
+}
+
+input[type=checkbox] { width:2em !important; 
+line-height:1em;
+}
+
+.updates { float:left; width:21em; margin-right:1.125em;
+}
+
+select {
+background: #EAFFEA;
+line-height:1em;
+font: italic .8125em Georgia, "Times New Roman", Times, serif;
+padding: .25em .375em .25em .375em;
+width: 4.5em;
+/*height:1.75em;*/
+border: 1px solid #c4c8cc;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+border-radius: 5px;
+  -moz-box-shadow: 5px 5px 7px #A0A9Af;
+  -webkit-box-shadow: 5px 5px 7px #A0A9Af;
+/*  -moz-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;*/
+}
+
+button {
+border: 1px solid #c4c8cc;
+-moz-border-radius: .5em;
+-webkit-border-radius: .5em;
+-khtml-border-radius: .5em;
+border-radius: .5em;
+display: block;
+font-size:.875em;letter-spacing: 1px;
+margin: 0 0 0 9em;
+padding: .75em 2em;
+text-shadow: 0 1px 1px #000000;
+text-transform: uppercase;
+  -moz-box-shadow: 5px 5px 7px #A0A9Af;
+  -webkit-box-shadow: 5px 5px 7px #A0A9Af;
+background: #EAFFEA;
+background: linear-gradient(#EAFFEA, ebebeb);background: -webkit-gradient(linear, left top, left bottom, from(#EAFFEA), to(#CFe6CF)); /* for webkit browsers */	background: -moz-linear-gradient(top, #EAFFEA, #DAebDA); /* for firefox */
+behavior: url(css/PIE.htc);}/* ADD PIE */
+
+button:hover {
+background: #EAFFEA;
+background: linear-gradient(#DAebDA,#EAFFEA);background: -webkit-gradient(linear, left top, left bottom, from(#CFe6CF), to(#EAFFEA)); /* for webkit browsers */	background: -moz-linear-gradient(top, #DAebDA, #EAFFEA); /* for firefox */
+
+cursor: pointer;
+}
+
+#modfoot { width:100%;
+padding:.5em 0; margin:0 auto;
+}
+
+#modfoot nav { font-size:.875em;line-height: 1.5em;
+padding:.375em 1.5em .25em; text-align:center;
+margin:1.5em auto .5em;
+}
+
+#closeBtn { 
+margin:auto;
+}
+
+ul.signup { 
+	display: inline-block;
+	width:93.6%;
+	text-align: justify;
+	-ms-text-justify: distribute-all-lines;
+	text-justify: distribute-all-lines;
+	font-size: 1em;
+padding:0;
+margin:2em 0 .5em;
+}
+
+/* clearfix */
+.signup:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.signup li {
+	font-size: .875em;	line-height: 1em;
+text-align:center;
+vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+  margin:0 -4px;
+}
+
+.signup li.last { margin-right:.25em;
+}
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+@media screen and (max-width: 950px) {
+#modal_box {
+    width: 70%!important;
+    margin: -22em 0 0 -35%!important;
+}
+
+.receive { float:left;
+width:75%;
+}
+
+}
+
+@media screen and (max-width: 900px) {
+
+.receive { float:left;
+width:70%;
+}
+
+label,
+label.wide,
+label.wide2 { text-align: left;font-size: 0.75em;color: #6E5F4D;float: left;
+width: 93.5%;
+}
+
+form#mail-list input:not([type=radio]),
+#mail-list textarea {
+padding: .25em .375em;
+width: 93.5%;
+border: 1px solid #c4c8cc;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+fieldset {
+width:80%;
+border: none;
+margin: 0 auto .125em;
+background:#E6F0E6;
+}
+
+#modal_box {
+    width: 90%!important;
+    margin: -22em 0 0 -45%!important;
+}
+
+.mod figure { margin:.5em 1em 0 0;
+float:left;
+}
+
+.receive { float:left;
+width:65%;
+}
+
+}
+

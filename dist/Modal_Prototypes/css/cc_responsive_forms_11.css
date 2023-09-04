@@ -1,0 +1,613 @@
+/* cc_responsive_forms_11.css 061213
+
+From 060813 cc_responsive_forms_10.css
+From 060613 cc_responsive_forms_09b.css + cc_responsive_forms_09_media_queries.css  */
+
+/* - - - - - - [ Bootstrap Declarations ] - - - - - - */
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  display: inline-block;
+  font-size: .875em;
+  height: 1.75em;
+  line-height: 1em;
+/*  height: 20px;
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  line-height: 20px;*/
+  color: #555555;
+  vertical-align: middle;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+select { 
+  height: 1.675em;
+}
+
+
+textarea {
+  height: auto;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+input:focus:invalid:focus,
+textarea:focus:invalid:focus,
+select:focus:invalid:focus {
+  border-color: #e9322d;
+  -webkit-box-shadow: 0 0 6px #f8b9b7;
+     -moz-box-shadow: 0 0 6px #f8b9b7;
+          box-shadow: 0 0 6px #f8b9b7;
+}
+
+
+/* - - - - - - [ END Bootstrap Declarations ] - - - - - - */
+
+
+legend { padding:0 .5em .5em;
+font-family: 
+Verdana, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:1.25em;
+color: #8b4203;
+}
+
+label { 
+	font-size:.75em;	line-height:1.125em;color: rgba(33, 16, 0, .7);
+margin:.25em 0 .5em;
+}
+
+form#contact-form > div,
+fieldset > div
+{
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0;
+}
+
+fieldset > div > div {width:100%;
+display:inline-block;
+margin-right:1.5%;
+}
+
+fieldset > div > div.street,
+fieldset > div > div.town,
+ {
+margin-right:0;
+background:#aliceblue;
+}
+
+fieldset > div > div.i2 {width:48.25%;
+}
+
+fieldset > div > div > label {
+width: 25%;
+float: left;
+padding-right: 2%;
+} /*, legend*/
+
+fieldset > div > div > label.comments
+ { width: 100%;
+padding-right: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=password],
+textarea {
+	width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=password] {
+  width: 75%;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type= submit]:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #4697e4;
+}
+
+/* - - [ cwebba codes ] - -  */
+
+#comments { width:98.5%;
+}
+
+div.street,
+div.town
+{ width: 100%;
+}
+
+div.street label { width: 12.25%;
+float: left;
+}
+
+div.street input[type=text] { width: 87.75%;
+}
+
+div.city { width:62%;
+display:inline-block;
+margin-right:1.5%;
+}
+
+div.city label { width: 19.125%;
+float: left;
+padding-right: 1.5%;
+display:inline-block;
+}
+
+div.city input { width:80%;
+display:inline-block;
+}
+
+div.state { width:12%;
+display:inline-block;
+margin-right:1.5%;
+}
+
+div.state label { width:36%;
+display:inline-block;
+}
+
+div.state input { width:3em;
+max-width:3em;
+}
+
+div.zip {width:20.5%;
+display:inline-block;
+}
+
+div.zip label { width:18%;
+padding-right: 2%;
+display:inline-block;
+}
+
+div.zip input { width:80%;
+display:inline-block;
+}
+
+div.yes {width:55%;
+float:left;
+}
+
+div.yes label { width:78%;
+display:inline-block;
+}
+
+div.yes input { width:6%;
+padding-right: 4%;
+display:inline-block;
+}
+
+.i2,
+.street,
+.city,
+.state,
+.zip,
+#title9
+{ margin-bottom:.5em;
+}
+
+label.comments { font-family: 
+Verdana, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #8b4203;
+}
+
+label.comments,
+button
+ { font-size:1em;
+letter-spacing: 1px;
+margin-top:.25em;
+margin-bottom:.125em;
+}
+
+.sendbuttonbox { 
+width:25%;
+float:left;
+}
+
+button { 
+font-size:.875em;font-style:bold;
+padding: .75em 2em;
+border: 1px solid #c4c8cc;
+-webkit-border-radius: .5em;-moz-border-radius: .5em;border-radius: .5em;}
+
+.last { margin-right:0;
+}
+
+
+/* MEDIA QUERIES START HERE */
+
+@media only screen and (min-width : 921px)  {
+
+div.street { 
+	width: 99%;
+}
+
+div.street label { width: 14.5%;
+float: left;
+padding-right: 2%;
+}
+
+div.street input[type=text] { width: 85.5%;
+}
+
+div.city { width:48%;
+float:left;
+margin-right:1.5%;
+}
+
+div.city label { width: 18%;
+float: left;
+padding-right: 2%;
+display:inline-block;
+}
+
+div.city input { width:82%;
+display:inline-block;
+}
+
+div.state { width:24%;
+float:left;
+margin-right:1.5%;
+}
+
+div.state label { width:36%;
+display:inline-block;
+}
+
+div.state input { width:30%;
+max-width:3em;
+}
+
+div.zip {width:23.5%;
+float:left;
+}
+
+div.zip label { width:24%;
+padding-right: 4%;
+display:inline-block;
+}
+
+div.zip input { width:76%;
+display:inline-block;
+}
+
+}
+
+@media only screen and (min-width : 1000px)  {
+
+div.street label { width: 12.25%;
+float: left;
+}
+
+div.street input[type=text] { width: 87.75%;
+}
+
+}
+
+@media only screen and (min-width : 1200px)  {
+
+div.street label { width: 12.25%;
+float: left;
+padding-right: 2%;
+}
+
+div.street input[type=text] { width: 87.75%;
+}
+
+div.city { width:53%;
+float:left;
+margin-right:1.5%;
+}
+
+div.city label { width: 18%;
+float: left;
+padding-right: 2%;
+display:inline-block;
+}
+
+div.city input { width:82%;
+display:inline-block;
+}
+
+div.state { width:19%;
+float:left;
+margin-right:1.5%;
+}
+
+div.state label { width:36%;
+display:inline-block;
+}
+
+div.state input { width:30%;
+max-width:3em;
+}
+
+div.zip {width:23.5%;
+float:left;
+}
+
+div.zip label { width:24%;
+padding-right: 4%;
+display:inline-block;
+}
+
+div.zip input { width:76%;
+display:inline-block;
+}
+
+}
+
+@media only screen and (max-width : 920px)  {
+
+div.street { 
+	width: 98.675%;
+}
+
+div.city { width:61.5%;
+float:left;
+margin-right:1.5%;
+}
+
+div.city label { width: 18%;
+float: left;
+padding-right: 2%;
+display:inline-block;
+}
+
+div.city input { width:82%;
+display:inline-block;
+}
+
+div.state { width:15%;
+float:left;
+margin-right:1.5%;
+}
+
+div.state label { width:36%;
+display:inline-block;
+}
+
+div.state input { width:30%;
+max-width:3em;
+}
+
+div.zip {width:19%;
+float:left;
+}
+
+div.zip label { width:24%;
+padding-right: 4%;
+display:inline-block;
+}
+
+div.zip input { width:76%;
+display:inline-block;
+}
+
+}
+
+@media (max-width: 760px) { /* This is the 1st Coyer breakpoint for mobile */
+
+fieldset > div > div {width:100%;
+display:inline-block;
+margin-right:2%;
+	}
+
+fieldset > div > div.i2 {width:100%;
+}
+
+/* End Coyer Declarations */
+
+div.street {
+width: 100%;
+}
+
+div.street label {
+width: 25%;
+display:inline-block;
+padding-right: 2%;
+}
+
+div.street input[type=text] { 
+width:75%;
+display:inline-block;
+}
+
+div.city {
+width: 100%;
+}
+
+div.city label {
+width: 25%;
+display:inline-block;
+padding-right: 2%;
+}
+
+div.city input[type=text] { 
+width:75%;
+display:inline-block;
+}
+
+div.state { width:38%;
+}
+
+div.zip { width:25%;
+}
+
+div.state label {
+width: 65%;
+display:inline-block;
+padding-right: 2%;
+}
+
+div.state input[type=select],
+div.zip input[type=text] { 
+width:75%;
+display:inline-block;
+}
+
+#comments { width:100%;
+}
+
+}
+
+
+@media (max-width: 600px) { /* This is the 2nd Coyer breakpoint for mobile */
+
+fieldset > div > div > label,
+
+legend { 
+font-size:1em;
+}
+
+legend {
+	width: 100%;
+  float: left;
+padding-right: 2%;
+	}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=password] {
+width: 100%;
+	}
+
+fieldset > div > div.i2 {
+}
+
+/* End Coyer Declarations */
+
+fieldset > div > div > label,
+legend {
+	width: 100%;
+  float: left;
+padding-right: 2%;
+	}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=password] {
+width: 100%;
+	}
+
+div.street label,
+div.city label {
+width: 100%;
+  float: left;
+padding-right: 2%;
+}
+
+div.street input[type=text],
+div.city input[type=text] { 
+width:100%;
+display:inline-block;
+}
+
+div.state { width:48%;
+}
+
+div.state label {
+width: 40%;
+padding-right: 2%;
+  float: left;
+}
+
+div.zip { width:48%;
+  float: left;
+}
+
+div.zip label {
+padding-right: 2%;
+  float: left;
+}
+
+}
+
+
+

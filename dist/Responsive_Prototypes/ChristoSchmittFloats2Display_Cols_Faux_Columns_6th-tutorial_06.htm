@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- This: ChristoSchmittFloats2Display_Cols_Faux_Columns_6th-tutorial_06.htm -->
+<!-- This: ChristoSchmittFloats2Display_Cols_Chg_Order_5th-tutorial_05.htm -->
+<!-- This: ChristoSchmittFloats2Display_Cols_Chg_Order_4th-tutorial_04.htm -->
+<!-- This: ChristoSchmittFloats2Display_Cols_Orig_Order_3rd-tutorial_03.htm -->
+<!-- This: ChristoSchmittFloats2Display_Cols_Any_Order_2nd-tutorial_02.htm -->
+<!-- From: ChristoSchmittFloats2Display_Cols_Any_Order_2nd-tutorial_01.htm -->
+
+<!-- From christopherschmitt.com -->
+<!-- From: http://christopherschmitt.com/2007/10/23/css-floats-to-display-columns-in-any-order/ -->
+
+
+<title>CSS Floats to Display Columns in Any Order – Faux Columns – Sixth Tutorial v01</title>
+
+<!-- <link rel="stylesheet" type="text/css" href="css/aux-style01.css"> -->
+
+<style type="text/css">
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, dialog { display: block }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, cite, code, del, dfn, em, font,  img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, audio, aside, canvas, details, figcaption, figure, footer, header, hgroup, mark, menu, nav, section, summary, time, video { margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;text-decoration: none;background:transparent;vertical-align:baseline;}/* a is removed to below*/
+
+body {width: 96%; margin: 0 auto;
+background-color:rgba(135, 135, 105, 0.4);
+} /* Center page without wrapper */
+
+#content { background:#FAD; }
+#sidnav { background:#EDA; }
+#related-info { background:#DEE;
+ background: url("images/paper_3.png") repeat-y 0% 0;
+ }
+.column {background:#DAD; }
+code { color:#900;}
+#copyright {background:aliceblue; }
+.column {
+ float: left;
+}
+#content {
+ margin-left: 40%;
+ width: 60%;
+}
+#sidnav {
+ margin-left: -100%;
+ width: 20%;
+}
+#related-info {
+ margin-left: -80%;
+ width: 19%;
+} 
+#copyright {
+ clear: both;
+}  
+
+.column .wrap {
+ padding: 20px;
+}
+
+#content .wrap {
+ padding: 20px 30px;
+}
+
+/* faux column code: */
+#container:after {
+ clear: both;
+ content: ".";
+ display: block;
+ height: 0;
+ visibility: hidden;
+}
+#container {
+ display: inline-block;
+}
+/*\*/
+#container {
+ display: block;
+}
+/**/
+/*\*//*/
+#container {
+ display: inline-block;
+}
+/**/
+#container-outer {
+ background:pink;
+ background: url("images/cork_1.png") repeat-y 0% 0;
+}
+#container {
+ background:blue;
+ background: url("images/grunge_wall.png") repeat-y 96% 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="container-outer">
+<div id="container">
+ <article id="content" class="column">
+  <div class="wrap">
+<p>With this simple markup structure in place, you can apply a generic float rule to all three column divs.</p>
+<p>Once dimensions are assigned to these blocks things rapidly change. First, start with the content block. To set the block to be 60% of the window width, and the width of the lefthand sidebar to be 20% of the screen.</p>
+<code>#content {
+ margin-left: 20%;
+ width: 60%;
+}
+</code>
+<p>By setting a lefthand margin equal to the width of your lefthand sidebar, you’ve essentially “reserved” some space for it. The next step is to use negative margins to “pull” the navigation div across the content div to the lefthand side of the page.</p>
+<h3>Creating Whitespace</h3>
+<p>The space between the columns is called a gutter. To customize this layout by increasing the size of the gutters, an approach would be to apply some margins around the columns. There are a number of ways to achieve this effect, but first start by adding an additional div to each of your columns, like so:</p>
+<code>
+&lt;div id="container"&gt;
+ &lt;div id="content" class="column"&gt;
+  &lt;div class="wrap"&gt;
+   [...]
+  &lt;/div&gt;
+ &lt;/div&gt;&lt;!-- /end #content --&gt;
+
+ &lt;div id="navigation" class="column"&gt;
+  &lt;div class="wrap"&gt;
+   [...]
+  &lt;/div&gt;
+ &lt;/div&gt;&lt;!-- /end #navigation --&gt;
+
+ &lt;div id="related-info" class="column"&gt;
+  &lt;div class="wrap"&gt;
+   [...]
+  &lt;/div&gt;
+ &lt;/div&gt;&lt;!-- /end #related-info --&gt;
+&lt;/div&gt;&lt;!-- /end #container --&gt;
+</code>
+
+<p>With your “wrap” divs in place, apply padding to them with CSS to create more breathing room:</p>
+<code>.column .wrap {
+ padding: 20px;
+}
+
+#content .wrap {
+ padding: 20px 30px;
+} 
+</code>
+
+<div style="background:#FF0;">
+<p>Now simplify the CSS for a moment, and remove all the column margins:</p>
+<code>
+#content {
+ width: 60%;
+}
+#navigation {
+ width: 20%;
+}
+#related-info {
+ width: 19%;
+}
+</code>
+<p>As a result, each column in your layout now appears in its natural position in the float order.</p>
+</div>
+<br />
+
+<div style="background:#6F0;">
+<p>By adding a lefthand margin to your navigation div, and then by using a negative lefthand margin to move your related-info div, you can essentially reverse the order of the second two columns.</p>
+<code>
+#content {
+ width: 60%;
+}
+#sidnav {
+ margin-left: 20%;
+ width: 20%;
+}
+#related-info {
+ margin-left: -39%;
+ width: 19%;
+} 
+</code>
+
+<p>As a result, each column in your layout now appears in its natural position in the float order.</p>
+</div>
+<br />
+<div style="background:#06F;">
+<p>And to complete the demonstration, place the content column on the righthand side of the page by applying the following code:</p>
+<code>
+#content {
+ margin-left: 40%;
+ width: 60%;
+}
+#sidnav {
+ margin-left: -100%;
+ width: 20%;
+}
+#related-info {
+ margin-left: -80%;
+ width: 19%;
+} 
+</code>
+
+<p>As with the first layout, a margin is applied to the content column in order to &ldquo;reserve&rdquo; some whitespace on the lefthand side of our page. Then, negative lefthand margins are used to pull the navigation and &ldquo;related information&rdquo; divs into the proper location.</p>
+</div>
+
+<br />
+<div style="background:#6AF;">
+<h3>Page Layout Algorithm</h3>
+<p>A simple way to calculate rearranging columns is to follow a somewhat simple algorithm used to calculate the negative margins for a column:</p>
+<ul>
+<li>For the column you want to determine its negative margin, first calculate the rightmost point for all columns that precedes it in the source code.</li>
+<li>Then specify the leftmost point for the column.</li>
+<li>Finally, subtract the rightmost value from the leftmost to give the left margin for the element.</li>
+</ul>
+</div>
+<br />
+
+<div style="background:#AF6;">
+<h3>Faux Columns</h3>
+<p><a hef="http://alistapart.com/articles/fauxcolumns/" target="_blank">Faux columns</a> is a technique developed by web designer <strong>Dan Cederholm</strong> that utilizes a horizontally repeating background image.</p>
+<p>By using one tiled image, Cederholm&rsquo;s method works incredibly well in a fixed-width design: however, the technique&rsquo;s versatility means that it needs only slight modification to work in our fully flexible layout. First, you need two images, one for each side of the content column</p>
+<p>Next, you’ll need to wrap your container block in an extra div, like so:</p>
+<code>
+&lt;div id="container-outer"&gt:
+ &lt;div id="container"&gt:
+  [Rest of template goes here]
+ &lt;/div&gt:
+&lt;/div&gt:
+</code>
+<p>And finally, you’ll need to add the following rules to your style sheet:</p>
+<code>
+#container:after {
+ clear: both;
+ content: ".";
+ display: block;
+ height: 0;
+ visibility: hidden;
+}
+#container {
+ display: inline-block;
+}
+/*\*/
+#container {
+ display: block;
+}
+/**/
+/*\*//*/
+#container {
+ display: inline-block;
+}
+/**/
+#container-outer {
+ background: url("images/cork_1.png") repeat-y 20% 0;
+}
+#container {
+ background: url("images/grunge_wall.png") repeat-y 80% 0;
+}
+</code>
+</div>
+<br />
+
+
+  </div><!-- END wrap -->
+ </article><!-- /END #content -->
+
+ <nav class="column" id="sidnav">
+  <div class="wrap">
+  <ul>
+<li>Link One</li>
+<li><a>Link Two</a></li>
+<li>Link Three</li>
+  <ul>
+<p>The margin-left value applied is a sum of the width of the center column (60%) and its lefthand margin (20%). This pulls the navigation column over to its proper place</p>
+<code>#navigation {
+ margin-left: -80%;
+ width: 20%;
+}
+</code>
+<br /><br />
+<h3>More Links to IE Hacks:</h3>
+  <ul>
+<li><a href="#" />Tantek Çelik&rsquo;s Box Model Hack</a></li>
+<li><a href="#" />Tantek Çelik&rsquo;s Mid Pass Filter</a></li>
+<li><a href="#" />Avoid borders &amp; padding</a></li>
+  </ul>
+
+  </div><!-- END wrap -->
+</nav><!-- /END #navigation -->
+
+ <aside id="related-info" class="column">
+  <div class="wrap">
+<p>By setting a width on the related-info block, the three-column layout is complete.</p>
+<code>#related-info {
+ width: 20%;
+} 
+</code>
+<p>Although the layout may look as though your columns are nearly complete, Internet Explorer on Windows needs a little extra attention.</p>
+<p>Thankfully, this is a documented IE bug known as the <a href="#" />&ldquo;Doubled Float-Margin Bug&rdquo;</a>: essentially, when a margin is applied to a floated box in the same direction as the float, that margin is doubled in size.</p>
+<p>Since a lefthand margin is applied to a left-floated element, IE on Windows takes that 20% margin and doubles it to 40%.</p>
+<p>Thankfully, the fix is a simple one. By applying display:inline to the problematic element, Internet Explorer behaves again. To do this, add the following lines to your CSS:</p>
+<code>/* IEx patches \*/
+* html .column {
+ display: inline;
+}
+/**/</code>
+  </div><!-- END wrap -->
+</aside><!-- /END #related-info -->
+
+
+</div><!-- /END #container -->
+</div><!-- END Container-outer -->
+
+<section id="copyright">
+  <div class="wrap">
+ <p>Copyright notice goes here.</p>
+<code>#copyright {
+ clear: both;
+}  
+</code>
+  </div><!-- END wrap -->
+</section>
+
+</body>
+</html>
+
+

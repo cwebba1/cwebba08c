@@ -1,0 +1,148 @@
+/* 120114 HandOff.com/css/fonts.css */
+
+@font-face {
+    font-family: 'antonioregular';
+    src: url('../handoff_fonts/webfonts_antonio/antonio-regular-webfont.eot');
+    src: url('../handoff_fonts/webfonts_antonio/antonio-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../handoff_fonts/webfonts_antonio/antonio-regular-webfont.woff') format('woff'),
+         url('../handoff_fonts/webfonts_antonio/antonio-regular-webfont.ttf') format('truetype'),
+         url('../handoff_fonts/webfonts_antonio/antonio-regular-webfont.svg#antonioregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arvoregular';
+    src: url('../handoff_fonts/webfonts_Arvo/arvo-regular-webfont.eot');
+    src: url('../handoff_fonts/webfonts_Arvo/arvo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../handoff_fonts/webfonts_Arvo/arvo-regular-webfont.woff') format('woff'),
+         url('../handoff_fonts/webfonts_Arvo/arvo-regular-webfont.ttf') format('truetype'),
+         url('../handoff_fonts/webfonts_Arvo/arvo-regular-webfont.svg#arvoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arvoitalic';
+    src: url('../handoff_fonts/webfonts_Arvo/arvo-italic-webfont.eot');
+    src: url('../handoff_fonts/webfonts_Arvo/arvo-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../handoff_fonts/webfonts_Arvo/arvo-italic-webfont.woff') format('woff'),
+         url('../handoff_fonts/webfonts_Arvo/arvo-italic-webfont.ttf') format('truetype'),
+         url('../handoff_fonts/webfonts_Arvo/arvo-italic-webfont.svg#arvoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'arvobold';
+    src: url('../handoff_fonts/webfonts_Arvo/arvo-bold-webfont.eot');
+    src: url('../handoff_fonts/webfonts_Arvo/arvo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../handoff_fonts/webfonts_Arvo/arvo-bold-webfont.woff') format('woff'),
+         url('../handoff_fonts/webfonts_Arvo/arvo-bold-webfont.ttf') format('truetype'),
+         url('../handoff_fonts/webfonts_Arvo/arvo-bold-webfont.svg#arvobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'arvobold_italic';
+    src: url('../handoff_fonts/webfonts_Arvo/arvo-bolditalic-webfont.eot');
+    src: url('../handoff_fonts/webfonts_Arvo/arvo-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../handoff_fonts/webfonts_Arvo/arvo-bolditalic-webfont.woff') format('woff'),
+         url('../handoff_fonts/webfonts_Arvo/arvo-bolditalic-webfont.ttf') format('truetype'),
+         url('../handoff_fonts/webfonts_Arvo/arvo-bolditalic-webfont.svg#arvobold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'source_sans_probold';
+    src: url('../handoff_fonts/webfonts_source-sans/sourcesanspro-bold-webfont.eot');
+    src: url('../handoff_fonts/webfonts_source-sans/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../handoff_fonts/webfonts_source-sans/sourcesanspro-bold-webfont.woff') format('woff'),
+         url('../handoff_fonts/webfonts_source-sans/sourcesanspro-bold-webfont.ttf') format('truetype'),
+         url('../handoff_fonts/webfonts_source-sans/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'source_sans_probold_italic';
+    src: url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-bolditalic-webfont.eot');
+    src: url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-bolditalic-webfont.woff2') format('woff2'),
+         url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-bolditalic-webfont.woff') format('woff'),
+         url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-bolditalic-webfont.ttf') format('truetype'),
+         url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-bolditalic-webfont.svg#source_sans_probold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans_prosemibold';
+    src: url('../handoff_fonts/webfonts_source-sans/sourcesanspro-semibold-webfont.eot');
+    src: url('../handoff_fonts/webfonts_source-sans/sourcesanspro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../handoff_fonts/webfonts_source-sans/sourcesanspro-semibold-webfont.woff') format('woff'),
+         url('../handoff_fonts/webfonts_source-sans/sourcesanspro-semibold-webfont.ttf') format('truetype'),
+         url('../handoff_fonts/webfonts_source-sans/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'source_sans_proSBdIt';
+    src: url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-semibolditalic-webfont.eot');
+    src: url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-semibolditalic-webfont.woff2') format('woff2'),
+         url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-semibolditalic-webfont.woff') format('woff'),
+         url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-semibolditalic-webfont.ttf') format('truetype'),
+         url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-semibolditalic-webfont.svg#source_sans_proSBdIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../handoff_fonts/webfonts_source-sans/sourcesanspro-regular-webfont.eot');
+    src: url('../handoff_fonts/webfonts_source-sans/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../handoff_fonts/webfonts_source-sans/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('../handoff_fonts/webfonts_source-sans/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('../handoff_fonts/webfonts_source-sans/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'source_sans_proitalic';
+    src: url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-italic-webfont.eot');
+    src: url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-italic-webfont.woff2') format('woff2'),
+         url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-italic-webfont.woff') format('woff'),
+         url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-italic-webfont.ttf') format('truetype'),
+         url('../handoff_fonts/webfonts_source-sans-italic/sourcesanspro-italic-webfont.svg#source_sans_proitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

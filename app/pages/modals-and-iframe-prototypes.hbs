@@ -1,0 +1,105 @@
+{{!-- pages/modals-and-iframe-prototypes.hbs --}}
+
+{{#> layouts/cwebba-base-05 title="Modals and Iframe Prototypes" }}
+
+{{#*inline "meta-block" }}
+{{> includes/meta
+  meta-description="Craig Webb is an Artist and Graphic Designer, content writer and Front-end website designer who helps clients to create their brand presence online."
+  meta-kewords="Artist, graphic designer, copywriter, content developer, website designer, web development engineer"
+  meta-social-content="Craig Webb is an artist, content developer and web designer who helps clients to create their brand presence online."
+  meta-url="http://craigwebbart.com/portfolio.html"
+  meta-site-name="Craig Webb Art"
+  og-image="http://craigwebbart.com/assets/images/heropics/hasegawa-tohaku-maple.jpg"
+  og-image-alt="Hasegawa Tōhaku: Maple and plants, c. 1593"
+}}
+{{/inline}}
+{{!-- best image 1200x630px, aspect ratio 1.91:1, size less than 1mb --}}
+
+{{!--   The `includes/head` partial is here.  --}}
+  {{#*inline "head-block"}}
+    <link rel="stylesheet" type="text/css" href="css/prototype-theater.css">
+  {{/inline}}
+
+{{!--   The `includes/header` partial is here.  --}}
+  {{#*inline "rail-block"}}
+    {{> includes/rail
+      rail-src="assets/images/navpics/math.jpg"
+      rail-alt="(917) 797&middot;0983"
+      rail-width="278"
+      rail-height="36"
+    }}
+  {{/inline}}
+
+{{!-- MAIN prototype-parent Starts here HERE. --}}
+
+
+  {{#*inline "tagline-header-block"}}
+    {{> includes/tagline-header
+      page-title="Modals and Iframe Prototypes"
+    }}
+  {{/inline}}
+
+  {{#*inline "prototype-list-nav-block"}}
+        {{!-- Prototype List Navigation goes here. --}}
+<!--      ##HERE!!!   -->
+<div class="div2 view-alert">
+<p><em>View links in the theater view or open links in a new tab to examine closely</em></p>
+</div><!-- END div2 -->
+<section class="div3 menu-wrap">
+  <nav class="prototype-list">
+  <ul id="proto-list">
+   {{!-- Put the "Prototype List" content here (list only). --}}
+<li><div><a href="Modal_Prototypes/ThirdSampleModal_04.htm" id="01" data-title="Third Sample Modal 04" data-cutline="This is a super simple modal using JavaScript. Clicking a &ldquo;close&rdquo; button is required to close the modal." target="page" rel="noopener noreferrer">Third Sample Modal 04</a></div></li>
+
+<li><div><a href="Modal_Prototypes/contact.htm" id="02" data-title="Contact Page" data-cutline="This page has two modals, one to display a map and a second to show a &ldquo;join mailing list&rdquo; form. Clicking a &ldquo;close&rdquo; button is required to close the modal." target="page" rel="noopener noreferrer">Contact Page</a></div></li>
+
+<li><div><a href="Modal_Prototypes/care_comp_04.htm" id="03" data-title="SCare Comp 04" data-cutline="This page has three modals. Part of this project involved tracking clicks to determine interest. Clicking a &ldquo;close&rdquo; button is required to close the modal." target="page" rel="noopener noreferrer">Care Comp 04</a></div></li>
+
+<li><div><a href="Modal_Prototypes/iframe_modal_04.html" id="04" data-title="Iframe Modal 04" data-cutline="These modals open an iframe. The &ldquo;close&rdquo; button is no longer required." target="page" rel="noopener noreferrer">Iframe Modal 04</a></div></li>
+
+<li><div><a href="Modal_Prototypes/iframe_modal_05.html" id="05" data-title="Iframe Modal 05" data-cutline="These modals open an iframe. No &ldquo;close&rdquo; button is required." target="page" rel="noopener noreferrer">Iframe Modal 05</a></div></li>
+
+
+<li><div><a href="live-prototypes.html" rel="noopener noreferrer" class="fnt400">&hookleftarrow; Back to Prototypes main page</a></div></li>
+
+
+
+
+    </ul>
+  </nav>
+</section><!-- END div3 -->
+{{/inline}}
+
+{{!-- END OF Prototype List Navigation HERE. --}}
+
+
+  {{#*inline "prototypes-theater-block"}}
+    {{> includes/prototypes-theater
+      first-link="Modal_Prototypes/ThirdSampleModal_04.htm"
+    }}
+  {{/inline}}
+
+
+        {{#> creative-consulting-nav-block }}
+        {{> includes/creative-consulting-nav }}
+        {{!-- This should be a standard template. --}}
+        {{/creative-consulting-nav-block }}
+
+        {{#> blockquote-workbook-block}}
+        {{> includes/blockquote-workbook }}
+        {{!-- This should be a standard template. --}}
+        {{/blockquote-workbook-block}}
+
+{{!-- MAIN prototype-parent ENDS here here. --}}
+
+
+
+ {{!-- The "footer-block" content is here. --}}
+
+{{!--  MODAL FORM BLOCK HERE  --}}
+
+    {{#*inline "js-block"}}
+    {{> includes/scripts/js-iframe-theater }}
+    {{/inline}}
+  
+{{/layouts/cwebba-base-05}}

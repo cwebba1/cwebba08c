@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>simple_sticky_footer_01.htm</title>
+<!-- http://codepen.io/m412c0/pen/jImsc  -->
+<style>
+article, aside, header, section, nav, footer, { display:block;
+}
+</style>
+<script>
+  document.createElement('header');
+  document.createElement('footer');
+  document.createElement('section');
+  document.createElement('aside');
+  document.createElement('nav');
+  document.createElement('article');
+</script>
+
+<style>
+html,
+body,
+.main {
+  height: 100%;
+}
+
+body {
+  display: table;
+  font: 400 1em/1.5em sans-serif;
+  margin: 0;
+  width: 100%;
+}
+
+.footer {
+  display: table-row;
+  height: 1px;
+}
+
+.header,
+.footer {
+  background-color: #c8c8c8;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 767px;
+  padding: 1em 0;
+  width: 90%;
+}
+</style>
+
+</head>
+<body>
+<header class="header">
+  
+  <div class="container">
+    
+    HEADER
+<p>lot's of stuff.</p>
+<p>lot's of stuff.</p>
+<p>lot's of stuff.</p>
+
+  </div>
+  
+</header>
+
+<main class="main">
+  
+  <div class="container">
+    
+    MAIN
+<p>lot's of stuff.</p>
+<p>lot's of stuff.</p>
+<p>lot's of stuff.</p>
+<p>lot's of stuff.</p>
+<p>lot's of stuff.</p>
+<p>lot's of stuff.</p>
+<p>lot's of stuff.</p>
+<p>lot's of stuff.</p>
+<p>lot's of stuff.</p>
+<p>lot's of stuff.</p>
+
+  </div>
+  
+</main>
+
+<footer class="footer">
+  
+  <div class="container">
+    
+    FOOTER
+
+  </div>
+  
+</footer>
+</body>
+</html>
