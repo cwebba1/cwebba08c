@@ -2,15 +2,9 @@
 
 @import "vars";
 @import "mixins";
-// @import "theme_info";
 
 // Reset 
-@import "resets/normalize-V8.0.1";
-@import "resets/reset";
-
-// Bootstrap 
-//@import "bs_scss/cwebba_bootstrap_0503b2";
-//@import "bs_scss/tether.scss";
+@import "resets/cwebba08c_reset";
 
 // Helpers 
 @import "base/css-custom-properties";

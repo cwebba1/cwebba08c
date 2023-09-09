@@ -1,8 +1,10 @@
-/* _sticky_footer_flex.scss */
-/* Sticky-footer Flex Declarations */
+/** _sticky_footer_flex.scss */
+/* Sticky-footer Flex Declarations 
+Updated 090923 */
 
+/* This declaration is redundent. Here for archival purposes only.
 *,:after,:before { box-sizing:border-box; }
-  
+  */
 html {
   min-height: 100%;
 text-rendering:optimizeLegibility;
@@ -42,16 +44,15 @@ align-items:stretch;
 
 main:after { content:'\00a0';
 display:block;
-/*margin-top:1.5em;*/
 height:0;
 visibility:hidden;
 }
 
 
-/* END STICKY FOOTER*/
+/** END STICKY FOOTER*/
 
 
-/* Flexbox Grid */
+/** Flexbox Grid */
 /*  https://www.taniarascia.com/easiest-flex-grid-ever/
 https://codepen.io/taniarascia/pen/rOLEGe 
 */

@@ -1,0 +1,52 @@
+User-agent: GPTBot
+Disallow: /
+User-agent: googlebot-image
+Disallow: /
+User-agent: baiduspider
+Disallow: /
+User-agent: baiduspider-image
+Disallow: /
+User-agent: baiduspider-video
+Disallow: /
+User-agent: psbot
+Disallow: /
+User-agent: msnbot-media
+Disallow: /
+User-agent: adidxbot
+Disallow: /
+User-agent: Googlebot-Image
+Disallow: /
+User-agent: Googlebot-Video
+Disallow: /
+User-agent: Storebot-Google
+Disallow: /
+User-agent: Mediapartners-Google
+Disallow: /
+User-agent: AdsBot-Google
+Disallow: /
+User-agent: Twitterbot/1.0
+Disallow: /
+User-agent: MJ12Bot
+Disallow: /
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SEMrushBot
+Disallow: /
+User-agent: MauiBot
+Disallow: /
+
+User-agent: *
+Disallow: 
+Crawl-delay: 120
+Disallow: /cgi-bin/
+Disallow: /assets/images/
+Disallow: /Cards/
+Disallow: /Inner_Components/
+Disallow: /Modal_Prototypes/
+Disallow: /Navigation_Prototypes/Disallow: /Responsive_Prototypes/
+Disallow: /Sticky_Footer_Prototypes/
+Disallow: /graphicprojects/graphic-project_00.htm
+Disallow: /webprojects/web-project_11_Code_of_Santa_Cruz.htm
+
+
+User-agent: Googlebot-ImageDisallow: /*.jpg$User-agent: Googlebot-ImageDisallow: /images/*.jpg$User-agent: Googlebot-ImageDisallow: /*.pdf$User-agent: Yahoo-MMCrawlerDisallow: /images/*.jpg$User-agent: SlurpDisallow: /*.jpg$User-agent: Yahoo-MMCrawlerDisallow: /images/*.pdf$User-agent: SlurpDisallow: /*.pdf$User-agent: psbotDisallow: /*.jpg$User-agent: msnbotDisallow: /*.jpg$User-agent: psbotDisallow: /*.pdf$User-agent: msnbotDisallow: /*.pdf$

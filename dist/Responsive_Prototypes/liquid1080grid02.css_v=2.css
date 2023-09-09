@@ -16,11 +16,15 @@ px12 { 1.1111111111111%;}
 
 /*	*	*	*	*	*	*	*	*	*/
 
-* {padding: 0;margin: 0;}
+* {
+padding: 0;
+margin: 0;
+}
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, cite, code, del, dfn, em, font,  img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, audio, aside, canvas, details, figcaption, figure, footer, header, hgroup, mark, menu, nav, section, summary, time, video { margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;text-decoration: none;background:transparent;vertical-align:baseline;}/* a is removed to below*/
 
-html { font-size:100.01%;height: 100%;
+html { font-size:100.01%;
+height: 100%;
 overflow-y: scroll; } /* always force a scrollbar in non-IE */
 -webkit-text-size-adjust: 100%;
 }
@@ -34,9 +38,14 @@ text-rendering:optimizeLegibility;
 }/* background:url('../images/24px_grid_bg.gif')  */
 /* Note: Improve default text rendering, handling of kerning pairs and ligatures;
 Fix for webkit rendering */
-* html body { height: 100%;width:100%;} /*for IE6*/* html .clearfix             { zoom: 1 } /* IE6 */*:first-child+html .clearfix { zoom: 1 } /* IE7 */
 
-body {background: #b8b8b8; /* for non-css3 browsers - was  #ebebeb; */font-size:1em; line-height:1; font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal;
+* html body { height: 100%;width:100%;} /*for IE6*/
+* html .clearfix             { zoom: 1 } /* IE6 */
+*:first-child+html .clearfix { zoom: 1 } /* IE7 */
+
+body {
+background: #b8b8b8; /* for non-css3 browsers - was  #ebebeb; */
+font-size:1em; line-height:1; font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: normal;
 	color: rgba(33,16,0,0.9);
 	-moz-text-shadow: 0 1px 0 rgba(245, 245, 245, 0.8);
 	-webkit-text-shadow: 0 1px 0 rgba(245, 245, 245, 0.8);
@@ -45,9 +54,21 @@ body {background: #b8b8b8; /* for non-css3 browsers - was  #ebebeb; */font-siz
 }
 
 
-.pink { background-color:#FFCCCC;}.pearl { background-color:#FCE;}.puce { background-color:#FEC;}.powder { background-color:#CFE;}.white { background-color:#FFF;}.gree { background-color:#EFEFEF;}.gred { background-color:#DDD;}.gre9 { background-color:#999;}.gre4 { background-color:#444;}.yell { background-color:#FFC;}
+.pink { background-color:#FFCCCC;}
+.pearl { background-color:#FCE;}
+.puce { background-color:#FEC;}
+.powder { background-color:#CFE;}
+.white { background-color:#FFF;}
+.gree { background-color:#EFEFEF;}
+.gred { background-color:#DDD;}
+.gre9 { background-color:#999;}
+.gre4 { background-color:#444;}
+.yell { background-color:#FFC;}
 
-.clear { clear:both; height:0; overflow:hidden; line-height:1px; font-size:1px;margin:0;padding:0;}
+.clear { clear:both; height:0; overflow:hidden; line-height:1px; font-size:1px;
+margin:0;
+padding:0;}
+
 
 /* NEW CSS */
 /* DEFAULT MOBILE STYLE */
@@ -59,7 +80,7 @@ margin:0.75em 0 2em;
 margin-bottom:2em;
 padding:.5em 0.55555555555555%;
 background: #ebebeb;
-	background: url("../images/oj_emboss.png")
+	background: url("images/oj_emboss.png")
 }
 
 .contain{

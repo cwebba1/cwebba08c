@@ -1,4 +1,4 @@
-/** 082923 _flex-fab-four-holy-albatross.scss */
+/** 090923 082923 _flex-fab-four-holy-albatross.scss */
 /** 122520 _flex-fab-four-holy-albatross.scss */
 
 .flexbox-wrapper { 
@@ -18,38 +18,38 @@
 
 
 .super-block {    flex: 1 1 auto;    
-min-width:calc(100%);    max-width:100%;    width:calc((500px - 100%) * 500);
-margin: var(--margin01);
+  min-width:calc(100%);    max-width:100%;    width:calc((500px - 100%) * 500);
+  margin: var(--margin01);
 }
 
 .big-block {    flex: 1 1 auto;    
-min-width:calc(50% - 1em);    max-width:100%;    width:calc((500px - 100%) * 500);
-margin: var(--margin01);
+  min-width:calc(50% - 1em);    max-width:100%;    width:calc((500px - 100%) * 500);
+  margin: var(--margin01);
 }
 
 .sexy-block-720 {    flex: 1 1 auto;    
-min-width:calc(66.666%  - 1em);    max-width:100%;    width:calc((720px - 100%) * 720);
-margin: var(--margin01);
+  min-width:calc(66.666%  - 1em);    max-width:100%;    width:calc((720px - 100%) * 720);
+  margin: var(--margin01);
 }
 
 .sexy-block {    flex: 1 1 auto;    
-min-width:calc(66.666%  - 1em);    max-width:100%;    width:calc((600px - 100%) * 600);
-margin: var(--margin01);
+  min-width:calc(66.666%  - 1em);    max-width:100%;    width:calc((600px - 100%) * 600);
+  margin: var(--margin01);
 }
 
 .bitty-titty-block {    flex: 1 1 auto;    
-min-width:calc(33.333%  - 1em);    max-width:100%;    width:calc((666px - 100%) * 666);
-margin: var(--margin01);
+  min-width:calc(33.333%  - 1em);    max-width:100%;    width:calc((666px - 100%) * 666);
+  margin: var(--margin01);
 }
 
 .bitty-block {    flex: 1 1 auto;    
-min-width:calc(25%  - 1em);    max-width:100%;    width:calc((500px - 100%) * 500);
-margin: var(--margin01);
+  min-width:calc(25%  - 1em);    max-width:100%;    width:calc((500px - 100%) * 500);
+  margin: var(--margin01);
 }
 
 .itti-bitty-block {    flex: 1 1 auto;    
-min-width:calc(16.666% - 1em);    max-width:100%;    width:calc((500px - 100%) * 500);
-margin: var(--margin01);
+  min-width:calc(16.666% - 1em);    max-width:100%;    width:calc((500px - 100%) * 500);
+  margin: var(--margin01);
 }
 
 
@@ -89,32 +89,30 @@ align-self: flex-start;
 }
 
 .txt-albatross-box { 
-flex: 2 1 auto;    
-align-self: flex-start;
-margin:0;
-min-width:58%;    
-max-width:100%;    
-width:calc((260px - 100%) * 260);
-flex-basis:1;
+  flex: 2 1 auto;    
+  align-self: flex-start;
+  margin:0;
+  min-width:58%;    
+  max-width:100%;    
+  width:calc((260px - 100%) * 260);
+  flex-basis:1;
 }
 
 .img-albatross-box,
 .txt-albatross-box { 
-margin-bottom:0;
+  margin-bottom:0;
 }
 
 .img-albatross-box img { 
   border:1px solid #ADBEAC;
 }
 
-
-
 /** Vertical - Horizontal - Vertical Pattern w/ Media Queries */
 
 .hv-card { 
   padding:1em;
   border:1px solid #DEDFDB;
-    margin: 0.5em;
+  margin: 0.5em;
   margin-bottom:1em;
  }
 
@@ -122,11 +120,10 @@ margin-bottom:0;
   border:1px solid #DEDFDB;
 }
 
-
 @media (min-width: 576px) {
 .hv-card { 
   flex: 1 1 24em;
-max-width:calc(50% - 1em);
+  max-width:calc(50% - 1em);
 }
 
 .clipped-vertical-image { 
@@ -146,18 +143,18 @@ max-width:calc(50% - 1em);
   }
 
 .hv-card figure { 
-     flex: 1 0 50%;
-    min-height: 1px;
-margin-right:1em;
+  flex: 1 0 50%;
+  min-height: 1px;
+  margin-right:1em;
 }
 
 .hv-card figure img { 
-align-self:stretch;
+  align-self:stretch;
 }
 
 .hv-card-body {
-    flex: 1 0 50%;
-    min-height: 1px;
+  flex: 1 0 50%;
+  min-height: 1px;
   }
 }
 
@@ -170,8 +167,8 @@ align-self:stretch;
   }
 
 .hv-card figure { 
-     flex: 1 1 100%;
-    min-height: 1px;
-margin-right:0;
-}
+  flex: 1 1 100%;
+  min-height: 1px;
+  margin-right:0;
+  }
 }

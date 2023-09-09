@@ -1,10 +1,11 @@
-/*  _top_nav.scss 020819 */
+/**  _top_nav.scss 090923 */
+/*  _top_nav.scss 020819 - Cwebba07 Styles */
 
-/* Top Header Navigation Module - Cwebba07 Styles */
+/* Top Header Navigation Module - Cwebba08c Styles */
 
 /* HEADER section */
 
-header { /*text-align:center;*/
+header { 
 	clear:both;
 	float:left;
 	width:100%;
@@ -34,11 +35,6 @@ margin-bottom:0;
 }
 
 
-/* HACK - See http://stackoverflow.com/questions/4604436/is-there-a-non-trivial-purpose-for-defining-a-css-style-for-htmlxmlns - Might change to Conditional Comment */
-html[xmlns] .top {
-	display: block;
-}
-
 ul.top { 
 width: 100%;
 height:2em;
@@ -53,7 +49,6 @@ padding: 0 1.5em;
   width: 100%;
   display: inline-block;
   zoom: 1;
-/*  display: inline; */
 }
 
 .top li {
@@ -62,7 +57,6 @@ padding: 0 1.5em;
   font-size: 1rem;
   padding: 0;
   zoom: 1;
-/*  display: inline;*/
 }
 
 .drop {
@@ -87,7 +81,7 @@ padding: 0 1.5em;
 	transition:font-size .25s ease-in, padding .25s ease-in; 
 	background: transparent;
 	text-decoration: none;
-	padding: 0.5em 12%;/*was 7.5%*/
+	padding: 0.5em 12%;
 	border: 0;
 -webkit-border-radius: .35em;
 -moz-border-radius: .35em;
@@ -173,7 +167,6 @@ border-radius: .35em;
 }
 
 /* sub levels link hover */
-/* line 194, ../sass/styles/_cwebba07.scss */
 .top ul a:hover {
   color: #900000;
   background-color: #bdc;
@@ -227,8 +220,7 @@ display:block;
 width:15em;
 height:100%;
 line-height:1.1em;
-}/*this width WAS 12em */
-/* padding:0.5em 1em;background:#d4d8bd; color:#000;*/
+}
 
 
 /* rounded corners for first and last child */
@@ -242,7 +234,7 @@ border-radius: 9px 9px 0 0; /*(top-left, top-right, bottom-right, bottom-left)*/
 	-webkit-border-bottom-right-radius: 9px;
 	-moz-border-radius-bottomright: 9px;
 	border-bottom-right-radius: 9px;
-border-radius: 0 0 9px 9px; /*(top-left, top-right, bottom-right, bottom-left)*/
+border-radius: 0 0 9px 9px;
 }
 
 .top ul li:last-child > a {
@@ -251,14 +243,11 @@ border-radius: 0 0 9px 9px; /*(top-left, top-right, bottom-right, bottom-left)*/
   -moz-border-radius-bottomright: 9px;
   border-bottom-right-radius: 9px;
   border-radius: 0 0 9px 9px;
-  /*(top-left, top-right, bottom-right, bottom-left)*/
 }
 
 /* END HEADER section */
 
-/* ======= [ Header Top Navigation Media Queries ]  =========== */
-
-
+/* ======= [ Header Top Navigation Media Queries ]  ======== */
 
 @media only screen and (max-width: 400px) {
   .top a:link, .top a:visited {
@@ -313,25 +302,6 @@ border-radius: 0 0 9px 9px; /*(top-left, top-right, bottom-right, bottom-left)*/
   }
 }
 
-@media only screen and (min-width: 600px) {
-/*
-  .top {
-  font-size: 0;
-    width: 90%;
-    height: 1em;
-    -o-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-  }
-  .top ul {
-    position: absolute;
-  top: 1.875em;
-  border:1px solid blue;
-  height: 5.75em;
-  }
-*/
-}
 
 @media screen and (min-width: 920px) {
 /*  
@@ -382,7 +352,6 @@ border-radius: 0 0 9px 9px; /*(top-left, top-right, bottom-right, bottom-left)*/
     width: 100%;
     display: inline-block;
     zoom: 1;
-/*    display: inline; */
   }
 
 }
@@ -397,21 +366,6 @@ border-radius: 0 0 9px 9px; /*(top-left, top-right, bottom-right, bottom-left)*/
   .top li:last-child { margin-right:0.75em;
   }
 
-}
-
-@media only screen and (max-width: 560px) {
-/*
-  .top ul li:hover a, .top li:hover li a {
-    font-family: 'Ubuntu', Verdana, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana Ref", sans-serif;
-    font-weight: 500;
-    padding-left: 7%;
-  }
-
-  .top ul li a:hover {
-    width: 10.75em;
-    line-height: 1em;
-  }
-*/
 }
 
 

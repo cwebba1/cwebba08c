@@ -1,5 +1,4 @@
-/*!  _contact_form_06.scss 053120
-contact_form_05.css 60916
+/**  _contact_form_06.scss 090923 053120
 contact_form_05.css 041816  */
 
 /*!  - - - - - - [ Base Form Declarations ] - - - - - - */
@@ -35,7 +34,6 @@ input[type="color"],
 select { 
   height: 1.675em;
 }
-
 
 textarea {
   height: auto;
@@ -93,9 +91,7 @@ select:focus:invalid:focus {
   box-shadow: 0 0 6px #f8b9b7;
 }
 
-
 /* - - - - - - [ END Bootstrap Declarations ] - - - - - - */
-
 
 legend { padding:0 .5em .5em;
 font-size:1.25em;
@@ -193,8 +189,6 @@ margin-right:0;
 #title5,
 #title6 { width:98.5%;}
 
-
-
 input[type=text],
 input[type=email],
 input[type=tel],
@@ -225,7 +219,7 @@ margin-top:.25em;
 }
 
 button.contact { 
-text-shadow: 1px 2px 2px rgba(102, 255, 166, 0.6);
+  text-shadow: 1px 2px 2px rgba(102, 255, 166, 0.6);
   margin:.5em 0;
   padding:1em 1em;
   font-style:bold;
@@ -233,9 +227,9 @@ text-shadow: 1px 2px 2px rgba(102, 255, 166, 0.6);
   border-left: 1px solid #ccc;
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
-background:#68E855;/* for non-css3 browsers */
+  background:#68E855;/* for non-css3 browsers */
   background: map-get($gradients, grnlite01);
-border-radius: .5em;
+  border-radius: .5em;
 }
 
 button.contact:hover { 
@@ -243,7 +237,6 @@ button.contact:hover {
   background:#68E855;/* for non-css3 browsers */
   background: map-get($gradients, grnlite02);
 }
-
 
 .map-btn,
 .close-btn {
@@ -266,10 +259,6 @@ button.contact:hover {
   text-decoration: none;
   background: map-get($gradients, grnlite01);
 }
-
-
-
-/* BUTTON SEND: (060916 GREEN) */
 
 button.send { 
   color:hsla(187, 69%, 25%, 1);
@@ -299,7 +288,6 @@ button.send:hover {
   background: map-get($gradients, grnlite01);
 }
 
-
 /* MEDIA QUERIES START HERE */
 
 @media (max-width: 1040px) {
@@ -308,17 +296,15 @@ button.send:hover {
     display:inline-block;
     margin-right:0;
   }
-
 }
 
 @media (max-width: 880px) {
-  div.nest,
-  div.zip { width:42%;
+    div.nest,
+    div.zip { width:42%;
   }
 
   div.nest label,
-  div.zip label,
-   { width:12%;
+  div.zip label { width:12%;
   }
 }
 

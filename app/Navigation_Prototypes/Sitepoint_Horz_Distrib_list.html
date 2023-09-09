@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Distributed Horizontal Menu</title>
+<!-- Sitepoint_Horz_Distrib_list.htm   -->
+<meta name="generator" content="PSPad editor, www.pspad.com">
+<style type="text/css">
+.nav {
+    margin:auto;
+    border:3px outset #66f;
+    padding:0;
+    min-width:42em;
+    width:95&#37;;
+    height:44px;
+    overflow:hidden;
+    background:#039;
+    text-align:justify;
+    font:bold 88%/1.1 verdana;
+}
+.nav li {
+    display:inline;
+    list-style:none;
+}
+.nav li.last {
+    margin-right:100%;
+}
+.nav li a {
+    display:inline-block;
+    padding:13px 4px 0;
+    height:31px;
+    color:#ddd;
+    vertical-align:middle;
+    text-decoration:none;
+    text-transform:capitalize;
+}
+.nav li a:hover {
+    margin:-3px;
+    border:3px inset #66f;
+    color:#ff6;
+    background:#36c;
+}
+</style></head><body>
+
+<ul class="nav">
+<!--[test to comment out random items]
+    <li>&nbsp; <a href="#">netscape&nbsp;9</a></li>
+[the spacing should be distributed]-->
+    <li>&nbsp; <a href="#">internet&nbsp;explorer&nbsp;6-8</a></li>
+    <li>&nbsp; <a href="#">opera&nbsp;10</a></li>
+    <li>&nbsp; <a href="#">firefox&nbsp;3</a></li>
+    <li>&nbsp; <a href="#">safari&nbsp;4</a></li>
+    <li class="last">&nbsp; <a href="#">chrome&nbsp;2</a> &nbsp; &nbsp;</li>
+</ul>
+
+</body></html>
+To move the first and last closer to the edge then you need these small adkustments:
+Code:
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Distributed Horizontal Menu</title>
+<meta name="generator" content="PSPad editor, www.pspad.com">
+<style type="text/css">
+.nav {
+    margin:auto;
+    border:3px outset #66f;
+    padding:0;
+    min-width:42em;
+    width:95%;
+    height:44px;
+    overflow:hidden;
+    background:#039;
+    text-align:justify;
+    font:bold 88%/1.1 verdana;
+}
+.nav li {
+    display:inline;
+    list-style:none;
+}
+.nav li.last {
+    margin-right:100%;
+}
+.nav li a {
+    display:inline-block;
+    padding:13px 4px 0;
+    height:31px;
+    color:#ddd;
+    vertical-align:middle;
+    text-decoration:none;
+    text-transform:capitalize;
+}
+.nav li a:hover {
+    margin:-3px;
+    border:3px inset #66f;
+    color:#ff6;
+    background:#36c;
+}
+</style></head><body>
+
+<ul class="nav">
+<!--[test to comment out random items]
+    <li>&nbsp; <a href="#">netscape&nbsp;9</a></li>
+[the spacing should be distributed]-->
+    <li> <a href="#">internet&nbsp;explorer&nbsp;6-8</a></li>
+    <li>&nbsp; <a href="#">opera&nbsp;10</a></li>
+    <li>&nbsp; <a href="#">firefox&nbsp;3</a></li>
+    <li>&nbsp; <a href="#">safari&nbsp;4</a></li>
+    <li class="last">&nbsp; <a href="#">chrome&nbsp;2</a> &nbsp;</li>
+</ul>
+
+</body></html>

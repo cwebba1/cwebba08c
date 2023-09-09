@@ -1,3 +1,4 @@
+/** –base.scss 090923 */
 /*! –base.scss 071220 */
 /* RESETS */
 /* This Normalize Reset conflicts with Fancybox.
@@ -7,36 +8,12 @@ html {
 
 /*!  ============  [    Base ]   ============= */
 
-* { -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-box-sizing: border-box;
-}
-
 .unborderbox { box-sizing: content-box;
 }
 
 body, nav, ul, li, a  {
   margin: 0; padding: 0;
 }
-
-
-
-/* IN NORMALIZE -
-html {
-  font-size: 16px;
-  font-family: sans-serif; /* 1 
-  -webkit-text-size-adjust: 100%; /* 2 
-  -ms-text-size-adjust: 100%; /* 2 
-}
-*/
-/* NO LONGER IN NORMALIZE, ADDING TO BASE 062820: */
-html {
-  font-size: 16px;
-  font-family: sans-serif; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -ms-text-size-adjust: 100%; /* 2 */
-}
-
 
 
 body {
@@ -50,30 +27,6 @@ background:$old-yeller;
  background:url('../assets/images/oj_emboss.png');
 text-shadow:rgba(0,0,0,0.01) 0 0 1px;
 }
-
-
-/*-  SELF-CLEARING FLOATS  - Example from stephencaver_Responsive
-----------------------------------------------------------------------*/
-
-header:after, nav:after, article:after, aside:after, footer:after, hgroup:after, section:after, .logo:after, figure:after, .page:after { 
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-  overflow: hidden;
-}
-
-
-.clearfix {display:block;}
-.clearfix:after, .container:after {content:"\0020";display:block;height:0;
-clear:both;visibility:hidden;
-overflow:hidden;
-}
-
-.clear {clear:both;
-}
-
 
 .basal {
   width: 97.5%;
@@ -92,11 +45,8 @@ padding-right: 1.375em;
 }
 
 .nest {
-  margin: 0px, auto;
-}
-
-.nest {
   display: block;
+  margin: 0px, auto;
 }
 
 /* MUST add width */

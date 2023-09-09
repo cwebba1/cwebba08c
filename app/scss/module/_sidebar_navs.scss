@@ -1,4 +1,4 @@
-/* _sidebar_navs.scss */
+/** _sidebar_navs.scss 090923 */
 
 
 /* - - - - [ DEFAULT SIDE NAVIGATION ] - - - -  */
@@ -66,39 +66,40 @@ color:#223; margin:0;
 .sidnav nav { margin:1em 0 .5em;
 }
 
-.navserv {width: 100%;
+.navserv { width: 100%;
 } /*this is a UL element */
 
 
-  .navserv li {
-    font-size: .9875em;
-    line-height: .75em;
-    border-bottom: 1px solid #DDD;
-    display: inline-block;
-    width: 48%;
-    margin: .25em 1% .5em 0;
-  }
+.navserv li {
+  font-size: .9875em;
+  line-height: .75em;
+  border-bottom: 1px solid #DDD;
+  display: inline-block;
+  width: 48%;
+  margin: .25em 1% .5em 0;
+}
 
-  .navserv li:after {
-    content: "";
-    width: 100%;
-    display: inline-block;
-    zoom: 1;
-    display: inline;
-  }
+.navserv li:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  zoom: 1;
+  display: inline;
+}
 
 .navserv li {
 text-align:left;
 margin:.25em 0;
 }
-  .navserv li {
-    font-size: .9875em;
-    border-bottom: 1px solid #DDD;
-    display: inline-block;
-    width: 98%;
-    margin: .25em 1% .5em 0;
-    line-height: 1em;
-  }
+
+.navserv li {
+  font-size: .9875em;
+  border-bottom: 1px solid #DDD;
+  display: inline-block;
+  width: 98%;
+  margin: .25em 1% .5em 0;
+  line-height: 1em;
+}
 
 .navserv a, .navserv a:visited {
   font-size:.875em;
@@ -108,7 +109,7 @@ margin:.25em 0;
   background: transparent;
   text-decoration: none;
   border: 0;
-border-radius: .35em;
+  border-radius: .35em;
 }
 
 .grn-gradi01,
@@ -118,15 +119,6 @@ border-radius: .35em;
   background: map-get($gradients, grn);
 }
 
-/* This was turned off - part of two-sidebar layout
-.sidnavcol p { font-size:.8275em;
-line-height: 1.125em;
-  color: rgba(33,16,0,.7);
-}
-*/
-
-/*@media only screen and (max-width: 600px) {
-} NOTE: These two declarations are now mobile-first. */
   .sidnav-art,
   .sidnav {
     width: 100%;
@@ -135,7 +127,6 @@ line-height: 1.125em;
   .related-info {
     width: 100%;
   }
-
 
 @media screen and (min-width: 787px) {
 
@@ -234,7 +225,6 @@ line-height: 1.5em;
   color: rgba(33, 16, 0, 0.7);
 }
 
-.row, /* Renaming this. remove .row */
 .sid-service-menu {
 width: 100%;
 margin: 0 auto;
@@ -285,9 +275,7 @@ color:#223; margin:0;
 .side-nav-serv li {
   width: 100%;
   float: left;
-}/*  border-bottom: 1px solid #DDD;
-  padding: .375em 0;*/
-
+}
 
 .wide-navserv li div,
 .side-nav-serv li div {
@@ -339,8 +327,7 @@ color:#223; margin:0;
   transition: all .5s ease-in-out;
   }
 
-.wide-move/*,
-.side-services*/ {
+.wide-move {
   width: 35%;
   float: left;
   margin-right: 2%;
@@ -349,8 +336,7 @@ color:#223; margin:0;
 
 @media screen and (min-width: 788px) {
 
-.wide-move/*,
-.side-services*/ {
+.wide-move {
   width: 44%;
   float: left;
   margin-right: 2%;
@@ -402,7 +388,6 @@ color:#223; margin:0;
 
 }
 
-
 /* - - - - [ END WIDE SIDE NAVIGATION ] - - - -  */
 
 
@@ -437,14 +422,14 @@ list-style: none;
 }
 
 .me-menu h4 a {
-  font-family: 'Ubuntu', Verdana, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana Ref", sans-serif;
+  font-family: $head-ft;
   color : #E6662D;
   font-weight:400;
   text-decoration: none;
 }
 
 .me-menu h4 a:hover {
-  font-family: 'Ubuntu', Verdana, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana Ref", sans-serif;
+  font-family: $head-ft;
   color : #FF9966;
   text-decoration: underline;
 }
@@ -470,18 +455,17 @@ border-radius: .5em;
  /*_ _ _ _ [ END WIDE ME-MENU ] _ _ _ _ _*/
 
 .wide-me-menu h4 a {
-	font-family: 'Ubuntu', Verdana, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana Ref", sans-serif;
+  font-family: $head-ft;
 	color : #E6662D;
 	font-weight:400;
 	text-decoration: none;
 }
 
 .wide-me-menu h4 a:hover {
-	font-family: 'Ubuntu', Verdana, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana Ref", sans-serif;
+  font-family: $head-ft;
 	color : #FF9966;
 	text-decoration: underline;
 }
-
 
 /* Me-Menu Media Queries */
 
@@ -489,12 +473,6 @@ border-radius: .5em;
   .me-menu-pic {
     padding-bottom: 0;
     clear: right;
-  }
-}
-
-@media screen and (min-width: 920px) {
-  .me-menu-pic {
-    margin-right: 90%;
   }
 }
 

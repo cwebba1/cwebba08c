@@ -1,5 +1,5 @@
 /** _flex_card.scss */
-/** 062420 */
+/** 090923 062420 */
 
 .cards img {
   height: auto;
@@ -8,7 +8,6 @@
 }
 
 .cards {
-  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -16,7 +15,6 @@
   padding: 0;
 }
 .cards__item {
-  display: -webkit-box;
   display: flex;
   padding: 1rem;
 }
@@ -34,7 +32,6 @@
   background-color: white;
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -43,17 +40,14 @@
     border:1px solid #D4CEC9;
 }
 .card:hover .card__image {
-  -webkit-filter: contrast(100%) grayscale(0);
-          filter: contrast(100%) grayscale(0);
+  filter: contrast(100%) grayscale(0);
 }
+
 .card__content {
   display: -webkit-box;
   display: flex;
-  -webkit-box-flex: 1;
-          flex: 1 1 auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  flex: 1 1 auto;
+  flex-direction: column;
   padding: 0 1rem;
 }
 .card__image {
@@ -62,14 +56,11 @@
   background-size: cover;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-  -webkit-filter: contrast(95%) grayscale(50%);
-          filter: contrast(95%) grayscale(50%);
+  filter: contrast(95%) grayscale(50%);
   overflow: hidden;
   position: relative;
-  -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
   transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
   transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
 }
 .card__image::before {
   content: "";
@@ -111,57 +102,57 @@
 
 .card__image--tb1associates {
   background: url(../assets/images/websites/tb1associatesllc_home_dt_600.jpg);
-background-size: cover;
-background-position: top;
+  background-size: cover;
+  background-position: top;
 }
 
 
 .card__image--lawson-biotech {
   background: url(../assets/images/websites/Lawson_biotech_c800.jpg);
-background-size: cover;
-background-position: top;
+  background-size: cover;
+  background-position: top;
  }
 
 .card__image--silver-fox {
   background: url(../assets/images/websites/SilverFox_800.jpg);
-background-size: cover;
-background-position: top;
+  background-size: cover;
+  background-position: top;
  }
 
 .card__image--icarus-group {
   background-image: url(../assets/images/websites/IcarusGroupIronwork2016_800.jpg);
-background-size: cover;
-background-position: top;
+  background-size: cover;
+  background-position: top;
  }
 
 .card__image--care-handoff {
   background-image: url(../assets/images/websites/CareHandOff_03_800.jpg);
-background-size: cover;
-background-position: top;
+  background-size: cover;
+  background-position: top;
  }
 
 .card__image--shalizar {
   background-image: url(../assets/images/websites/Shalizar_home_600.jpg);
-background-size: cover;
-background-position: top;
+  background-size: cover;
+  background-position: top;
  }
 
 .card__image--mural-mural {
   background-image: url(../assets/images/websites/MMW_About_short_800.jpg);
-background-size: cover;
-background-position: top;
+  background-size: cover;
+  background-position: top;
  }
 
 .card__image--randalls {
   background-image: url(../assets/images/websites/Randalls_New_Home_800.jpg);
-background-size: cover;
-background-position: top;
+  background-size: cover;
+  background-position: top;
  }
 
 .card__image--bill-miller {
   background-image: url(../assets/images/websites/BM_Photography_600.jpg);
-background-size: cover;
-background-position: top;
+  background-size: cover;
+  background-position: top;
  }
 
 /** Cwebba1 Graphic Design Links */

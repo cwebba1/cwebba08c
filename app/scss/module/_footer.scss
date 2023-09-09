@@ -1,10 +1,7 @@
-/* footer.scss 120720 072120
-footer.scss 050620
-footer.scss 022519 */
-/* footer.scss 021019 */
-/* cwebba08 */
+/** footer.scss 090923 120720 072120 021019 */
+/* cwebba08c */
 
-/* FOOTER */
+/** FOOTER */
 
 footer {
   padding:0 1em.5em;
@@ -121,76 +118,72 @@ vertical-align:middle;
 /*  Grid Layout  */
 
 /*  .footstep, */
-  .context,
-  .socialnav, /* <ul class="socialmedia"> */
-  .join { 
-    width: 100%;
+.context,
+.socialnav, /* <ul class="socialmedia"> */
+.join { 
+  width: 100%;
 }
 
 @media all and (min-width: 600px) {
-footer { 
-  }
 
 .grid-wrapper { 
   display: grid;
   grid-template-columns: 17em 1fr;
   grid-template-rows: 2.5em auto;
   grid-gap: 0.5em;
- }
+  }
 
 /*  .footstep { 
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-   grid-row-end: 2;
-   }
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  }
 */
   .context { 
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
    grid-row-end: 3;
    }
 
   .socialnav { 
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
    grid-row-end: 2;
   }
 
   .join { 
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-   grid-row-end: 3;
-margin-top:0.5em;
-   }
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-top:0.5em;
+  }
 }
 
 @media all and (min-width: 800px) {
-footer { 
-  }
 
 .grid-wrapper { 
   display: grid;
   grid-template-columns: 17em 1fr minmax(12em, 24%);
   grid-template-rows: 2.5em auto;
-}
+  }
 
-  .socialnav { 
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-   grid-row-end: 2;
-   }
+.socialnav { 
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  }
 
   .join { 
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-   grid-row-end: 2;
-margin-top:0;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-top:0;
    }
 }
 

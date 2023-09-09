@@ -22,9 +22,6 @@ Portioms of this layout is mobile-first, but not all. */
   transition:width .25s ease-in; 
 }
 
-
-.container2 { } /*This is just a div. */
-
 .rice {
   background: url("../assets/images/ricepaper.png");
   }
@@ -334,6 +331,16 @@ flex-basis:1;
 
 /* - - - - -   [ INDEX PAGE - WORKBOOK NAV ]  - - - - - */
 
+:root {
+/* Index Workbook Nav Images */
+
+--graphics: url(../assets/images/heropics/Saturn_Returns.jpg);
+
+--copywriting: url(../assets/images/heropics/Honda_LeaveBehind_pg06.jpg);
+
+--webdesign: url(../assets/images/heropics/Pegasus_Home_Desk_800.jpg);
+
+}
 
 .graphic-icon { 
 box-shadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);

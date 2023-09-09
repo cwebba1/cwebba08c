@@ -1,5 +1,5 @@
 /** _iframe_theater.scss */
-/** 092621 */
+/** 090923 092621 */
 
 .bdr425 {
   border: 1px solid #D4CEC9;
@@ -8,17 +8,6 @@
 
 .fnt400 {
   font-weight: 400;
-}
-
-/* SEE prototype-theater.css
-.view-alert { 
-  background:rgba(234, 255, 234, 0.5); 
-  padding: 0.425em;
-  border: 1px solid #D4CEC9;
-  border-radius: 0.325em; 
-}
-*/
-#description-box {
 }
 
 .description {
@@ -73,15 +62,11 @@ nav.prototype-list a:visited {
 /* Media Queries */
 @media screen and (min-width: 530px) and (max-width: 920px) {
   nav.prototype-list ul {
-    -ms-column-count: 2;
-    -moz-column-count: 2;
-         column-count: 2;
+    column-count: 2;
   }
 }
 @media screen and (min-width: 920px) {
   nav.prototype-list ul {
-    -ms-column-count: 1;
-    -moz-column-count: 1;
-         column-count: 1;
+    column-count: 1;
   }
 }

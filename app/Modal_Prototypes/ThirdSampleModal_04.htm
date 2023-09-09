@@ -13,7 +13,7 @@
   document.createElement('aside');
   document.createElement('nav');
   document.createElement('article');
-function overlay() {
+function overlay() {}
 </script>
 
 
@@ -71,7 +71,10 @@ border-radius: .5em;
 	border: 1px #ddd solid;
 	margin: 0 auto;
 	cursor: pointer;
--webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;}
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+}
 </style>
 </head>
 <body>
@@ -83,14 +86,17 @@ border-radius: .5em;
 </figure>
 
 <div id="modal_box">
-<form id="mail-list" action="support/formtoemailpro.php"><form method="post" name="subscription-form" action="support/formtoemailpro.php"><!-- contact-form --><header class="mod">
+<form id="mail-list" action="support/formtoemailpro.php">
+<form method="post" name="subscription-form" action="support/formtoemailpro.php"><!-- contact-form -->
+<header class="mod">
 <h1>Subscribe to our mailing list</h1>
 <figure><img class="mod" src="images/airplane.jpg"></figure>
 <div class="receive"><p>Receive periodic reviews,  updates about current events and special offers.</p></div>
 </header>
 <br />
 <article id="subscribe">
-<div id="fieldset">
+
+<div id="fieldset">
 <legend>Your Contact Information</legend>
 <ul>
 <li>
@@ -115,8 +121,10 @@ border-radius: .5em;
 </li>
 <li  id="comments">
 <label for=comments class="comments">Comment here</label>
-<textarea type="text" name="comments" value="comment" rows="8"></textarea></li>
-</ul><div class="updates">
+<textarea type="text" name="comments" value="comment" rows="8"></textarea>
+</li>
+</ul>
+<div class="updates">
 <label for="email-updates" class="wide2">Send Special Offers</label>
 <input type="checkbox" checked name="email-updates"></div>
 
@@ -127,10 +135,12 @@ border-radius: .5em;
 <nav style="padding:0;margin:0;">
 <span id="closeBtn" class="close-btn">Close Window</span><br />
 <ul class="signup">
-<li><a href="mailto:craigwebb@craigwebbart.com">Send an email to Craig Webb Art</a></li><li class="last">© Copyright 2013 <a href="http://craigwebbart.com" target="_blank">Craig Webb Art</a></li>
+<li><a href="mailto:craigwebb@craigwebbart.com">Send an email to Craig Webb Art</a></li>
+<li class="last">© Copyright 2013 <a href="http://craigwebbart.com" target="_blank">Craig Webb Art</a></li>
 <span class="stretch"></span> 
 </ul>
-</nav></footer>
+</nav>
+</footer>
 </div>
 <!-- *   *   *   *   *   *   *    -->
 

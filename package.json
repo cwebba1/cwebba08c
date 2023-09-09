@@ -7,12 +7,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cwebba1/Cwebba08b.git"
+    "url": "git+https://github.com/cwebba1/cwebba08c.git"
   },
   "bugs": {
-    "url": "https://github.com/cwebba1/Cwebba08b/issues"
+    "url": "https://github.com/cwebba1/cwebba08c/issues"
   },
-  "homepage": "https://github.com/cwebba1/Cwebba08b#readme",
+  "homepage": "https://github.com/cwebba1/cwebba08c#readme",
   "keywords": [
     "Gulp 4",
     "SASS",

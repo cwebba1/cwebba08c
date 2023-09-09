@@ -1,31 +1,123 @@
 @charset "UTF-8";
+/** _vars.scss 090823 */
 /* _vars.scss 121720 */
+/** Theme Information
+//--------------------------------------------*/
+/*
+$theme_name: "cwebba";
+$theme_uri: "http://craigwebbart.com";
+$theme_description: "Theme for Craig Webb Art";
+$theme_version: "8.3";
+$theme_author: "Craig Webb Art - @cwebba1";
+$theme_author_uri: "http://CraigWebbArt.com";
+$theme_license: "Copyright 2018, 2020, 2023 Craig Webb Art";
+$theme_tags: "handlebars static site";
+*/
+/* Helpers: */
 /* Depreciated */
-/* Very light reddish gray, used as a border on  .workbook li border, .top UL border /*
+/** CWebba08 Colors */
+/* WHITES */
+/* #FDFEFB              // A bright, yellow-hue wht.
+// HSL 150 33 99 99
+// RGB 252 253 252 */
+/* #FDFEFB             // .basal off-white background color 
+// HSL 76 66 99 99     // This is a hue between yellow and green - bright and neutral. 
+// RGB 253 254 251 */
+/* # FCFDFC
+// HSL 150 33 99 99
+// RGB 252 253 252 */
+/* #EEEEDD         // Yel Background-color for body
+// HSL 60 33 90 93
+// RGB 238 238 221 */
+/* Shadow Color
+// #4D1A3B
+// hsla(321, 50%, 20%, 1); */
+/* GREYS */
+/* Very light reddish gray, used as a border on  .workbook li border, .top UL border 
 #DFDEDD
 30 3 87 87
 223 222 221   */
-/* #CFCFCF       // (Grey border for Top UL UL) <-- DEPRECIATED REMOVE THIS
-// HSL 26 0 81 81
-// RGB 207 207 207 
-  $brd-gry: rgba(207, 207, 207, 0.99);      */
-/*#6E5C4D <-- Make-be $tan-txt-dk   Use for Text-color visited
+/* #D4CEC9 <-- Warm grey, close to #CFCFCF, Approx. "450": $gray-450, Convert border to this.
+// 25 12 81 81
+// 212 206 201 */
+/* BROWNS: */
+/* #331700      // Slightly lighter for large type
+// HSL 27 100 10 12 */
+/* #241000         // This is the default body text-color.
+//HSL 27 100 7 8
+//RGB 36 16 0
+//hsla(27 100%, 7%, 1); */
+/* #211000
+// HSL 29 100 6 8
+// RGB 33 16 0
+// hsla(29 100%, 6%, 1); */
+/* #443322
+// HSL 30 33 20 21
+// RGB 68 51 34
+// hsla(30 33%, 20%, 1); */
+/* #857464             // Txt color for .grn-gradi01,
+// HSL 29 14 46 47
+// RGB 133 116 100 */
+/* #6E5C4D <-- Make-be $tan-txt-dk   Use for Text-color visited
 HSL 27 18 37 37
 RGB 110 92 77       */
-/*#37B375 <-- Button color
+/* #8C4103              // Header-tag Brown
+// HSL 27 96 28 35
+// RGB 140 65 3 */
+/* GREENS: */
+/* #bdc         // CWebba Grn
+// #BBDDCC
+// HSL 150 33 80 80
+// RGB 187 221 204 */
+/* #A9C6B8
+// HSL 151 20 72 74
+// RGB 169 198 184 */
+/* #7BAD94
+// HSL 150 23 58 62
+// RGB 123 173 148 */
+/* #D9EDDA     <--- Accidental celadon green
+// 123 35 89 90
+// 217 237 218 */
+/* #37B375 <-- Button color
 152 53 46 59
 55 179 117      */
+/* #EAFFEA
+// HSL 120 100 96 97
+// RGB 234 255 234 */
+/* #CFE6CF
+// HSL 120 32 86 87
+// RGB 207 230 207 */
+/* COLORS FOR SOCIAL MEDIA ICONS (022119)
+
+// #B6D6B6         022119 inset green [1/3]
+// HSL 120 28 78 79
+// RGB 182 214 182 */
+/* #DDEFD2
+// 98 47 88 91     <-- mid-color between inset green and basal white [2/3]
+// RGB 221 239 210 */
+/* #EDFFE2     <--- 2nd inset color for social media   [3/3]
+// 97 100 94 97
+// 237 255 226 */
+/* GREEN-BLUES: */
+/* #2288AA;        // a:visitedvcolor
+// HSL 195 67 40 49
+// RGB 34 136 170 */
+/* BLUES: */
+/* #0088CC;         $tagblu
+// HSL 200 100 40 53
+// color:hsla(200, 100%, 40%, 1);
+// RGB 0 136 204 */
 /* .arrowCircle    <-- color for lightbox SVG
 #93C6F0
 HSL 207 76 76 76
 RGB 147 198 240
 stroke:rgba(147, 198, 240, 0.5);        */
 /* A-link Blues */
-/*a:link
+/* a:link
 #004477
 206 100 23 28
 0 68 119        */
-/*a:focus, a:hover { color: #06C;
+/* a:focus, a:hover { color: #06C;
 #0066CC
 210 100 40 46
 0 102 204       */
@@ -33,28 +125,51 @@ stroke:rgba(147, 198, 240, 0.5);        */
 #3399CC
 200 60 50 57
 51 153 204      */
-/*.credit a {color: #84A4BD;
+/* .credit a {color: #84A4BD;
 #84A4BD     <-- low saturation lite blue    
 206 30 63 63
 132 164 189     */
-/*#5FC1F1     <-- $daylight-blu
+/* #5FC1F1     <-- $daylight-blu
 200 84 66 72
 95 193 241      */
-/*! ORANGE */
-/*a.contact {
+/* ORANGE */
+/* a.contact {
   color : #E6662D;
 #E6662D
 18 79 54 57
 230 102 45      */
-/*a.contact:hover {
+/* a.contact:hover {
   color : #FF9966;
 #FF9966
 20 100 70 71
 255 153 102     */
-/*#AC3415       <--- Button Hvr Red
+/* REDS */
+/* #900000         <--- Blood Red
+// HSL 0 100 28 30
+// RGB 144 0 0 */
+/* #AC3415       <--- Button Hvr Red
 12 78 38 39
 172 52 21       */
-/* - – - – - – - – - – - – - – - – - – - –
+/* CWebba08 Prototyping Colors: */
+/* #FFDEDD     main Pink
+// HSL 2 100 93 91
+// RGB 255 222 221 */
+/* #FEFDFA     header, footer wht
+// HSL 45 67 99 99
+// RGB 254 253 250 */
+/* #CEEFEF     .wide-content
+// HSL 180 51 87 91
+// RGB 206 239 239 */
+/* #AFDFC7     html    Grn
+// HSL 150 43 78 82
+// RGB 175 223 199 */
+/* #BCDEFA     body blu (+ .sidebar)
+// HSL 207 86 86 86
+// RGB 188 22 250 */
+/* #DAB452         =   $mustard
+// HSL 43 65 59 71
+// RGB 218 180 82 */
+/** - – - – - – - – - – - – - – - – - – - –
 iFRAME TEMPLATE COLORS 121720 */
 /* #ECEAE9;   // iframe html, iframe body background
 // RGB 236 234 233
@@ -79,128 +194,205 @@ iFRAME TEMPLATE COLORS 121720 */
 RGB 244 238 236
 HSL 20 27 94 94
 // hsla(20 27%, 94%, 1);        */
-/* - – - – - – - – - – - – - – - – - – - – */
-/*  Gradient classes and fallback colors
-
-$gra-gradi:  #f7f7f7;
-$grn-gradi: #EAFFEA;	
-$grnlite01: #DAebDA;
-$topnavhover-gradi: #BBDDCC;
-$topcurrent-gradi: #FFCCCC;
-$topul-gradi: #F9FBFA;	
-$topulhover-gradi: #bdc;	
-
-  */
+/** - – - – - – - – - – - – - – - – - – - – */
+/* ICON Colors: */
 /* IMAGE MODIFIERS */
 /* Box-Shadow */
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+/** _cwebba08c_reset.scss Cwebba08c Reset 090823 */
+/** 
+https://www.joshwcomeau.com/css/custom-css-reset/
+https://andy-bell.co.uk/a-modern-css-reset/
+https://dev.to/hankchizljaw/a-modern-css-reset-6p3
+https://mattbrictson.com/blog/css-normalize-and-reset
+https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css
+https://necolas.github.io/normalize.css/latest/normalize.css
+https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css
+https://elad2412.github.io/the-new-css-reset/
+https://www.digitalocean.com/community/tutorials/css-minimal-css-reset
+*/
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
 }
 
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
-body {
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  line-height: 1.5;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+html {
+  /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/) */
+  font-size: 16px;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
   margin: 0;
 }
 
-/**
- * Render the `main` element consistently in IE.
- */
-main {
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+ol, ul {
+  list-style: none;
+  padding-inline: 0;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img, picture, video, canvas, svg {
   display: block;
+  max-width: 100%;
+  max-inline-size: 100%;
+  max-block-size: 100%;
 }
 
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+table {
+  border-collapse: collapse;
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
 }
 
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
+input, button, textarea, select, optgroup {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+input, textarea {
+  -webkit-user-select: auto;
+}
+
+textarea {
+  overflow: auto;
+  white-space: revert;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
 hr {
-  box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  color: inherit; /* 2 */
 }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
 abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+          text-decoration: underline dotted;
 }
 
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
 b,
 strong {
   font-weight: bolder;
 }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
- * Add the correct font size in all browsers.
- */
 small {
   font-size: 80%;
 }
 
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
+:where(pre) {
+  all: revert;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
 sub,
 sup {
   font-size: 75%;
@@ -217,309 +409,97 @@ sup {
   top: -0.5em;
 }
 
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10.
- */
-img {
-  border-style: none;
-}
-
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input { /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select { /* 1 */
-  text-transform: none;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
-  border-style: none;
+legend {
   padding: 0;
 }
 
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
-  outline: 1px dotted rgba(212, 206, 201, 0.99);
-}
-
-/**
- * Correct the padding in Firefox.
- */
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
 progress {
   vertical-align: baseline;
 }
 
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
   height: auto;
 }
 
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
 [type=search] {
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
 }
 
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type=search]::-webkit-search-decoration {
+::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  font: inherit;
 }
 
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
 details {
   display: block;
 }
 
-/*
- * Add the correct display in all browsers.
- */
 summary {
   display: list-item;
 }
 
-/* Misc
-   ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
-template {
+:where([hidden]) {
   display: none;
 }
 
-/**
- * Add the correct display in IE 10.
- */
-[hidden] {
-  display: none;
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
 }
 
-/*! _reset.scss */
-/* 051116 Reset. This contains declarations from cwebba, BS, Eric Myer, HTML5 Reset */
-/* BS resets from _reboot.scss */
-html,
-button,
-input,
-select,
-textarea {
-  font-family: sans-serif;
+::placeholder {
+  color: unset;
 }
 
-/* Box Sizing https://css-tricks.com/box-sizing
-http://stackoverflow.com/questions/29605843/how-do-you-add-box-sizing-border-box-to-normalize-css-file
-http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-*/
-html {
-  box-sizing: border-box;
+::marker {
+  content: initial;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
 }
 
-.unborderbox {
-  box-sizing: content-box;
+:where([draggable=true]) {
+  -webkit-user-drag: element;
 }
 
-body, nav, ul, li, a {
-  margin: 0;
-  padding: 0;
+:where(dialog:modal) {
+  all: revert;
 }
 
-/*-  SELF-CLEARING FLOATS  - Example from stephencaver_Responsive
-----------------------------------------------------------------------*/
-header:after, nav:after, article:after, aside:after, footer:after, hgroup:after, section:after, .logo:after, figure:after, .page:after {
-  content: " ";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-  overflow: hidden;
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
-
-.clearfix {
-  display: block;
-}
-
-.clearfix:after, .container:after {
-  content: " ";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-  overflow: hidden;
-}
-
-[tabindex="-1"]:focus {
-  outline: none !important;
-}
-
-[role=button] {
-  cursor: pointer;
-}
-
-a,
-area,
-button,
-[role=button],
-input,
-label,
-select,
-summary,
-textarea {
-  touch-action: manipulation;
-}
-
-/* END BS reboot.scss */
-/* HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-} /*light blue*/
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle; /* This varies from Normalize*/
-h1, h2, h3, h4, h5, h6, blockquote {
-  margin: 0;
-}
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-* :focus,
-:active {
-  outline: 0;
-}
-
-/* _css-custom-properties.scss */
+/** _css-custom-properties.scss */
 :root {
-  --cardShadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);
-  --written-content: url(../assets/images/gallery/Jack_Kerouac_and_Neal_Cassady.jpg);
-  --artDirection: url(../assets/images/gallery/Alberto_Giacometti.jpg);
-  --product: url(../assets/images/gallery/Akira_Kurosawa_with-the_cast_of_Rashomon_1950.jpg);
-  --frontEnd: url(../assets/images/gallery/Paul_Klee_1925.jpg);
-  --copyWriting: url(../assets/images/gallery/Sunday_trip.jpg);
-  --webEngineer: url(../assets/images/gallery/James_Dean.jpg);
-  --progress: url(../assets/images/gallery/George_Platt_Lynes_1939.jpg);
-  /* Index Workbook Nav Images */
-  --graphics: url(../assets/images/heropics/Saturn_Returns.jpg);
-  --copywriting: url(../assets/images/heropics/Honda_LeaveBehind_pg06.jpg);
-  --webdesign: url(../assets/images/heropics/Pegasus_Home_Desk_800.jpg);
+  /* 090923 Removed for testing. These may be removed. */
   /* Project iframe template */
+  /*
   --iframe-foot:url(../assets/images/textures/egg-shell.png);
-  /*Flex-box*/
-  --tbass: url(../assets/images/websites/tb1associatesllc_home_dt_600.jpg);
+  */
+  /*Flex-box*/ /*
+--tbass: url(../assets/images/websites/tb1associatesllc_home_dt_600.jpg);
+*/
   /* Colors * /
 
   /* From Prototype_Sandbox _vars.css */
@@ -770,6 +750,17 @@ fieldset {
   HSL 20 27 94 94
   // hsla(20 27%, 94%, 1);        */
   --iframe-gry-sock:rgba(244, 238, 236, 0.99);
+  /* - – - – - – - [ Socia; Media Icon Colors] – - – - – - – */
+  --codepen: #000000;
+  --linkedin: #0077B5;
+  --twitter: #1DA1F2;
+  --github: #181717;
+  --behance: #1769FF;
+  --flickr: #0063DC;
+  --instagram: #E4405F;
+  --facebook: #3B5998;
+  --angellist: #000000;
+  --dribbble: #EA4C89;
   /* - – - – - – - – - – - – - – - – - – - – */
   /*
   //Gradient Variable
@@ -813,21 +804,6 @@ fieldset {
   --questions:linear-gradient(0deg, hsla(210,75%,95%,1) 0%,hsla(213,100%,98%,1) 15%,hsla(213,100%,98%,1) 78%,hsla(212,58%,95%,1) 100%);
   /* background: #e5fceb; – Old browsers */
   --questions-chosen:linear-gradient(0deg, hsla(136,79%,95%,1) 0%,hsla(135,63%,86%,1) 61%,hsla(135,50%,86%,1) 100%);
-  /*
-  // ICON -webkit-column-rule-style: ;
-  -moz-column-rule-style: ;
-  -o-column-rule-style: ;
-  column-rule-style: ;    */
-  --codepen: #000000;
-  --linkedin: #0077B5;
-  --twitter: #1DA1F2;
-  --github: #181717;
-  --behance: #1769FF;
-  --flickr: #0063DC;
-  --instagram: #E4405F;
-  --facebook: #3B5998;
-  --angellist: #000000;
-  --dribbble: #EA4C89;
 }
 
 /* _sticky_footer_flex.scss */
@@ -1233,6 +1209,13 @@ footer {
 }
 
 /* - - - - -   [ INDEX PAGE - WORKBOOK NAV ]  - - - - - */
+:root {
+  /* Index Workbook Nav Images */
+  --graphics: url(../assets/images/heropics/Saturn_Returns.jpg);
+  --copywriting: url(../assets/images/heropics/Honda_LeaveBehind_pg06.jpg);
+  --webdesign: url(../assets/images/heropics/Pegasus_Home_Desk_800.jpg);
+}
+
 .graphic-icon {
   box-shadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);
   background: linear-gradient(0deg, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(0deg, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)), var(--graphics);
@@ -4302,11 +4285,13 @@ line-height: 1.125em;
     clear: right;
   }
 }
+/* 090823 WTF?
 @media screen and (min-width: 920px) {
   .me-menu-pic {
     margin-right: 90%;
   }
 }
+*/
 @media screen and (max-width: 920px) {
   li.me-menu-text {
     width: 100%;
@@ -5977,45 +5962,50 @@ body.lb-disable-scrolling {
 }
 
 /** _flip_box.scss */
+/** 090923 */
 /** 051820 */
-.written-content {
+:root {
+  --cardShadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);
+  --written-content: url(../assets/images/gallery/Jack_Kerouac_and_Neal_Cassady.jpg);
+  --artDirection: url(../assets/images/gallery/Alberto_Giacometti.jpg);
+  --product: url(../assets/images/gallery/Akira_Kurosawa_with-the_cast_of_Rashomon_1950.jpg);
+  --frontEnd: url(../assets/images/gallery/Paul_Klee_1925.jpg);
+  --copyWriting: url(../assets/images/gallery/Sunday_trip.jpg);
+  --webEngineer: url(../assets/images/gallery/James_Dean.jpg);
+  --progress: url(../assets/images/gallery/George_Platt_Lynes_1939.jpg);
+  /* This was never used. --copyWriting is used in Navbox. */
+}
+:root .written-content {
   box-shadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);
   background: linear-gradient(0deg, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(0deg, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)), var(--written-content);
   background-size: cover;
 }
-
-.art {
+:root .art {
   box-shadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);
   background: linear-gradient(0deg, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(0deg, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)), var(--artDirection);
   background-size: cover;
 }
-
-.product {
+:root .product {
   box-shadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);
   background: linear-gradient(0deg, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(0deg, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)), var(--product);
   background-size: cover;
 }
-
-.front-end {
+:root .front-end {
   box-shadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);
   background: linear-gradient(0deg, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(0deg, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)), var(--frontEnd);
   background-size: cover;
 }
-
-.progress {
+:root .progress {
   box-shadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);
   background: linear-gradient(0deg, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(0deg, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)), var(--progress);
   background-size: cover;
 }
-
-/* This was never used. --copyWriting is used in Navbox. */
-.copy {
+:root .copy {
   box-shadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);
   background: linear-gradient(0deg, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(0deg, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)), var(--copyWriting);
   background-size: cover;
 }
-
-.web-engineer {
+:root .web-engineer {
   box-shadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);
   background: linear-gradient(0deg, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(0deg, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)), var(--webEngineer);
   background-size: cover;

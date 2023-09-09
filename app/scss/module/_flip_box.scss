@@ -1,7 +1,23 @@
 
 /** _flip_box.scss */
+/** 090923 */
 /** 051820 */
+:root {
+--cardShadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);
 
+--written-content: url(../assets/images/gallery/Jack_Kerouac_and_Neal_Cassady.jpg);
+
+--artDirection: url(../assets/images/gallery/Alberto_Giacometti.jpg);
+
+--product: url(../assets/images/gallery/Akira_Kurosawa_with-the_cast_of_Rashomon_1950.jpg);
+
+--frontEnd: url(../assets/images/gallery/Paul_Klee_1925.jpg);
+
+--copyWriting: url(../assets/images/gallery/Sunday_trip.jpg);
+
+--webEngineer: url(../assets/images/gallery/James_Dean.jpg);
+
+--progress: url(../assets/images/gallery/George_Platt_Lynes_1939.jpg);
 
 .written-content { 
 box-shadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);
@@ -51,8 +67,8 @@ box-shadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 18
 background:linear-gradient(0deg, rgba(253, 254, 251, 0.2), rgba(253, 254, 251, 0.2)), linear-gradient(0deg, rgba(253, 254, 251, 0.8), rgba(212, 206, 201, 0.7)),
 var(--webEngineer);
 background-size: cover;
+  }
 }
-
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
@@ -125,8 +141,6 @@ min-height:100%;
   margin: 10% 0;
 }
 
-
-
 @media only screen and (min-width: 756px) {
   .flip-card {
   height: 256px;
@@ -164,13 +178,13 @@ min-height:100%;
   color: black;
 } */
 
-  .flip-card-back {
+.flip-card-back {
   transform: rotateY(180deg);
   }
 }
 
 @media only screen and (min-width: 900px) {
-  .flip-card-back div p {
+.flip-card-back div p {
   width: 60%;
   transition:width 2s ease-in; 
   }

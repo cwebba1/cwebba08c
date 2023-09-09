@@ -1,34 +1,15 @@
-/* _css-custom-properties.scss */
+/** _css-custom-properties.scss */
+
 :root {
---cardShadow: inset 0 0 15px rgba(154, 152, 147, 0.5), inset 0 0 20px rgba(191, 187, 176, 0.7), inset 0 35px 35px -18px rgba(221, 217, 208, 0.8);
 
---written-content: url(../assets/images/gallery/Jack_Kerouac_and_Neal_Cassady.jpg);
-
---artDirection: url(../assets/images/gallery/Alberto_Giacometti.jpg);
-
---product: url(../assets/images/gallery/Akira_Kurosawa_with-the_cast_of_Rashomon_1950.jpg);
-
---frontEnd: url(../assets/images/gallery/Paul_Klee_1925.jpg);
-
---copyWriting: url(../assets/images/gallery/Sunday_trip.jpg);
-
---webEngineer: url(../assets/images/gallery/James_Dean.jpg);
-
---progress: url(../assets/images/gallery/George_Platt_Lynes_1939.jpg);
-/* Index Workbook Nav Images */
-
---graphics: url(../assets/images/heropics/Saturn_Returns.jpg);
-
---copywriting: url(../assets/images/heropics/Honda_LeaveBehind_pg06.jpg);
-
---webdesign: url(../assets/images/heropics/Pegasus_Home_Desk_800.jpg);
-
+/* 090923 Removed for testing. These may be removed. */
 /* Project iframe template */
+/*
 --iframe-foot:url(../assets/images/textures/egg-shell.png);
-
-/*Flex-box*/
+*/
+/*Flex-box*//*
 --tbass: url(../assets/images/websites/tb1associatesllc_home_dt_600.jpg);
-
+*/
 /* Colors * /
 
 /* From Prototype_Sandbox _vars.css */
@@ -375,9 +356,22 @@ HSL 20 27 94 94
 --iframe-gry-sock :rgba(244, 238, 236, 0.99);
 
 
+/* - – - – - – - [ Socia; Media Icon Colors] – - – - – - – */
+
+
+--codepen: #000000;
+--linkedin: #0077B5;
+--twitter: #1DA1F2;
+--github: #181717;
+--behance: #1769FF;
+--flickr: #0063DC;
+--instagram: #E4405F;
+--facebook: #3B5998;
+--angellist: #000000;
+--dribbble: #EA4C89;
+
+
 /* - – - – - – - – - – - – - – - – - – - – */
-
-
 
 /*
 //Gradient Variable
@@ -424,21 +418,5 @@ $gradients: map-merge((     */
 
     /* background: #e5fceb; – Old browsers */
     --questions-chosen:linear-gradient(0deg, hsla(136,79%,95%,1) 0%,hsla(135,63%,86%,1) 61%,hsla(135,50%,86%,1) 100%);
-/*
-// ICON -webkit-column-rule-style: ;
--moz-column-rule-style: ;
--o-column-rule-style: ;
-column-rule-style: ;    */
 
---codepen: #000000;
---linkedin: #0077B5;
---twitter: #1DA1F2;
---github: #181717;
---behance: #1769FF;
---flickr: #0063DC;
---instagram: #E4405F;
---facebook: #3B5998;
---angellist: #000000;
---dribbble: #EA4C89;
-
-}
+  }
