@@ -316,7 +316,7 @@ h3 {
   font-size: 1.5em;
   font-weight: 300;
   line-height:1.25em;
-  letter-spacing: 0.0875em;
+  letter-spacing: 0.0475em;;
   margin-bottom:0.5em;
 }
 
@@ -324,7 +324,7 @@ h4 {
   font-size: 1.25em;
   font-weight: 300;
   line-height:1.25em;
-  letter-spacing: 0.0625em;
+  letter-spacing: 0.0475em;
   margin-bottom:0.25em;
 }
 
@@ -357,7 +357,7 @@ blockquote.big {
 color:hsla(27, 100%, 7%, 1);
 font-size:1.125em;
 line-height: 1.375em;
-letter-spacing: 0.1em;
+letter-spacing: 0.0625em;
 background:hsla(150, 40%, 70%, .3);
 padding:0.25em 1% 0.375em 2%;
 margin: 1.25em 0 1.375em 0;
@@ -660,7 +660,8 @@ button {
 .btn-grn {
   color: var(--golf-green);
   background: #EAFFEA; /* Old browsers */
-  background: map-get($gradients, grn);
+/*  background: map-get($gradients, grn); */
+  background:var(--grn);
   padding: 0.375rem 0.75rem;
   border: 1px solid transparent;  /* may want to add Cwebba08b color */
   border-color:var(--brd-gry);
@@ -668,7 +669,8 @@ button {
 
 .btn-grn:hover {
   background: #DAEBDA; /* Old browsers */
-  background: map-get($gradients, grnlite02);
+/*  background: map-get($gradients, grnlite02); */
+background: var(--grnlite02)
 }
 /* These are BS4 Declarations */
 .btn-grn:hover,
@@ -714,12 +716,14 @@ a.btn-grn {
   text-shadow: 1px 1px 1px rgba(212, 206, 201, 0.5);  /*[--bdr-gry]*/
   padding: 0.375rem 0.75rem;
   background: #f7f7f7;
-  background: map-get($gradients, gra);
-  border: 1px solid rgba(223, 222, 221, 0.5);;
+/*  background: map-get($gradients, gra);*/
+  background:var(--gra);
+  border: 1px solid rgba(223, 222, 221, 0.5);
 }
 .btn-gry:hover {
   background: #f7f7f7;
-  background: map-get($gradients, gra02);
+/**  background: map-get($gradients, gra02);*/
+  background:var(--gra02);
 }
 
 .btn-gry:hover,

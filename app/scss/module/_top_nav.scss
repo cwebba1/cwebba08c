@@ -92,7 +92,8 @@ border-radius: .35em;
   color: #241000;
   color: hsla(27, 100%, 7%, 1);
   background: #BBDDCC;
-  background: map-get($gradients, topnavhover);
+/*  background: map-get($gradients, topnavhover);*/
+background:var(--topnavhover);
 }
 
 .top a, .top a:visited {display:block;float:left; text-decoration:none;
@@ -107,14 +108,16 @@ border-radius: .35em;
   border: 0;
   border-radius: .35em;
   background: #FFCCCC;
-  background: map-get($gradients, topcurrent);
+/**  background: map-get($gradients, topcurrent);*/
+  background:var(--topcurrent);
 }
 
 
 /* level 2 list   - - - - - - - */
 .top ul {
   background: #F9FBFA;
-  background: map-get($gradients, topul);
+/*  background: map-get($gradients, topul);*/
+  background:var(--topul);
   color: #fff;
   display: none;
   margin: 0;
@@ -171,7 +174,8 @@ border-radius: .35em;
   color: #900000;
   background-color: #bdc;
   background: linear-gradient(to bottom, #bbddcc, #7bad94) !important;
-  background-color: map-get($gradients, topulhover);
+  /*background-color: map-get($gradients, topulhover);*/
+  background:var(topulhover);
   border-radius: 0 0 0 0;
 }
 
@@ -336,7 +340,6 @@ border-radius: 0 0 9px 9px;
 
   .top li:last-child { margin-right:0.75em;
   }
-
 }
 
 @media screen and (max-width: 920px) {
@@ -353,19 +356,17 @@ border-radius: 0 0 9px 9px;
     display: inline-block;
     zoom: 1;
   }
-
 }
 
 @media screen and (min-width: 560px) and (max-width: 920px) {
   .topnav {
     margin: 0 auto .5em;
-}
+  }
 }
 
 @media screen and (min-width: 921px), print {
   .top li:last-child { margin-right:0.75em;
   }
-
 }
 
 

@@ -399,6 +399,7 @@ $gradients: () ;
 $gradients: map-merge((     */
     --gra: linear-gradient(0deg, rgba(247, 247, 247, 1) 0%,rgba(230, 230, 230, 1) 100%);
     --gra02: linear-gradient(0deg, rgba(230, 230, 230, 1) 0%, rgba(247, 247, 247, 1) 100%);
+    --grn: linear-gradient(0deg, rgba(234, 255, 234, 1) 0%,rgba(207, 230, 207, 1) 100%);
     --grnlite01: linear-gradient(0deg, rgba(234, 255, 234, 1) 0%, rgba(218,235,218,1) 100%); /* #DAEBDA */
     --grnlite02: linear-gradient(0deg, rgba(218,235,218,1) 0%, rgba(234, 255, 234, 1)  100%); /* #DAEBDA */
     --topnavhover: linear-gradient(180deg, rgba(221, 238, 230, 1) 0%,rgba(187, 221, 204, 1) 47%,rgba(169, 198, 184, 1) 100%);

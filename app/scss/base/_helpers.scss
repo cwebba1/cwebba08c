@@ -63,21 +63,6 @@ padding-left: 0.125em;
 margin: 0 0.325em;
 }
 
-/* Gradient Classes */
-@each $gradient, $value in $gradients {
-  @include bg-gradient(".bg-gradient-#{$gradient}", $value);
-}
-
-// Gradient Classes 
-@each $gradient, $value in $gradients {
-  @include text-gradient(".text-gradient-#{$gradient}", $value);
-}
-
-// Border Classes 
-@each $gradient, $value in $gradients {
-  @include border-gradient(".border-gradient-#{$gradient}", $value);
-}
-
 .shadow {
 background:hsla(321, 50%, 20%, .8);
 -moz-box-shadow: 0 .125em .625em hsla(321, 50%, 20%, 1);
@@ -256,8 +241,9 @@ code { color:#900;}
 .join,
 .workbook li {
   background: #f7f7f7;
-  background: map-get($gradients, gra);
-  color: #432;
+/*  background: map-get($gradients, gra);*/
+background:var(--gra);
+color: #432;
   color: hsla(30, 33%, 20%, 1);
 }
 
