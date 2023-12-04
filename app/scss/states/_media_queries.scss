@@ -1,9 +1,9 @@
-/* _media_queries.scss */
+/*! _media_queries.scss */
 
-/* ======= [ Media Queries ]  =========== */
+/*! ======= [ Media Queries ]  =========== */
 
 .copyright {
-  font-family: $head-ft;
+  font-family: var(--head-ft);
   font-size: 0.6875em;
   line-height: .0625em;
   color:#889;

@@ -1,9 +1,9 @@
-/**  _top_nav.scss 090923 */
+/*!  _top_nav.scss 
+112623 090923 020819 */
 /*  _top_nav.scss 020819 - Cwebba07 Styles */
+/*! Top Header Navigation Module - Cwebba08c Styles */
 
-/* Top Header Navigation Module - Cwebba08c Styles */
-
-/* HEADER section */
+/*! HEADER section */
 
 header { 
 	clear:both;
@@ -68,9 +68,9 @@ padding: 0 1.5em;
   float: left;
   text-decoration: none;
 }
-
+  
 .top a:link, .top a:visited { 
-	font-family: $head-ft;
+	font-family: var(--head-ft);
   font-weight:400;
 	font-size: 1em;
 	color: rgba(33,16,0,.7);
@@ -113,7 +113,7 @@ background:var(--topnavhover);
 }
 
 
-/* level 2 list   - - - - - - - */
+/*! level 2 list   - - - - - - - */
 .top ul {
   background: #F9FBFA;
 /*  background: map-get($gradients, topul);*/
@@ -157,7 +157,7 @@ background:var(--topnavhover);
   line-height: 1em;
 }
 
-/* sub levels link hover */
+/*! sub levels link hover */
 .top ul li:hover a, .top li:hover li a {
   text-align: left;
   background: none;
@@ -175,11 +175,11 @@ background:var(--topnavhover);
   background-color: #bdc;
   background: linear-gradient(to bottom, #bbddcc, #7bad94) !important;
   /*background-color: map-get($gradients, topulhover);*/
-  background:var(topulhover);
+  background:var(--topulhover);
   border-radius: 0 0 0 0;
 }
 
-/* THESE DECLARATIONS ARE EXTRA (compares to the MQ-Redo version)
+/*! THESE DECLARATIONS ARE EXTRA (compares to the MQ-Redo version)
 
 .top ul li a:hover {
 padding-top:.5em;
@@ -198,7 +198,7 @@ line-height:1.1em;
 
  /*  In the original above, this float is set to NONE. Now this rule MUST be included. When float is removed, the links disappear.  */
 
-/* level 3+ list */
+/*! level 3+ list */
 .top ul ul {
 	left: 10em;
 	top: -.125em;
@@ -217,7 +217,7 @@ padding-top:.5em;
 line-height:1.1em; 
 }
 
-/* style the sub level links *//* ie_drop */
+/*! style the sub level links *//* ie_drop */
 .top ul ul a, 
 .top ul ul a:visited {
 display:block;
@@ -226,8 +226,7 @@ height:100%;
 line-height:1.1em;
 }
 
-
-/* rounded corners for first and last child */
+/*! rounded corners for first and last child */
 .top ul li:first-child > a {
 	-moz-border-radius-topleft: 9px;
 	-moz-border-radius-topright: 9px;
@@ -249,9 +248,9 @@ border-radius: 0 0 9px 9px;
   border-radius: 0 0 9px 9px;
 }
 
-/* END HEADER section */
+/*! END HEADER section */
 
-/* ======= [ Header Top Navigation Media Queries ]  ======== */
+/*! ======= [ Header Top Navigation Media Queries ]  ======== */
 
 @media only screen and (max-width: 400px) {
   .top a:link, .top a:visited {
@@ -260,14 +259,13 @@ border-radius: 0 0 9px 9px;
   }
 
   .top ul li:hover a, .top li:hover li a {
-    font-family: $bod-ft;
+    font-family: var(--bod-ft);
     line-height: 1.375em;
   }
 
   .top ul li a:hover {
     width: 12.5em;
   }
-
 }
 
 @media only screen and (min-width: 400px) {
@@ -368,17 +366,4 @@ border-radius: 0 0 9px 9px;
   .top li:last-child { margin-right:0.75em;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 

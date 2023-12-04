@@ -100,7 +100,7 @@ kbd,
 /*pre,*/
 samp,
  tt {
-	font-family: $mono-ft;
+	font-family: var(--mono-ft);
 	font-size: 1em;
 	color:#900;
 	}
@@ -171,7 +171,7 @@ sub {
     bottom: -0.25em;
 }
 
-/* add to span for ampersand */
+/*! add to span for ampersand */
 .amp{font-family:Adobe Caslon Pro,Baskerville,"Goudy Old Style","Palatino","Palatino Linotype","Book Antiqua",Georgia,"Times New Roman",Times,serif;
 font-style:italic;
 font-size:110%;
@@ -186,7 +186,7 @@ vertical-align:baseline
 	font-weight: normal;
 } /* Ethan Marcotte Best Ampersand */
 
-/* FORMATING OF CLASSES */
+/*! FORMATING OF CLASSES */
 
 .fl{ float: left; }
 .fr{ float: right; }

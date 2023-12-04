@@ -1,24 +1,31 @@
-/** _css-custom-properties.scss */
+/*! _css-custom-properties.scss
+112623
+ */
 
 :root {
+
+/*! Fonts: */
+--bod-ft:'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+--head-ft: 'Ubuntu', Verdana, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana Ref", sans-serif;
+--mono-ft: "andale mono", "lucida console", monospace, serif;
+--top-ul-ft: Verdana, Geneva, "Helvetica Neue", Helvetica, sans-serif; /* Depreciated */
 
 /* 090923 Removed for testing. These may be removed. */
 /* Project iframe template */
 /*
 --iframe-foot:url(../assets/images/textures/egg-shell.png);
 */
-/*Flex-box*//*
---tbass: url(../assets/images/websites/tb1associatesllc_home_dt_600.jpg);
-*/
-/* Colors * /
+
+
+/*! Colors * /
 
 /* From Prototype_Sandbox _vars.css */
 
-/* Crayola Colors */
+/*! Crayola Colors */
 --shadow-blue: #778BA5;
 --sunglow: #FFCC33;
 
-// CWebba08 Color system - Hue 25 */
+/*! CWebba08 Color system - Hue 25 */
 
 --white:    #fff ;
 --gray-100: #FBFAF9 ;
@@ -32,9 +39,10 @@
 --gray-900: #2A2622 ;
 --black:    #000 ;
 
-/* CWebba08 Colors
-
-// WHITES
+/*! CWebba08 Colors 
+*/
+/*
+/*! WHITES
 */
 
 /* #FDFEFB              // A bright, yellow-hue wht.
@@ -61,12 +69,12 @@
 
 
 
-/* Shadow Color
+/*! Shadow Color
 // #4D1A3B
 // hsla(321, 50%, 20%, 1);      */
 --plum: rgba(77, 26, 59, 0.95);
 
-/* GREYS */
+/*! GREYS */
 
 /* Very light reddish gray, used as a border on  .workbook li border, .top UL border /*
 #DFDEDD
@@ -80,7 +88,6 @@
   --brd-gry: rgba(207, 207, 207, 0.99);      */
 
 
-
 /* #D4CEC9 <-- Warm grey, close to #CFCFCF, Approx. "450": $gray-450, Convert border to this.
 // 25 12 81 81
 // 212 206 201      */
@@ -88,7 +95,7 @@
 
 
 
-/* BROWNS:        */
+/*! BROWNS:        */
 
 /* #331700      // Slightly lighter for large type
 // HSL 27 100 10 12     */
@@ -128,8 +135,6 @@ HSL 27 18 37 37
 RGB 110 92 77       */
 --tan-txt-dk:rgba(110, 92, 77, 0.99);
 
-
-
 /* #8C4103              // Header-tag Brown
 // HSL 27 96 28 35
 // RGB 140 65 3     */
@@ -137,7 +142,7 @@ RGB 110 92 77       */
 
 
 
-/* GREENS: */
+/*! GREENS: */
 
 /* #bdc         // CWebba Grn
 // #BBDDCC
@@ -166,8 +171,6 @@ RGB 110 92 77       */
 55 179 117      */
 --golf-green:rgba(43, 140, 92, 0.99);
 
-
-
 /* #EAFFEA
 // HSL 120 100 96 97
 // RGB 234 255 234      */
@@ -179,7 +182,7 @@ RGB 110 92 77       */
 --wasabi:rgba(207, 230, 207, 1);
 
 
-/* COLORS FOR SOCIAL MEDIA ICONS (022119) */
+/*! COLORS FOR SOCIAL MEDIA ICONS (022119) */
 
 /* #B6D6B6         022119 inset green [1/3]
 // HSL 120 28 78 79
@@ -197,7 +200,7 @@ RGB 110 92 77       */
 --lemon-grass:rgba(237,255,226, 0.5);
 
 
-/* GREEN-BLUES::*/;
+/*! GREEN-BLUES::*/;
 
 /* #2288AA;        // a:visitedvcolor
 // HSL 195 67 40 49
@@ -205,15 +208,13 @@ RGB 110 92 77       */
 --cape-cod-blu:rgba(34,136,170, 0.99);
 
 
-/* BLUES: */
+/*! BLUES: */
 
 /* #0088CC;         $tagblu
 // HSL 200 100 40 53
 // color:hsla(200, 100%, 40%, 1);
 // RGB 0 136 204        */
 --tagblu:rgba(0, 136, 204, 0.99);
-
-
 
 
 /* .arrowCircle    <-- color for lightbox SVG
@@ -223,7 +224,7 @@ RGB 147 198 240
 stroke:rgba(147, 198, 240, 0.5);        */
 --arrow-circle:rgba(147, 198, 240, 0.99);
 
-/* A-link Blues */
+/*! A-link Blues */
 
 /*a:link
 #004477
@@ -272,7 +273,7 @@ stroke:rgba(147, 198, 240, 0.5);        */
 --orange-lt:rgba(255, 153, 102, 0.99);
 
 
-/* REDS */
+/*! REDS */
 
 /* #900000         <--- Blood Red
 // HSL 0 100 28 30
@@ -317,7 +318,7 @@ stroke:rgba(147, 198, 240, 0.5);        */
 // RGB 218 180 82       */
 --mustard: rgba(218, 180, 82, 0.99);
 
-/* - – - – - – - – - – - – - – - – - – - –
+/*! - – - – - – - – - – - – - – - – - – - –
 iFRAME TEMPLATE COLORS 121720 */
 
 /* #ECEAE9;   // iframe html, iframe body background
@@ -356,7 +357,7 @@ HSL 20 27 94 94
 --iframe-gry-sock :rgba(244, 238, 236, 0.99);
 
 
-/* - – - – - – - [ Socia; Media Icon Colors] – - – - – - – */
+/*! - – - – - – - [ Socia; Media Icon Colors] – - – - – - – */
 
 
 --codepen: #000000;
@@ -397,6 +398,7 @@ $topulhover-gradi: #bdc;
 /*
 $gradients: () ;
 $gradients: map-merge((     */
+/*! Gradients 112623 */
     --gra: linear-gradient(0deg, rgba(247, 247, 247, 1) 0%,rgba(230, 230, 230, 1) 100%);
     --gra02: linear-gradient(0deg, rgba(230, 230, 230, 1) 0%, rgba(247, 247, 247, 1) 100%);
     --grn: linear-gradient(0deg, rgba(234, 255, 234, 1) 0%,rgba(207, 230, 207, 1) 100%);
@@ -412,7 +414,7 @@ $gradients: map-merge((     */
     --cold: linear-gradient(135deg, #8019C6 0%,#2F93CC 100%0);
     /* $gradients);
 
-/* LSH Gradient Colors */
+/*! LSH Gradient Colors */
 
     /* background: #eaf3fc; – Old browsers */
     --questions:linear-gradient(0deg, hsla(210,75%,95%,1) 0%,hsla(213,100%,98%,1) 15%,hsla(213,100%,98%,1) 78%,hsla(212,58%,95%,1) 100%); ;

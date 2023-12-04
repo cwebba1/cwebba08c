@@ -1,11 +1,8 @@
-/**  081923 _css3_columns.scss */
-/*  062420 _css3_columns.scss
-032220 _css3_columns
-_css3_columns 042019
-_css3_columns 072716 */
+/*!  _css3_columns.scss 
+112623 081923 062420 032220 042019 072716 */
 
-/*     - - - - [ CSS3 COLUMNS ] - - - - -  */
-
+/*!  / – - - - - [ CSS3 COLUMNS ] - - - - - / 
+*/
 .columns01,
 .columns2b,
 .columns02,
@@ -17,7 +14,8 @@ _css3_columns 072716 */
 .columns03b,
 .columns03,
 .columns04 {
-  text-align: top;
+/*  text-align: top; This is incorrect*/
+  vertical-align: top; /* Test and see – the valiue may need to be vertical-align: text-top;*/
   -webkit-column-count: 1;
   -webkit-column-gap: 1em;
     -webkit-column-rule: 0;

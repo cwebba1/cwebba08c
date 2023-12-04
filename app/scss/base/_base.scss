@@ -1,5 +1,5 @@
-/** –base.scss 090923 */
-/*! –base.scss 071220 */
+/*! _base.scss  */
+/*! 120323 090923 071220 */
 /* RESETS */
 /* This Normalize Reset conflicts with Fancybox.
 html {
@@ -11,6 +11,12 @@ html {
 .unborderbox { box-sizing: content-box;
 }
 
+html { -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  font-family:sans-serif;
+  font-size:16px;
+  }
+  
 body, nav, ul, li, a  {
   margin: 0; padding: 0;
 }
@@ -18,12 +24,12 @@ body, nav, ul, li, a  {
 
 body {
 font-size:100%;
-font-family:$bod-ft;
+font-family:var(--bod-ft);
 font-weight:300;
 line-height: 1.5;
 	transition:all .5s ease-in; 
 color:hsla(27, 100%, 7%, 1);
-background:$old-yeller;
+background:var(--old-yeller);
  background:url('../assets/images/oj_emboss.png');
 text-shadow:rgba(0,0,0,0.01) 0 0 1px;
 }
@@ -46,10 +52,10 @@ padding-right: 1.375em;
 
 .nest {
   display: block;
-  margin: 0px, auto;
+  margin: 0px auto;
 }
 
-/* MUST add width */
+/*! MUST add width */
 /* line 113, sass/base/_base.scss */
 .nest:after {
   content: "\0020";
@@ -71,14 +77,11 @@ padding-right: 1.375em;
 .relative {position: relative;}
 
 
-
-/* formatting of elements */
-
-/* TYPOGRAPHY */
+/*! TYPOGRAPHY */
 
 /* 082816 NOTE: - LOAD FONTS VIA STYLE LINK */
 p {
-font: 1em  $bod-ft;
+font: 1em  var(--bod-ft);
 font-weight:300;
 line-height: 1.5;
 color:hsla(27, 100%, 7%, 1);
@@ -93,7 +96,7 @@ p.no-margin {
   margin:0;
   }
 
-/*
+/*!
 3/16 = 0.1875
 0.375
 9/16 = 0.5625
@@ -179,10 +182,10 @@ float:right;
 text-align:right;
 }
 
-/* LINKS */
+/*! LINKS */
 
 a { 
-  color: $midnight-blue;
+  color: var(--midnight-blue);
   font-size: inherit;
   line-height: inherit;
   text-decoration: none;
@@ -204,36 +207,36 @@ a:focus { outline: 0; }
 
 a:hover, a:active { outline: none; }
 
-a:focus, a:hover { color: $royal-blu;
+a:focus, a:hover { color: var(--royal-blu);
 text-decoration: underline; 
 }
 
-a:visited {color:$visitation-blu;
+a:visited {color:var(--visitation-blu);
 text-decoration: none;
 }
 
 a:active { 
-  color:$redskin; 
+  color:var(--redskin); 
   text-decoration: underline; 
 }
 
 a.contact {
-  color:$pumpkin;
+  color:var(--pumpkin);
   text-decoration: none;
 }
 
 a.contact:hover {
-  color :$orange-lt;
+  color : var(--orange-lt);
   text-decoration: underline;
 }
 
-.credit {font-family: $bod-ft;
+.credit {font-family: var(--bod-ft);
 font-weight:400;
 font-size:.675em;
 line-height:.75em;
 }
 
-.credit a {color: $blu-moon;
+.credit a {color: var(--blu-moon);
   text-decoration: none;
   -o-transition: 0.2s color linear;
   -moz-transition: 0.2s color linear;
@@ -243,7 +246,7 @@ line-height:.75em;
 
 .credit a:focus { outline: thin dotted; }
 
-.credit a:focus, a:hover {color: $royal-blu;
+.credit a:focus, a:hover {color: var(--royal-blu);
 text-decoration: underline; 
 }
 
@@ -251,16 +254,16 @@ text-decoration: underline;
 text-decoration: none;
 }
 
-a.cutine { color:$visitation-blu;
+a.cutine { color:var(--visitation-blu);
 margin: 0 0 .5em 0;
-font-family: $bod-ft;
+font-family: var(--bod-ft);
 font-weight:400;
 font-size: 12px;
 line-height: 1.4em;
 font-style:italic;
 text-decoration: none; }
 
-a.cutine:hover { color:$visitation-blu;
+a.cutine:hover { color:var(--visitation-blu);
 text-decoration: underline; }
 
 a.cutine:visited {color: #0066CC;
@@ -273,25 +276,25 @@ a img, img { border: none; }
 a img {display: block;} /* Stops image links getting text link styles */
 
 a.menu {
-font-family: $head-ft;
+font-family: var(--head-ft);
 font-size:.875em;
 font-weight: 300;
 line-height : 1.625em;
-color:$visitation-blu;
+color: var(--visitation-blu);
 text-decoration: none;
 }
 
 a.menu:hover {
-	font-family: $head-ft;
-	color :$daylight-blu;
+	font-family: var(--head-ft);
+	color : var(--daylight-blu);
 	text-decoration: underline;
 text-decoration-thickness: 10%;
 }
 
-/* Headers */
+/*! Headers */
 
-h1, h2, h3, h4, h5, h6,  blockquote {font-family:$head-ft;
-  color: $hdr-brn;    //#8c4103;
+h1, h2, h3, h4, h5, h6,  blockquote {font-family:var(--head-ft);
+  color: var(--hdr-brn);    //#8c4103;
   font-weight: 300;
 letter-spacing: 0.0625em;
 }
@@ -371,7 +374,7 @@ border-radius: .375em;
 
 
 
-/* = MEDIA / IMG Elements 
+/*! = MEDIA / IMG Elements 
 ---------------------------------------------------- */
 img {
 border: 0;
@@ -394,7 +397,7 @@ img:not([alt]) {
 
 
 
-/* IMAGE MODIFIERS */
+/*! IMAGE MODIFIERS */
 
 .rnd {
 border: 0;
@@ -492,7 +495,7 @@ margin-bottom:1.5em;
 }
 
 
-/* = LISTS 
+/*! = LISTS 
 ---------------------------------------------------- */
 
 ul { list-style:initial; }
@@ -594,7 +597,7 @@ ul.angle {
 }/* Â» */
 
 
-/* ==============================
+/*! ==============================
    Forms Normalize Reset
    ============================ */
 fieldset {
@@ -699,7 +702,8 @@ a.btn-grn {
   }
 
 ::-webkit-input-placeholder,
-::input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
 ::placeholder {
   font-family: Georgia, 'Taviraj', "Times New Roman", Times, serif;
   font-style:italic;
@@ -733,10 +737,10 @@ a.btn-grn {
   border-color: var(--brd-gry);
 }
 .btn-gry:focus { 
-  border: 1px solid calc (var(--tan-txt) / 2);
+  border: 1px solid calc((var--tan-txt) / 2);
   box-shadow: 0 0 5px var(--bdr-gry);
 }
-/* ======= [ END NORMALIZE RESETS ]  =========== */
+/*! ======= [ END NORMALIZE RESETS ]  =========== */
 
 
 

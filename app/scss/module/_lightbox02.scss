@@ -1,8 +1,8 @@
-/* 101321 LIGHTBOX II lightbox02.scss */
-/* 061216 LIGHTBOX II lightbox02.scss */
-/* 032916 LIGHTBOX II lightbox02.css */
-/* 032516 LIGHTBOX II lightbox02.css */
-/* Preload images */
+/*!  _lightbox02.scss LIGHTBOX II */
+/* 092423 101321 061216 032916 032516LIGHTBOX II lightbox02.scss */
+
+
+/*! Preload images */
 /* line 5, ../sass/module/_lightbox02.scss */
 body:after {
   content: url(../assets/images/lightboximages/close.png) url(../assets/images/lightboximages/loading.gif) url(../assets/images/lightboximages/prev.png) url(../assets/images/lightboximages/next.png);
@@ -13,7 +13,6 @@ body:after {
 body.lb-disable-scrolling {
   overflow: hidden;
 }
-
 
 /* line 14, ../sass/module/_lightbox02.scss */
 .lightboxOverlay {
@@ -194,7 +193,8 @@ body.lb-disable-scrolling {
 
 /* line 171, ../sass/module/_lightbox02.scss */
 .lb-outerContainer {
-  max-width: auto !important;
+  /*  max-width: auto !important; apparently this value is wrong. testing 120323 */
+  max-width: fit-content;
   height: auto !important;
 }
 
@@ -229,7 +229,7 @@ body.lb-disable-scrolling {
   padding-bottom: 1em;
   font-size: .875em;
   color: #FFF;
-  text-shadow: rvar(--bdy-brn) 1px 1px 4px;
+  text-shadow: var(--bdy-brn) 1px 1px 4px;
 }
 
 /* line 203, ../sass/module/_lightbox02.scss */

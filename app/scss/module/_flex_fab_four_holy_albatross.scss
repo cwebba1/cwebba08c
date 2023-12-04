@@ -1,5 +1,5 @@
-/** 090923 082923 _flex-fab-four-holy-albatross.scss */
-/** 122520 _flex-fab-four-holy-albatross.scss */
+/*!  _flex-fab-four-holy-albatross.scss */
+/* 120323 090923  082923  122520 _flex-fab-four-holy-albatross.scss */
 
 .flexbox-wrapper { 
 	display:flex;
@@ -53,7 +53,7 @@
 }
 
 
-/** vert-horiz-albatross-card */
+/*! vert-horiz-albatross-card */
 /** 121020 comps-and-wireframes */
 .flexwrapstretch { 
   display:flex;
@@ -95,7 +95,7 @@ align-self: flex-start;
   min-width:58%;    
   max-width:100%;    
   width:calc((260px - 100%) * 260);
-  flex-basis:1;
+/*  flex-basis:1; apparently 1 is invalid ? test. */
 }
 
 .img-albatross-box,

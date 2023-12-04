@@ -1,4 +1,4 @@
-/**  _contact_form_06.scss 090923 053120
+/*!  _contact_form_06.scss 090923 053120
 contact_form_05.css 041816  */
 
 /*!  - - - - - - [ Base Form Declarations ] - - - - - - */
@@ -91,7 +91,7 @@ select:focus:invalid:focus {
   box-shadow: 0 0 6px #f8b9b7;
 }
 
-/* - - - - - - [ END Bootstrap Declarations ] - - - - - - */
+/*! - - - - - - [ END Bootstrap Declarations ] - - - - - - */
 
 legend { padding:0 .5em .5em;
 font-size:1.25em;
@@ -183,7 +183,7 @@ display:inline-block;
 margin-right:0;
 }
 
-/* Address Declarations */
+/*! Address Declarations */
 #title5 { margin-bottom:.25em;}
 
 #title5,
@@ -222,20 +222,23 @@ button.contact {
   text-shadow: 1px 2px 2px rgba(102, 255, 166, 0.6);
   margin:.5em 0;
   padding:1em 1em;
-  font-style:bold;
+  font-weight:bold;
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
   background:#68E855;/* for non-css3 browsers */
-  background: map-get($gradients, grnlite01);
+/**  background: map-get($gradients, grnlite01); */
+background:var(--grnlite01);
   border-radius: .5em;
 }
 
 button.contact:hover { 
   text-shadow: -1px -2px 2px rgba(102, 255, 166, 0.6);
   background:#68E855;/* for non-css3 browsers */
-  background: map-get($gradients, grnlite02);
+/**  background: map-get($gradients, grnlite02);*/
+  background:var(--grnlite01);
+
 }
 
 .map-btn,
@@ -250,14 +253,16 @@ button.contact:hover {
   margin: 0 auto;
   cursor: pointer;
   border-radius: 6px;
-  background: map-get($gradients, grnlite02);
+/**  background: map-get($gradients, grnlite02);*/
+  background:var(--grnlite02);
 }
 
 .close-btn,
 .map-btn:hover {
   color:hsla(0, 59%, 52%, 1);
   text-decoration: none;
-  background: map-get($gradients, grnlite01);
+/**  background: map-get($gradients, grnlite01);*/
+  background:var(--grnlite01);
 }
 
 button.send { 
@@ -265,7 +270,8 @@ button.send {
   text-shadow: 1px 2px 2px hsla(88, 70%, 86%, 0.8);
   margin:.5em 0;
   padding:.625em 1em;
-  font-family: $bod-ft;
+/*  font-family: $bod-ft; */
+  font-family: var(--bod-ft);
   font-weight:700;
   letter-spacing: 0.08em;
   border-top: 1px solid #ccc;
@@ -275,7 +281,8 @@ button.send {
 /* http://www.cssportal.com/css-gradient-generator/ */
 /* BEDD40  98D85F  81C266 */
   background-color:#BEDD40;
-  background: map-get($gradients, grnlite02);
+/**  background: map-get($gradients, grnlite02);*/
+  background:var(--grnlite02);
   border-radius: .5em;
 }
 
@@ -285,10 +292,11 @@ button.send:hover {
   /* http://www.cssportal.com/css-gradient-generator/ */
   /* HOVER: 81C266 98D85F BEDD40  */
   background-color:#81C266;
-  background: map-get($gradients, grnlite01);
+/**  background: map-get($gradients, grnlite01);*/
+  background:var(--grnlite01);
 }
 
-/* MEDIA QUERIES START HERE */
+/*! MEDIA QUERIES START HERE */
 
 @media (max-width: 1040px) {
   div.city { 

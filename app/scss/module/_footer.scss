@@ -1,7 +1,7 @@
-/** footer.scss 090923 120720 072120 021019 */
-/* cwebba08c */
+/*! footer.scss cwebba08c */
+/* 120323  090923 120720 072120 021019 */
 
-/** FOOTER */
+/*! FOOTER */
 
 footer {
   padding:0 1em.5em;
@@ -17,7 +17,8 @@ margin-bottom:0.5em;
 .footsy a:hover, .footsy a:active {
   color: #857464;
   background: #EAFFEA;
-  background: map-get($gradients, grn);
+/*  background: map-get($gradients, grn); */
+background:var(--grn);
 }
 
 ul.footsy   {
@@ -115,7 +116,7 @@ vertical-align:middle;
 /* .socialmedia { This is located in the _social_nav.scss component} */
 
 
-/*  Grid Layout  */
+/*!  Footer Grid Layout  */
 
 /*  .footstep, */
 .context,
