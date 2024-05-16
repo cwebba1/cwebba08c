@@ -8,7 +8,7 @@ Portioms of this layout is mobile-first, but not all. */
 /* cwebba_layout_02.css 011117 */
 /* cwebba_layout_01.css 011017 */
 
-/* Base Declarations */
+/*! Base Declarations */
 
 
 .basal {
@@ -30,7 +30,7 @@ footer {
   clear: both;
   }
 
-/* Mobile-first */
+/*! Mobile-first */
 
   .landpage,
   .main-art-content,
@@ -40,7 +40,7 @@ footer {
   }
 
 
-/* - - - - [ NO sidebar  ] - - - -  */
+/*! - - - - [ NO sidebar  ] - - - -  */
 
 /* No column layout */
 .landpage  {
@@ -83,7 +83,7 @@ padding:1em 1.5em;
   }
 }
 
-/* - - - - [ WIDE PAGE STYLE - 1 sidebar  ] - - - -  */
+/*! - - - - [ WIDE PAGE STYLE - 1 sidebar  ] - - - -  */
 
 /* Mobile */
 
@@ -101,7 +101,7 @@ padding:1em 1.5em;
   }
 */
 
-/* - - - - [ 2 sidebar main-content layout (services): ] - - - -  */
+/*! - - - - [ 2 sidebar main-content layout (services): ] - - - -  */
 /* 3-COLUMN LAYOUT STYLE */
 
 .main-content {
@@ -141,7 +141,7 @@ border-radius: .75em;
 }
 
 
-/* - - - - [ MEDIA QUERIES ] - - - -  */
+/*! - - - - [ MEDIA QUERIES ] - - - -  */
 
 @media only screen and (min-width : 600px)  {
 
@@ -202,7 +202,7 @@ float:left;
 */
 }
 
-/* ======= [ CWebba Layout Media Queries ]  =========== */
+/*! ======= [ CWebba Layout Media Queries ]  =========== */
 
 
 @media screen and (max-width: 920px) {
@@ -240,7 +240,7 @@ float:left;
 }
 
 
-/* - - - - -   [ WEB-DESIGN PAGE ]  - - - - - */
+/*! - - - - -   [ WEB-DESIGN PAGE ]  - - - - - */
 
 .project-content { 
   margin-bottom:1.5em;
@@ -289,7 +289,7 @@ float:left;
  }
 
 
-/* - - - - -   [ SERVICES PAGE ]  - - - - - */
+/*! - - - - -   [ SERVICES PAGE ]  - - - - - */
 
 #skillset {
   margin:1em 0 1.5em;
@@ -300,7 +300,7 @@ float:left;
 }
 
 
-/* - - - - -   [ PORTFOLIO PAGE ]  - - - - - */
+/*! - - - - -   [ PORTFOLIO PAGE ]  - - - - - */
 
 #portfolio { 
   width:100%;
@@ -322,14 +322,14 @@ float:left;
 .big-wave {
 flex: 0 1 auto;    
 min-width:calc(33.333%  - 1em);    max-width:100%;    width:calc((600px - 100%) * 600);
-flex-basis:1;
+/*flex-basis:1; */
   background: no-repeat url(../assets/images/content/Healthcare_Sunami01.jpg);
   background-size: cover;
  margin: var(--margin01);
   margin-right:1em;
 }
 
-/* - - - - -   [ INDEX PAGE - WORKBOOK NAV ]  - - - - - */
+/*! - - - - -   [ INDEX PAGE - WORKBOOK NAV ]  - - - - - */
 
 :root {
 /* Index Workbook Nav Images */

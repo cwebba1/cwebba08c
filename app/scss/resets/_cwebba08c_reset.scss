@@ -1,7 +1,8 @@
-/** _cwebba08c_reset.scss Cwebba08c Reset 090823 */
+/*! _cwebba08c_reset.scss 041324 */
+/* Cwebba08c Reset 112623  090823 */
 /** 
 https://www.joshwcomeau.com/css/custom-css-reset/
-https://andy-bell.co.uk/a-modern-css-reset/
+https://andy-bell.co.uk/a-more-modern-css-reset/
 https://dev.to/hankchizljaw/a-modern-css-reset-6p3
 https://mattbrictson.com/blog/css-normalize-and-reset
 https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css
@@ -10,13 +11,16 @@ https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css
 https://elad2412.github.io/the-new-css-reset/
 https://www.digitalocean.com/community/tutorials/css-minimal-css-reset
 */
-@charset "utf-8";
+/* now charset is in _fonts.scss
+@charset "utf-8"; */
 
-
+/* This reset fucks up layout. It came from 
+https://css-tricks.com/an-interview-with-elad-shechter-on-the-new-css-reset/
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
     all: unset;
     display: revert;
 }
+*/
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -29,46 +33,6 @@ https://www.digitalocean.com/community/tutorials/css-minimal-css-reset
 #root, #__next {
   isolation: isolate;
 }
-
-html {
-	/* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/) */
-  font-size: 16px;
-	font-family:
-		system-ui,
-		'Segoe UI',
-		Roboto,
-		Helvetica,
-		Arial,
-		sans-serif,
-		'Apple Color Emoji',
-		'Segoe UI Emoji';
-	-webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  	-moz-tab-size: 4;
-	tab-size: 4;
-}
-
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
 
 body {
   min-height: 100vh;
@@ -104,10 +68,11 @@ article > * + * {
   margin-top: 1em;
 }
 
+/*! This reset fucks up layout
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
     all: unset;
     display: revert;
-}
+}*/
 
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -151,7 +116,7 @@ img, picture, video, canvas, svg {
   }
 
 table {
-    border-collapse: collapse;
+  border-collapse: collapse;
 	text-indent: 0; /* 1 */
 	border-color: inherit; /* 2 */
 }
@@ -314,7 +279,9 @@ meter {
     -webkit-user-drag: element;
 }
 
-:where(dialog:modal) {
+/* This comes from https://elad2412.github.io/the-new-css-reset/.
+It was written as dialog:modal, which showed to be invalid. It may be invalid. */
+:where(dialog :modal) {
     all: revert;
 }
 

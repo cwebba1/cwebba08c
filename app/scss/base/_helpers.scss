@@ -1,4 +1,4 @@
-/*!  _helpers.scss */
+/*!  _helpers.scss 041324 */
 
 .mw149 { max-width: 149px;}
 
@@ -17,9 +17,6 @@
 .mw670 { max-width:41.875em;}
 
 .w48p { width:48%;
-	-o-transition:width .25s ease-in, max-width .25s ease-in; 
-    -moz-transition:width .25s ease-in, max-width .25s ease-in; 
-    -webkit-transition:width .25s ease-in, max-width .25s ease-in;
 	transition:width .25s ease-in, max-width .25s ease-in; 
 }
 
@@ -65,21 +62,28 @@ margin: 0 0.325em;
 
 .shadow {
 background:hsla(321, 50%, 20%, .8);
--moz-box-shadow: 0 .125em .625em hsla(321, 50%, 20%, 1);
--webkit-box-shadow: 0 .125em .625em hsla(321, 50%, 20%, 1);
 box-shadow: 0 .125em .625em hsla(321, 50%, 20%, 1);
 }
 
 .innershadow { 
--moz-box-shadow: inset 0 0 15px #8C7E73, 0 0 20px #DDD6D5;
--webkit-box-shadow: inset 0 0 15px #8C7E73, 0 0 20px #DDD6D5;
 box-shadow: inset 0 0 15px #8C7E73, 0 0 20px #DDD6D5, inset 0 35px 35px -18px #D2C8C6;
 }
 
+.thin-lt-rule {
+  height:1px; border: none; color:#CFD0CF;
+  background-color:#CDC; width:100%; padding:0; clear: both; margin-bottom:0;
+  margin:2em 0;
+  }
+  
 .rule {
 height:2px; border: none; color:#A92323;
 background-color:#A92323; width:100%; padding:0; clear: both; margin-bottom:0;
 }/* #FFCCCC;  */
+
+.red-rule {
+height:2px; border: none; color:#A92323;
+background-color:#A92323; width:100%; padding:0; clear: both; margin-bottom:0;
+}
 
 abbr[title] {
     border-bottom: 1px dotted;
@@ -87,22 +91,33 @@ abbr[title] {
 b,
 strong { font-weight: 600; }
 
-em,i { font-style:italic; }
+em, i { font-style:italic; }
 dfn {
-    font-style: italic;
+  font-style: italic;
 }
 mark {
-    background: #ff0;
-    color: #000;
+  background: #ff0;
+  color: #000;
 }
+
+dt {
+  font-weight: bold;
+  /* text-decoration: underline;*/
+  margin: 0.25em 0 0;
+}
+dd {
+  margin: 0;
+  padding: 0 0 0.5em 0;
+}
+
 code,
 kbd,
 /*pre,*/
 samp,
  tt {
-	font-family: $mono-ft;
+	font-family: var(--mono-ft);
 	font-size: 1em;
-	color:#900;
+	color:var(--blood);
 	}
 
 pre {
@@ -112,16 +127,16 @@ pre {
 }
 
 .wrap-text {
-   word-wrap: break-word;
--epub-word-break: break-all;
--ms-word-break: break-all;
-     word-break: break-all;
-     word-break: break-word;     /* Non standard for webkit */
-    overflow-wrap: break-word;
-   -epub-hyphens: auto;
-   -webkit-hyphens: auto;
-   -moz-hyphens: auto;
-        hyphens: auto;
+  word-wrap: break-word;
+  -epub-word-break: break-all;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;/* Non standard for webkit */
+  overflow-wrap: break-word;
+  -epub-hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
 .nowrap {
@@ -146,23 +161,26 @@ pre {
 .column-no-break {
   display:block;
   -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-    page-break-inside: avoid; /* Firefox */
-    break-inside: avoid; /* IE 10+ */
+  page-break-inside: avoid; /* Firefox */
+  break-inside: avoid; /* IE 10+ */
 }
 
 q {
-    quotes: "\201C" "\201D" "\2018" "\2019";
+  quotes: "\201C" "\201D" "\2018" "\2019";
 }
+
 small {
-    font-size: 80%;
+  font-size: 80%;
 }
+
 sub,
 sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
+
 sup {
     top: -0.5em;
 }
@@ -171,7 +189,7 @@ sub {
     bottom: -0.25em;
 }
 
-/* add to span for ampersand */
+/*! add to span for ampersand */
 .amp{font-family:Adobe Caslon Pro,Baskerville,"Goudy Old Style","Palatino","Palatino Linotype","Book Antiqua",Georgia,"Times New Roman",Times,serif;
 font-style:italic;
 font-size:110%;
@@ -186,16 +204,16 @@ vertical-align:baseline
 	font-weight: normal;
 } /* Ethan Marcotte Best Ampersand */
 
-/* FORMATING OF CLASSES */
+/*! FORMATING OF CLASSES */
 
-.fl{ float: left; }
-.fr{ float: right; }
-.mcent{ margin-left: auto; margin-right: auto; }
-.tcent{text-align:center;}
+.fl { float: left; }
+.fr { float: right; }
+.mcent { margin-left: auto; margin-right: auto; }
+.tcent {text-align:center;}
 .tleft { text-align:left;}
 .trigh { text-align:right;}
 .tjust { text-align:justify;}
-.centertext{ margin-left: auto; margin-right: auto; text-align:center; }
+.centertext { margin-left: auto; margin-right: auto; text-align:center; }
 
 .first {margin-left:0;padding-left:0;}
 .last {margin-right:0;padding-right:0;}
@@ -204,7 +222,6 @@ vertical-align:baseline
 .block {display:block;}
 .inblock {display:inline-block;}
 .relative {position: relative;}
-
 
 .no-margin { margin:0;}
 .mr1{ width:inherit;
@@ -242,12 +259,7 @@ code { color:#900;}
 .workbook li {
   background: #f7f7f7;
 /*  background: map-get($gradients, gra);*/
-background:var(--gra);
-color: #432;
+  background:var(--gra);
+  color: #432;
   color: hsla(30, 33%, 20%, 1);
 }
-
-
-
-
-

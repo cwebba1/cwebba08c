@@ -1,5 +1,5 @@
-/** _iframe_modal.scss */
-/** 090923 062420 */
+/*! _iframe_modal.scss */
+/** 120323 090923 062420 */
 
 .modal {
   z-index:3;
@@ -19,9 +19,9 @@
   left:4%;
   top:8%;
   width:90%;
-  height:80vh;
+  height: 80vh;
   border:none;
-  display:hidden;
+/*  display:hidden; this value is wrong. 120323 */
   margin-bottom:1em;
   }
 
@@ -32,9 +32,9 @@
   left:8%;
   top:8%;
   width:80%;
-  height:80vh;
+  height: 80vh;
   border:none;
-  display:hidden;
+/*  display:hidden; this value is wrong. 120323 */
   margin-bottom:1em;
   }
 }

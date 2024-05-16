@@ -1,5 +1,5 @@
-/** –base.scss 090923 */
-/*! –base.scss 071220 */
+/*! _base.scss  */
+/*! 032424 120323 090923 071220 */
 /* RESETS */
 /* This Normalize Reset conflicts with Fancybox.
 html {
@@ -11,21 +11,55 @@ html {
 .unborderbox { box-sizing: content-box;
 }
 
+html {
+  font-family : var(--bod-ft), 'Open Sans', 
+  'source-sans-pro', 'Helvetica Neue', 'Frutiger', "Myriad Pro", Arial, Helvetica, var(--system-ui), sans-serif;
+  font-size: 100%;
+  font-size: 18px;
+	-webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-tab-size: 2;
+	tab-size: 2;
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+  html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
 body, nav, ul, li, a  {
   margin: 0; padding: 0;
 }
 
 
 body {
-font-size:100%;
-font-family:$bod-ft;
-font-weight:300;
-line-height: 1.5;
-	transition:all .5s ease-in; 
-color:hsla(27, 100%, 7%, 1);
-background:$old-yeller;
- background:url('../assets/images/oj_emboss.png');
-text-shadow:rgba(0,0,0,0.01) 0 0 1px;
+  font-family:var(--bod-ft);
+  font-weight:400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color:hsla(27, 100%, 7%, 0.99);
+  text-shadow:rgba(0,0,0,0.01) 0 0 1px;
+  transition:all .5s ease-in; 
+  background:var(--old-yeller);
+  background:url('../assets/images/oj_emboss.png');
 }
 
 .basal {
@@ -44,45 +78,16 @@ padding-left: 1.375em;
 padding-right: 1.375em;
 }
 
-.nest {
-  display: block;
-  margin: 0px, auto;
-}
-
-/* MUST add width */
-/* line 113, sass/base/_base.scss */
-.nest:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-  overflow: hidden;
-}
-
-.first {margin-left:0;padding-left:0;}
-.last {margin-right:0;padding-right:0;}
-
-.inline {display:inline;}
-.block {display:block;}
-.in-block {display:inline-block;
-  vertical-align:top;
-}
-.relative {position: relative;}
-
-
-
-/* formatting of elements */
-
-/* TYPOGRAPHY */
+/*! TYPOGRAPHY */
 
 /* 082816 NOTE: - LOAD FONTS VIA STYLE LINK */
 p {
-font: 1em  $bod-ft;
-font-weight:300;
+font-family:var(--bod-fit);
+font-weight:400;
+font-size: 1em; /* 1.125rem is 18px. was 1em*/
 line-height: 1.5;
-color:hsla(27, 100%, 7%, 1);
-margin: 0 0 .5em 0;
+color:hsla(27, 100%, 7%, 0.99);
+margin: 0 0 0.5em 0;
 }
 
 p:last-of-type { 
@@ -93,9 +98,14 @@ p.no-margin {
   margin:0;
   }
 
-/*
+/*!
+2/16 = 0.125
 3/16 = 0.1875
-0.375
+4/16 = 0.25
+5/16 = 0.3125
+6/16 = 0.375
+7/16 = 0.4375
+8/16 = 0.5
 9/16 = 0.5625
 10/16 = 0.625
 11/16 = 0.6875
@@ -103,10 +113,10 @@ p.no-margin {
 13/16 = 0.8125
 14/16 = 0.875
 15/16 = 0.9375
-6/16 = 0.375
 18/16 = 1.125
 19/16 = 1.1875
 20/16 = 1.25
+22/16 = 1.375
 */
 
 .p6 { font-size:0.375em;
@@ -179,10 +189,10 @@ float:right;
 text-align:right;
 }
 
-/* LINKS */
+/*! LINKS */
 
 a { 
-  color: $midnight-blue;
+  color: var(--midnight-blue);
   font-size: inherit;
   line-height: inherit;
   text-decoration: none;
@@ -192,186 +202,203 @@ a {
   border: 0;
   outline: 0;
   background:transparent; 
-  -o-transition: 0.2s color linear;
-  -moz-transition: 0.2s color linear;
-  -webkit-transition: 0.2s color linear;
-  transition: 0.2s color linear;
   word-wrap: break-word;
   overflow-wrap: break-word;
-}/*csw blue */
+  transition: 0.2s color linear;
+}
 
 a:focus { outline: 0; }
 
 a:hover, a:active { outline: none; }
 
-a:focus, a:hover { color: $royal-blu;
+a:focus, a:hover { color: var(--royal-blu);
 text-decoration: underline; 
 }
 
-a:visited {color:$visitation-blu;
+a:visited {color:var(--visitation-blu);
 text-decoration: none;
 }
 
 a:active { 
-  color:$redskin; 
+  color:var(--redskin); 
   text-decoration: underline; 
 }
 
 a.contact {
-  color:$pumpkin;
+  color:var(--pumpkin);
   text-decoration: none;
 }
 
 a.contact:hover {
-  color :$orange-lt;
+  color : var(--orange-lt);
   text-decoration: underline;
 }
 
-.credit {font-family: $bod-ft;
+.credit {font-family: var(--bod-ft);
 font-weight:400;
 font-size:.675em;
 line-height:.75em;
 }
 
-.credit a {color: $blu-moon;
+.credit a {color: var(--blu-moon);
   text-decoration: none;
-  -o-transition: 0.2s color linear;
-  -moz-transition: 0.2s color linear;
-  -webkit-transition: 0.2s color linear;
   transition: 0.2s color linear;
 }
 
 .credit a:focus { outline: thin dotted; }
 
-.credit a:focus, a:hover {color: $royal-blu;
+.credit a:focus, a:hover {color: var(--daylight-blu); /*#5FC1F1*/
 text-decoration: underline; 
 }
 
-.credit a:visited {color: #900000;
+.credit a:visited {color: hsla(358,84%,30%,1); /*#8C0C10;*/
 text-decoration: none;
-}
+} /* This might change to var(--visitation-blu) */
 
-a.cutine { color:$visitation-blu;
+a.cutine { color: var(--midnight-blue); /*rgba(0, 68, 119, 0.99);*/
 margin: 0 0 .5em 0;
-font-family: $bod-ft;
+font-family: var(--bod-ft);
 font-weight:400;
 font-size: 12px;
 line-height: 1.4em;
 font-style:italic;
 text-decoration: none; }
 
-a.cutine:hover { color:$visitation-blu;
+a.cutine:hover { color: var(--royal-blu); /* Royal blue #0066CC;*/
 text-decoration: underline; }
 
-a.cutine:visited {color: #0066CC;
+a.cutine:visited {color: var(--visitation-blu); /*#3399CC;*/
 text-decoration: underline;
-}/*Royal blue */
+}
 
 p a, p a:visited { line-height: inherit; }
 
-a img, img { border: none; }
-a img {display: block;} /* Stops image links getting text link styles */
+/* This is added 032424 from webblog gulp_2022*/
+h2 > a:focus, h2:hover > a {color: var(--royal-blu); /* Royal blue #0066CC;*/ 
+text-decoration: none; 
+}
 
+a img, img { border: none; }
+a img { display: block;} 
+/* Stops image links getting text link styles */
+
+/* 041324 I think these declarations are obsolete.
 a.menu {
-font-family: $head-ft;
+font-family: var(--head-ft);
 font-size:.875em;
 font-weight: 300;
 line-height : 1.625em;
-color:$visitation-blu;
+color: var(--visitation-blu);
 text-decoration: none;
 }
 
 a.menu:hover {
-	font-family: $head-ft;
-	color :$daylight-blu;
+	font-family: var(--head-ft);
+	color : var(--daylight-blu);
 	text-decoration: underline;
-text-decoration-thickness: 10%;
+	text-decoration-thickness: 10%;
 }
+*/
 
-/* Headers */
+/*! Headers */
 
-h1, h2, h3, h4, h5, h6,  blockquote {font-family:$head-ft;
-  color: $hdr-brn;    //#8c4103;
-  font-weight: 300;
-letter-spacing: 0.0625em;
+h1, h2, h3, h4, h5, h6,  blockquote {
+  font-family: var(--head-ft), 'Ubuntu variable', "DejaVu Sans", "Seravek", 'source-sans-pro', 'Corbel', 'Gill Sans Nova', "Liberation Sans", 'Nimbus Sans', "Bitstream Vera Sans", Verdana, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Verdana Ref", sans-serif;
+  /*  font-style:italic; */
+  color: var(--hdr-brn);    //#8c4103;
+  font-weight: 400;
+/*  letter-spacing: 0.0625em; */
 }
 
 h1 { 
   font-size: 2em;
-  font-weight: 300;
   line-height:1.25em;
-  letter-spacing: 1px;
+/*  letter-spacing: 1px; */
   margin-bottom:0.5em;
 }
 
 h2 { 
   font-size: 1.75em;
-  font-weight:300;
   line-height:1.25em;
-  letter-spacing: 0.0625em;
-  margin-bottom:0.5em;
+/*  letter-spacing: 0.0625em; */
+margin-bottom:0.5em;
 }
 
 h3 { 
   font-size: 1.5em;
-  font-weight: 300;
   line-height:1.25em;
-  letter-spacing: 0.0475em;;
+/*  letter-spacing: 0.0475em;; */
   margin-bottom:0.5em;
 }
 
 h4 { 
   font-size: 1.25em;
-  font-weight: 300;
   line-height:1.25em;
-  letter-spacing: 0.0475em;
+/*  letter-spacing: 0.0475em; */
   margin-bottom:0.25em;
 }
 
+/* these two tags have higher weight - why? */
 h5 {   
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 1.0625em;
+  font-weight: 500; 
   line-height:1.25em;
-  letter-spacing: 0.0625em;
-  margin-bottom:0.125em;
+/*  letter-spacing: 0.0625em; */
+margin-bottom:0.125em;
  }
 
 h6 { 
   font-size: 1em;
   font-weight: 500;
   line-height:1.25em;
-  letter-spacing: 0.0625em;
-  margin-bottom:0;
+/*  letter-spacing: 0.0625em; */
+margin-bottom:0;
   color:#000; 
 }
 
 blockquote {
-color:hsla(27, 100%, 7%, 1);
-font-size:1.125em;
-line-height: 1.375em;
-margin: 0 0 0.5em 0;
-font-style:italic;
+  color: var(--bdy-brn); /* hsla(27, 100%, 7%, 1) */
+  font-size:1.125em;
+  line-height: 1.375em;
+  font-style:italic;
+  background:hsla(150, 40%, 70%, .3);
+  padding:0.375em 1% 0.375em 3%;
+  border-radius: 0.375em;
+  margin: 0 0 0.5em 0;
 }
 
 blockquote.big {
-color:hsla(27, 100%, 7%, 1);
-font-size:1.125em;
+  font-family: var(--head-ft), 'Ubuntu variable', Verdana, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", "Verdana Ref", sans-serif;
+  font-style:italic;
+  color: var(--bdy-brn); /*hsla(27, 100%, 7%, 1);*/
+font-size:1.0625em;
 line-height: 1.375em;
-letter-spacing: 0.0625em;
+/*letter-spacing: 0.0625em; */
 background:hsla(150, 40%, 70%, .3);
-padding:0.25em 1% 0.375em 2%;
+padding:0.375em 1% 0.375em 3%;
+border-radius: 0.375em;
 margin: 1.25em 0 1.375em 0;
 }
 
+/* Not needed anymore
 aside, article, #leftnav, blockquote.big {
      -moz-border-radius: .375em;
      -webkit-border-radius: .375em;
 border-radius: .375em;
-}
+} */
+
+blockquote.big h4 {
+  padding:0;
+  margin: 0 0 0.125em 0;
+  }
+
+blockquote.big p {
+  padding:0;
+  margin: 0 0 0.5em 0;
+  }
 
 
-
-/* = MEDIA / IMG Elements 
+/*! = MEDIA / IMG Elements 
 ---------------------------------------------------- */
 img {
 border: 0;
@@ -381,7 +408,7 @@ vertical-align:baseline;
 }
 
 svg:not(:root) {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 img { -ms-interpolation-mode: bicubic; }
@@ -392,9 +419,17 @@ img:not([alt]) {
   border: 5px dashed hotpink;
 } */
 
+/*! IMAGE MODIFIERS */
+.border {
+	border-style: solid;
+	border-color: #DDD;
+  border-width: 1px;
+}
 
-
-/* IMAGE MODIFIERS */
+.centered {
+display: block;
+margin-left: auto; margin-right: auto;
+}
 
 .rnd {
 border: 0;
@@ -408,18 +443,6 @@ border: 0;-webkit-border-radius: .3em;
 -moz-border-radius: .3em;
 border-radius: .3em;
 }
-
-.border {
-	border-style: solid;
-	border-color: #DDD;
-border-width: 1px;
-}
-
-.centered{
-display: block;
-margin-left: auto; margin-right: auto;
-}
-
 
 a img{border:0}
 
@@ -444,7 +467,7 @@ font-size:1rem;
 }
 
 figcaption { 
-  margin:.125em 0 0.5em; 
+  margin:.25em 0 0.5em; 
   font-size:.8125em; 
   line-height:1em; 
   color: #333333;
@@ -462,24 +485,28 @@ figcaption p:last-of-type {
 }
 
 figure.w250 {
-float:left;
-text-align:left;
-margin-bottom:1em;
-padding:0;
+  max-width:250px; 
+  float:left;
+  text-align:left;
+  margin-bottom:1em;
+  margin-right:1em; 
+  padding:0;
 }
 
 figure.w200 { 
-float:left;
-text-align:left;
-margin-bottom:1em;
-padding:0;
+  max-width:200px; 
+  float:left;
+  text-align:left;
+  margin-bottom:1em;
+  padding:0;
 }
 
 figure.w150 { 
-float:left;
-text-align:left;
-margin-bottom:1em;
-padding:0;
+  max-width:150px; 
+  float:left;
+  text-align:left;
+  margin-bottom:1em;
+  padding:0;
 }
 
 .w150 a,
@@ -487,12 +514,8 @@ padding:0;
 .w250 a { margin:0;
 }
 
-.endpara {
-margin-bottom:1.5em;
-}
 
-
-/* = LISTS 
+/*! = LISTS 
 ---------------------------------------------------- */
 
 ul { list-style:initial; }
@@ -508,6 +531,10 @@ nav ul{
 nav li{
   display:inline;
 }
+
+ul.inside li {
+  list-style-position: inside;
+} /* put list inside */
 
 li ul, li ol {margin:0;}
 dl dd {margin-left: 1.5em}
@@ -533,10 +560,11 @@ ul.example {
   margin:0 0 .5em;
 }
  
+/* » RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK &#187; */
 .example li:before {
   content: "» ";
   color: #A92323; /* or whatever color you prefer */
-}/* Â» RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK &#187; */
+}
 
 
 ul.dash,
@@ -566,177 +594,25 @@ ul.angle {
 .triangle li,
 .angle li { 
   margin:0 0 .5em;
+  color: var( --redskin) /*hsla(0 66%, 40%, 1); #A92323 */
 }
 
 .dash li:before {
   content: "\2013\00a0\020";
-  color: #A92323; /* or whatever color you prefer */
 }
 
 .mdash li:before {
   content: "\2014\020";
-  color: #A92323; /* or whatever color you prefer */
 }
 
 .bullet li:before {
   content: "\2022\00a0\020";
-  color: #A92323; /* or whatever color you prefer */
-}/* â€¢ */
+}
 
 .triangle li:before {
   content: "\2023\00a0\020";
-  color: #A92323; /* or whatever color you prefer */
-}/* â€£ */
+}
 
 .angle li:before {
   content: "\00bb\00a0\020";
-  color: #A92323; /* or whatever color you prefer */
-}/* Â» */
-
-
-/* ==============================
-   Forms Normalize Reset
-   ============================ */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
 }
-legend {
-  border: 0;
-  padding: 0;
-}
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  cursor: pointer;
-}
-button[disabled],
-input[disabled] {
-  cursor: default;
-}
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-input[type="search"] {
--moz-box-sizing: content-box;
--webkit-box-sizing: content-box;
-box-sizing: content-box;
-}
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-textarea {
-  overflow: auto; /* 1 */
-  vertical-align: top; /* 2 */
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-button { 
-  @include inlineflexCenter();
-  @include btnFont();
-  transition: 0.2s color linear;
-  border-color:inherit;
-  border-radius: 0.25rem;
-  cursor: pointer;
- }
-
-/* Inline-flex button with added styles: */
-.btn-grn {
-  color: var(--golf-green);
-  background: #EAFFEA; /* Old browsers */
-/*  background: map-get($gradients, grn); */
-  background:var(--grn);
-  padding: 0.375rem 0.75rem;
-  border: 1px solid transparent;  /* may want to add Cwebba08b color */
-  border-color:var(--brd-gry);
-}
-
-.btn-grn:hover {
-  background: #DAEBDA; /* Old browsers */
-/*  background: map-get($gradients, grnlite02); */
-background: var(--grnlite02)
-}
-/* These are BS4 Declarations */
-.btn-grn:hover,
-.btn-grn:focus { 
-  color: var(--redskin);
-  text-decoration: none;
-  text-shadow:rgba(234, 255, 234, 0.99) -1px -1px 1px;
-  outline: 0;
-  border-color: var(--old-grass);
-/*  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); I don't want this */
-}
-
-.btn-grn:focus { 
-  box-shadow: 0 0 4px var(--wasabi);
-  border: 1px solid var(--old-grass);
-}
-
-a.btn-grn { 
-  @include inlineflexCenter();
-  @include btnFont();
-  text-decoration:none;
-  padding: 0.375rem 0.75rem;
-  border-radius: 0.25rem;  
-  transition: 0.2s color linear;
-  cursor: pointer;
-  }
-
-::-webkit-input-placeholder,
-::input-placeholder,
-::placeholder {
-  font-family: Georgia, 'Taviraj', "Times New Roman", Times, serif;
-  font-style:italic;
-  font-size:.8125em;
-  color: rgba(36, 16, 0, 0.5);
-  opacity: 0.8; /* Firefox */
-}
-
-/*! Grey Button Colors: */
-
-.btn-gry {
-  color: #443322;
-  color: var(--chocolate-brn);
-  text-shadow: 1px 1px 1px rgba(212, 206, 201, 0.5);  /*[--bdr-gry]*/
-  padding: 0.375rem 0.75rem;
-  background: #f7f7f7;
-/*  background: map-get($gradients, gra);*/
-  background:var(--gra);
-  border: 1px solid rgba(223, 222, 221, 0.5);
-}
-.btn-gry:hover {
-  background: #f7f7f7;
-/**  background: map-get($gradients, gra02);*/
-  background:var(--gra02);
-}
-
-.btn-gry:hover,
-.btn-gry:focus { 
-  color: var(--redskin);
-  text-shadow:rgba(212, 206, 201, 0.99) -1px -1px 1px; /*[--bdr-gry]*/
-  border-color: var(--brd-gry);
-}
-.btn-gry:focus { 
-  border: 1px solid calc (var(--tan-txt) / 2);
-  box-shadow: 0 0 5px var(--bdr-gry);
-}
-/* ======= [ END NORMALIZE RESETS ]  =========== */
-
-
-

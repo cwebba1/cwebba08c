@@ -1,7 +1,8 @@
-/* _social_nav.scss 120720 022119 */
-/* cwebba08 */
+/*! _social_nav.scss SOCIAL MEDIA NAVIGATION */
 
-/* SOCIAL MEDIA NAVIGATION */
+/* cwebba08c 092423 cwebba08 120720 022119 
+ This page uses SASS */
+
 .socialmedia {    
   display:flex;
   transition:width .25s ease-in; 
@@ -17,6 +18,7 @@
   bottom:0.75em;
 }
 
+/*! THIS IS SASS + SVG */
 @function _buildIcon($icon) {
   $icon: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="-6 -6 36 36">#{$icon}</svg>';
   @return $icon;

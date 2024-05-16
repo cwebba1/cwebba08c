@@ -1,6 +1,6 @@
-/** _sticky_footer_flex.scss */
-/* Sticky-footer Flex Declarations 
-Updated 090923 */
+/*! _sticky_footer_flex.scss */
+/*! Sticky-footer Flex Declarations 
+Updated 112623 090923 */
 
 /* This declaration is redundent. Here for archival purposes only.
 *,:after,:before { box-sizing:border-box; }
@@ -67,7 +67,7 @@ https://codepen.io/taniarascia/pen/rOLEGe
   }
 
 
-/* INNER STICKY FOOTER*/
+/*! INNER STICKY FOOTER*/
 
 
 @media (min-width:920px) {
@@ -96,9 +96,9 @@ visibility:hidden;
 }
 
 }
-/* END INNER STICKY FOOTER*/
+/*! END INNER STICKY FOOTER*/
 
-/* - - - - [ WIDE PAGE STYLE ] - - - -  */
+/*! - - - - [ WIDE PAGE STYLE ] - - - -  */
 
 .wide-content {
   width: 100%;
@@ -113,7 +113,7 @@ visibility:hidden;
 }
 
 
-/* Media Queries */
+/*! Media Queries */
 
 @media screen and (min-width: 920px) {
 

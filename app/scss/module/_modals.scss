@@ -63,7 +63,7 @@ clear: both;
   margin-right:0;
 }
 
-/* - - - [ Social Modal ] - - - */
+/*! - - - [ Social Modal ] - - - */
 
 #modal_fader {
   background:rgba(154, 152, 147, 0.5);
@@ -111,10 +111,10 @@ border-radius: .5em;
 	cursor: pointer;
   border-radius: 6px;
   text-decoration: none;
-  text-align: middle;
+  vertical-align: middle;
 }
 
-/* - - - [ Social Modal Styles ] - - - */
+/*! - - - [ Social Modal Styles ] - - - */
 
 .mod h5 { 
   color: #384313;
@@ -185,7 +185,7 @@ width:70%;
 }
 
 .subscribe label { 
-  font-family:$bod-ft;
+  font-family:var(--bod-ft);
   margin-top: .125em;
   margin-right:1em;
   padding-top: 0;
@@ -248,13 +248,13 @@ input[type=checkbox] {
 
 .social-button:hover { 
   background-color:#BEDD40;
-  background: map-get($gradients, grnlite01);
+  background:var(--grnlite01);
 }
 
 .map-btn:hover,
 button.send:hover {
   background: #EAFFEA;
-  background: map-get($gradients, grn);
+  background:var(--grn);
   cursor: pointer;
 }
 
@@ -281,15 +281,15 @@ button.send:hover {
 
 .mail-me { 
   text-decoration: none;
-  color: $tan-txt;
+  color: var(--tan-txt);
   font-size:.75em;
   &:focus { color: #06C;
   }
   &:visited  {
-  color: $tan-txt-dk; /*#6E5C4D*/
+  color: var(--tan-txt-dk);  
   }
   &:active {
-  color: $redskin;
+  color: var(--redskin);
   }
 }
 /* END Social Modal Styles */

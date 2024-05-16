@@ -1,10 +1,10 @@
 {
-  "name": "cwebba08bv3",
-  "version": "1.0.3",
+  "name": "cwebba08cv2",
+  "version": "4.0.1",
   "description": "Handlebars Gulp Development Environment",
   "main": "gulpfile.js",
   "author": "Craig Webb Art",
-  "license": "MIT",
+  "license": "Copyright Craig Webb Art",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cwebba1/cwebba08c.git"
@@ -26,6 +26,7 @@
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
   "dependencies": {
+    "@babel/traverse": "^7.23.4",
     "autoprefixer": "^10.4.15",
     "browser-sync": "^2.29.3",
     "browserslist": "^4.21.10",
