@@ -185,10 +185,6 @@ width:70%;
 }
 
 .subscribe label { 
-<<<<<<< HEAD
-=======
-/*  font-family:$bod-ft;*/
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
   font-family:var(--bod-ft);
   margin-top: .125em;
   margin-right:1em;
@@ -252,20 +248,12 @@ input[type=checkbox] {
 
 .social-button:hover { 
   background-color:#BEDD40;
-<<<<<<< HEAD
-=======
-/**  background: map-get($gradients, grnlite01);*/
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
   background:var(--grnlite01);
 }
 
 .map-btn:hover,
 button.send:hover {
   background: #EAFFEA;
-<<<<<<< HEAD
-=======
-/*  background: map-get($gradients, grn);*/
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
   background:var(--grn);
   cursor: pointer;
 }
@@ -293,26 +281,14 @@ button.send:hover {
 
 .mail-me { 
   text-decoration: none;
-<<<<<<< HEAD
-=======
-/*  color: $tan-txt; */
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
   color: var(--tan-txt);
   font-size:.75em;
   &:focus { color: #06C;
   }
   &:visited  {
-<<<<<<< HEAD
   color: var(--tan-txt-dk);  
   }
   &:active {
-=======
-/*  color: $tan-txt-dk; #6E5C4D*/
-  color: var(--tan-txt-dk);  
-  }
-  &:active {
-/*  color: $redskin;*/
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
   color: var(--redskin);
   }
 }

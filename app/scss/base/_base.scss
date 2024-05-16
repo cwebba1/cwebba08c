@@ -1,9 +1,7 @@
 /*! _base.scss  */
-<<<<<<< HEAD
 /*! 032424 120323 090923 071220 */
-=======
 /*! 120323 090923 071220 */
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
+
 /* RESETS */
 /* This Normalize Reset conflicts with Fancybox.
 html {
@@ -15,7 +13,6 @@ html {
 .unborderbox { box-sizing: content-box;
 }
 
-<<<<<<< HEAD
 html {
   font-family : var(--bod-ft), 'Open Sans', 
   'source-sans-pro', 'Helvetica Neue', 'Frutiger', "Myriad Pro", Arial, Helvetica, var(--system-ui), sans-serif;
@@ -50,21 +47,18 @@ dd {
   margin: 0;
 }
 
-=======
 html { -webkit-text-size-adjust:100%;
   -ms-text-size-adjust:100%;
   font-family:sans-serif;
   font-size:16px;
   }
-  
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
+
 body, nav, ul, li, a  {
   margin: 0; padding: 0;
 }
 
 
 body {
-<<<<<<< HEAD
   font-family:var(--bod-ft);
   font-weight:400;
   font-size: 1rem;
@@ -74,7 +68,6 @@ body {
   transition:all .5s ease-in; 
   background:var(--old-yeller);
   background:url('../assets/images/oj_emboss.png');
-=======
 font-size:100%;
 font-family:var(--bod-ft);
 font-weight:300;
@@ -84,7 +77,6 @@ color:hsla(27, 100%, 7%, 1);
 background:var(--old-yeller);
  background:url('../assets/images/oj_emboss.png');
 text-shadow:rgba(0,0,0,0.01) 0 0 1px;
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 }
 
 .basal {
@@ -103,8 +95,6 @@ padding-left: 1.375em;
 padding-right: 1.375em;
 }
 
-<<<<<<< HEAD
-=======
 .nest {
   display: block;
   margin: 0px auto;
@@ -132,19 +122,15 @@ padding-right: 1.375em;
 .relative {position: relative;}
 
 
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 /*! TYPOGRAPHY */
 
 /* 082816 NOTE: - LOAD FONTS VIA STYLE LINK */
 p {
-<<<<<<< HEAD
 font-family:var(--bod-fit);
 font-weight:400;
 font-size: 1em; /* 1.125rem is 18px. was 1em*/
-=======
 font: 1em  var(--bod-ft);
 font-weight:300;
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 line-height: 1.5;
 color:hsla(27, 100%, 7%, 0.99);
 margin: 0 0 0.5em 0;
@@ -159,10 +145,7 @@ p.no-margin {
   }
 
 /*!
-<<<<<<< HEAD
 2/16 = 0.125
-=======
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 3/16 = 0.1875
 4/16 = 0.25
 5/16 = 0.3125
@@ -310,11 +293,8 @@ line-height:.75em;
 
 .credit a:focus { outline: thin dotted; }
 
-<<<<<<< HEAD
-.credit a:focus, a:hover {color: var(--daylight-blu); /*#5FC1F1*/
-=======
+.credit a:focus, a:hover {color: var(--daylight-blu);} /*#5FC1F1*/
 .credit a:focus, a:hover {color: var(--royal-blu);
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 text-decoration: underline; 
 }
 
@@ -322,11 +302,8 @@ text-decoration: underline;
 text-decoration: none;
 } /* This might change to var(--visitation-blu) */
 
-<<<<<<< HEAD
-a.cutine { color: var(--midnight-blue); /*rgba(0, 68, 119, 0.99);*/
-=======
+a.cutine { color: var(--midnight-blue);} /*rgba(0, 68, 119, 0.99);*/
 a.cutine { color:var(--visitation-blu);
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 margin: 0 0 .5em 0;
 font-family: var(--bod-ft);
 font-weight:400;
@@ -335,11 +312,8 @@ line-height: 1.4em;
 font-style:italic;
 text-decoration: none; }
 
-<<<<<<< HEAD
-a.cutine:hover { color: var(--royal-blu); /* Royal blue #0066CC;*/
-=======
+a.cutine:hover { color: var(--royal-blu);} /* Royal blue #0066CC;*/
 a.cutine:hover { color:var(--visitation-blu);
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 text-decoration: underline; }
 
 a.cutine:visited {color: var(--visitation-blu); /*#3399CC;*/
@@ -377,19 +351,18 @@ a.menu:hover {
 
 /*! Headers */
 
-<<<<<<< HEAD
 h1, h2, h3, h4, h5, h6,  blockquote {
   font-family: var(--head-ft), 'Ubuntu variable', "DejaVu Sans", "Seravek", 'source-sans-pro', 'Corbel', 'Gill Sans Nova', "Liberation Sans", 'Nimbus Sans', "Bitstream Vera Sans", Verdana, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Verdana Ref", sans-serif;
   /*  font-style:italic; */
   color: var(--hdr-brn);    //#8c4103;
   font-weight: 400;
 /*  letter-spacing: 0.0625em; */
-=======
+}
+
 h1, h2, h3, h4, h5, h6,  blockquote {font-family:var(--head-ft);
   color: var(--hdr-brn);    //#8c4103;
   font-weight: 300;
 letter-spacing: 0.0625em;
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 }
 
 h1 { 
@@ -480,10 +453,6 @@ blockquote.big p {
   }
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 /*! = MEDIA / IMG Elements 
 ---------------------------------------------------- */
 img {
@@ -512,15 +481,12 @@ img:not([alt]) {
   border-width: 1px;
 }
 
-<<<<<<< HEAD
 .centered {
 display: block;
 margin-left: auto; margin-right: auto;
 }
-=======
 
 /*! IMAGE MODIFIERS */
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 
 .rnd {
 border: 0;
@@ -606,10 +572,6 @@ figure.w150 {
 }
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 /*! = LISTS 
 ---------------------------------------------------- */
 
@@ -710,11 +672,9 @@ ul.angle {
 
 .angle li:before {
   content: "\00bb\00a0\020";
-<<<<<<< HEAD
-}
-=======
   color: #A92323; /* or whatever color you prefer */
-}/* Â» */
+}
+/* Â» */
 
 
 /*! ==============================
@@ -861,7 +821,3 @@ a.btn-grn {
   box-shadow: 0 0 5px var(--bdr-gry);
 }
 /*! ======= [ END NORMALIZE RESETS ]  =========== */
-
-
-
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e

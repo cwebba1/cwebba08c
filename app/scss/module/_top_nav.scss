@@ -171,10 +171,6 @@ border-radius: .35em;
   color: #900000;
   background-color: #bdc;
   background: linear-gradient(to bottom, #bbddcc, #7bad94) !important;
-<<<<<<< HEAD
-=======
-  /*background-color: map-get($gradients, topulhover);*/
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
   background:var(--topulhover);
   border-radius: 0 0 0 0;
 }
@@ -227,11 +223,8 @@ line-height:1.1em;
 }
 
 /*! rounded corners for first and last child */
-<<<<<<< HEAD
  /*(top-left, top-right, bottom-right, bottom-left)*/
 
-=======
->>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 .top ul li:first-child > a {
 border-radius: 9px 9px 0 0;
 }
