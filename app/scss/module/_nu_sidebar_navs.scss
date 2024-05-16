@@ -83,6 +83,10 @@ nav.creative li div:hover,
 nav.development li div:hover { 
   color: #857464;
   background: #EAFFEA;
+<<<<<<< HEAD
+=======
+/**  background: map-get($gradients, grn); */
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
   background:var(--grn);
   padding: .375em 0 .375em .5em;
 }

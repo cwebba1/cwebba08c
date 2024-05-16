@@ -1,5 +1,9 @@
 /*! footer.scss cwebba08c */
+<<<<<<< HEAD
 /* 041324 120323  090923 120720 072120 021019 */
+=======
+/* 120323  090923 120720 072120 021019 */
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 
 /*! FOOTER */
 
@@ -17,6 +21,10 @@ margin-bottom:0.5em;
 .footsy a:hover, .footsy a:active {
   color: #857464;
   background: #EAFFEA;
+<<<<<<< HEAD
+=======
+/*  background: map-get($gradients, grn); */
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 background:var(--grn);
 }
 

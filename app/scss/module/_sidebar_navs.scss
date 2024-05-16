@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! _sidebar_navs.scss 041324 */
+=======
+/*! _sidebar_navs.scss 090923 */
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 
 
 /*! - - - - [ DEFAULT SIDE NAVIGATION ] - - - -  */
@@ -6,6 +10,10 @@
 /*  SHARED  */
 .gra-gradi {
   background: #f7f7f7;
+<<<<<<< HEAD
+=======
+/**  background: map-get($gradients, gra); */
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
   background: var(--gra);
 
   color: #432;
@@ -117,6 +125,10 @@ margin:.25em 0;
 .navserv a:hover, .navserv a:active {
   color: #857464;
   background: #EAFFEA;
+<<<<<<< HEAD
+=======
+/**  background: map-get($gradients, grn); */
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
   background: var(--grn);
 }
 
@@ -212,6 +224,10 @@ line-height: 1.5em;
 .wide-navserv div:hover, .wide-navserv div:active {
   color: #857464;
   background: #EAFFEA;
+<<<<<<< HEAD
+=======
+/**  background: map-get($gradients, grn); */
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 background: var(--grn);
 }
 
@@ -244,6 +260,10 @@ overflow: hidden;
 
 .wide-move h4,
 .side-services h4 { margin:0 0 .25em;
+<<<<<<< HEAD
+=======
+/*color:$tagblu;#0088CC;*/
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 color:var(--tagblu);/*#0088CC;*/
 
 line-height:1.75em;
@@ -292,6 +312,10 @@ color:#223; margin:0;
 .side-nav-serv li div:hover {
   color: #857464;
   background: #EAFFEA;
+<<<<<<< HEAD
+=======
+/**  background: map-get($gradients, grn); */
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 background: var(--grn);
 padding: .375em 1.25em;
 }
@@ -424,6 +448,10 @@ list-style: none;
 }
 
 .me-menu h4 a {
+<<<<<<< HEAD
+=======
+/*  font-family: $head-ft*/
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
   font-family: var(--head-ft);
 
   color : #E6662D;
@@ -432,6 +460,10 @@ list-style: none;
 }
 
 .me-menu h4 a:hover {
+<<<<<<< HEAD
+=======
+/*  font-family: $head-ft*/
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 font-family: var(--head-ft);
 color : #FF9966;
   text-decoration: underline;
@@ -458,6 +490,10 @@ border-radius: .5em;
  /*!_ _ _ _ [ END WIDE ME-MENU ] _ _ _ _ _*/
 
 .wide-me-menu h4 a {
+<<<<<<< HEAD
+=======
+/*  font-family: $head-ft*/
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 font-family: var(--head-ft);
 	color : #E6662D;
 	font-weight:400;
@@ -465,6 +501,10 @@ font-family: var(--head-ft);
 }
 
 .wide-me-menu h4 a:hover {
+<<<<<<< HEAD
+=======
+/*  font-family: $head-ft*/
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 font-family: var(--head-ft);
 color : #FF9966;
 	text-decoration: underline;

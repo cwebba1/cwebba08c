@@ -1,5 +1,9 @@
 /*! _base.scss  */
+<<<<<<< HEAD
 /*! 032424 120323 090923 071220 */
+=======
+/*! 120323 090923 071220 */
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 /* RESETS */
 /* This Normalize Reset conflicts with Fancybox.
 html {
@@ -11,6 +15,7 @@ html {
 .unborderbox { box-sizing: content-box;
 }
 
+<<<<<<< HEAD
 html {
   font-family : var(--bod-ft), 'Open Sans', 
   'source-sans-pro', 'Helvetica Neue', 'Frutiger', "Myriad Pro", Arial, Helvetica, var(--system-ui), sans-serif;
@@ -45,12 +50,21 @@ dd {
   margin: 0;
 }
 
+=======
+html { -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  font-family:sans-serif;
+  font-size:16px;
+  }
+  
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 body, nav, ul, li, a  {
   margin: 0; padding: 0;
 }
 
 
 body {
+<<<<<<< HEAD
   font-family:var(--bod-ft);
   font-weight:400;
   font-size: 1rem;
@@ -60,6 +74,17 @@ body {
   transition:all .5s ease-in; 
   background:var(--old-yeller);
   background:url('../assets/images/oj_emboss.png');
+=======
+font-size:100%;
+font-family:var(--bod-ft);
+font-weight:300;
+line-height: 1.5;
+	transition:all .5s ease-in; 
+color:hsla(27, 100%, 7%, 1);
+background:var(--old-yeller);
+ background:url('../assets/images/oj_emboss.png');
+text-shadow:rgba(0,0,0,0.01) 0 0 1px;
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 }
 
 .basal {
@@ -78,13 +103,48 @@ padding-left: 1.375em;
 padding-right: 1.375em;
 }
 
+<<<<<<< HEAD
+=======
+.nest {
+  display: block;
+  margin: 0px auto;
+}
+
+/*! MUST add width */
+/* line 113, sass/base/_base.scss */
+.nest:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.first {margin-left:0;padding-left:0;}
+.last {margin-right:0;padding-right:0;}
+
+.inline {display:inline;}
+.block {display:block;}
+.in-block {display:inline-block;
+  vertical-align:top;
+}
+.relative {position: relative;}
+
+
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 /*! TYPOGRAPHY */
 
 /* 082816 NOTE: - LOAD FONTS VIA STYLE LINK */
 p {
+<<<<<<< HEAD
 font-family:var(--bod-fit);
 font-weight:400;
 font-size: 1em; /* 1.125rem is 18px. was 1em*/
+=======
+font: 1em  var(--bod-ft);
+font-weight:300;
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 line-height: 1.5;
 color:hsla(27, 100%, 7%, 0.99);
 margin: 0 0 0.5em 0;
@@ -99,7 +159,10 @@ p.no-margin {
   }
 
 /*!
+<<<<<<< HEAD
 2/16 = 0.125
+=======
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 3/16 = 0.1875
 4/16 = 0.25
 5/16 = 0.3125
@@ -247,7 +310,11 @@ line-height:.75em;
 
 .credit a:focus { outline: thin dotted; }
 
+<<<<<<< HEAD
 .credit a:focus, a:hover {color: var(--daylight-blu); /*#5FC1F1*/
+=======
+.credit a:focus, a:hover {color: var(--royal-blu);
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 text-decoration: underline; 
 }
 
@@ -255,7 +322,11 @@ text-decoration: underline;
 text-decoration: none;
 } /* This might change to var(--visitation-blu) */
 
+<<<<<<< HEAD
 a.cutine { color: var(--midnight-blue); /*rgba(0, 68, 119, 0.99);*/
+=======
+a.cutine { color:var(--visitation-blu);
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 margin: 0 0 .5em 0;
 font-family: var(--bod-ft);
 font-weight:400;
@@ -264,7 +335,11 @@ line-height: 1.4em;
 font-style:italic;
 text-decoration: none; }
 
+<<<<<<< HEAD
 a.cutine:hover { color: var(--royal-blu); /* Royal blue #0066CC;*/
+=======
+a.cutine:hover { color:var(--visitation-blu);
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 text-decoration: underline; }
 
 a.cutine:visited {color: var(--visitation-blu); /*#3399CC;*/
@@ -302,12 +377,19 @@ a.menu:hover {
 
 /*! Headers */
 
+<<<<<<< HEAD
 h1, h2, h3, h4, h5, h6,  blockquote {
   font-family: var(--head-ft), 'Ubuntu variable', "DejaVu Sans", "Seravek", 'source-sans-pro', 'Corbel', 'Gill Sans Nova', "Liberation Sans", 'Nimbus Sans', "Bitstream Vera Sans", Verdana, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Verdana Ref", sans-serif;
   /*  font-style:italic; */
   color: var(--hdr-brn);    //#8c4103;
   font-weight: 400;
 /*  letter-spacing: 0.0625em; */
+=======
+h1, h2, h3, h4, h5, h6,  blockquote {font-family:var(--head-ft);
+  color: var(--hdr-brn);    //#8c4103;
+  font-weight: 300;
+letter-spacing: 0.0625em;
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 }
 
 h1 { 
@@ -398,6 +480,10 @@ blockquote.big p {
   }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 /*! = MEDIA / IMG Elements 
 ---------------------------------------------------- */
 img {
@@ -426,10 +512,15 @@ img:not([alt]) {
   border-width: 1px;
 }
 
+<<<<<<< HEAD
 .centered {
 display: block;
 margin-left: auto; margin-right: auto;
 }
+=======
+
+/*! IMAGE MODIFIERS */
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 
 .rnd {
 border: 0;
@@ -515,6 +606,10 @@ figure.w150 {
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
 /*! = LISTS 
 ---------------------------------------------------- */
 
@@ -615,4 +710,158 @@ ul.angle {
 
 .angle li:before {
   content: "\00bb\00a0\020";
+<<<<<<< HEAD
 }
+=======
+  color: #A92323; /* or whatever color you prefer */
+}/* Â» */
+
+
+/*! ==============================
+   Forms Normalize Reset
+   ============================ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="search"] {
+-moz-box-sizing: content-box;
+-webkit-box-sizing: content-box;
+box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto; /* 1 */
+  vertical-align: top; /* 2 */
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button { 
+  @include inlineflexCenter();
+  @include btnFont();
+  transition: 0.2s color linear;
+  border-color:inherit;
+  border-radius: 0.25rem;
+  cursor: pointer;
+ }
+
+/* Inline-flex button with added styles: */
+.btn-grn {
+  color: var(--golf-green);
+  background: #EAFFEA; /* Old browsers */
+/*  background: map-get($gradients, grn); */
+  background:var(--grn);
+  padding: 0.375rem 0.75rem;
+  border: 1px solid transparent;  /* may want to add Cwebba08b color */
+  border-color:var(--brd-gry);
+}
+
+.btn-grn:hover {
+  background: #DAEBDA; /* Old browsers */
+/*  background: map-get($gradients, grnlite02); */
+background: var(--grnlite02)
+}
+/* These are BS4 Declarations */
+.btn-grn:hover,
+.btn-grn:focus { 
+  color: var(--redskin);
+  text-decoration: none;
+  text-shadow:rgba(234, 255, 234, 0.99) -1px -1px 1px;
+  outline: 0;
+  border-color: var(--old-grass);
+/*  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); I don't want this */
+}
+
+.btn-grn:focus { 
+  box-shadow: 0 0 4px var(--wasabi);
+  border: 1px solid var(--old-grass);
+}
+
+a.btn-grn { 
+  @include inlineflexCenter();
+  @include btnFont();
+  text-decoration:none;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;  
+  transition: 0.2s color linear;
+  cursor: pointer;
+  }
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+::placeholder {
+  font-family: Georgia, 'Taviraj', "Times New Roman", Times, serif;
+  font-style:italic;
+  font-size:.8125em;
+  color: rgba(36, 16, 0, 0.5);
+  opacity: 0.8; /* Firefox */
+}
+
+/*! Grey Button Colors: */
+
+.btn-gry {
+  color: #443322;
+  color: var(--chocolate-brn);
+  text-shadow: 1px 1px 1px rgba(212, 206, 201, 0.5);  /*[--bdr-gry]*/
+  padding: 0.375rem 0.75rem;
+  background: #f7f7f7;
+/*  background: map-get($gradients, gra);*/
+  background:var(--gra);
+  border: 1px solid rgba(223, 222, 221, 0.5);
+}
+.btn-gry:hover {
+  background: #f7f7f7;
+/**  background: map-get($gradients, gra02);*/
+  background:var(--gra02);
+}
+
+.btn-gry:hover,
+.btn-gry:focus { 
+  color: var(--redskin);
+  text-shadow:rgba(212, 206, 201, 0.99) -1px -1px 1px; /*[--bdr-gry]*/
+  border-color: var(--brd-gry);
+}
+.btn-gry:focus { 
+  border: 1px solid calc((var--tan-txt) / 2);
+  box-shadow: 0 0 5px var(--bdr-gry);
+}
+/*! ======= [ END NORMALIZE RESETS ]  =========== */
+
+
+
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e

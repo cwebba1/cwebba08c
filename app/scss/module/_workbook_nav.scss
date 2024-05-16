@@ -1,9 +1,17 @@
 /*! _workbook_nav.scss */
 /*! Workbook Navigation Module - Cwebba08c Flexbox Styles /*
+<<<<<<< HEAD
 /* 041324 112623 090923 062720 020819 */
 
 .workbook li {
   background: #f7f7f7;
+=======
+/* 112623 090923 062720 020819 */
+
+.workbook li {
+  background: #f7f7f7;
+/**  background: map-get($gradients, gra); */
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
   background:var(--gra);
   color: #432;
   color: hsla(30, 33%, 20%, 1);

@@ -16,6 +16,18 @@
 .columns04 {
 /*  text-align: top; This is incorrect*/
   vertical-align: top; /* Test and see – the valiue may need to be vertical-align: text-top;*/
+<<<<<<< HEAD
+=======
+  -webkit-column-count: 1;
+  -webkit-column-gap: 1em;
+    -webkit-column-rule: 0;
+  -moz-column-count: 1;
+  -moz-column-gap: 1em;
+    -moz-column-rule: 0;
+  -ms-column-count: 1;
+  -ms-column-gap: 1em;
+    -ms-column-rule: 0;
+>>>>>>> 3e565eb195a42bc0a205e6d55e29a3c3a09b8d4e
   column-count: 1;
   column-gap: 1em;
     column-rule: 0;
